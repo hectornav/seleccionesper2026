@@ -1,3 +1,10 @@
 from django.contrib import admin
+from .models import Voto
 
-# Register your models here.
+
+@admin.register(Voto)
+class VotoAdmin(admin.ModelAdmin):
+    list_display = ('candidato', 'ip_address', 'fecha_voto')
+    list_filter = ('candidato', 'fecha_voto')
+    search_fields = ('ip_address', 'candidato__nombre')
+    ordering = ('-fecha_voto',)
