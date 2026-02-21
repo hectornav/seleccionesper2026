@@ -1,0 +1,72 @@
+{
+  "nombre": "Francisco Ernesto Diez-Canseco Távara",
+  "slug": "francisco-ernesto-diez-canseco-t-vara",
+  "foto_url": "/static/img/candidatos/DiezCanseco.jpg",
+  "edad": 50,
+  "region": "Lima",
+  "profesion": "Empresario / Político",
+  "posicion_politica": "derecha",
+  "lema": "El estado únicamente al servicio de los ciudadanos",
+  "biografia": "Francisco Diez-Canseco es empresario y candidato de Perú Acción. Propone reactivación económica, inversión privada y lucha anticorrupción.",
+  "experiencia": "Empresario / Político. Candidato presidencial 2026.",
+  "antecedentes": "Sin antecedentes penales conocidos de relevancia pública.",
+  "es_destacado": false,
+  "verificado": true,
+  "orden": 17,
+  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/FranciscoDiez.pdf",
+  "resumen_propuestas": "Revolución pacífica con el Plan Mano de Hierro: erradicación de la corrupción, pago de la deuda social y mano dura contra la criminalidad.",
+  "propuestas_destacadas": [
+    "Pago de la Deuda Social: seguridad, educación, salud e infraestructura",
+    "Reconstrucción Moral: rendición de cuentas y sanciones severas a funcionarios corruptos",
+    "Lucha drástica contra la delincuencia, minería ilegal y narcotráfico",
+    "Restitución del principio de autoridad de las Fuerzas Policiales",
+    "Unión nacional sin discriminación para solucionar los grandes problemas del país"
+  ],
+  "posicionamiento_issues": {
+    "asamblea_constituyente": "en contra",
+    "privatizacion_empresas_estado": "a favor",
+    "libre_comercio_tlc": "a favor",
+    "pena_muerte": "a favor parcial"
+  },
+  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "scores": {
+    "score_economia": 5,
+    "score_seguridad": 5,
+    "score_medio_ambiente": 5,
+    "score_educacion": 5,
+    "score_salud": 5
+  },
+  "propuestas": [
+    {
+      "tema": "reforma_estado",
+      "titulo": "Pago de la Deuda Social",
+      "descripcion": "Atención equitativa en seguridad, salud, educación e infraestructura.",
+      "icono": "bi-bank"
+    },
+    {
+      "tema": "anticorrupcion",
+      "titulo": "Reconstrucción Moral del Perú",
+      "descripcion": "Rendición de cuentas obligatoria y sanción drástica a funcionarios corruptos.",
+      "icono": "bi-eye"
+    },
+    {
+      "tema": "seguridad_ciudadana",
+      "titulo": "Plan Mano de Hierro contra el Crimen",
+      "descripcion": "Reducción real de delincuencia, extorsión, minería ilegal y terrorismo.",
+      "icono": "bi-shield-check"
+    },
+    {
+      "tema": "educacion",
+      "titulo": "Revalorización de Salud y Educación",
+      "descripcion": "Énfasis en salud mental, protección a la niñez, mujeres y personas con discapacidad.",
+      "icono": "bi-book"
+    },
+    {
+      "tema": "economia_empleo",
+      "titulo": "Capacidad de Gestión y Eficiencia",
+      "descripcion": "Manejo del gobierno con profesionales capacitados erradicando el mercantilismo.",
+      "icono": "bi-graph-up-arrow"
+    }
+  ],
+  "partido_nombre": "Partido Político Perú Acción"
+}

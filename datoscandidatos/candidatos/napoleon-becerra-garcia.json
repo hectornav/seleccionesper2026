@@ -1,0 +1,67 @@
+{
+  "nombre": "Napoleón Becerra García",
+  "slug": "napole-n-becerra-garc-a",
+  "foto_url": "/static/img/candidatos/NapoleonBecerra.jpg",
+  "edad": 50,
+  "region": "Lima",
+  "profesion": "Político / Dirigente Sindical",
+  "posicion_politica": "centro_izquierda",
+  "lema": " ",
+  "biografia": "Napoleón Becerra García es dirigente sindical y candidato del Partido de los Trabajadores y Emprendedores. Propone derechos laborales, economía popular y reforma agraria moderada.",
+  "experiencia": "Político / Dirigente Sindical. Candidato presidencial 2026.",
+  "antecedentes": "Sin antecedentes penales conocidos de relevancia pública.",
+  "es_destacado": false,
+  "verificado": true,
+  "orden": 6,
+  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/NapoleonBecerra.pdf",
+  "resumen_propuestas": "Seguridad preventiva, salud rural, nutrición escolar, anticorrupción con cadena perpetua y revolución del emprendimiento.",
+  "propuestas_destacadas": [
+    "Justicia comunitaria y seguridad preventiva: reducir criminalidad 40% en 5 años",
+    "Red nacional de atención médica preventiva con 100% cobertura rural",
+    "Programa nacional de nutrición escolar para reducir desnutrición al 5%",
+    "Cadena perpetua para corrupción grave con 100% de casos judicializados",
+    "Revolución del emprendimiento: +500,000 nuevas MYPEs y 1 millón de emprendedores apoyados"
+  ],
+  "posicionamiento_issues": {},
+  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "scores": {
+    "score_economia": 5,
+    "score_seguridad": 5,
+    "score_medio_ambiente": 5,
+    "score_educacion": 5,
+    "score_salud": 5
+  },
+  "propuestas": [
+    {
+      "tema": "anticorrupcion",
+      "titulo": "Cadena perpetua para delitos graves de corrupción con 100% de casos judicializados",
+      "descripcion": "Cadena perpetua para delitos graves de corrupción con 100% de casos judicializados",
+      "icono": "bi-eye"
+    },
+    {
+      "tema": "educacion",
+      "titulo": "Programa nacional de nutrición escolar para reducir desnutrición infantil al 5%",
+      "descripcion": "Programa nacional de nutrición escolar para reducir desnutrición infantil al 5%",
+      "icono": "bi-book"
+    },
+    {
+      "tema": "mypes_emprendimiento",
+      "titulo": "Creación de +500,000 nuevas MYPEs y apoyo a 1 millón de emprendedores",
+      "descripcion": "Creación de +500,000 nuevas MYPEs y apoyo a 1 millón de emprendedores",
+      "icono": "bi-shop"
+    },
+    {
+      "tema": "salud",
+      "titulo": "Red nacional de atención médica preventiva con 100% de cobertura en zonas rurales",
+      "descripcion": "Red nacional de atención médica preventiva con 100% de cobertura en zonas rurales",
+      "icono": "bi-heart-pulse"
+    },
+    {
+      "tema": "seguridad_ciudadana",
+      "titulo": "Justicia comunitaria y seguridad preventiva: reducir criminalidad en 40% en 5 años",
+      "descripcion": "Justicia comunitaria y seguridad preventiva: reducir criminalidad en 40% en 5 años",
+      "icono": "bi-shield-check"
+    }
+  ],
+  "partido_nombre": "Partido de los Trabajadores y Emprendedores PTE-Perú"
+}

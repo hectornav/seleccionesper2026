@@ -1,0 +1,78 @@
+{
+  "nombre": "Ronald Darwin Atencio Sotomayor",
+  "slug": "ronald-darwin-atencio-sotomayor",
+  "foto_url": "/static/img/candidatos/RonaldDarwin.jpeg",
+  "edad": 50,
+  "region": "Ayacucho",
+  "profesion": "Político / Dirigente",
+  "posicion_politica": "izquierda",
+  "lema": "Por un Perú mejor",
+  "biografia": "Ronald Atencio Sotomayor es líder de la Alianza Electoral Venceremos, coalición de izquierda. Promueve la economía popular, los derechos de los pueblos originarios y la reforma agraria.",
+  "experiencia": "Político / Dirigente. Candidato presidencial 2026.",
+  "antecedentes": "Sin antecedentes penales conocidos de relevancia pública.",
+  "es_destacado": false,
+  "verificado": true,
+  "orden": 16,
+  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/RonaldAtencio.pdf",
+  "resumen_propuestas": "Nueva Constitución plurinacional vía Asamblea Constituyente, Segunda Reforma Agraria y soberanía energética como pilares.",
+  "propuestas_destacadas": [
+    "Nueva Constitución plurinacional mediante Asamblea Constituyente",
+    "Segunda Reforma Agraria priorizando agricultura familiar y comunera",
+    "Sistema de pensiones solidario y digno con pensiones no contributivas ampliadas",
+    "Red Nacional de Ductos del Gas y Gasoducto del Sur",
+    "Reforma tributaria progresiva e 'Impunidad cero'"
+  ],
+  "posicionamiento_issues": {
+    "asamblea_constituyente": "a favor",
+    "privatizacion_empresas_estado": "en contra",
+    "libre_comercio_tlc": "en contra",
+    "relaciones_venezuela_cuba": "neutral"
+  },
+  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "scores": {
+    "score_economia": 5,
+    "score_seguridad": 5,
+    "score_medio_ambiente": 5,
+    "score_educacion": 5,
+    "score_salud": 5
+  },
+  "propuestas": [
+    {
+      "tema": "anticorrupcion",
+      "titulo": "'Impunidad cero': erradicación de la impunidad y la corrupción",
+      "descripcion": "'Impunidad cero': erradicación de la impunidad y la corrupción",
+      "icono": "bi-eye"
+    },
+    {
+      "tema": "economia_empleo",
+      "titulo": "Segunda Reforma Agraria priorizando agricultura familiar y comunera",
+      "descripcion": "Segunda Reforma Agraria priorizando agricultura familiar y comunera",
+      "icono": "bi-graph-up-arrow"
+    },
+    {
+      "tema": "economia_empleo",
+      "titulo": "Reforma tributaria progresiva con impuestos justos",
+      "descripcion": "Reforma tributaria progresiva con impuestos justos",
+      "icono": "bi-graph-up-arrow"
+    },
+    {
+      "tema": "infraestructura_agua_saneamiento",
+      "titulo": "Red Nacional de Ductos del Gas y Gasoducto del Sur para soberanía energética",
+      "descripcion": "Red Nacional de Ductos del Gas y Gasoducto del Sur para soberanía energética",
+      "icono": "bi-water"
+    },
+    {
+      "tema": "pensiones_adulto_mayor",
+      "titulo": "Sistema de pensiones solidario, digno y sostenible ampliando pensiones no contributivas",
+      "descripcion": "Sistema de pensiones solidario, digno y sostenible ampliando pensiones no contributivas",
+      "icono": "bi-person-heart"
+    },
+    {
+      "tema": "reforma_estado",
+      "titulo": "Nueva Constitución plurinacional, democrática y popular mediante Asamblea Constituyente",
+      "descripcion": "Nueva Constitución plurinacional, democrática y popular mediante Asamblea Constituyente",
+      "icono": "bi-bank"
+    }
+  ],
+  "partido_nombre": "Alianza Electoral Venceremos"
+}

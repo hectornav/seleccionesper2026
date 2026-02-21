@@ -1,0 +1,71 @@
+{
+  "nombre": "Mario Enrique Vizcarra Cornejo",
+  "slug": "mario-enrique-vizcarra-cornejo",
+  "foto_url": "/static/img/candidatos/MarioVizcarra.png",
+  "edad": 60,
+  "region": "Moquegua",
+  "profesion": "Ingeniero / Político",
+  "posicion_politica": "centro",
+  "lema": "Volvamos a sonreír",
+  "biografia": "Mario Vizcarra Cornejo nació en 1964 en Moquegua. Hermano del expresidente Martín Vizcarra Cornejo. Ingeniero civil con experiencia en gestión pública regional. Fue funcionario regional en Moquegua durante gobiernos anteriores. Candidato presidencial por Perú Primero en 2026.",
+  "experiencia": "Funcionario e ingeniero civil en Moquegua. Hermano del expresidente Martín Vizcarra.",
+  "antecedentes": "⚠️ Su hermano Martín Vizcarra fue destituido de la presidencia en 2020 y enfrenta múltiples investigaciones por corrupción. Mario no tiene condenas propias registradas.",
+  "es_destacado": false,
+  "verificado": true,
+  "orden": 22,
+  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/MarioVizcarra.pdf",
+  "resumen_propuestas": "Un Estado moderno, eficiente y descentralizado enfocado en el ciudadano, la lucha frontal contra la pobreza, la seguridad y el desarrollo productivo.",
+  "propuestas_destacadas": [
+    "Programa de Vivienda Social Sostenible 'Una Casita Para Ti'",
+    "Fondo rotatorio 'Mi Chacra Crece' para 300,000 familias agricultoras",
+    "Reforma integral de la Policía Nacional e intervención de FFAA en prisiones de máxima seguridad",
+    "Programa nacional 'Anemia Cero' e intervención en primera infancia",
+    "Plan Nacional de Conectividad Digital para internet en el 90% de zonas rurales"
+  ],
+  "posicionamiento_issues": {
+    "asamblea_constituyente": "en contra",
+    "privatizacion_empresas_estado": "neutral",
+    "libre_comercio_tlc": "a favor"
+  },
+  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "scores": {
+    "score_economia": 6,
+    "score_seguridad": 6,
+    "score_medio_ambiente": 6,
+    "score_educacion": 6,
+    "score_salud": 6
+  },
+  "propuestas": [
+    {
+      "tema": "infraestructura_agua_saneamiento",
+      "titulo": "Vivienda Sostenible 'Una Casita Para Ti'",
+      "descripcion": "Implementación masiva de viviendas sociales en ciudades intermedias.",
+      "icono": "bi-house"
+    },
+    {
+      "tema": "economia_empleo",
+      "titulo": "Mi Chacra Crece",
+      "descripcion": "Fondo rotatorio, crédito y asistencia técnica para la agricultura familiar.",
+      "icono": "bi-graph-up-arrow"
+    },
+    {
+      "tema": "seguridad_ciudadana",
+      "titulo": "Reforma Policial y Nuevas Cárceles",
+      "descripcion": "Reforma de la PNP y construcción de penales de máxima seguridad bajo control de FFAA.",
+      "icono": "bi-shield-check"
+    },
+    {
+      "tema": "salud",
+      "titulo": "Atención Primaria y Nutrición",
+      "descripcion": "Erradicación de la anemia y cobertura de salud universal en zonas alejadas.",
+      "icono": "bi-heart-pulse"
+    },
+    {
+      "tema": "educacion",
+      "titulo": "Conectividad Digital Rural",
+      "descripcion": "Llevar internet de alta velocidad al 90% de las escuelas y localidades rurales.",
+      "icono": "bi-wifi"
+    }
+  ],
+  "partido_nombre": "Partido Político Perú Primero"
+}

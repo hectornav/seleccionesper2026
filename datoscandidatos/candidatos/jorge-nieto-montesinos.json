@@ -1,0 +1,30 @@
+{
+  "nombre": "Jorge Nieto Montesinos",
+  "slug": "jorge-nieto-montesinos",
+  "foto_url": "/static/img/candidatos/JorgeNieto.jpg",
+  "edad": 67,
+  "region": "Lima",
+  "profesion": "Sociólogo / Político / Analista",
+  "posicion_politica": "centro-izquierda",
+  "lema": "Buen gobierno para todos",
+  "biografia": "Jorge Nieto Montesinos nació en 1957 en Lima. Sociólogo con amplia trayectoria en análisis político y derechos humanos. Fue Ministro de Defensa durante el gobierno de Pedro Pablo Kuczynski (2016–2017). Ha sido investigador y consultor de organismos internacionales. Candidato por el Partido del Buen Gobierno, agrupación de centro-reformista.",
+  "experiencia": "Ministro de Defensa del Perú (2016-2017). Analista político y sociólogo. Consultor de organismos internacionales.",
+  "antecedentes": "Sin antecedentes penales conocidos.",
+  "es_destacado": false,
+  "verificado": false,
+  "orden": 25,
+  "link_plan_gobierno": "",
+  "resumen_propuestas": "",
+  "propuestas_destacadas": [],
+  "posicionamiento_issues": {},
+  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "scores": {
+    "score_economia": 5,
+    "score_seguridad": 6,
+    "score_medio_ambiente": 7,
+    "score_educacion": 8,
+    "score_salud": 7
+  },
+  "propuestas": [],
+  "partido_nombre": "Partido del Buen Gobierno"
+}

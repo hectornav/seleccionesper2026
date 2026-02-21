@@ -1,0 +1,285 @@
+{% extends 'candidatos/base.html' %}
+{% load static %}
+
+{% block title %}Candidatos — Elecciones Perú 2026{% endblock %}
+
+{% block content %}
+
+<!-- HERO -->
+<section class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                    <span
+                        style="background:rgba(245,166,35,0.2);color:var(--gold);border:1px solid rgba(245,166,35,0.4);border-radius:20px;padding:2px 12px;font-size:0.78rem;font-weight:700">
+                        🗓️ Elecciones Generales 2026
+                    </span>
+                </div>
+                <h1 style="font-size:clamp(1.6rem,3vw,2.5rem);font-weight:800;line-height:1.2;margin-bottom:0.75rem">
+                    Conoce a los candidatos<br>
+                    <span style="color:var(--gold)">Vota con información</span>
+                </h1>
+                <p style="color:rgba(255,255,255,0.75);font-size:0.95rem;max-width:480px;line-height:1.7">
+                    Compara propuestas, descubre quién mejor representa tus ideas y toma la decisión más importante: tu
+                    voto.
+                </p>
+                <div class="d-flex flex-wrap gap-2 mt-3">
+                    <a href="{% url 'candidatos:quiz' %}" class="btn-peru"
+                        style="border-radius:20px;padding:0.6rem 1.4rem;font-size:0.9rem;background:var(--gold);color:var(--dark)">
+                        <i class="bi bi-lightning-fill"></i> Hacer el Test Electoral
+                    </a>
+                    <a href="{% url 'candidatos:comparar' %}" class="btn-outline-peru"
+                        style="border-color:rgba(255,255,255,0.5);color:white;border-radius:20px;padding:0.6rem 1.4rem;font-size:0.9rem">
+                        <i class="bi bi-columns-gap"></i> Comparar Candidatos
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 d-none d-lg-block text-end">
+                <div class="d-flex justify-content-end gap-3">
+                    <div class="stat-card"
+                        style="background:rgba(255,255,255,0.1);border-radius:12px;padding:1rem 1.5rem;text-align:center">
+                        <div style="font-size:2rem;font-weight:800;color:var(--gold)">{{ total_candidatos }}</div>
+                        <div style="font-size:0.75rem;color:rgba(255,255,255,0.6)">Candidatos</div>
+                    </div>
+                    <div class="stat-card"
+                        style="background:rgba(255,255,255,0.1);border-radius:12px;padding:1rem 1.5rem;text-align:center">
+                        <div style="font-size:2rem;font-weight:800;color:var(--gold)">🗳️</div>
+                        <div style="font-size:0.75rem;color:rgba(255,255,255,0.6)">Elecciones 2026</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTENIDO PRINCIPAL -->
+<div class="container py-4">
+
+    <!-- FILTROS -->
+    <div class="filter-bar">
+        <form method="get" class="row g-2 align-items-center" id="filter-form">
+            <div class="col-12 col-md-4">
+                <div class="input-group">
+                    <span class="input-group-text"
+                        style="border:2px solid var(--border-color);border-right:none;border-radius:10px 0 0 10px;background:white">
+                        <i class="bi bi-search text-muted"></i>
+                    </span>
+                    <input type="text" name="q" id="search-input" value="{{ busqueda }}" class="form-control"
+                        placeholder="Buscar candidato..." style="border-left:none;border-radius:0 10px 10px 0"
+                        autocomplete="off">
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <select name="posicion" id="posicion-filter" class="form-select">
+                    <option value="">Todas las posiciones</option>
+                    {% for value, label in posicion_choices %}
+                    <option value="{{ value }}" {% if filtro_posicion == value %}selected{% endif %}>{{ label }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="col-6 col-md-3">
+                <select name="partido" id="partido-filter" class="form-select">
+                    <option value="">Todos los partidos</option>
+                    {% for partido in partidos %}
+                    <option value="{{ partido.id }}" {% if filtro_partido == partido.id|stringformat:"i" %}selected{% endif %}>
+                        {{ partido.nombre }} ({{ partido.siglas }})
+                    </option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="col-12 col-md-2 d-flex gap-2">
+                <button type="submit" class="btn-peru w-100" style="justify-content:center">
+                    <i class="bi bi-funnel"></i> Filtrar
+                </button>
+                {% if busqueda or filtro_posicion or filtro_partido %}
+                <a href="{% url 'candidatos:home' %}" class="btn-outline-peru" style="white-space:nowrap">
+                    <i class="bi bi-x"></i>
+                </a>
+                {% endif %}
+            </div>
+        </form>
+    </div>
+
+    <!-- RESULTADOS -->
+    {% if candidatos %}
+    <div class="d-flex align-items-center justify-content-between mb-3">
+        <h2 class="section-title" style="font-size:1.2rem;margin:0">
+            {% if busqueda or filtro_posicion or filtro_partido %}
+            Resultados de búsqueda
+            {% else %}
+            Todos los candidatos
+            {% endif %}
+        </h2>
+        <span style="font-size:0.82rem;color:var(--text-muted-custom)">
+            {{ candidatos|length }} candidato{% if candidatos|length != 1 %}s{% endif %}
+        </span>
+    </div>
+
+    <div class="row g-3" id="candidatos-grid">
+        {% for candidato in candidatos %}
+        <div class="col-12 col-sm-6 col-lg-4 animate-in candidato-item" data-nombre="{{ candidato.nombre|lower }}"
+            data-posicion="{{ candidato.posicion_politica }}" data-partido="{{ candidato.partido.id }}"
+            style="--delay: {{ forloop.counter0 }}00ms;">
+            <div class="card-candidato">
+                <!-- Foto -->
+                <div class="foto-wrapper">
+                    {% if candidato.get_foto %}
+                    <img src="{{ candidato.get_foto }}" alt="{{ candidato.nombre }}" loading="lazy">
+                    {% else %}
+                    <div class="foto-placeholder">
+                        <i class="bi bi-person-circle"></i>
+                    </div>
+                    {% endif %}
+
+                    <!-- Badge posición -->
+                    <span class="posicion-badge" style="--pos-color: {{ candidato.posicion_color }};">
+                        {{ candidato.posicion_label }}
+                    </span>
+
+                    <!-- Badge partido -->
+                    <span class="partido-badge" style="--partido-color: {{ candidato.partido.color_primario }};">
+                        {{ candidato.partido.siglas }}
+                    </span>
+
+                    <!-- Badge verificado -->
+                    {% if candidato.verificado %}
+                    <span class="verificado-badge">
+                        <i class="bi bi-patch-check-fill"></i>
+                    </span>
+                    {% endif %}
+                </div>
+
+                <!-- Info -->
+                <div class="card-body-custom">
+                    <h3 class="candidato-nombre">{{ candidato.nombre }}</h3>
+                    <div class="candidato-info">
+                        <i class="bi bi-briefcase"></i> {{ candidato.profesion }} &bull;
+                        <i class="bi bi-geo-alt"></i> {{ candidato.region }}
+                    </div>
+
+                    {% if candidato.lema %}
+                    <p class="candidato-lema">"{{ candidato.lema }}"</p>
+                    {% elif candidato.resumen_propuestas %}
+                    <p class="candidato-lema" style="font-style:normal;border-color:#e9ecef">{{
+                        candidato.resumen_propuestas|truncatewords:15 }}</p>
+                    {% endif %}
+
+                    <!-- Propuesta destacada -->
+                    {% if candidato.propuestas_destacadas %}
+                    <div class="propuesta-preview">
+                        <i class="bi bi-lightbulb-fill"></i>
+                        <span>{{ candidato.propuestas_destacadas.0|truncatewords:10 }}</span>
+                    </div>
+                    {% endif %}
+
+                    <div class="d-flex gap-2">
+                        <a href="{% url 'candidatos:candidato_detail' candidato.slug %}" class="btn-peru flex-fill"
+                            style="justify-content:center">
+                            <i class="bi bi-eye"></i> Ver perfil
+                        </a>
+                        {% if candidato.link_plan_gobierno %}
+                        <a href="{{ candidato.link_plan_gobierno }}" target="_blank" rel="noopener"
+                            class="btn-outline-peru" title="Plan de Gobierno"
+                            style="border-color:#6b7280;color:#6b7280">
+                            <i class="bi bi-file-pdf"></i>
+                        </a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    <!-- ESTADO VACÍO (JS controlled) -->
+    <div id="no-results" class="text-center py-5 d-none">
+        <div style="font-size:4rem;margin-bottom:1rem">🔍</div>
+        <h3 style="font-weight:700;color:var(--dark)">No se encontraron candidatos</h3>
+        <p class="text-muted">Intenta con otros filtros de búsqueda</p>
+        <button onclick="resetFilters()" class="btn-peru">
+            <i class="bi bi-arrow-left"></i> Limpiar filtros
+        </button>
+    </div>
+
+    <!-- CTA QUIZ -->
+    <div class="mt-5 p-4 text-center"
+        style="background:linear-gradient(135deg,var(--dark),#16213e);border-radius:20px;color:white">
+        <div style="font-size:2.5rem;margin-bottom:0.75rem">⚡</div>
+        <h3 style="font-weight:800;font-size:1.4rem">¿No sabes por quién votar?</h3>
+        <p style="color:rgba(255,255,255,0.7);max-width:400px;margin:0 auto 1.2rem;font-size:0.9rem">
+            Responde nuestro test electoral y descubre qué candidato mejor representa tus valores e ideas.
+        </p>
+        <a href="{% url 'candidatos:quiz' %}" class="btn-peru"
+            style="background:var(--gold);color:var(--dark);font-size:0.95rem;padding:0.65rem 2rem;border-radius:20px">
+            <i class="bi bi-lightning-fill"></i> Hacer el Test Electoral
+        </a>
+    </div>
+
+</div>
+
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    const searchInput = document.getElementById('search-input');
+    const posicionFilter = document.getElementById('posicion-filter');
+    const partidoFilter = document.getElementById('partido-filter');
+    const candidatoItems = document.querySelectorAll('.candidato-item');
+    const noResults = document.getElementById('no-results');
+    const candidatosGrid = document.getElementById('candidatos-grid');
+    const countDisplay = document.querySelector('.section-title + span') || document.createElement('span');
+
+    function filterCandidatos() {
+        const query = searchInput.value.toLowerCase().trim();
+        const posicion = posicionFilter.value;
+        const partido = partidoFilter.value;
+        let visibleCount = 0;
+
+        candidatoItems.forEach(item => {
+            const matchesSearch = item.dataset.nombre.includes(query);
+            const matchesPosicion = !posicion || item.dataset.posicion === posicion;
+            const matchesPartido = !partido || item.dataset.partido === partido;
+
+            if (matchesSearch && matchesPosicion && matchesPartido) {
+                item.classList.remove('d-none');
+                visibleCount++;
+            } else {
+                item.classList.add('d-none');
+            }
+        });
+
+        // Toggle no results message
+        if (visibleCount === 0) {
+            noResults.classList.remove('d-none');
+            if (candidatosGrid) candidatosGrid.classList.add('d-none');
+        } else {
+            noResults.classList.add('d-none');
+            if (candidatosGrid) candidatosGrid.classList.remove('d-none');
+        }
+
+        // Update count text
+        if (countDisplay) {
+            countDisplay.textContent = `${visibleCount} candidato${visibleCount !== 1 ? 's' : ''}`;
+        }
+    }
+
+    function resetFilters() {
+        searchInput.value = '';
+        posicionFilter.value = '';
+        partidoFilter.value = '';
+        filterCandidatos();
+    }
+
+    // Attach events
+    searchInput.addEventListener('input', filterCandidatos);
+    posicionFilter.addEventListener('change', filterCandidatos);
+    partidoFilter.addEventListener('change', filterCandidatos);
+
+    // Initial check (in case search query was passed via URL)
+    if (searchInput.value || posicionFilter.value || partidoFilter.value) {
+        filterCandidatos();
+    }
+</script>
+{% endblock %}

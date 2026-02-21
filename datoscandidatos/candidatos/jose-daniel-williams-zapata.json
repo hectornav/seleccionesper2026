@@ -1,0 +1,49 @@
+{
+  "nombre": "José Daniel Williams Zapata",
+  "slug": "jos-daniel-williams-zapata",
+  "foto_url": "/static/img/candidatos/JoseWilliams.jpg",
+  "edad": 63,
+  "region": "Lima",
+  "profesion": "General del Ejército (r) / Político",
+  "posicion_politica": "centro-derecha",
+  "lema": "Orden, desarrollo e integridad",
+  "biografia": "Daniel Williams Zapata nació en 1961 en Lima. General de Brigada del Ejército Peruano en situación de retiro. Tuvo una larga carrera militar llegando a los más altos cargos castrenses. Presidió la Comisión de Defensa Nacional en el Congreso. Militante de Avanza País, partido de centro-derecha liberal. Propone un Estado fuerte en seguridad con economía de mercado y lucha técnica contra la corrupción.",
+  "experiencia": "General de Brigada del Ejército Peruano (r). Congresista de la República. Presidente de la Comisión de Defensa Nacional en el Congreso.",
+  "antecedentes": "Sin antecedentes penales conocidos.",
+  "es_destacado": false,
+  "verificado": false,
+  "orden": 26,
+  "link_plan_gobierno": "",
+  "resumen_propuestas": "",
+  "propuestas_destacadas": [],
+  "posicionamiento_issues": {},
+  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "scores": {
+    "score_economia": 7,
+    "score_seguridad": 10,
+    "score_medio_ambiente": 4,
+    "score_educacion": 5,
+    "score_salud": 5
+  },
+  "propuestas": [
+    {
+      "tema": "economia",
+      "titulo": "Libre mercado y atracción de inversión privada",
+      "descripcion": "Reducir el tamaño del Estado y eliminar regulaciones que ahuyentan la inversión extranjera. Economía de mercado libre como único camino para generar empleo y riqueza sostenida.",
+      "icono": "bi-graph-up-arrow"
+    },
+    {
+      "tema": "estado",
+      "titulo": "Eficiencia y reducción del gasto público",
+      "descripcion": "Auditoría general del Estado para eliminar gasto ineficiente, duplicidades y corrupción. Estado mínimo pero eficiente, con foco en seguridad, justicia y servicios básicos.",
+      "icono": "bi-bank2"
+    },
+    {
+      "tema": "seguridad",
+      "titulo": "Mano dura contra la criminalidad",
+      "descripcion": "Fortalecer las Fuerzas Armadas y la PNP con presupuesto, equipamiento y autonomía operacional. Cero tolerancia con el crimen organizado, narcotráfico y terrorismo.",
+      "icono": "bi-shield-fill"
+    }
+  ],
+  "partido_nombre": "Avanza País - Partido de Integración Social"
+}

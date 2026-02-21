@@ -1,0 +1,67 @@
+{
+  "nombre": "Rosario del Pilar Fernández Bazán",
+  "slug": "rosario-del-pilar-fern-ndez-baz-n",
+  "foto_url": "/static/img/candidatos/RosarioFernandez.png",
+  "edad": 59,
+  "region": "La Libertad",
+  "profesion": "Abogada / Política",
+  "posicion_politica": "centro",
+  "lema": "Un camino diferente para el Perú",
+  "biografia": "Rosario Fernández Bazán nació en 1965 en La Libertad. Abogada con especialización en derecho constitucional y administrativo. Fue Ministra de Justicia y Presidenta del Consejo de Ministros durante el gobierno de Alan García (2011). Su breve gestión como Premier estuvo marcada por el intento de diálogo con comunidades en conflicto. Candidata presidencial por Un Camino Diferente.",
+  "experiencia": "Ministra de Justicia (2011). Presidenta del Consejo de Ministros (2011). Abogada constitucionalista.",
+  "antecedentes": "Sin antecedentes penales conocidos.",
+  "es_destacado": false,
+  "verificado": true,
+  "orden": 29,
+  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/RosarioFernandez.pdf",
+  "resumen_propuestas": "Descentralización radical del poder del Estado, militarización de la seguridad y bachillerato automático bajo estándares internacionales.",
+  "propuestas_destacadas": [
+    "Descentralización radical: Congreso a Puno, Presidencia a Trujillo",
+    "Ministerio de Guerra unificado con IA y videocámaras en todos los agentes",
+    "'Escuadrones de la Vida': 10 grupos de inteligencia mil efectivos cada uno",
+    "Bachillerato automático con homologación universitaria modelo Bolonia europeo",
+    "Observatorio Nacional de Precios de Medicamentos (ONPAM)"
+  ],
+  "posicionamiento_issues": {},
+  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "scores": {
+    "score_economia": 6,
+    "score_seguridad": 6,
+    "score_medio_ambiente": 6,
+    "score_educacion": 7,
+    "score_salud": 6
+  },
+  "propuestas": [
+    {
+      "tema": "educacion",
+      "titulo": "Bachillerato automático y homologación universitaria bajo estándares Bolonia con plataforma digital",
+      "descripcion": "Bachillerato automático y homologación universitaria bajo estándares Bolonia con plataforma digital",
+      "icono": "bi-book"
+    },
+    {
+      "tema": "reforma_estado",
+      "titulo": "Descentralización radical: Congreso a Puno, Presidencia a Trujillo y ministerios al interior",
+      "descripcion": "Descentralización radical: Congreso a Puno, Presidencia a Trujillo y ministerios al interior",
+      "icono": "bi-bank"
+    },
+    {
+      "tema": "salud",
+      "titulo": "Observatorio Nacional de Precios y Abastecimiento de Medicamentos (ONPAM)",
+      "descripcion": "Observatorio Nacional de Precios y Abastecimiento de Medicamentos (ONPAM)",
+      "icono": "bi-heart-pulse"
+    },
+    {
+      "tema": "seguridad_ciudadana",
+      "titulo": "Ministerio de Guerra unificado (FFAA+Interior) con IA y cámaras en todos los agentes",
+      "descripcion": "Ministerio de Guerra unificado (FFAA+Interior) con IA y cámaras en todos los agentes",
+      "icono": "bi-shield-check"
+    },
+    {
+      "tema": "seguridad_ciudadana",
+      "titulo": "'Escuadrones de la Vida': 10 grupos de inteligencia con mil efectivos cada uno",
+      "descripcion": "'Escuadrones de la Vida': 10 grupos de inteligencia con mil efectivos cada uno",
+      "icono": "bi-shield-check"
+    }
+  ],
+  "partido_nombre": "Un Camino Diferente"
+}

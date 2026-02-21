@@ -1,0 +1,36 @@
+{
+  "nombre": "Rafael Jorge Belaunde Llosa",
+  "slug": "rafael-jorge-belaunde-llosa",
+  "foto_url": "/static/img/candidatos/RafaelBelaunde.jpg",
+  "edad": 71,
+  "region": "Lima",
+  "profesion": "Abogado / Político / Empresario",
+  "posicion_politica": "centro",
+  "lema": "Plan para Sacar al Perú Adelante",
+  "biografia": "Rafael Belaunde Llosa nació en 1953 en Lima. Es sobrino del expresidente Fernando Belaúnde Terry. Abogado y empresario con trayectoria en el sector privado y la política liberal. Candidato de Libertad Popular, partido de corte liberal-democrático. Propone reducción del Estado, inversión privada y reformas institucionales.",
+  "experiencia": "Abogado y empresario. Militante de partidos liberales y demócrata-cristianos.",
+  "antecedentes": "Sin antecedentes penales conocidos.",
+  "es_destacado": false,
+  "verificado": true,
+  "orden": 10,
+  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/JorgeNieto.pdf",
+  "resumen_propuestas": "Fortalecimiento democrático, anticorrupción meritocrática y reducción de brechas territoriales.",
+  "propuestas_destacadas": [
+    "Reforma institucional para fortalecer la democracia y el estado de derecho",
+    "Lucha anticorrupción con transparencia y meritocracia en el Estado",
+    "Inversión en educación y salud pública de calidad",
+    "Seguridad ciudadana con enfoque preventivo e integral",
+    "Desarrollo económico con equidad y reducción de brechas territoriales"
+  ],
+  "posicionamiento_issues": {},
+  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "scores": {
+    "score_economia": 8,
+    "score_seguridad": 7,
+    "score_medio_ambiente": 4,
+    "score_educacion": 6,
+    "score_salud": 5
+  },
+  "propuestas": [],
+  "partido_nombre": "Libertad Popular"
+}

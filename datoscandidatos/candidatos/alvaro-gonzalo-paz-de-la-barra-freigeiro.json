@@ -1,0 +1,78 @@
+{
+  "nombre": "Álvaro Gonzalo Paz de la Barra Freigeiro",
+  "slug": "alvaro-gonzalo-paz-de-la-barra-freigeiro",
+  "foto_url": "/static/img/candidatos/AlvaroPaz.jpg",
+  "edad": 42,
+  "region": "Lima",
+  "profesion": "Empresario / Político",
+  "posicion_politica": "centro_derecha",
+  "lema": "Libre mercado con responsabilidad social",
+  "biografia": "Álvaro Paz es el candidato presidencial de la organización política Fe en el Perú para el periodo 2026-2031. Su plan de gobierno se fundamenta en una concepción integral de la persona humana como centro y fin supremo de la acción del Estado y en la defensa del Estado constitucional de derecho, la democracia representativa y participativa y la vigencia efectiva de los derechos fundamentales. La propuesta articula crecimiento económico, inclusión social, sostenibilidad ambiental y fortalecimiento democrático, con una visión de país al 2050 alineada al Plan Estratégico de Desarrollo Nacional, el Acuerdo Nacional y los Objetivos de Desarrollo Sostenible.",
+  "experiencia": "Liderazgo de la organización política Fe en el Perú y presentación del Plan de Gobierno 2026-2031.",
+  "antecedentes": "Sin información específica de antecedentes penales o investigaciones en el documento del plan de gobierno. Revisar estado actual en el Poder Judicial del Perú.",
+  "es_destacado": false,
+  "verificado": true,
+  "orden": 1,
+  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/AlvaroPaz.pdf",
+  "resumen_propuestas": "El Plan de Gobierno 2026-2031 de Fe en el Perú propone un modelo de libre mercado con responsabilidad social, donde la iniciativa privada es motor del desarrollo dentro de reglas claras y justas, complementado con políticas públicas para inclusión productiva, formalización progresiva, desarrollo regional equilibrado y sostenibilidad ambiental, consolidando un Estado democrático, moderno y eficiente.",
+  "propuestas_destacadas": [
+    "Adoptar un verdadero libre mercado con responsabilidad social como motor de generación de riqueza, empleo e innovación, complementado con políticas de inclusión productiva y desarrollo regional equilibrado.",
+    "Consolidar un Estado democrático, moderno y eficiente, basado en el Estado constitucional de derecho, la separación de poderes y la rendición de cuentas.",
+    "Promover el desarrollo humano integral con igualdad de oportunidades, reduciendo brechas sociales y territoriales y mejorando el acceso a servicios públicos de calidad.",
+    "Impulsar una economía dinámica, competitiva e inclusiva, diversificada y descentralizada, generadora de empleo formal.",
+    "Garantizar la sostenibilidad ambiental y territorial del desarrollo, articulando la visión de país al 2050 con estabilidad política, instituciones sólidas y ciudadanía activa."
+  ],
+  "posicionamiento_issues": {
+    "asamblea_constituyente": "no especificado",
+    "libre_comercio_tlc": "a favor",
+    "privatizacion_empresas_estado": "no especificado",
+    "relaciones_venezuela_cuba": "no especificado"
+  },
+  "fuente_datos": "Plan de Gobierno de Fe en el Perú 2026-2031.",
+  "scores": {
+    "score_economia": 8,
+    "score_seguridad": 6,
+    "score_medio_ambiente": 7,
+    "score_educacion": 7,
+    "score_salud": 7
+  },
+  "propuestas": [
+    {
+      "tema": "ideario_principios",
+      "titulo": "Ideario, principios, objetivos y valores",
+      "descripcion": "Marco doctrinario que concibe a la persona humana como centro de la acción del Estado, reafirma el Estado constitucional de derecho, la democracia representativa y participativa, y define valores como veracidad, tolerancia, responsabilidad, transparencia, solidaridad, honestidad y justicia.",
+      "icono": "bi-people"
+    },
+    {
+      "tema": "economia_empleo",
+      "titulo": "Libre mercado con responsabilidad social",
+      "descripcion": "Concepción económica que adopta el libre mercado como motor de riqueza, empleo e innovación, con rol del Estado en garantizar libre competencia, estabilidad macroeconómica, protección de derechos laborales y del consumidor, corrección de fallas de mercado, transición hacia la industrialización y provisión de bienes públicos esenciales.",
+      "icono": "bi-graph-up-arrow"
+    },
+    {
+      "tema": "gestion_publica",
+      "titulo": "Sentido común, sentido de urgencia y sentido del deber",
+      "descripcion": "Enfoque ético de la gestión pública que exige decisiones razonables y viables, acción oportuna frente a pobreza e inseguridad y ejercicio de la función pública como encargo temporal al servicio de la nación.",
+      "icono": "bi-bank"
+    },
+    {
+      "tema": "democracia_instituciones",
+      "titulo": "Fortalecimiento democrático e institucional",
+      "descripcion": "Objetivo de consolidar un Estado democrático, moderno y eficiente, con instituciones sólidas, reglas claras, transparencia y rendición de cuentas, recuperando la confianza ciudadana.",
+      "icono": "bi-shield-check"
+    },
+    {
+      "tema": "desarrollo_humano",
+      "titulo": "Desarrollo humano integral y cohesión social",
+      "descripcion": "Objetivos de promover el desarrollo humano integral con igualdad de oportunidades, fortalecer la cohesión social y la paz social y reducir la pobreza y la desigualdad.",
+      "icono": "bi-heart-pulse"
+    },
+    {
+      "tema": "vision_pais_2050",
+      "titulo": "Visión de país al 2050",
+      "descripcion": "Horizonte de un país con sociedad cohesionada, Estado moderno y confiable, economía diversificada y descentralizada, territorios articulados y ambiente protegido, alineado con el Plan Estratégico al 2050 y los ODS.",
+      "icono": "bi-geo-alt"
+    }
+  ],
+  "partido_nombre": "Fe en el Perú"
+}

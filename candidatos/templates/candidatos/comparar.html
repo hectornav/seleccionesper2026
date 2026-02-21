@@ -1,0 +1,365 @@
+{% extends 'candidatos/base.html' %}
+
+{% block title %}Comparar Candidatos — Elecciones Perú 2026{% endblock %}
+
+{% block content %}
+
+<section style="background:linear-gradient(135deg,var(--dark),#16213e);padding:2rem 0;color:white">
+    <div class="container">
+        <nav aria-label="breadcrumb" class="mb-2">
+            <ol class="breadcrumb breadcrumb-custom">
+                <li class="breadcrumb-item"><a href="{% url 'candidatos:home' %}">Candidatos</a></li>
+                <li class="breadcrumb-item active">Comparar</li>
+            </ol>
+        </nav>
+        <h1 style="font-size:1.8rem;font-weight:800;margin-bottom:0.4rem">Comparar Candidatos</h1>
+        <p style="color:rgba(255,255,255,0.7);font-size:0.9rem;margin:0">Selecciona hasta 3 candidatos para comparar sus
+            perfiles y propuestas lado a lado.</p>
+    </div>
+</section>
+
+<div class="container py-4">
+
+    <!-- SELECTOR -->
+    <div style="background:white;border-radius:16px;padding:1.5rem;box-shadow:var(--card-shadow);margin-bottom:1.5rem">
+        <h3 style="font-size:1rem;font-weight:700;margin-bottom:1rem;color:var(--dark)">
+            <i class="bi bi-person-plus"></i> Selecciona candidatos para comparar
+        </h3>
+        <form method="get" id="compareForm">
+            <div class="row g-2 align-items-end">
+
+                <!-- Select 1 -->
+                <div class="col-12 col-md-4">
+                    <label style="font-size:0.8rem;font-weight:600;color:var(--text-muted-custom)">Candidato 1</label>
+                    <select name="c" class="form-select" onchange="this.form.submit()"
+                        style="border:2px solid var(--border-color);border-radius:10px;font-size:0.875rem">
+                        <option value="">— Seleccionar —</option>
+                        {% for c in candidatos_todos %}
+                        <option value="{{ c.id }}" {% if c.id == slots.0 %}selected{% endif %}>{{ c.nombre }} ({{ c.partido.siglas }})</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <!-- Select 2 -->
+                <div class="col-12 col-md-4">
+                    <label style="font-size:0.8rem;font-weight:600;color:var(--text-muted-custom)">Candidato 2</label>
+                    <select name="c" class="form-select" onchange="this.form.submit()"
+                        style="border:2px solid var(--border-color);border-radius:10px;font-size:0.875rem">
+                        <option value="">— Seleccionar —</option>
+                        {% for c in candidatos_todos %}
+                        <option value="{{ c.id }}" {% if c.id == slots.1 %}selected{% endif %}>{{ c.nombre }} ({{ c.partido.siglas }})</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <!-- Select 3 -->
+                <div class="col-12 col-md-4">
+                    <label style="font-size:0.8rem;font-weight:600;color:var(--text-muted-custom)">Candidato 3</label>
+                    <select name="c" class="form-select" onchange="this.form.submit()"
+                        style="border:2px solid var(--border-color);border-radius:10px;font-size:0.875rem">
+                        <option value="">— Seleccionar —</option>
+                        {% for c in candidatos_todos %}
+                        <option value="{{ c.id }}" {% if c.id == slots.2 %}selected{% endif %}>{{ c.nombre }} ({{ c.partido.siglas }})</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="col-12 d-flex gap-2 mt-2">
+                    {% if candidatos_seleccionados %}
+                    <a href="{% url 'candidatos:comparar' %}" class="btn-outline-peru" style="font-size:0.85rem">
+                        <i class="bi bi-x-circle"></i> Limpiar
+                    </a>
+                    {% endif %}
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+    {% if candidatos_seleccionados %}
+
+    <!-- TABLA DE COMPARACIÓN -->
+    <div style="overflow-x:auto">
+        <table
+            style="width:100%;border-collapse:collapse;background:white;border-radius:16px;overflow:hidden;box-shadow:var(--card-shadow)">
+
+            <!-- HEADER CON FOTOS -->
+            <thead>
+                <tr>
+                    <th
+                        style="background:var(--dark);color:white;padding:1rem;font-size:0.85rem;width:180px;min-width:140px">
+                        Candidato
+                    </th>
+                    {% for c in candidatos_seleccionados %}
+                    <th
+                        style="background:{{ c.partido.color_primario }};color:white;padding:1rem;text-align:center;min-width:200px">
+                        <div style="display:flex;flex-direction:column;align-items:center;gap:8px">
+                            <div
+                                style="width:60px;height:70px;border-radius:10px;overflow:hidden;border:2px solid rgba(255,255,255,0.3);background:rgba(0,0,0,0.2)">
+                                {% if c.get_foto %}
+                                <img src="{{ c.get_foto }}" alt="{{ c.nombre }}"
+                                    style="width:100%;height:100%;object-fit:cover;object-position:top">
+                                {% else %}
+                                <div
+                                    style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:30px;color:rgba(255,255,255,0.5)">
+                                    <i class="bi bi-person-fill"></i>
+                                </div>
+                                {% endif %}
+                            </div>
+                            <div>
+                                <div style="font-weight:800;font-size:0.9rem">{{ c.nombre }}</div>
+                                <div style="font-size:0.75rem;opacity:0.85">{{ c.partido.siglas }}</div>
+                            </div>
+                        </div>
+                    </th>
+                    {% endfor %}
+                </tr>
+            </thead>
+
+            <tbody>
+                <!-- DATOS BÁSICOS -->
+                <tr style="background:#f8f9fa">
+                    <td colspan="{{ candidatos_seleccionados|length|add:1 }}"
+                        style="padding:0.5rem 1rem;font-size:0.75rem;font-weight:700;color:var(--text-muted-custom);text-transform:uppercase;letter-spacing:0.5px">
+                        Información General
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="padding:0.75rem 1rem;font-size:0.85rem;font-weight:600;color:#4a5568;border-bottom:1px solid #e9ecef">
+                        <i class="bi bi-briefcase"></i> Profesión
+                    </td>
+                    {% for c in candidatos_seleccionados %}
+                    <td
+                        style="padding:0.75rem 1rem;font-size:0.85rem;text-align:center;border-bottom:1px solid #e9ecef;color:#2d3748">
+                        {{ c.profesion }}
+                    </td>
+                    {% endfor %}
+                </tr>
+                <tr>
+                    <td
+                        style="padding:0.75rem 1rem;font-size:0.85rem;font-weight:600;color:#4a5568;border-bottom:1px solid #e9ecef">
+                        <i class="bi bi-geo-alt"></i> Región
+                    </td>
+                    {% for c in candidatos_seleccionados %}
+                    <td
+                        style="padding:0.75rem 1rem;font-size:0.85rem;text-align:center;border-bottom:1px solid #e9ecef;color:#2d3748">
+                        {{ c.region }}
+                    </td>
+                    {% endfor %}
+                </tr>
+                <tr>
+                    <td
+                        style="padding:0.75rem 1rem;font-size:0.85rem;font-weight:600;color:#4a5568;border-bottom:1px solid #e9ecef">
+                        <i class="bi bi-calendar3"></i> Edad
+                    </td>
+                    {% for c in candidatos_seleccionados %}
+                    <td
+                        style="padding:0.75rem 1rem;font-size:0.85rem;text-align:center;border-bottom:1px solid #e9ecef;color:#2d3748">
+                        {{ c.edad }} años
+                    </td>
+                    {% endfor %}
+                </tr>
+                <tr>
+                    <td
+                        style="padding:0.75rem 1rem;font-size:0.85rem;font-weight:600;color:#4a5568;border-bottom:1px solid #e9ecef">
+                        <i class="bi bi-compass"></i> Posición
+                    </td>
+                    {% for c in candidatos_seleccionados %}
+                    <td style="padding:0.75rem 1rem;text-align:center;border-bottom:1px solid #e9ecef">
+                        <span
+                            style="background:{{ c.posicion_color }};color:white;border-radius:20px;padding:2px 10px;font-size:0.75rem;font-weight:600">
+                            {{ c.posicion_label }}
+                        </span>
+                    </td>
+                    {% endfor %}
+                </tr>
+
+                <!-- VISIÓN Y PROPUESTAS -->
+                <tr style="background:#f8f9fa">
+                    <td colspan="{{ candidatos_seleccionados|length|add:1 }}"
+                        style="padding:0.5rem 1rem;font-size:0.75rem;font-weight:700;color:var(--text-muted-custom);text-transform:uppercase;letter-spacing:0.5px">
+                        Visión de Gobierno
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="padding:0.75rem 1rem;font-size:0.85rem;font-weight:600;color:#4a5568;border-bottom:1px solid #e9ecef;vertical-align:top">
+                        <i class="bi bi-lightbulb"></i> Resumen
+                    </td>
+                    {% for c in candidatos_seleccionados %}
+                    <td style="padding:0.75rem 1rem;font-size:0.82rem;text-align:left;border-bottom:1px solid #e9ecef;color:#2d3748;line-height:1.6">
+                        {% if c.resumen_propuestas %}
+                        {{ c.resumen_propuestas|truncatewords:30 }}
+                        {% else %}
+                        <span class="text-muted">Sin información</span>
+                        {% endif %}
+                    </td>
+                    {% endfor %}
+                </tr>
+                <tr>
+                    <td
+                        style="padding:0.75rem 1rem;font-size:0.85rem;font-weight:600;color:#4a5568;border-bottom:1px solid #e9ecef;vertical-align:top">
+                        <i class="bi bi-trophy"></i> Propuesta principal
+                    </td>
+                    {% for c in candidatos_seleccionados %}
+                    <td style="padding:0.75rem 1rem;font-size:0.82rem;text-align:left;border-bottom:1px solid #e9ecef;color:#2d3748;line-height:1.5">
+                        {% if c.propuestas_destacadas %}
+                        <strong style="color:var(--peru-red)">{{ c.propuestas_destacadas.0|truncatewords:20 }}</strong>
+                        {% else %}
+                        <span class="text-muted">—</span>
+                        {% endif %}
+                    </td>
+                    {% endfor %}
+                </tr>
+
+                <!-- POSICIONAMIENTO EN TEMAS CLAVE -->
+                <tr style="background:#f8f9fa">
+                    <td colspan="{{ candidatos_seleccionados|length|add:1 }}"
+                        style="padding:0.5rem 1rem;font-size:0.75rem;font-weight:700;color:var(--text-muted-custom);text-transform:uppercase;letter-spacing:0.5px">
+                        Posición en Temas Clave
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:0.75rem 1rem;font-size:0.85rem;font-weight:600;color:#4a5568;border-bottom:1px solid #e9ecef">
+                        <i class="bi bi-bank2"></i> Asamblea Constituyente
+                    </td>
+                    {% for c in candidatos_seleccionados %}
+                    <td style="padding:0.75rem 1rem;text-align:center;border-bottom:1px solid #e9ecef">
+                        {% with pos=c.posicionamiento_issues.asamblea_constituyente %}
+                        {% if pos == 'a favor' %}
+                        <span style="background:#dcfce7;color:#166534;border-radius:20px;padding:3px 10px;font-size:0.75rem;font-weight:700"><i class="bi bi-check-circle-fill"></i> A favor</span>
+                        {% elif pos == 'en contra' %}
+                        <span style="background:#fef2f2;color:#991b1b;border-radius:20px;padding:3px 10px;font-size:0.75rem;font-weight:700"><i class="bi bi-x-circle-fill"></i> En contra</span>
+                        {% elif pos %}
+                        <span style="background:#f3f4f6;color:#6b7280;border-radius:20px;padding:3px 10px;font-size:0.75rem;font-weight:700">{{ pos|title }}</span>
+                        {% else %}
+                        <span class="text-muted">—</span>
+                        {% endif %}
+                        {% endwith %}
+                    </td>
+                    {% endfor %}
+                </tr>
+                <tr>
+                    <td style="padding:0.75rem 1rem;font-size:0.85rem;font-weight:600;color:#4a5568;border-bottom:1px solid #e9ecef">
+                        <i class="bi bi-building"></i> Privatización
+                    </td>
+                    {% for c in candidatos_seleccionados %}
+                    <td style="padding:0.75rem 1rem;text-align:center;border-bottom:1px solid #e9ecef">
+                        {% with pos=c.posicionamiento_issues.privatizacion_empresas_estado %}
+                        {% if pos == 'a favor' %}
+                        <span style="background:#dcfce7;color:#166534;border-radius:20px;padding:3px 10px;font-size:0.75rem;font-weight:700"><i class="bi bi-check-circle-fill"></i> A favor</span>
+                        {% elif pos == 'en contra' %}
+                        <span style="background:#fef2f2;color:#991b1b;border-radius:20px;padding:3px 10px;font-size:0.75rem;font-weight:700"><i class="bi bi-x-circle-fill"></i> En contra</span>
+                        {% elif pos %}
+                        <span style="background:#fef3c7;color:#92400e;border-radius:20px;padding:3px 10px;font-size:0.75rem;font-weight:700">{{ pos|title }}</span>
+                        {% else %}
+                        <span class="text-muted">—</span>
+                        {% endif %}
+                        {% endwith %}
+                    </td>
+                    {% endfor %}
+                </tr>
+                <tr>
+                    <td style="padding:0.75rem 1rem;font-size:0.85rem;font-weight:600;color:#4a5568;border-bottom:1px solid #e9ecef">
+                        <i class="bi bi-globe-americas"></i> Libre Comercio / TLC
+                    </td>
+                    {% for c in candidatos_seleccionados %}
+                    <td style="padding:0.75rem 1rem;text-align:center;border-bottom:1px solid #e9ecef">
+                        {% with pos=c.posicionamiento_issues.libre_comercio_tlc %}
+                        {% if pos == 'a favor' %}
+                        <span style="background:#dcfce7;color:#166534;border-radius:20px;padding:3px 10px;font-size:0.75rem;font-weight:700"><i class="bi bi-check-circle-fill"></i> A favor</span>
+                        {% elif pos == 'en contra' %}
+                        <span style="background:#fef2f2;color:#991b1b;border-radius:20px;padding:3px 10px;font-size:0.75rem;font-weight:700"><i class="bi bi-x-circle-fill"></i> En contra</span>
+                        {% elif pos %}
+                        <span style="background:#fef3c7;color:#92400e;border-radius:20px;padding:3px 10px;font-size:0.75rem;font-weight:700">{{ pos|title }}</span>
+                        {% else %}
+                        <span class="text-muted">—</span>
+                        {% endif %}
+                        {% endwith %}
+                    </td>
+                    {% endfor %}
+                </tr>
+
+                <!-- LEMA -->
+                <tr style="background:#f8f9fa">
+                    <td colspan="{{ candidatos_seleccionados|length|add:1 }}"
+                        style="padding:0.5rem 1rem;font-size:0.75rem;font-weight:700;color:var(--text-muted-custom);text-transform:uppercase;letter-spacing:0.5px">
+                        Propuesta de Campaña
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="padding:0.75rem 1rem;font-size:0.85rem;font-weight:600;color:#4a5568;border-bottom:1px solid #e9ecef">
+                        <i class="bi bi-chat-quote"></i> Lema
+                    </td>
+                    {% for c in candidatos_seleccionados %}
+                    <td
+                        style="padding:0.75rem 1rem;font-size:0.82rem;text-align:center;border-bottom:1px solid #e9ecef;font-style:italic;color:#4a5568">
+                        {% if c.lema %}"{{ c.lema }}"{% else %}<span class="text-muted">—</span>{% endif %}
+                    </td>
+                    {% endfor %}
+                </tr>
+
+                <!-- DOCUMENTOS Y LINKS -->
+                <tr style="background:#f8f9fa">
+                    <td colspan="{{ candidatos_seleccionados|length|add:1 }}"
+                        style="padding:0.5rem 1rem;font-size:0.75rem;font-weight:700;color:var(--text-muted-custom);text-transform:uppercase;letter-spacing:0.5px">
+                        Documentos y Enlaces
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:0.75rem 1rem;font-size:0.85rem;font-weight:600;color:#4a5568;border-bottom:1px solid #e9ecef">
+                        <i class="bi bi-file-earmark-pdf"></i> Plan de Gobierno
+                    </td>
+                    {% for c in candidatos_seleccionados %}
+                    <td style="padding:0.75rem 1rem;text-align:center;border-bottom:1px solid #e9ecef">
+                        {% if c.link_plan_gobierno %}
+                        <a href="{{ c.link_plan_gobierno }}" target="_blank" rel="noopener" class="btn-outline-peru"
+                            style="font-size:0.75rem;padding:0.35rem 0.7rem;border-color:var(--gold);color:var(--gold)">
+                            <i class="bi bi-download"></i> Ver PDF (JNE)
+                        </a>
+                        {% else %}
+                        <span class="text-muted">—</span>
+                        {% endif %}
+                    </td>
+                    {% endfor %}
+                </tr>
+                <tr>
+                    <td style="padding:0.75rem 1rem;font-size:0.85rem;font-weight:600;color:#4a5568">
+                        <i class="bi bi-box-arrow-up-right"></i> Perfil completo
+                    </td>
+                    {% for c in candidatos_seleccionados %}
+                    <td style="padding:0.75rem 1rem;text-align:center">
+                        <a href="{% url 'candidatos:candidato_detail' c.slug %}" class="btn-peru"
+                            style="font-size:0.8rem;padding:0.4rem 0.8rem;justify-content:center">
+                            <i class="bi bi-eye"></i> Ver perfil
+                        </a>
+                    </td>
+                    {% endfor %}
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    {% else %}
+    <!-- ESTADO INICIAL -->
+    <div class="text-center py-5" style="color:var(--text-muted-custom)">
+        <div style="font-size:4rem;margin-bottom:1rem">⚖️</div>
+        <h3 style="font-weight:700;color:var(--dark)">Selecciona candidatos</h3>
+        <p>Elige hasta 3 candidatos en los selectores de arriba para compararlos.</p>
+        <div class="row g-3 mt-3 justify-content-center">
+            {% for c in candidatos_todos|slice:":3" %}
+            <div class="col-auto">
+                <a href="{% url 'candidatos:comparar' %}?c={{ c.id }}" class="btn-outline-peru"
+                    style="font-size:0.85rem">
+                    {{ c.nombre }}
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+
+</div>
+{% endblock %}

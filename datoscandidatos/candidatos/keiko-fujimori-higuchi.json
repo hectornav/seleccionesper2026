@@ -1,0 +1,73 @@
+{
+  "nombre": "Keiko Fujimori Higuchi",
+  "slug": "keiko-fujimori-higuchi",
+  "foto_url": "/static/img/candidatos/KeikoFujimori.jpg",
+  "edad": 49,
+  "region": "Lima",
+  "profesion": "Administradora de Empresas / Política",
+  "posicion_politica": "derecha",
+  "lema": "Mano firme, corazón grande",
+  "biografia": "Keiko Sofía Fujimori Higuchi nació el 25 de mayo de 1975 en Lima. Es hija del expresidente Alberto Fujimori. Estudió Administración de Empresas en la Universidad de Boston (EE.UU.) y tiene un MBA de la Columbia Business School. Sirvió como Primera Dama durante parte del gobierno de su padre (1994-2000). Fue congresista por Lima en los períodos 2006-2011 y 2011-2016. Candidata presidencial en 2011 (segunda vuelta), 2016 (segunda vuelta) y 2021 (segunda vuelta, perdió ante Pedro Castillo). Fundadora y lideresa del partido Fuerza Popular, heredero del fujimorismo. Sus propuestas se centran en seguridad ciudadana, libre mercado y estabilidad macroeconómica.",
+  "experiencia": "Primera Dama de la República (1994-2000). Congresista de la República por Lima (2006-2011, 2011-2016). Tres veces candidata presidencial (2011, 2016, 2021).",
+  "antecedentes": "Múltiples procesos judiciales activos. Revisar estado actual en Poder Judicial del Perú.",
+  "es_destacado": true,
+  "verificado": true,
+  "orden": 21,
+  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/KeikoFujimori.pdf",
+  "resumen_propuestas": "Plan 'Perú con Orden': recuperación del control territorial, economía social de mercado con shock desregulatorio y capitalismo popular.",
+  "propuestas_destacadas": [
+    "Plan 'Perú con Orden': control territorial y fortalecimiento PNP",
+    "Shock desregulatorio para economía social de mercado",
+    "Reforma institucional anticorrupción con gestión pública digital",
+    "Acceso universal a salud, educación, agua y saneamiento",
+    "Capitalismo popular: libre mercado con protección a trabajadores y MYPEs"
+  ],
+  "posicionamiento_issues": {
+    "asamblea_constituyente": "en contra",
+    "privatizacion_empresas_estado": "a favor",
+    "libre_comercio_tlc": "a favor",
+    "pena_muerte": "a favor parcial",
+    "relaciones_venezuela_cuba": "en contra"
+  },
+  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "scores": {
+    "score_economia": 8,
+    "score_seguridad": 9,
+    "score_medio_ambiente": 3,
+    "score_educacion": 5,
+    "score_salud": 5
+  },
+  "propuestas": [
+    {
+      "tema": "anticorrupcion",
+      "titulo": "Reforma institucional anticorrupción con gestión pública moderna, digital y transparente",
+      "descripcion": "Reforma institucional anticorrupción con gestión pública moderna, digital y transparente",
+      "icono": "bi-eye"
+    },
+    {
+      "tema": "economia_empleo",
+      "titulo": "Shock desregulatorio y fortalecimiento de la economía social de mercado",
+      "descripcion": "Shock desregulatorio y fortalecimiento de la economía social de mercado",
+      "icono": "bi-graph-up-arrow"
+    },
+    {
+      "tema": "economia_empleo",
+      "titulo": "Capitalismo popular: libre mercado con protección a trabajadores, MYPEs, sector agrario y consumidores",
+      "descripcion": "Capitalismo popular: libre mercado con protección a trabajadores, MYPEs, sector agrario y consumidores",
+      "icono": "bi-graph-up-arrow"
+    },
+    {
+      "tema": "genero_inclusion",
+      "titulo": "Acceso universal a servicios básicos de calidad: salud, educación, agua y saneamiento",
+      "descripcion": "Acceso universal a servicios básicos de calidad: salud, educación, agua y saneamiento",
+      "icono": "bi-people"
+    },
+    {
+      "tema": "seguridad_ciudadana",
+      "titulo": "Recuperación del control territorial, fortalecimiento de la PNP y modernización del sistema judicial",
+      "descripcion": "Recuperación del control territorial, fortalecimiento de la PNP y modernización del sistema judicial",
+      "icono": "bi-shield-check"
+    }
+  ],
+  "partido_nombre": "Fuerza Popular"
+}

@@ -1,0 +1,78 @@
+{
+  "nombre": "Wolfgang Mario Grozo Costa",
+  "slug": "wolfgang-mario-grozo-costa",
+  "foto_url": "/static/img/candidatos/WolfgangGrozo.png",
+  "edad": 50,
+  "region": "Lima",
+  "profesion": "Abogado / Político",
+  "posicion_politica": "centro",
+  "lema": "Ni de izquierda ni de derecha, el Perú es de los que madrugan",
+  "biografia": "Wolfgang Grozo Costa es abogado y candidato de Integridad Democrática. Su partido promueve la transparencia institucional y reformas del sistema judicial.",
+  "experiencia": "Abogado / Político. Candidato presidencial 2026.",
+  "antecedentes": "Sin antecedentes penales conocidos de relevancia pública.",
+  "es_destacado": false,
+  "verificado": true,
+  "orden": 34,
+  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/WolfgangGrozo.pdf",
+  "resumen_propuestas": "Propuesta de centro humanista con énfasis en seguridad, salud y emprendimiento como motores del desarrollo.",
+  "propuestas_destacadas": [
+    "Seguridad ciudadana integral con tecnología e inteligencia ('No hay libertad si vives con miedo')",
+    "Salud integral para todos con cobertura universal",
+    "Educación de calidad cerrando brechas territoriales",
+    "Emprendimiento como motor económico: apoyo a MYPEs y jóvenes",
+    "Igualdad y protección institucional para grupos vulnerables"
+  ],
+  "posicionamiento_issues": {
+    "asamblea_constituyente": "en contra",
+    "matrimonio_igualitario": "neutral",
+    "privatizacion_empresas_estado": "neutral",
+    "libre_comercio_tlc": "a favor"
+  },
+  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "scores": {
+    "score_economia": 5,
+    "score_seguridad": 5,
+    "score_medio_ambiente": 5,
+    "score_educacion": 5,
+    "score_salud": 5
+  },
+  "propuestas": [
+    {
+      "tema": "educacion",
+      "titulo": "Educación cerrando brechas territoriales y estructurales",
+      "descripcion": "Educación cerrando brechas territoriales y estructurales",
+      "icono": "bi-book"
+    },
+    {
+      "tema": "mypes_emprendimiento",
+      "titulo": "Apoyo a MYPEs y jóvenes emprendedores como motor económico",
+      "descripcion": "Apoyo a MYPEs y jóvenes emprendedores como motor económico",
+      "icono": "bi-shop"
+    },
+    {
+      "tema": "salud",
+      "titulo": "Restablecimiento de servicios esenciales de salud con cobertura universal",
+      "descripcion": "Restablecimiento de servicios esenciales de salud con cobertura universal",
+      "icono": "bi-heart-pulse"
+    },
+    {
+      "tema": "seguridad_ciudadana",
+      "titulo": "Estrategia tecnológica y de inteligencia contra el crimen organizado",
+      "descripcion": "Estrategia tecnológica y de inteligencia contra el crimen organizado",
+      "icono": "bi-shield-check"
+    },
+    {
+      "tema": "seguridad_ciudadana",
+      "titulo": "'No hay libertad si vives con miedo'",
+      "descripcion": "'No hay libertad si vives con miedo'",
+      "icono": "bi-shield-check"
+    },
+    {
+      "tema": "genero_inclusion",
+      "titulo": "Políticas para discapacitados, adultos mayores y comunidad LGBTQ+",
+      "descripcion": "Políticas para discapacitados, adultos mayores y comunidad LGBTQ+",
+      "icono": "bi-people"
+    }
+  ],
+  "partido_nombre": "Integridad Democrática"
+}

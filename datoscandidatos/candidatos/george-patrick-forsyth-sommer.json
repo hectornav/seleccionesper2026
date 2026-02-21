@@ -1,0 +1,67 @@
+{
+  "nombre": "George Patrick Forsyth Sommer",
+  "slug": "george-patrick-forsyth-sommer",
+  "foto_url": "/static/img/candidatos/GeorgeForsyth.jpg",
+  "edad": 42,
+  "region": "Lima",
+  "profesion": "Empresario / Exfutbolista / Político",
+  "posicion_politica": "centro",
+  "lema": "¡A Paso de Vencedores!",
+  "biografia": "George Forsyth nació el 7 de octubre de 1982 en Lima. Exarquero de la selección peruana de fútbol (Alianza Lima, CN Miraflores). Estudió en el colegio La Inmaculada y tiene estudios universitarios en administración. Fue alcalde del distrito de La Victoria (Lima) de 2019 a 2022, conocido por sus iniciativas de seguridad ciudadana. Candidato presidencial en 2021 (llegó a la primera vuelta). Actualmente milita en Somos Perú.",
+  "experiencia": "Arquero profesional de fútbol (Alianza Lima, selección peruana). Alcalde de La Victoria - Lima (2019-2022). Candidato presidencial 2021.",
+  "antecedentes": "⚠️ INVESTIGADO: Fue investigado por presunto nepotismo en su gestión como alcalde de La Victoria y por contratos cuestionados con empresas de seguridad. También fue objeto de atención mediática por su separación y vida personal pública.",
+  "es_destacado": true,
+  "verificado": true,
+  "orden": 32,
+  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/GeorgeForsyth.pdf",
+  "resumen_propuestas": "Modernización del Estado, protección a instituciones autónomas, 'Anemia Cero', desarrollo industrial y Policía al servicio del ciudadano.",
+  "propuestas_destacadas": [
+    "Blindaje constitucional de órganos autónomos (JNJ, ONPE, Defensoría)",
+    "Programa 'Anemia Cero' articulando transferencias condicionadas y salud rural",
+    "Programa 'Técnicos para la Industria' con 50,000 becas y modelo de formación dual",
+    "Creación de 10 plataformas regionales de exportación y clústeres productivos",
+    "Reforma policial con descentralización y uso de Inteligencia Artificial"
+  ],
+  "posicionamiento_issues": {},
+  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "scores": {
+    "score_economia": 6,
+    "score_seguridad": 8,
+    "score_medio_ambiente": 5,
+    "score_educacion": 6,
+    "score_salud": 6
+  },
+  "propuestas": [
+    {
+      "tema": "reforma_estado",
+      "titulo": "Perú Democrático",
+      "descripcion": "Blindaje constitucional para proteger a los órganos autónomos de la captura política.",
+      "icono": "bi-bank"
+    },
+    {
+      "tema": "salud",
+      "titulo": "Programa Anemia Cero",
+      "descripcion": "Transferencias condicionadas y contratación de enfermeras especialistas en zonas rurales.",
+      "icono": "bi-heart-pulse"
+    },
+    {
+      "tema": "educacion",
+      "titulo": "Técnicos para la Industria",
+      "descripcion": "50,000 becas integrales para carreras técnicas y reconversión laboral.",
+      "icono": "bi-book"
+    },
+    {
+      "tema": "seguridad_ciudadana",
+      "titulo": "Policía al Servicio del Ciudadano",
+      "descripcion": "Descentralización policial, mapas del delito en tiempo real y uso de IA.",
+      "icono": "bi-shield-check"
+    },
+    {
+      "tema": "economia_empleo",
+      "titulo": "Diversificación Exportadora",
+      "descripcion": "Plataformas regionales de exportación y compras estatales con contenido nacional.",
+      "icono": "bi-graph-up-arrow"
+    }
+  ],
+  "partido_nombre": "Partido Democrático Somos Perú"
+}

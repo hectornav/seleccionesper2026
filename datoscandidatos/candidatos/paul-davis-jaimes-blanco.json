@@ -1,0 +1,72 @@
+{
+  "nombre": "Paul Davis Jaimes Blanco",
+  "slug": "paul-jaimes-blanco",
+  "foto_url": "/static/img/candidatos/PaulJaimes.jpeg",
+  "edad": 47,
+  "region": "Lima",
+  "profesion": "Abogado",
+  "posicion_politica": "centro",
+  "lema": "Por aquellos que no tienen voz... ¡Progresemos!",
+  "biografia": "Paul Davis Jaimes Blanco nació el 2 de febrero de 1979 en el distrito de Jesús María, Lima. Es abogado por la Universidad de San Martín de Porres (USMP), con estudios de posgrado en Gobierno y Gestión Pública. Es el fundador y presidente del partido Progresemos. Su partido se define como humanista y descentralizado, con un fuerte compromiso con la protección animal y del medio ambiente. Postula a la Presidencia de la República para el período 2026-2031 con un plan enfocado en seguridad ciudadana, vida digna y economía formal.",
+  "experiencia": "Asesor en el Congreso de la República (2022-2025). Fundador y presidente del Comité Ejecutivo Nacional del partido Progresemos desde 2024. Exmilitante del Partido Aprista Peruano y Avanza País.",
+  "antecedentes": "Sin antecedentes penales conocidos en el documento. Revisar estado actual en el Poder Judicial del Perú.",
+  "es_destacado": false,
+  "verificado": true,
+  "orden": 3,
+  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/PaulJaimes.pdf",
+  "resumen_propuestas": "Plan 'PROGRESEMOS 2031': seguridad integral con pena de muerte para delitos graves, salud universal, economía formal, agenda animalista pionera y anticorrupción con Inteligencia Artificial.",
+  "propuestas_destacadas": [
+    "Restablecimiento de la pena de muerte para delitos de extrema gravedad y salida de la Corte IDH",
+    "Agenda Animalista Nacional: hospitales veterinarios regionales, esterilización masiva y Registro de Agresores",
+    "Sistema Integrado de Salud descentralizado con Historia Clínica Electrónica universal",
+    "Integridad pública con IA anticorrupción: detección en tiempo real e inhabilitación perpetua",
+    "Educación con Complejos Educativos Integrales, crédito educativo tasa 0% y becas con regalías mineras"
+  ],
+  "posicionamiento_issues": {
+    "asamblea_constituyente": "en contra",
+    "libre_comercio_tlc": "a favor",
+    "privatizacion_empresas_estado": "neutral",
+    "relaciones_venezuela_cuba": "no especificado"
+  },
+  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "scores": {
+    "score_economia": 6,
+    "score_seguridad": 8,
+    "score_medio_ambiente": 9,
+    "score_educacion": 7,
+    "score_salud": 7
+  },
+  "propuestas": [
+    {
+      "tema": "seguridad_ciudadana",
+      "titulo": "Seguridad integral con pena de muerte, reforma penitenciaria y salida de la Corte IDH",
+      "descripcion": "Pena de muerte para violación de menores, terrorismo y crimen organizado; cárceles de máxima seguridad; y unidades de inteligencia operativa.",
+      "icono": "bi-shield-check"
+    },
+    {
+      "tema": "medio_ambiente",
+      "titulo": "Agenda Animalista y Ambientalista: hospitales veterinarios y protección",
+      "descripcion": "Construcción de hospitales veterinarios por región, esterilización gratuita, Registro de Agresores de Animales y protección de fauna silvestre.",
+      "icono": "bi-tree"
+    },
+    {
+      "tema": "salud",
+      "titulo": "Sistema de salud integrado con Historia Clínica Electrónica universal",
+      "descripcion": "Red de salud con telemedicina en zonas rurales, Historia Clínica Electrónica interoperable y plan 'Primeros 1000 Días' contra la anemia.",
+      "icono": "bi-heart-pulse"
+    },
+    {
+      "tema": "anticorrupcion",
+      "titulo": "Integridad pública con IA y 'Muerte Civil' definitiva",
+      "descripcion": "Software de IA que cruza datos financieros de funcionarios, examen nacional de servicio público e inhabilitación perpetua para condenados por corrupción.",
+      "icono": "bi-eye"
+    },
+    {
+      "tema": "educacion",
+      "titulo": "Complejos Educativos Integrales y crédito educativo tasa 0%",
+      "descripcion": "Creación de Complejos Educativos Integrales (CEI) en zonas rurales, Laboratorios de Innovación y crédito educativo al 0% fondeado con regalías mineras.",
+      "icono": "bi-book"
+    }
+  ],
+  "partido_nombre": "Progresemos"
+}

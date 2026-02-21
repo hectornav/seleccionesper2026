@@ -1,0 +1,67 @@
+{
+  "nombre": "Marisol Pérez Tello",
+  "slug": "marisol-p-rez-tello",
+  "foto_url": "/static/img/candidatos/MarisolPérez.jpg",
+  "edad": 54,
+  "region": "Lima",
+  "profesion": "Abogada / Política",
+  "posicion_politica": "centro",
+  "lema": "Primero la gente",
+  "biografia": "Marisol Pérez Tello nació el 21 de enero de 1971 en Lima. Abogada por la Pontificia Universidad Católica del Perú. Ha sido congresista por Lima en varios períodos. Fue Ministra de Justicia y Derechos Humanos durante el gobierno de PPK (2016-2017). Candidata presidencial por el Partido Popular Cristiano en 2011. Es conocida por sus posiciones moderadas en materia de derechos humanos y justicia.",
+  "experiencia": "Congresista de la República por Lima (múltiples períodos). Ministra de Justicia y Derechos Humanos (2016-2017). Candidata presidencial 2011.",
+  "antecedentes": "Sin antecedentes penales conocidos.",
+  "es_destacado": false,
+  "verificado": true,
+  "orden": 18,
+  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/MarisolPerez.pdf",
+  "resumen_propuestas": "Plan educativo con metas cuantificadas al 2031: mejora en lectura, conclusión oportuna de primaria y formación técnica con acreditación.",
+  "propuestas_destacadas": [
+    "+15pp estudiantes de primaria con nivel satisfactorio en lectura al 2031",
+    "98% tasa de conclusión oportuna de primaria (ninguna región bajo 96%)",
+    "Duplicar adultos que concluyen Educación Básica Alternativa (50% mujeres, 50% rural)",
+    "+15pp egresados de secundaria en programas técnicos o tecnológicos formales",
+    "70% de programas técnico-productivos públicos con acreditación de calidad al 2031"
+  ],
+  "posicionamiento_issues": {},
+  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "scores": {
+    "score_economia": 6,
+    "score_seguridad": 6,
+    "score_medio_ambiente": 6,
+    "score_educacion": 7,
+    "score_salud": 7
+  },
+  "propuestas": [
+    {
+      "tema": "educacion",
+      "titulo": "Incrementar 15pp los estudiantes de primaria con nivel satisfactorio en lectura (brecha urbano-rural <10pp al 2031)",
+      "descripcion": "Incrementar 15pp los estudiantes de primaria con nivel satisfactorio en lectura (brecha urbano-rural <10pp al 2031)",
+      "icono": "bi-book"
+    },
+    {
+      "tema": "educacion",
+      "titulo": "Tasa de conclusión oportuna de primaria al 98% (ninguna región bajo 96%)",
+      "descripcion": "Tasa de conclusión oportuna de primaria al 98% (ninguna región bajo 96%)",
+      "icono": "bi-book"
+    },
+    {
+      "tema": "educacion",
+      "titulo": "Duplicar jóvenes y adultos que concluyen ciclos de Educación Básica Alternativa",
+      "descripcion": "Duplicar jóvenes y adultos que concluyen ciclos de Educación Básica Alternativa",
+      "icono": "bi-book"
+    },
+    {
+      "tema": "educacion",
+      "titulo": "Incrementar 15pp la proporción de egresados de secundaria en programas técnicos formales",
+      "descripcion": "Incrementar 15pp la proporción de egresados de secundaria en programas técnicos formales",
+      "icono": "bi-book"
+    },
+    {
+      "tema": "educacion",
+      "titulo": "70% de programas técnico-productivos públicos con acreditación de calidad al 2031",
+      "descripcion": "70% de programas técnico-productivos públicos con acreditación de calidad al 2031",
+      "icono": "bi-book"
+    }
+  ],
+  "partido_nombre": "Primero la Gente"
+}

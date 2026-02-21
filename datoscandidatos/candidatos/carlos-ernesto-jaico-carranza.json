@@ -1,0 +1,72 @@
+{
+  "nombre": "Carlos Ernesto Jaico Carranza",
+  "slug": "carlos-ernesto-jaico-carranza",
+  "foto_url": "/static/img/candidatos/CarlosJaico.jpeg",
+  "edad": 58,
+  "region": "Lima",
+   "profesion": "Abogado / Político",
+  "posicion_politica": "centro_derecha",
+  "lema": "Construyendo puentes para el desarrollo del Perú hacia 2040",
+  "biografia": "Carlos Jaico Carranza es el candidato presidencial del Partido Político Perú Moderno para el periodo 2026-2031. El Plan de Gobierno 2026-2031 de Perú Moderno, elaborado por el equipo liderado por la Lic. Mariella Aragón Arce y la plancha presidencial, presenta las líneas directrices y políticas para un eventual gobierno orientado a reducir las grandes brechas en infraestructura, educación, salud, transportes y comunicaciones, y a conducir al país hacia el desarrollo del primer mundo.",
+  "experiencia": "Candidato presidencial del Partido Político Perú Moderno, con participación en la definición de las líneas programáticas, ideológicas y estratégicas del Plan de Gobierno 2026-2031.",
+  "antecedentes": "Sin información específica de antecedentes penales o investigaciones en el documento del plan de gobierno. Revisar estado actual en el Poder Judicial del Perú.",
+  "es_destacado": false,
+  "verificado": true,
+  "orden": 1,
+  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/CarlosJaicoCarranza.pdf",
+  "resumen_propuestas": "El Plan de Gobierno 2026-2031 de Perú Moderno se sustenta en bases programáticas e ideológicas, con visión de país y estrategias orientadas a resolver principalmente la seguridad ciudadana, declarar la guerra a las organizaciones criminales y la corrupción y narcotráfico, junto con el fomento al emprendimiento nacional, integración territorial mediante el Tren Transandino y una transformación educativa denominada Nueva Escuela Peruana.",
+  "propuestas_destacadas": [
+    "Declarar la guerra a las organizaciones criminales y fortalecer la lucha contra la corrupción y el narcotráfico.",
+    "Reducir las grandes brechas en infraestructura en educación, salud, transportes y comunicaciones para acercar al Perú al desarrollo del primer mundo.",
+    "Impulsar el fomento al emprendimiento nacional mediante una Estrategia Nacional para el Desarrollo de los Emprendimientos.",
+    "Implementar la Estrategia de Integración Territorial e Infraestructura Andina a través del Tren Transandino.",
+    "Desarrollar la Estrategia de Transformación Educativa: La Nueva Escuela Peruana, como pilar de capital humano y desarrollo."
+  ],
+  "posicionamiento_issues": {
+    "asamblea_constituyente": "no especificado",
+    "libre_comercio_tlc": "no especificado",
+    "privatizacion_empresas_estado": "no especificado",
+    "relaciones_venezuela_cuba": "no especificado"
+  },
+  "fuente_datos": "Plan de Gobierno 2026-2031 del Partido Político Perú Moderno.",
+  "scores": {
+    "score_economia": 7,
+    "score_seguridad": 8,
+    "score_medio_ambiente": 6,
+    "score_educacion": 7,
+    "score_salud": 7
+  },
+  "propuestas": [
+    {
+      "tema": "seguridad_ciudadana",
+      "titulo": "Seguridad ciudadana y lucha contra el crimen organizado",
+      "descripcion": "Eje del plan orientado a resolver los problemas de seguridad ciudadana, declarando la guerra a las organizaciones criminales y reforzando la lucha contra la corrupción y el narcotráfico.",
+      "icono": "bi-shield-check"
+    },
+    {
+      "tema": "emprendimiento",
+      "titulo": "Fomento al emprendimiento nacional",
+      "descripcion": "Estrategia para promover el emprendimiento nacional mediante una Estrategia Nacional para el Desarrollo de los Emprendimientos, como motor de crecimiento y empleo.",
+      "icono": "bi-graph-up-arrow"
+    },
+    {
+      "tema": "infraestructura_integracion",
+      "titulo": "Integración territorial e infraestructura andina: Tren Transandino",
+      "descripcion": "Estrategia de Integración Territorial e Infraestructura Andina basada en el Tren Transandino, para articular regiones y apoyar el desarrollo productivo.",
+      "icono": "bi-train-front"
+    },
+    {
+      "tema": "educacion",
+      "titulo": "Transformación educativa: La Nueva Escuela Peruana",
+      "descripcion": "Estrategia de Transformación Educativa denominada La Nueva Escuela Peruana, que busca reformar el sistema educativo como base del desarrollo nacional.",
+      "icono": "bi-book"
+    },
+    {
+      "tema": "anticorrupcion",
+      "titulo": "Estrategia para erradicar la corrupción",
+      "descripcion": "Líneas de acción para erradicar la corrupción, reforzando la institucionalidad y los mecanismos de control en la gestión pública.",
+      "icono": "bi-eye"
+    }
+  ],
+  "partido_nombre": "Perú Moderno"
+}

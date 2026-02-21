@@ -1,0 +1,72 @@
+{
+  "nombre": "César Acuña Peralta",
+  "slug": "c-sar-acu-a-peralta",
+  "foto_url": "/static/img/candidatos/CesarAcuña.jpg",
+  "edad": 73,
+  "region": "La Libertad",
+  "profesion": "Empresario / Político",
+  "posicion_politica": "centro_derecha",
+  "lema": "Más Inversión Privada y Más Justicia Social",
+  "biografia": "César Acuña Peralta es candidato presidencial por Alianza para el Progreso (APP) para el período 2026-2031. El Plan de Gobierno 2026-2031 de APP se presenta dentro del sistema democrático peruano basado en la Constitución de 1993 y expone principios, valores y objetivos orientados al desarrollo sostenible mediante el conocimiento, la participación y valores humanistas, proponiendo un Estado democrático, descentralizado y moderno.",
+  "experiencia": "Liderazgo de la organización política Alianza para el Progreso (APP) y responsabilidad en la conducción del plan de gobierno 2026-2031, centrado en reformas institucionales, económicas, sociales y territoriales.",
+  "antecedentes": "Sin información específica de antecedentes penales o investigaciones en el documento del plan de gobierno. Revisar estado actual en el Poder Judicial del Perú.",
+  "es_destacado": false,
+  "verificado": true,
+  "orden": 1,
+  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/CesarAcunaPeralta.pdf",
+  "resumen_propuestas": "El Plan de Gobierno 2026-2031 de APP, bajo el lema “Más Inversión Privada y Más Justicia Social”, busca desarrollo económico con empleo masivo, salud y educación de calidad, atención a grupos vulnerables y fortalecimiento institucional, mediante cuatro ejes: institucional, económico, social y territorial, con énfasis en reforma del Estado, inversión privada y descentralización.",
+  "propuestas_destacadas": [
+    "Impulsar una economía competitiva para generar empleo masivo con alta productividad, aprovechando recursos naturales, inversión en ciencia, tecnología e infraestructura.",
+    "Asegurar atención primaria en salud y una educación pública de calidad que forme ciudadanos integrales.",
+    "Gestionar programas sociales orientados a la tercera edad, personas con discapacidad y sectores de extrema pobreza.",
+    "Rediseñar el Poder Ejecutivo reduciendo de 19 a 10 ministerios para eliminar duplicidades, reducir gasto corriente improductivo y mejorar la gobernabilidad.",
+    "Fortalecer la descentralización, el ordenamiento territorial y el cuidado del medio ambiente, poniendo al Estado al servicio del ciudadano bajo la consigna de “La Revolución para el Progreso Popular”."
+  ],
+  "posicionamiento_issues": {
+    "asamblea_constituyente": "en contra (fortalecer la Constitución de 1993 con reformas puntuales)",
+    "libre_comercio_tlc": "a favor",
+    "privatizacion_empresas_estado": "a favor de mayor inversión privada con rol regulador del Estado",
+    "relaciones_venezuela_cuba": "no especificado"
+  },
+  "fuente_datos": "Plan de Gobierno Alianza para el Progreso (APP) 2026-2031.",
+  "scores": {
+    "score_economia": 8,
+    "score_seguridad": 7,
+    "score_medio_ambiente": 6,
+    "score_educacion": 8,
+    "score_salud": 7
+  },
+  "propuestas": [
+    {
+      "tema": "institucional_reforma_estado",
+      "titulo": "Reforma del Estado y rediseño del Poder Ejecutivo",
+      "descripcion": "Rediseño del Poder Ejecutivo reduciendo de 19 a 10 ministerios mediante fusiones y extinciones de entidades para eliminar duplicidades y trámites cruzados, logrando un Estado más gobernable, con menos gasto corriente improductivo y mejor coordinación sector–región.",
+      "icono": "bi-bank"
+    },
+    {
+      "tema": "economia_empleo",
+      "titulo": "Desarrollo económico y empleo masivo competitivo",
+      "descripcion": "Impulsar una economía competitiva que genere empleo masivo con alta productividad, aprovechando recursos naturales, ciencia y tecnología, e infraestructura, promoviendo inversión en todas sus formas.",
+      "icono": "bi-graph-up-arrow"
+    },
+    {
+      "tema": "salud_educacion",
+      "titulo": "Salud y educación de calidad",
+      "descripcion": "Asegurar bienestar mediante atención primaria en salud y promover educación pública de calidad que forme ciudadanos integrales, como pilares del desarrollo humano.",
+      "icono": "bi-heart-pulse"
+    },
+    {
+      "tema": "grupos_vulnerables",
+      "titulo": "Atención a grupos vulnerables",
+      "descripcion": "Gestionar programas sociales y atender necesidades urgentes de la tercera edad, personas con discapacidad y sectores de extrema pobreza.",
+      "icono": "bi-people"
+    },
+    {
+      "tema": "instituciones_confianza",
+      "titulo": "Instituciones democráticas y confianza ciudadana",
+      "descripcion": "Transformar instituciones públicas y normas de convivencia social para mejorar representación, reducir costos a la inversión privada y mejorar servicios de salud, educación, agua, saneamiento, transporte y energía.",
+      "icono": "bi-shield-check"
+    }
+  ],
+  "partido_nombre": "Alianza para el Progreso"
+}

@@ -1,0 +1,67 @@
+{
+  "nombre": "Rafael Bernardo López Aliaga Cazorla",
+  "slug": "rafael-bernardo-l-pez-aliaga-cazorla",
+  "foto_url": "/static/img/candidatos/RafaelLopez.jpg",
+  "edad": 58,
+  "region": "Lima",
+  "profesion": "Empresario / Ingeniero",
+  "posicion_politica": "derecha",
+  "lema": "Sin corruptos, sin comunistas",
+  "biografia": "Rafael López Aliaga nació el 27 de noviembre de 1966 en Lima. Ingeniero Industrial por la Universidad de Piura. Empresario exitoso, presidente del Grupo RPP durante años. Actual alcalde de la Municipalidad de Lima Metropolitana (desde enero 2023). Conocido por su devota fe católica y posturas social-conservadoras. Promueve la economía de libre mercado extrema y la reducción drástica del Estado. Candidato presidencial en 2021 (5to lugar en primera vuelta con 11.7% de votos).",
+  "experiencia": "Empresario del sector transporte y seguros (Rímac, RPP). Alcalde de Lima Metropolitana (2023-presente). Candidato presidencial 2021.",
+  "antecedentes": "⚠️ INVESTIGADO: Investigado por presunto enriquecimiento ilícito y lavado de activos vinculados a su gestión empresarial. Su gestión como alcalde de Lima ha sido cuestionada por la judicialización de decisiones administrativas y polémicas declaraciones públicas. Tuvo una demanda por difamación presentada por una periodista.",
+  "es_destacado": true,
+  "verificado": true,
+  "orden": 5,
+  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/RafaelLopez.pdf",
+  "resumen_propuestas": "Central de Lucha contra la Corrupción con plenos poderes, unidades itinerantes de pacificación y canastas básicas de productores nacionales.",
+  "propuestas_destacadas": [
+    "Central de Lucha contra la Corrupción (CCC) con plenos poderes",
+    "Unidades Itinerantes de Pacificación con inteligencia y agentes encubiertos",
+    "Canastas básicas de productores nacionales para erradicar pobreza extrema",
+    "Clubes Zonales en todo el país para fortalecer valores familiares",
+    "Habilitación de terrenos estatales para vivienda social accesible"
+  ],
+  "posicionamiento_issues": {},
+  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "scores": {
+    "score_economia": 10,
+    "score_seguridad": 9,
+    "score_medio_ambiente": 2,
+    "score_educacion": 5,
+    "score_salud": 3
+  },
+  "propuestas": [
+    {
+      "tema": "anticorrupcion",
+      "titulo": "Central de Lucha contra la Corrupción (CCC) con plenos poderes para detectar, infiltrar y capturar",
+      "descripcion": "Central de Lucha contra la Corrupción (CCC) con plenos poderes para detectar, infiltrar y capturar",
+      "icono": "bi-eye"
+    },
+    {
+      "tema": "genero_inclusion",
+      "titulo": "Canastas básicas de productores agrícolas nacionales para erradicar pobreza extrema y desnutrición",
+      "descripcion": "Canastas básicas de productores agrícolas nacionales para erradicar pobreza extrema y desnutrición",
+      "icono": "bi-people"
+    },
+    {
+      "tema": "seguridad_ciudadana",
+      "titulo": "Unidades Itinerantes de Pacificación Ciudadana con inteligencia y agentes encubiertos",
+      "descripcion": "Unidades Itinerantes de Pacificación Ciudadana con inteligencia y agentes encubiertos",
+      "icono": "bi-shield-check"
+    },
+    {
+      "tema": "infraestructura_agua_saneamiento",
+      "titulo": "Habilitación de terrenos estatales con servicios básicos para vivienda social",
+      "descripcion": "Habilitación de terrenos estatales con servicios básicos para vivienda social",
+      "icono": "bi-water"
+    },
+    {
+      "tema": "reforma_estado",
+      "titulo": "Clubes Zonales en todo el país para fortalecer valores familiares en zonas vulnerables",
+      "descripcion": "Clubes Zonales en todo el país para fortalecer valores familiares en zonas vulnerables",
+      "icono": "bi-bank"
+    }
+  ],
+  "partido_nombre": "Renovación Popular"
+}

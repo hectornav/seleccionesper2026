@@ -1,0 +1,102 @@
+{
+  "nombre": "Alex Gonzalez Castillo",
+  "slug": "alex-gonzalez-castillo",
+  "foto_url": "/static/img/candidatos/AlexGonzales.jpeg",
+  "edad": 64,
+  "region": "Por definir",
+  "profesion": "Político",
+  "posicion_politica": "centro",
+  "lema": "Plan Verde al 2030",
+  "biografia": "Alex Gonzalez Castillo es presidente del Partido Demócrata Verde y presenta el Plan de Gobierno 2026-2030 titulado “Plan Verde al 2030”. El plan se fundamenta en una visión de país basada en la defensa de la democracia, el respeto de la dignidad humana, la protección de la libertad de expresión, la garantía de los derechos humanos y la promoción de una economía social de mercado al servicio de la persona. La propuesta se nutre de visitas a pueblos de la costa, sierra y selva, y se alinea con el Plan Estratégico al 2050, el Acuerdo Nacional y los Objetivos de Desarrollo Sostenible, con énfasis en desarrollo sostenible y fortalecimiento institucional.",
+  "experiencia": "Presidente del Partido Demócrata Verde. Responsable de la presentación del Plan de Gobierno 2026-2030 “Plan Verde al 2030”.",
+  "antecedentes": "Sin información específica de antecedentes penales o investigaciones en el documento del plan de gobierno. Revisar estado actual en el Poder Judicial del Perú.",
+  "es_destacado": false,
+  "verificado": true,
+  "orden": 1,
+  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/AlexGonzalezCastillo.pdf",
+  "resumen_propuestas": "Plan “Plan Verde al 2030”: fortalecimiento de la democracia y las instituciones, reducción de la pobreza mediante activación y recuperación económica, convertir al Perú en uno de los países menos afectados por el cambio climático, ubicarlo entre los tres más competitivos e innovadores y liderar como el país más democrático de Latinoamérica, con enfoque de desarrollo sostenible y economía social de mercado.",
+  "propuestas_destacadas": [
+    "Reducción de la incidencia de la pobreza mediante la activación y recuperación económica.",
+    "Ser uno de los países menos afectados por el cambio climático mediante políticas ambientales y de desarrollo sostenible.",
+    "Ubicar al Perú dentro de los 3 países más competitivos e innovadores.",
+    "Liderar como el país más democrático de Latinoamérica, con instituciones sólidas, independientes y transparentes.",
+    "Conservación del patrimonio ambiental y cultural y afirmación de la peruanidad en todas sus manifestaciones plurales e interculturales."
+  ],
+  "posicionamiento_issues": {
+    "asamblea_constituyente": "no especificado",
+    "libre_comercio_tlc": "a favor de economía social de mercado e integración a mercados",
+    "privatizacion_empresas_estado": "no especificado",
+    "relaciones_venezuela_cuba": "no especificado"
+  },
+  "fuente_datos": "Plan de Gobierno del Partido Demócrata Verde 2026-2030 (Plan Verde al 2030).",
+  "scores": {
+    "score_economia": 7,
+    "score_seguridad": 6,
+    "score_medio_ambiente": 9,
+    "score_educacion": 7,
+    "score_salud": 7
+  },
+  "propuestas": [
+    {
+      "tema": "seguridad_ciudadana",
+      "titulo": "Orden público, seguridad ciudadana y lucha contra la corrupción",
+      "descripcion": "Eje 1 del Plan Verde al 2030, orientado a fortalecer el orden público, la seguridad ciudadana, la justicia y la lucha contra la corrupción como pilares de un Estado democrático con instituciones sólidas e independientes.",
+      "icono": "bi-shield-check"
+    },
+    {
+      "tema": "educacion",
+      "titulo": "Educación y cultura para el desarrollo de las personas",
+      "descripcion": "Eje 2 del plan, centrado en mejorar la educación y la cultura como bases del desarrollo humano, la igualdad de oportunidades y la afirmación de la identidad nacional.",
+      "icono": "bi-book"
+    },
+    {
+      "tema": "salud",
+      "titulo": "Fortalecimiento del sistema de salud",
+      "descripcion": "Eje 3 del plan, que busca mejorar el acceso, la calidad y la cobertura de los servicios de salud para elevar la calidad de vida de la población.",
+      "icono": "bi-heart-pulse"
+    },
+    {
+      "tema": "vivienda_servicios",
+      "titulo": "Vivienda, transporte y servicios básicos",
+      "descripcion": "Eje 4, orientado a vivienda, transporte de personas, servicios básicos y saneamiento físico legal como componentes esenciales del bienestar ciudadano.",
+      "icono": "bi-house-door"
+    },
+    {
+      "tema": "inclusion_social",
+      "titulo": "Igualdad de oportunidades y programas sociales",
+      "descripcion": "Ejes 5 y 6, enfocados en igualdad de oportunidades para mujeres y diversos segmentos poblacionales, así como lucha contra la pobreza y fortalecimiento de programas sociales.",
+      "icono": "bi-people"
+    },
+    {
+      "tema": "territorio_sostenible",
+      "titulo": "Territorio sostenible y gestión de riesgos",
+      "descripcion": "Ejes 7, 8 y 9, que incluyen ordenamiento territorial, desarrollo urbano y rural, gestión de riesgos de desastres y protección del ambiente, la biodiversidad y los recursos hídricos.",
+      "icono": "bi-tree"
+    },
+    {
+      "tema": "economia_empleo",
+      "titulo": "Economía, competitividad, empleo decente e innovación",
+      "descripcion": "Ejes 10, 11 y 12, centrados en fortalecer la economía y los sectores productivos, promover empleo decente y MIPYME, y potenciar la ciencia, tecnología, innovación y transformación digital.",
+      "icono": "bi-graph-up-arrow"
+    },
+    {
+      "tema": "infraestructura",
+      "titulo": "Infraestructura nacional para el desarrollo",
+      "descripcion": "Eje 13 del plan, que prioriza el desarrollo de infraestructura nacional como soporte de la competitividad y la integración territorial.",
+      "icono": "bi-building"
+    },
+    {
+      "tema": "gestion_publica_justicia",
+      "titulo": "Gestión pública moderna y sistema de justicia",
+      "descripcion": "Ejes 14 y 15, que plantean una gestión pública moderna, transparente y con rendición de cuentas, y un sistema de justicia eficiente, independiente y accesible.",
+      "icono": "bi-bank"
+    },
+    {
+      "tema": "descentralizacion_cultura",
+      "titulo": "Descentralización, ordenamiento territorial e identidad cultural",
+      "descripcion": "Ejes 16 y 17, orientados a profundizar la descentralización, el ordenamiento territorial y la afirmación de la identidad y diversidad cultural del país.",
+      "icono": "bi-geo-alt"
+    }
+  ],
+  "partido_nombre": "Partido Demócrata Verde"
+}

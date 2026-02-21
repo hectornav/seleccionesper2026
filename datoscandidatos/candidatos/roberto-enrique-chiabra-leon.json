@@ -1,0 +1,71 @@
+{
+  "nombre": "Roberto Enrique Chiabra León",
+  "slug": "roberto-enrique-chiabra-le-n",
+  "foto_url": "/static/img/candidatos/RobertoChiabra.jpg",
+  "edad": 68,
+  "region": "Lima",
+  "profesion": "General del Ejército (r) / Político",
+  "posicion_politica": "centro_derecha",
+  "lema": "Unidad y desarrollo",
+  "biografia": "Roberto Chiabra León nació en 1956 en Lima. General de División del Ejército Peruano en situación de retiro. Fue Ministro de Defensa durante el gobierno de Alejandro Toledo. Congresista en múltiples períodos, destacando en temas de seguridad y defensa. Candidato por Unidad Nacional, coalición de partidos de centro-derecha.",
+  "experiencia": "General de División del Ejército (r). Ministro de Defensa (gobierno de Toledo). Congresista de la República.",
+  "antecedentes": "Sin antecedentes penales conocidos.",
+  "es_destacado": false,
+  "verificado": true,
+  "orden": 8,
+  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/RobertoChiabra.pdf",
+  "resumen_propuestas": "Las cuatro fortalezas económicas (agricultura, pesca, minería, turismo) con economía social de mercado, seguridad y justicia.",
+  "propuestas_destacadas": [
+    "Las cuatro fortalezas económicas: agricultura, pesca, minería y turismo",
+    "Seguridad ciudadana, orden interno y reforma de la administración de justicia",
+    "Economía social de mercado con libertad, educación y justicia como pilares",
+    "Plan especial de solidaridad para sectores excluidos",
+    "Simplificación administrativa y modernización del Estado"
+  ],
+  "posicionamiento_issues": {
+    "asamblea_constituyente": "en contra",
+    "libre_comercio_tlc": "a favor",
+    "privatizacion_empresas_estado": "a favor parcial"
+  },
+  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "scores": {
+    "score_economia": 7,
+    "score_seguridad": 9,
+    "score_medio_ambiente": 4,
+    "score_educacion": 5,
+    "score_salud": 5
+  },
+  "propuestas": [
+    {
+      "tema": "economia_empleo",
+      "titulo": "Agricultura, pesca, minería y turismo como ejes del desarrollo productivo",
+      "descripcion": "Agricultura, pesca, minería y turismo como ejes del desarrollo productivo",
+      "icono": "bi-graph-up-arrow"
+    },
+    {
+      "tema": "economia_empleo",
+      "titulo": "Economía social de mercado con libertad",
+      "descripcion": "Economía social de mercado con libertad",
+      "icono": "bi-graph-up-arrow"
+    },
+    {
+      "tema": "reforma_estado",
+      "titulo": "Simplificación administrativa y modernización del Estado",
+      "descripcion": "Simplificación administrativa y modernización del Estado",
+      "icono": "bi-bank"
+    },
+    {
+      "tema": "seguridad_ciudadana",
+      "titulo": "Seguridad ciudadana, orden interno y reforma de la administración de justicia como prioridad",
+      "descripcion": "Seguridad ciudadana, orden interno y reforma de la administración de justicia como prioridad",
+      "icono": "bi-shield-check"
+    },
+    {
+      "tema": "genero_inclusion",
+      "titulo": "Plan especial de solidaridad focalizado para sectores más excluidos",
+      "descripcion": "Plan especial de solidaridad focalizado para sectores más excluidos",
+      "icono": "bi-people"
+    }
+  ],
+  "partido_nombre": "Unidad Nacional"
+}

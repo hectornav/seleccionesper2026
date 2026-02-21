@@ -1,0 +1,71 @@
+{
+  "nombre": "Ricardo Pablo Belmont Cassinelli",
+  "slug": "ricardo-pablo-belmont-cassinelli",
+  "foto_url": "/static/img/candidatos/RicardoBelmont.jpeg",
+  "edad": 77,
+  "region": "Lima",
+  "profesion": "Comunicador / Empresario / Político",
+  "posicion_politica": "centro",
+  "lema": "Lima para todos",
+  "biografia": "Ricardo Belmont nació el 30 de junio de 1947 en Lima. Pionero de la televisión peruana, conductor del programa \"El show de los sueños\". Fue alcalde de Lima Metropolitana en dos períodos (1990-1992 y 1993-1995) con el movimiento Obras. Intentó nuevamente la alcaldía en 2022 sin éxito. Su gestión en Lima fue recordada por obras de infraestructura y programas sociales populares. Figura histórica de la política limeña con perfil populista y pragmático.",
+  "experiencia": "Alcalde de Lima Metropolitana (1990-1995). Conductor televisivo y radial por décadas. Empresario del entretenimiento.",
+  "antecedentes": "⚠️ INVESTIGADO: Belmont ha enfrentado investigaciones por irregularidades durante sus gestiones municipales en la década de 1990. En 2001 fue incluido en investigaciones sobre enriquecimiento ilícito. Los casos prescribieron sin condena definitiva.",
+  "es_destacado": false,
+  "verificado": true,
+  "orden": 24,
+  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/RicardoBelmont.pdf",
+  "resumen_propuestas": "Economía social de mercado con rostro humano, industrialización de recursos naturales e integración a la OCDE.",
+  "propuestas_destacadas": [
+    "Economía social de mercado 'con rostro humano'",
+    "Industrialización progresiva de recursos naturales con valor agregado",
+    "Cambios constitucionales en justicia y tributación dentro del marco democrático",
+    "Integración a la OCDE como modernización del Estado y la economía",
+    "Infraestructura universal (puertos, aeropuertos, hidroeléctricas, carreteras)"
+  ],
+  "posicionamiento_issues": {
+    "asamblea_constituyente": "en contra",
+    "libre_comercio_tlc": "a favor",
+    "privatizacion_empresas_estado": "a favor parcial"
+  },
+  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "scores": {
+    "score_economia": 5,
+    "score_seguridad": 5,
+    "score_medio_ambiente": 4,
+    "score_educacion": 5,
+    "score_salud": 6
+  },
+  "propuestas": [
+    {
+      "tema": "economia_empleo",
+      "titulo": "Economía social de mercado 'con rostro humano': inversión privada con reglas claras del Estado",
+      "descripcion": "Economía social de mercado 'con rostro humano': inversión privada con reglas claras del Estado",
+      "icono": "bi-graph-up-arrow"
+    },
+    {
+      "tema": "economia_empleo",
+      "titulo": "Industrialización progresiva de recursos naturales para exportar con valor agregado",
+      "descripcion": "Industrialización progresiva de recursos naturales para exportar con valor agregado",
+      "icono": "bi-graph-up-arrow"
+    },
+    {
+      "tema": "economia_empleo",
+      "titulo": "Integración a la OCDE como objetivo de modernización",
+      "descripcion": "Integración a la OCDE como objetivo de modernización",
+      "icono": "bi-graph-up-arrow"
+    },
+    {
+      "tema": "infraestructura_agua_saneamiento",
+      "titulo": "Puertos, aeropuertos, hidroeléctricas y carreteras para conectar regiones y generar empleo",
+      "descripcion": "Puertos, aeropuertos, hidroeléctricas y carreteras para conectar regiones y generar empleo",
+      "icono": "bi-water"
+    },
+    {
+      "tema": "reforma_estado",
+      "titulo": "Cambios constitucionales en justicia, tributación y sistema electoral dentro del marco democrático",
+      "descripcion": "Cambios constitucionales en justicia, tributación y sistema electoral dentro del marco democrático",
+      "icono": "bi-bank"
+    }
+  ],
+  "partido_nombre": "Partido Cívico Obras"
+}

@@ -1,0 +1,78 @@
+{
+  "nombre": "Luis Fernando Olivera Vega",
+  "slug": "luis-fernando-olivera-vega",
+  "foto_url": "/static/img/candidatos/FernandoOlivera.jpeg",
+  "edad": 67,
+  "region": "Lima",
+  "profesion": "Abogado / Político / Activista",
+  "posicion_politica": "centro",
+  "lema": "Refundar el Perú",
+  "biografia": "Fernando Olivera es candidato presidencial por el Frente de la Esperanza 2021. Su plan de gobierno plantea la REFUNDACIÓN DEL PERÚ mediante una lucha frontal contra la corrupción que, según el documento, domina los poderes e instituciones del Estado, y propone recuperar los valores milenarios del país y la democracia a través de profundas reformas constitucionales, legislativas y de gestión.",
+  "experiencia": "Liderazgo del Frente de la Esperanza 2021 y presentación de un plan de gobierno centrado en reformas institucionales, lucha anticorrupción y fortalecimiento del Estado de derecho.",
+  "antecedentes": "Sin información específica de antecedentes penales o investigaciones en el documento del plan de gobierno. Revisar estado actual en el Poder Judicial del Perú.",
+  "es_destacado": false,
+  "verificado": true,
+  "orden": 1,
+  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/FernandoOlivera.pdf",
+  "resumen_propuestas": "El plan de gobierno del Frente de la Esperanza 2021 se centra en la refundación del Perú mediante una amplia agenda de reformas constitucionales y legislativas (Ley Patriota), mecanismos de democracia directa como el referéndum, una profunda reforma del sistema de justicia, medidas drásticas contra la corrupción y la criminalidad, y decretos de urgencia para eliminar la desnutrición y anemia infantil, la inseguridad alimentaria y cerrar brechas en saneamiento básico.",
+  "propuestas_destacadas": [
+    "Presentar la Ley Patriota el 28 de julio de 2026 con reformas constitucionales y legales, y someterlas a referéndum el 7 de octubre de 2026 junto con las elecciones regionales y municipales.",
+    "Establecer la revocatoria del Presidente y congresistas por referéndum si no cumplen sus promesas y eliminar la inmunidad de altas autoridades del Estado.",
+    "Reformar totalmente el Poder Judicial, Ministerio Público, Tribunal Constitucional, Junta Nacional de Justicia, Contraloría, Defensoría del Pueblo y Procuraduría.",
+    "Eliminar beneficios penitenciarios para graves delitos, endurecer penas, anular arbitrajes y limitar adendas en contratos del Estado, reforzando la rendición de cuentas y la transparencia.",
+    "Emitir decretos de urgencia para eliminar la desnutrición y anemia infantil, la inseguridad alimentaria, financiar y ejecutar proyectos de saneamiento básico y culminar obras inconclusas del Estado."
+  ],
+  "posicionamiento_issues": {
+    "asamblea_constituyente": "a favor de reformas constitucionales profundas mediante Ley Patriota y referéndum",
+    "libre_comercio_tlc": "no especificado",
+    "privatizacion_empresas_estado": "no especificado",
+    "relaciones_venezuela_cuba": "no especificado"
+  },
+  "fuente_datos": "Bases del Plan de Gobierno del Frente de la Esperanza 2021.",
+  "scores": {
+    "score_economia": 7,
+    "score_seguridad": 9,
+    "score_medio_ambiente": 6,
+    "score_educacion": 7,
+    "score_salud": 7
+  },
+  "propuestas": [
+    {
+      "tema": "reforma_constitucional",
+      "titulo": "Ley Patriota y reformas constitucionales",
+      "descripcion": "Presentar la Ley Patriota el 28 de julio de 2026 con reformas constitucionales como revocatoria del Presidente y congresistas por referéndum, eliminación de inmunidad de altas autoridades, censura ciudadana a ministros y reforma del rol de las Fuerzas Armadas, sometidas a aprobación congresal y referéndum nacional.",
+      "icono": "bi-bank"
+    },
+    {
+      "tema": "justicia_instituciones",
+      "titulo": "Reforma integral del sistema de justicia y órganos de control",
+      "descripcion": "Reforma total del Poder Judicial, Ministerio Público, Tribunal Constitucional, Junta Nacional de Justicia, Contraloría, Defensoría del Pueblo y Procuraduría para recuperar la institucionalidad y combatir la corrupción.",
+      "icono": "bi-balance-scale"
+    },
+    {
+      "tema": "seguridad_ciudadana",
+      "titulo": "Nuevas fuerzas policiales y sistema de inteligencia",
+      "descripcion": "Creación de la Guardia Civil, Policía Nacional de Investigaciones, Guardia Republicana y Policía de Migraciones, así como de un nuevo Sistema de Inteligencia Nacional Integrado y reforma del rol de las Fuerzas Armadas.",
+      "icono": "bi-shield-check"
+    },
+    {
+      "tema": "anticorrupcion",
+      "titulo": "Medidas legislativas anticorrupción y contra el crimen",
+      "descripcion": "Paquete de leyes para eliminar beneficios penitenciarios, acumular penas, endurecer sanciones para funcionarios y altos cargos, anular arbitrajes y limitar adendas en contratos del Estado, incautar bienes vinculados a corrupción y lavado, y fortalecer la rendición de cuentas y transparencia.",
+      "icono": "bi-eye"
+    },
+    {
+      "tema": "politica_migratoria",
+      "titulo": "Regulación estricta de extranjeros en situación irregular",
+      "descripcion": "Leyes que prohíben contratación, servicios públicos educativos y de salud (salvo emergencias) y operaciones financieras a extranjeros ilegales, obligando a un empadronamiento general bajo responsabilidad de las autoridades.",
+      "icono": "bi-people"
+    },
+    {
+      "tema": "politica_social",
+      "titulo": "Decretos de urgencia para infancia, alimentación y saneamiento",
+      "descripcion": "Decretos de urgencia desde el 28 de julio de 2026 para eliminar la desnutrición y anemia infantil, la inseguridad alimentaria, financiar y ejecutar todos los proyectos de saneamiento básico, agua y alcantarillado, y culminar obras inconclusas de contratos del Estado.",
+      "icono": "bi-heart-pulse"
+    }
+  ],
+  "partido_nombre": "Frente de la Esperanza 2021"
+}

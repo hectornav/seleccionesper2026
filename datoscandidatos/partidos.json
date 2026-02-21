@@ -1,0 +1,247 @@
+[
+  {
+    "nombre": "Fuerza Popular",
+    "siglas": "FP",
+    "ideologia": "Derecha / Populismo de derecha",
+    "color_primario": "#D52B2B",
+    "color_secundario": "#FFFFFF"
+  },
+  {
+    "nombre": "Alianza para el Progreso",
+    "siglas": "APP",
+    "ideologia": "Centro / Populismo centrista",
+    "color_primario": "#E67E22",
+    "color_secundario": "#FFFFFF"
+  },
+  {
+    "nombre": "Partido del Buen Gobierno",
+    "siglas": "PDBG",
+    "ideologia": "Centro",
+    "color_primario": "#1A2B4C",
+    "color_secundario": "#FFFFFF"
+  },
+  {
+    "nombre": "Un Camino Diferente",
+    "siglas": "CD",
+    "ideologia": "Centro",
+    "color_primario": "#1A2B4C",
+    "color_secundario": "#FFFFFF"
+  },
+  {
+    "nombre": "Partido Patriótico del Perú",
+    "siglas": "PPDP",
+    "ideologia": "Centro",
+    "color_primario": "#1A2B4C",
+    "color_secundario": "#FFFFFF"
+  },
+  {
+    "nombre": "Ahora Nación",
+    "siglas": "AN",
+    "ideologia": "Centro",
+    "color_primario": "#1A2B4C",
+    "color_secundario": "#FFFFFF"
+  },
+  {
+    "nombre": "Podemos Perú",
+    "siglas": "PP",
+    "ideologia": "Centro",
+    "color_primario": "#1A2B4C",
+    "color_secundario": "#FFFFFF"
+  },
+  {
+    "nombre": "Juntos por el Perú",
+    "siglas": "JPP",
+    "ideologia": "Centro-izquierda / Socialismo democrático",
+    "color_primario": "#27AE60",
+    "color_secundario": "#FFFFFF"
+  },
+  {
+    "nombre": "Partido Morado",
+    "siglas": "PM",
+    "ideologia": "Centro",
+    "color_primario": "#1A2B4C",
+    "color_secundario": "#FFFFFF"
+  },
+  {
+    "nombre": "Frente de la Esperanza 2021",
+    "siglas": "FE",
+    "ideologia": "Centro",
+    "color_primario": "#1A2B4C",
+    "color_secundario": "#FFFFFF"
+  },
+  {
+    "nombre": "Partido Demócrata Unido Perú",
+    "siglas": "PDUP",
+    "ideologia": "Centro",
+    "color_primario": "#1A2B4C",
+    "color_secundario": "#FFFFFF"
+  },
+  {
+    "nombre": "Progresemos",
+    "siglas": "PROG",
+    "ideologia": "Centro",
+    "color_primario": "#673AB7",
+    "color_secundario": "#FFFFFF"
+  },
+  {
+    "nombre": "Fe en el Perú",
+    "siglas": "P",
+    "ideologia": "Centro",
+    "color_primario": "#1A2B4C",
+    "color_secundario": "#FFFFFF"
+  },
+  {
+    "nombre": "Partido Democrático Somos Perú",
+    "siglas": "SP",
+    "ideologia": "Centro / Social-liberal",
+    "color_primario": "#2980B9",
+    "color_secundario": "#FFFFFF"
+  },
+  {
+    "nombre": "País Para Todos",
+    "siglas": "PPT",
+    "ideologia": "Centro",
+    "color_primario": "#1A2B4C",
+    "color_secundario": "#FFFFFF"
+  },
+  {
+    "nombre": "Partido Político Perú Acción",
+    "siglas": "PA",
+    "ideologia": "Centro",
+    "color_primario": "#1A2B4C",
+    "color_secundario": "#FFFFFF"
+  },
+  {
+    "nombre": "Integridad Democrática",
+    "siglas": "ID",
+    "ideologia": "Centro",
+    "color_primario": "#1A2B4C",
+    "color_secundario": "#FFFFFF"
+  },
+  {
+    "nombre": "Partido Cívico Obras",
+    "siglas": "PCO",
+    "ideologia": "Centro / Populismo",
+    "color_primario": "#F39C12",
+    "color_secundario": "#FFFFFF"
+  },
+  {
+    "nombre": "Partido de los Trabajadores y Emprendedores PTE-Perú",
+    "siglas": "PLTEP",
+    "ideologia": "Centro",
+    "color_primario": "#1A2B4C",
+    "color_secundario": "#FFFFFF"
+  },
+  {
+    "nombre": "Alianza Electoral Venceremos",
+    "siglas": "AEV",
+    "ideologia": "Centro",
+    "color_primario": "#1A2B4C",
+    "color_secundario": "#FFFFFF"
+  },
+  {
+    "nombre": "Partido Político Cooperación Popular",
+    "siglas": "PPCP",
+    "ideologia": "Centro / Liberal",
+    "color_primario": "#8E44AD",
+    "color_secundario": "#FFFFFF"
+  },
+  {
+    "nombre": "Partido Demócrata Federal",
+    "siglas": "PDF",
+    "ideologia": "Centro",
+    "color_primario": "#1A2B4C",
+    "color_secundario": "#FFFFFF"
+  },
+  {
+    "nombre": "Partido Aprista Peruano",
+    "siglas": "PAP",
+    "ideologia": "Centro-izquierda / Aprismo",
+    "color_primario": "#FFFFFF",
+    "color_secundario": "#D52B2B"
+  },
+  {
+    "nombre": "El Partido Demócrata Verde",
+    "siglas": "PDV",
+    "ideologia": "Centro-izquierda / Ecologismo",
+    "color_primario": "#2ECC71",
+    "color_secundario": "#FFFFFF"
+  },
+  {
+    "nombre": "Unidad Nacional",
+    "siglas": "UN",
+    "ideologia": "Centro",
+    "color_primario": "#1A2B4C",
+    "color_secundario": "#FFFFFF"
+  },
+  {
+    "nombre": "Libertad Popular",
+    "siglas": "LP",
+    "ideologia": "Centro",
+    "color_primario": "#1A2B4C",
+    "color_secundario": "#FFFFFF"
+  },
+  {
+    "nombre": "Partido SíCreo",
+    "siglas": "PS",
+    "ideologia": "Centro",
+    "color_primario": "#1A2B4C",
+    "color_secundario": "#FFFFFF"
+  },
+  {
+    "nombre": "Salvemos al Perú",
+    "siglas": "SP",
+    "ideologia": "Centro",
+    "color_primario": "#1A2B4C",
+    "color_secundario": "#FFFFFF"
+  },
+  {
+    "nombre": "Fuerza y Libertad",
+    "siglas": "FL",
+    "ideologia": "Centro",
+    "color_primario": "#1A2B4C",
+    "color_secundario": "#FFFFFF"
+  },
+  {
+    "nombre": "Partido Político Nacional Perú Libre",
+    "siglas": "PL",
+    "ideologia": "Izquierda / Marxismo-leninismo",
+    "color_primario": "#C0392B",
+    "color_secundario": "#FFFFFF"
+  },
+  {
+    "nombre": "Partido Regionalista de Integración Nacional",
+    "siglas": "PRIN",
+    "ideologia": "Centro",
+    "color_primario": "#1A2B4C",
+    "color_secundario": "#FFFFFF"
+  },
+  {
+    "nombre": "Renovación Popular",
+    "siglas": "RP",
+    "ideologia": "Derecha / Conservadurismo",
+    "color_primario": "#1A5276",
+    "color_secundario": "#FFFFFF"
+  },
+  {
+    "nombre": "Avanza País - Partido de Integración Social",
+    "siglas": "APPIS",
+    "ideologia": "Centro-derecha / Liberal",
+    "color_primario": "#1ABC9C",
+    "color_secundario": "#FFFFFF"
+  },
+  {
+    "nombre": "Partido Político Perú Primero",
+    "siglas": "PPPP",
+    "ideologia": "Centro / Progresismo",
+    "color_primario": "#2C3E50",
+    "color_secundario": "#FFFFFF"
+  },
+  {
+    "nombre": "Primero la Gente",
+    "siglas": "PG",
+    "ideologia": "Centro-derecha / Democracia cristiana",
+    "color_primario": "#E74C3C",
+    "color_secundario": "#FFFFFF"
+  }
+]

@@ -1,0 +1,72 @@
+{
+  "nombre": "Charlie Carrasco Salazar",
+  "slug": "charlie-carrasco-salazar",
+  "foto_url": "/static/img/candidatos/CharlieCarrasco.jpeg",
+  "edad": 45,
+  "region": "Lima",
+  "profesion": "Abogado / Político",
+  "posicion_politica": "centro-derecha",
+  "lema": "Unido Perú",
+  "biografia": "Charlie Carrasco es candidato presidencial por la organización política Unido Perú. Su Plan de Gobierno plantea una reforma total del Estado, una agenda de seguridad ciudadana y anticorrupción de línea dura, y una reforma económica basada en una economía social de mercado centrada en la persona, la familia y el capitalismo popular.",
+  "experiencia": "Liderazgo de la organización política Unido Perú y presentación del Plan de Gobierno, que incluye reformas estructurales del Estado, seguridad ciudadana y modelo económico.",
+  "antecedentes": "Sin información específica de antecedentes penales o investigaciones en el documento del plan de gobierno. Revisar estado actual en el Poder Judicial del Perú.",
+  "es_destacado": false,
+  "verificado": true,
+  "orden": 1,
+  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/CharlieCarrasco.pdf",
+  "resumen_propuestas": "El Plan de Gobierno de Unido Perú propone una reforma total del Estado con austeridad y reducción del tamaño estatal, una política de seguridad ciudadana y anticorrupción con penas severas y fortalecimiento de fuerzas del orden, y una reforma económica bajo una economía social de mercado y capitalismo popular, con reducción de gasto público e impuestos, apertura comercial y promoción de inversiones en sectores productivos.",
+  "propuestas_destacadas": [
+    "Promover una reforma total del Estado con reorganización, restructuración y reingeniería, incluyendo austeridad extrema, fusión de ministerios, reorganización de organismos autónomos y reducción del gasto público.",
+    "Crear oficinas especializadas como la Oficina Nacional de Anticorrupción y la Oficina Nacional de Servicios Básicos, Saneamiento y Titulaciones, y profesionalizar y digitalizar el sector público.",
+    "Implementar un servicio militar obligatorio para quienes no estudian ni trabajan, penas de cadena perpetua para delitos graves y construcción de mega cárceles industriales y productivas.",
+    "Reorganizar la PNP y el sistema de justicia, crear policías especializadas, resguardar la frontera con el ejército, usar jueces sin rostro y tecnología de reconocimiento facial y drones para la persecución del delito.",
+    "Aplicar una reforma económica basada en economía social de mercado y capitalismo popular, con reducción drástica del gasto público al 20% del PBI, reducción de impuestos, modernización laboral, apertura comercial y fuerte promoción de inversiones en agricultura, ganadería, pesca, minería, hidrocarburos y energías renovables."
+  ],
+  "posicionamiento_issues": {
+    "asamblea_constituyente": "a favor de cambio constitucional vía referéndum",
+    "libre_comercio_tlc": "a favor (apertura comercial)",
+    "privatizacion_empresas_estado": "a favor de reducir tamaño del Estado y eliminar monopolios u oligopolios",
+    "relaciones_venezuela_cuba": "no especificado"
+  },
+  "fuente_datos": "Plan de Gobierno Unido Perú.",
+  "scores": {
+    "score_economia": 8,
+    "score_seguridad": 9,
+    "score_medio_ambiente": 6,
+    "score_educacion": 6,
+    "score_salud": 6
+  },
+  "propuestas": [
+    {
+      "tema": "reforma_estado",
+      "titulo": "Reforma total del Estado y austeridad extrema",
+      "descripcion": "Reforma total del Estado con reorganización y reingeniería, austeridad extrema, reducción y fusión de ministerios, descentralización de ministerios a regiones, reorganización de organismos autónomos, reducción del gasto público empezando por la publicidad y profesionalización y digitalización del sector público.",
+      "icono": "bi-bank"
+    },
+    {
+      "tema": "servicios_basicos_titulacion",
+      "titulo": "Oficinas especializadas y titulación automática",
+      "descripcion": "Creación de la Oficina Central de Informática, la Oficina Nacional de Anticorrupción y la Oficina Nacional de Servicios Básicos, Saneamiento y Titulaciones, titulación automática de tierras tras 10 años de posesión continua y plan retorno para peruanos en el extranjero.",
+      "icono": "bi-file-earmark-text"
+    },
+    {
+      "tema": "seguridad_ciudadana_anticorrupcion",
+      "titulo": "Seguridad ciudadana y anticorrupción de línea dura",
+      "descripcion": "Servicio militar obligatorio para quienes no estudian ni trabajan, cadena perpetua para corruptos y delincuentes graves, reorganización de la PNP e INPE, creación de policías especializadas, jueces sin rostro, cámaras con reconocimiento facial y drones, mega cárceles industriales y retiro de la Convención Americana de Derechos Humanos sometido a referéndum.",
+      "icono": "bi-shield-check"
+    },
+    {
+      "tema": "licenciados_ffaa",
+      "titulo": "Política integral para licenciados de las Fuerzas Armadas y PNP",
+      "descripcion": "Creación de la Secretaría Nacional de Licenciados, pensión mensual sin discriminación, infraestructura de círculos militares y villas, beneficios educativos y laborales, y creación de puestos de trabajo en seguridad y servicios públicos.",
+      "icono": "bi-people"
+    },
+    {
+      "tema": "economia_empleo",
+      "titulo": "Reforma económica y capitalismo popular",
+      "descripcion": "Economía social de mercado centrada en la persona y la familia bajo un sistema de capitalismo popular, con reducción del gasto público al 20% del PBI, reducción de impuestos, modernización laboral, apertura comercial, reforma energética y fuerte promoción de inversiones de largo plazo en sectores productivos.",
+      "icono": "bi-graph-up-arrow"
+    }
+  ],
+  "partido_nombre": "Unido Perú"
+}

@@ -1,0 +1,77 @@
+{
+  "nombre": "Mesías Antonio Guevara Amasifuén",
+  "slug": "mes-as-antonio-guevara-amasifu-n",
+  "foto_url": "/static/img/candidatos/MesíasGuevara.jpg",
+  "edad": 50,
+  "region": "San Martín",
+  "profesion": "Abogado / Político",
+  "posicion_politica": "centro",
+  "lema": "La República, todas las peruanas y peruanos, la soñamos juntos",
+  "biografia": "Mesías Guevara Amasifuén es abogado y exgobernador regional de Cajamarca (2019-2022). Candidato por Partido Morado, propone descentralización y lucha anticorrupción.",
+  "experiencia": "Abogado / Político. Candidato presidencial 2026.",
+  "antecedentes": "Sin antecedentes penales conocidos de relevancia pública.",
+  "es_destacado": false,
+  "verificado": true,
+  "orden": 2,
+  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/AntonioOrtiz.pdf",
+  "resumen_propuestas": "Partido de centro progresista con eje en familia, libertades individuales, economía social de mercado y preparación tecnológica del país ante la Revolución Robótica.",
+  "propuestas_destacadas": [
+    "Reforma integral del Estado con separación de poderes e independencia judicial real",
+    "Economía social de mercado con distribución equitativa y combate a la desigualdad",
+    "Cero anemia y desnutrición: inversión en primera infancia con metas medibles",
+    "Preparación tecnológica ante la Revolución Robótica e IA con reconversión productiva",
+    "Descentralización con infraestructura e industrias en todas las regiones"
+  ],
+  "posicionamiento_issues": {
+    "asamblea_constituyente": "en contra",
+    "libre_comercio_tlc": "a favor",
+    "privatizacion_empresas_estado": "a favor parcial"
+  },
+  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "scores": {
+    "score_economia": 5,
+    "score_seguridad": 5,
+    "score_medio_ambiente": 5,
+    "score_educacion": 5,
+    "score_salud": 5
+  },
+  "propuestas": [
+    {
+      "tema": "economia_empleo",
+      "titulo": "Economía social de mercado con libertad de empresa y distribución equitativa",
+      "descripcion": "Economía social de mercado con libertad de empresa y distribución equitativa",
+      "icono": "bi-graph-up-arrow"
+    },
+    {
+      "tema": "economia_empleo",
+      "titulo": "Preparación tecnológica ante la Revolución Robótica e IA: reconversión productiva",
+      "descripcion": "Preparación tecnológica ante la Revolución Robótica e IA: reconversión productiva",
+      "icono": "bi-graph-up-arrow"
+    },
+    {
+      "tema": "infraestructura_agua_saneamiento",
+      "titulo": "Descentralización con infraestructura e industrias en todas las regiones",
+      "descripcion": "Descentralización con infraestructura e industrias en todas las regiones",
+      "icono": "bi-water"
+    },
+    {
+      "tema": "reforma_estado",
+      "titulo": "Plena separación de poderes e independencia judicial real",
+      "descripcion": "Plena separación de poderes e independencia judicial real",
+      "icono": "bi-bank"
+    },
+    {
+      "tema": "reforma_estado",
+      "titulo": "Modernización del sistema judicial y del Ministerio Público",
+      "descripcion": "Modernización del sistema judicial y del Ministerio Público",
+      "icono": "bi-bank"
+    },
+    {
+      "tema": "salud",
+      "titulo": "Cero anemia y desnutrición: inversión prioritaria en primera infancia con metas medibles",
+      "descripcion": "Cero anemia y desnutrición: inversión prioritaria en primera infancia con metas medibles",
+      "icono": "bi-heart-pulse"
+    }
+  ],
+  "partido_nombre": "Partido Morado"
+}

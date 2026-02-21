@@ -1,0 +1,72 @@
+{
+  "nombre": "Walter Gilmer Chirinos Purizaga",
+  "slug": "walter-chirinos-purizaga",
+  "foto_url": "/static/img/candidatos/WalterChirinos.jpeg",
+  "edad": 57,
+  "region": "La Libertad",
+  "profesion": "Contador Público / Político",
+  "posicion_politica": "centro",
+  "lema": "Un Perú Integrado, Justo y Descentralizado",
+  "biografia": "Walter Gilmer Chirinos Purizaga nació el 27 de junio de 1968 en el distrito de Paiján (La Libertad). Es contador público y político, actual presidente y fundador del Partido Regionalista de Integración Nacional (PRIN). Se perfila como candidato presidencial del PRIN para las elecciones de 2026. Ha participado como candidato al Congreso en 2020 y 2021. El PRIN promueve la descentralización del país y la representación de los movimientos regionales, firmando un acuerdo político con la Asociación de Movimientos Regionales del Perú en 2024.",
+  "experiencia": "Contador público egresado de la Universidad Privada Telesup. Fundador y líder del PRIN. Excandidato al Congreso (2020, 2021).",
+  "antecedentes": "Sin antecedentes penales conocidos en el documento. Revisar estado actual en el Poder Judicial del Perú.",
+  "es_destacado": false,
+  "verificado": true,
+  "orden": 5,
+  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/WalterChirinos.pdf",
+  "resumen_propuestas": "Plan PRIN 2026-2031: descentralización productiva, seguridad ciudadana con Centro de Lucha contra la Criminalidad e IA, salud preventiva (6% PBI) y educación técnica dual.",
+  "propuestas_destacadas": [
+    "Centro de Lucha contra la Criminalidad con Inteligencia Artificial y geolocalización en tiempo real",
+    "Presupuesto de salud incrementado al 6% del PBI con atención universal y telemedicina rural",
+    "Plataforma digital de contrataciones públicas con blockchain para evitar la corrupción",
+    "Banco Minero para acopiar producción de pequeña y mediana minería formal",
+    "Educación técnica dual y colegios especializados por vocación productiva regional"
+  ],
+  "posicionamiento_issues": {
+    "asamblea_constituyente": "en contra",
+    "libre_comercio_tlc": "a favor",
+    "privatizacion_empresas_estado": "neutral",
+    "relaciones_venezuela_cuba": "no especificado"
+  },
+  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "scores": {
+    "score_economia": 7,
+    "score_seguridad": 7,
+    "score_medio_ambiente": 7,
+    "score_educacion": 7,
+    "score_salud": 8
+  },
+  "propuestas": [
+    {
+      "tema": "seguridad_ciudadana",
+      "titulo": "Centro de Lucha contra la Criminalidad con IA y drones",
+      "descripcion": "Creación de un Centro Nacional con IA, cámaras de reconocimiento facial, rastreo de criptomonedas y App 'Denuncia Ya' anónima.",
+      "icono": "bi-shield-check"
+    },
+    {
+      "tema": "salud",
+      "titulo": "Salud preventiva universal y presupuesto al 6% del PBI",
+      "descripcion": "Incremento de presupuesto al 6% del PBI, Autoridad Nacional de Coordinación del Sistema de Salud e Historia Clínica Electrónica nacional.",
+      "icono": "bi-heart-pulse"
+    },
+    {
+      "tema": "educacion",
+      "titulo": "Educación técnica dual y colegios especializados",
+      "descripcion": "Colegios especializados en comercio o industria según la región, educación técnica con prácticas en empresas y reducción de deserción escolar.",
+      "icono": "bi-book"
+    },
+    {
+      "tema": "anticorrupcion",
+      "titulo": "Blockchain en contrataciones y Consejo Anticorrupción autónomo",
+      "descripcion": "Plataforma única de contrataciones con blockchain, Ley de Confiscación de Activos y uso de IA para detectar enriquecimiento ilícito.",
+      "icono": "bi-eye"
+    },
+    {
+      "tema": "economia_empleo",
+      "titulo": "Banco Minero y formalización de MYPEs con beneficios escalonados",
+      "descripcion": "Creación del Banco Minero, incremento de presión tributaria al 19%, y centros regionales de desarrollo técnico para agroexportación y turismo.",
+      "icono": "bi-graph-up-arrow"
+    }
+  ],
+  "partido_nombre": "Partido Regionalista de Integración Nacional (PRIN)"
+}

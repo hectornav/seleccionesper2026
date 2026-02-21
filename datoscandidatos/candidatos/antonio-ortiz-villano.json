@@ -1,0 +1,79 @@
+{
+  "nombre": "Antonio Ortiz",
+  "slug": "antonio-ortiz",
+  "foto_url": "/static/img/candidatos/AntonioOrtiz.jpg",
+  "edad": null,
+  "region": "Lima",
+  "profesion": "No especificada en el documento",
+  "posicion_politica": "centro-izquierda",
+  "lema": "El Perú Primero",
+  "biografia": "Antonio Ortiz es el candidato presidencial del partido SíCreo para el período 2026-2031. El partido SíCreo tiene como visión un país solidario, equitativo y democrático, con un enfoque en la economía social de mercado que integre el desarrollo productivo con la justicia social. Su plan de gobierno destaca por una fuerte apuesta en ciencia y tecnología, seguridad ciudadana inteligente, reforma de salud y educación pública, y sostenibilidad ambiental.",
+  "experiencia": "No especificada en el documento.",
+  "antecedentes": "No se registran antecedentes en el documento. Revisar estado actual en el Poder Judicial del Perú.",
+  "es_destacado": false,
+  "verificado": true,
+  "orden": 1,
+  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/AntonioOrtiz.pdf",
+  "resumen_propuestas": "Plan de Gobierno 2026-2031: Seguridad ciudadana con Sistema de Inteligencia Nacional y Serenazgo Inteligente, Sistema Único de Salud, Ministerio de Ciencia y Tecnología (2% del PBI), educación pública conectada (Plan 'Perú Conectado'), transición a energías limpias y economía azul.",
+  "propuestas_destacadas": [
+    "Sistema de Inteligencia Nacional para combatir el crimen organizado y Serenazgo Inteligente",
+    "Creación del Ministerio de Ciencia, Tecnología e Innovación Productiva (meta: 2% del PBI en I+D)",
+    "Sistema Único de Salud Universal y preventivo (100% de cobertura en salud básica)",
+    "Muerte civil, inhabilitación perpetua y embargo de bienes para condenados por corrupción",
+    "Plan Nacional de Transición Energética al 2035 y fomento de la Economía Azul"
+  ],
+  "posicionamiento_issues": {
+    "asamblea_constituyente": "en contra",
+    "privatizacion_empresas_estado": "neutral",
+    "libre_comercio_tlc": "a favor",
+    "pena_muerte": "no especificado",
+    "relaciones_venezuela_cuba": "no especificado"
+  },
+  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "partido": {
+    "nombre": "SíCreo",
+    "siglas": "SICREO",
+    "ideologia": "Centro-izquierda / Economía social de mercado / Ecologismo",
+    "color_primario": "#00BCD4",
+    "color_secundario": "#FFFFFF"
+  },
+  "scores": {
+    "score_economia": 7,
+    "score_seguridad": 7,
+    "score_medio_ambiente": 8,
+    "score_educacion": 8,
+    "score_salud": 8
+  },
+  "propuestas": [
+    {
+      "tema": "seguridad_ciudadana",
+      "titulo": "Sistema de Inteligencia Nacional, Serenazgo Inteligente y Escuadrón contra la extorsión",
+      "descripcion": "Fortalecimiento de la inteligencia policial contra la criminalidad organizada y transnacional, creación del 'Serenazgo Inteligente' (SERIN) equipado con cámaras y tecnología de respuesta rápida, y formación de un escuadrón especial contra extorsión y sicariato.",
+      "icono": "bi-shield-check"
+    },
+    {
+      "tema": "educacion",
+      "titulo": "Ministerio de Ciencia y Tecnología y conectividad escolar al 100%",
+      "descripcion": "Creación del Ministerio de Ciencia, Tecnología e Innovación Productiva con una meta de inversión del 2% del PBI en I+D. Implementación del Plan 'Perú Conectado' para llevar internet de banda ancha al 100% de colegios rurales.",
+      "icono": "bi-book"
+    },
+    {
+      "tema": "salud",
+      "titulo": "Sistema Único de Salud, telemedicina rural y acceso a medicamentos",
+      "descripcion": "Unificación progresiva de MINSA y EsSalud en un Sistema Único de Salud Universal. Construcción de hospitales de nivel II y III, implementación masiva de telemedicina en zonas rurales y creación de una red nacional de boticas públicas.",
+      "icono": "bi-heart-pulse"
+    },
+    {
+      "tema": "medio_ambiente",
+      "titulo": "Transición energética al 2035, protección de la Amazonía y Economía Azul",
+      "descripcion": "Plan Nacional de Transición Energética con incentivos fiscales para energía solar y eólica (meta: 40% matriz renovable al 2035). Protección estricta de la Amazonía contra la minería ilegal y desarrollo de la Economía Azul para aprovechamiento sostenible del mar.",
+      "icono": "bi-tree"
+    },
+    {
+      "tema": "anticorrupcion",
+      "titulo": "Muerte civil para corruptos, digitalización del Estado y Fiscalía especializada",
+      "descripcion": "Inhabilitación perpetua ('muerte civil') y embargo de bienes para condenados por corrupción. Digitalización total de licitaciones públicas, creación de la Fiscalía Especializada en Corrupción de Alta Complejidad y fomento del gobierno abierto.",
+      "icono": "bi-eye"
+    }
+  ]
+}

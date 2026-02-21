@@ -1,0 +1,71 @@
+{
+  "nombre": "Fiorella Molinelli Aristondo",
+  "slug": "fiorella-molinelli-aristondo",
+  "foto_url": "/static/img/candidatos/FiorellaMollinelli.jpg",
+  "edad": 50,
+  "region": "Lima",
+  "profesion": "Economista / Política",
+  "posicion_politica": "centro_derecha",
+  "lema": "Por un Perú mejor",
+  "biografia": "Giannina Molinelli es economista y candidata por Fuerza y Libertad. Propone política económica liberal, reducción del gasto público y fomento a la inversión privada.",
+  "experiencia": "Economista / Política. Candidato presidencial 2026.",
+  "antecedentes": "Sin antecedentes penales conocidos de relevancia pública.",
+  "es_destacado": false,
+  "verificado": true,
+  "orden": 27,
+  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/FiorellaMolinelli.pdf",
+  "resumen_propuestas": "Seguridad ciudadana con autoridad y firmeza, salud universal de calidad, diversificación productiva y guerra frontal al crimen organizado.",
+  "propuestas_destacadas": [
+    "Seguridad ciudadana con autoridad y firmeza: modernización policial integral",
+    "Salud universal de calidad: medicamentos accesibles y hospitales equipados",
+    "Diversificación productiva y competitividad con inversiones estratégicas",
+    "Educación moderna con tecnología y capacitación docente",
+    "Guerra frontal contra extorsión y narcotráfico con cooperación internacional"
+  ],
+  "posicionamiento_issues": {
+    "asamblea_constituyente": "en contra",
+    "libre_comercio_tlc": "a favor",
+    "pena_muerte": "a favor parcial"
+  },
+  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "scores": {
+    "score_economia": 5,
+    "score_seguridad": 5,
+    "score_medio_ambiente": 5,
+    "score_educacion": 5,
+    "score_salud": 5
+  },
+  "propuestas": [
+    {
+      "tema": "economia_empleo",
+      "titulo": "Diversificación productiva y competitividad nacional con inversiones e infraestructura estratégica",
+      "descripcion": "Diversificación productiva y competitividad nacional con inversiones e infraestructura estratégica",
+      "icono": "bi-graph-up-arrow"
+    },
+    {
+      "tema": "educacion",
+      "titulo": "Educación moderna con tecnología, infraestructura moderna y capacitación docente",
+      "descripcion": "Educación moderna con tecnología, infraestructura moderna y capacitación docente",
+      "icono": "bi-book"
+    },
+    {
+      "tema": "salud",
+      "titulo": "Acceso oportuno, medicamentos esenciales a precios accesibles y hospitales equipados en todo el país",
+      "descripcion": "Acceso oportuno, medicamentos esenciales a precios accesibles y hospitales equipados en todo el país",
+      "icono": "bi-heart-pulse"
+    },
+    {
+      "tema": "seguridad_ciudadana",
+      "titulo": "Estrategia integral con modernización policial y equipamiento",
+      "descripcion": "Estrategia integral con modernización policial y equipamiento",
+      "icono": "bi-shield-check"
+    },
+    {
+      "tema": "seguridad_ciudadana",
+      "titulo": "Guerra frontal contra extorsión y 'Gota a Gota' con cooperación internacional contra narcotráfico",
+      "descripcion": "Guerra frontal contra extorsión y 'Gota a Gota' con cooperación internacional contra narcotráfico",
+      "icono": "bi-shield-check"
+    }
+  ],
+  "partido_nombre": "Fuerza y Libertad"
+}

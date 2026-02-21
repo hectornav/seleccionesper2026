@@ -1,0 +1,30 @@
+{
+  "nombre": "Armando Joaquín Massé Fernández",
+  "slug": "armando-joaqu-n-mass-fern-ndez",
+  "foto_url": "/static/img/candidatos/ArmandoMasse.jpg",
+  "edad": 50,
+  "region": "Lima",
+  "profesion": "Abogado / Político",
+  "posicion_politica": "centro",
+  "lema": "Por un Perú mejor",
+  "biografia": "Armando Massé Fernández es abogado y candidato por el Partido Demócrata Federal. Propone un sistema federal para Perú y mayor autonomía regional.",
+  "experiencia": "Abogado / Político. Candidato presidencial 2026.",
+  "antecedentes": "Sin antecedentes penales conocidos de relevancia pública.",
+  "es_destacado": false,
+  "verificado": false,
+  "orden": 9,
+  "link_plan_gobierno": "",
+  "resumen_propuestas": "",
+  "propuestas_destacadas": [],
+  "posicionamiento_issues": {},
+  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "scores": {
+    "score_economia": 5,
+    "score_seguridad": 5,
+    "score_medio_ambiente": 5,
+    "score_educacion": 5,
+    "score_salud": 5
+  },
+  "propuestas": [],
+  "partido_nombre": "Partido Demócrata Federal"
+}

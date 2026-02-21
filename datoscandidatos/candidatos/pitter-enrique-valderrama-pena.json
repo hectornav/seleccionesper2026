@@ -1,0 +1,72 @@
+{
+  "nombre": "Enrique Valderrama",
+  "slug": "enrique-valderrama",
+  "foto_url": "/static/img/candidatos/PitterValderrama.jpg",
+  "edad": 39,
+  "region": "Lima",
+  "profesion": "Abogado / Empresario",
+  "posicion_politica": "centro_izquierda",
+  "lema": "Renovemos el Perú",
+  "biografia": "Enrique Valderrama es candidato presidencial por el Partido Aprista Peruano (APRA) para el período 2026-2031. Es ingeniero geólogo egresado de la Universidad Nacional Mayor de San Marcos (UNMSM), con un MBA en Administración Estratégica de Empresas por CENTRUM Católica y un MBA en Liderazgo Empresarial por EADA Barcelona. Es CEO de Samiorcco Compañía Minera y Director del Observatorio de Desarrollo Económico del Perú (ODE PERÚ). Es miembro de la Sociedad Geológica del Perú y Miembro de Honor de la Society of Economic Geologists (SEG).",
+  "experiencia": "CEO de Samiorcco Compañía Minera (desde 2017). Fundador y Director de ODE PERÚ. Gerente de Operaciones en Oro Negro Compañía Minera. Investigador en políticas mineras y energéticas.",
+  "antecedentes": "Sin antecedentes penales conocidos en el documento. Revisar estado actual en el Poder Judicial del Perú.",
+  "es_destacado": false,
+  "verificado": true,
+  "orden": 2,
+  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/EnriqueValderrama.pdf",
+  "resumen_propuestas": "Plan 'Renovemos el Perú': democracia funcional aprista, justicia social con economía social de mercado, reforma constitucional bicameral, salud universal integrada y transición energética renovable.",
+  "propuestas_destacadas": [
+    "Ley de Atención Universal en Salud con sistema integrado y financiador único",
+    "Reforma constitucional: Congreso bicameral con 160 diputados y 60 senadores",
+    "Reorganización territorial en 15 macrorregiones con unificación Lima-Callao",
+    "Educación articulada con demandas productivas: 50% de egresados de secundaria en educación superior",
+    "Transición a energía renovable y eliminación del mercurio en minería artesanal al 2031"
+  ],
+  "posicionamiento_issues": {
+    "asamblea_constituyente": "en contra",
+    "libre_comercio_tlc": "a favor",
+    "privatizacion_empresas_estado": "neutral",
+    "relaciones_venezuela_cuba": "no especificado"
+  },
+  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "scores": {
+    "score_economia": 7,
+    "score_seguridad": 6,
+    "score_medio_ambiente": 7,
+    "score_educacion": 8,
+    "score_salud": 8
+  },
+  "propuestas": [
+    {
+      "tema": "salud",
+      "titulo": "Sistema Integrado de Salud con financiador único y atención universal",
+      "descripcion": "Ley de Atención Universal en Salud que unifique MINSA, EsSalud y Sanidad de FFAA/FFPP, con expansión de telemedicina e historia clínica digital interoperable.",
+      "icono": "bi-heart-pulse"
+    },
+    {
+      "tema": "educacion",
+      "titulo": "Educación articulada con el sector productivo y reforma curricular",
+      "descripcion": "Reforma de la Ley General de Educación, laboratorios STEAM, fortalecimiento de PRONABEC y meta de 50% de egresados de secundaria en educación superior.",
+      "icono": "bi-book"
+    },
+    {
+      "tema": "anticorrupcion",
+      "titulo": "Reforma constitucional bicameral y sistema electoral transparente",
+      "descripcion": "Congreso bicameral, reorganización en 15 macrorregiones, auditorías externas a partidos y elecciones internas simultáneas virtuales.",
+      "icono": "bi-eye"
+    },
+    {
+      "tema": "economia_empleo",
+      "titulo": "Reforma tributaria progresiva y formalización laboral de MYPEs",
+      "descripcion": "Eliminar tasa plana a MYPEs por tributación progresiva, reducir informalidad laboral y crear fondo de US$ 1,000 millones para exportaciones no tradicionales.",
+      "icono": "bi-graph-up-arrow"
+    },
+    {
+      "tema": "medio_ambiente",
+      "titulo": "Transición energética renovable y eliminación del mercurio",
+      "descripcion": "Eliminar el mercurio en minería formal al 2031, expandir planetGOLD a 15 regiones, y lograr 70% de energía renovable en la mediana minería.",
+      "icono": "bi-tree"
+    }
+  ],
+  "partido_nombre": "Partido Aprista Peruano"
+}

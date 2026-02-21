@@ -1,0 +1,67 @@
+{
+  "nombre": "Herbert Caller Gutiérrez",
+  "slug": "herbert-caller-guti-rrez",
+  "foto_url": "/static/img/candidatos/HerbertCaller.jpg",
+  "edad": 50,
+  "region": "Lima",
+  "profesion": "Abogado / Político",
+  "posicion_politica": "centro_derecha",
+  "lema": "Por un Perú mejor",
+  "biografia": "Herbert Caller Gutiérrez es abogado y político vinculado al Partido Patriótico del Perú. Ha tenido participación en política regional y propone orden, seguridad y libre mercado.",
+  "experiencia": "Abogado / Político. Candidato presidencial 2026.",
+  "antecedentes": "Sin antecedentes penales conocidos de relevancia pública.",
+  "es_destacado": false,
+  "verificado": true,
+  "orden": 31,
+  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/HerbertCaller.pdf",
+  "resumen_propuestas": "Revolución educativa con IA, Economía Azul y Naranja como nuevos motores y crédito internacional a MYPEs a tasas bajas.",
+  "propuestas_destacadas": [
+    "Revolución educativa con superAprendizaje e Inteligencia Artificial en el currículo",
+    "Descentralización real: UNMSM, UNI y UNALM en cada región del país",
+    "Economía Azul (circular) y Economía Naranja (creativa) como nuevos motores",
+    "Crédito internacional para MYPEs a tasas menores al 5% anual",
+    "Pago a contratistas del Estado solo al completar obra con calidad exigida"
+  ],
+  "posicionamiento_issues": {},
+  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "scores": {
+    "score_economia": 5,
+    "score_seguridad": 5,
+    "score_medio_ambiente": 5,
+    "score_educacion": 5,
+    "score_salud": 5
+  },
+  "propuestas": [
+    {
+      "tema": "economia_empleo",
+      "titulo": "Economía Azul (circular) y Economía Naranja (creativa) como nuevos motores",
+      "descripcion": "Economía Azul (circular) y Economía Naranja (creativa) como nuevos motores",
+      "icono": "bi-graph-up-arrow"
+    },
+    {
+      "tema": "economia_empleo",
+      "titulo": "Bancos de Alemania, Francia y Corea del Sur para créditos a MYPEs <5% anual",
+      "descripcion": "Bancos de Alemania, Francia y Corea del Sur para créditos a MYPEs <5% anual",
+      "icono": "bi-graph-up-arrow"
+    },
+    {
+      "tema": "educacion",
+      "titulo": "Revolución educativa con métodos de superAprendizaje e IA integrada al currículo",
+      "descripcion": "Revolución educativa con métodos de superAprendizaje e IA integrada al currículo",
+      "icono": "bi-book"
+    },
+    {
+      "tema": "educacion",
+      "titulo": "Descentralización real: UNMSM, UNI y UNALM en cada región",
+      "descripcion": "Descentralización real: UNMSM, UNI y UNALM en cada región",
+      "icono": "bi-book"
+    },
+    {
+      "tema": "reforma_estado",
+      "titulo": "Cambio del sistema de contrataciones: pago solo al completar obra con calidad exigida",
+      "descripcion": "Cambio del sistema de contrataciones: pago solo al completar obra con calidad exigida",
+      "icono": "bi-bank"
+    }
+  ],
+  "partido_nombre": "Partido Patriótico del Perú"
+}

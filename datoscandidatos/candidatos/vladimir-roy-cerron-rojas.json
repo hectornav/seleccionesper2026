@@ -1,0 +1,72 @@
+{
+  "nombre": "Vladimir Roy Cerrón Rojas",
+  "slug": "vladimir-roy-cerr-n-rojas",
+  "foto_url": "/static/img/candidatos/VladimirCerron.jpeg",
+  "edad": 57,
+  "region": "Junín",
+  "profesion": "Médico / Político",
+  "posicion_politica": "izquierda",
+  "lema": "#PorLaRevancha",
+  "biografia": "Vladimir Cerrón nació el 10 de enero de 1968 en Chupaca, Junín. Es médico cirujano egresado de la Universidad Nacional del Centro del Perú y tiene estudios en Cuba. Fundador y secretario general de Perú Libre. Fue gobernador regional de Junín en dos períodos (2011-2014 y 2018-2019). Fue quien postuló a Pedro Castillo como candidato presidencial de Perú Libre en 2021. Ideológicamente se define como marxista-leninista y chavista.",
+  "experiencia": "Gobernador Regional de Junín (2011-2014, 2018-2019). Fundador y líder del partido Perú Libre. Médico cirujano.",
+  "antecedentes": "Condenado por corrupción de funcionarios. Revisar estado actual en Poder Judicial del Perú.",
+  "es_destacado": true,
+  "verificado": true,
+  "orden": 7,
+  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/VladimirCerron.pdf",
+  "resumen_propuestas": "Plan Por la Revancha del Pueblo: superación del modelo neoliberal, educación liberadora, Sistema Único de Salud y recuperación de recursos.",
+  "propuestas_destacadas": [
+    "100% de la población con acceso a agua potable y saneamiento al 2031",
+    "Sistema Único de Salud con cobertura efectiva ≥95%",
+    "Educación pública liberadora, reduciendo el analfabetismo al 0%",
+    "Superación de la matriz neoliberal y recuperación de empresas estratégicas",
+    "Lucha de clases orientada a eliminar las brechas de desigualdad y pobreza"
+  ],
+  "posicionamiento_issues": {
+    "asamblea_constituyente": "a favor",
+    "privatizacion_empresas_estado": "en contra",
+    "libre_comercio_tlc": "en contra",
+    "relaciones_venezuela_cuba": "a favor"
+  },
+  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "scores": {
+    "score_economia": 2,
+    "score_seguridad": 3,
+    "score_medio_ambiente": 5,
+    "score_educacion": 6,
+    "score_salud": 7
+  },
+  "propuestas": [
+    {
+      "tema": "infraestructura_agua_saneamiento",
+      "titulo": "Agua y Saneamiento Universal",
+      "descripcion": "Garantizar que el 100% de la población tenga agua potable al 2031.",
+      "icono": "bi-water"
+    },
+    {
+      "tema": "salud",
+      "titulo": "Sistema Único de Salud",
+      "descripcion": "Atención universal, gratuita y preventiva con cobertura al 95%.",
+      "icono": "bi-heart-pulse"
+    },
+    {
+      "tema": "educacion",
+      "titulo": "Educación Pública Liberadora",
+      "descripcion": "Erradicación del analfabetismo y cobertura total en educación básica.",
+      "icono": "bi-book"
+    },
+    {
+      "tema": "economia_empleo",
+      "titulo": "Modelo Económico Popular",
+      "descripcion": "Fin del modelo neoliberal y nacionalización de sectores estratégicos.",
+      "icono": "bi-graph-up-arrow"
+    },
+    {
+      "tema": "reforma_estado",
+      "titulo": "No más pobres en un país rico",
+      "descripcion": "Estado con rol activo para poner la economía al servicio del ser humano.",
+      "icono": "bi-bank"
+    }
+  ],
+  "partido_nombre": "Partido Político Nacional Perú Libre"
+}

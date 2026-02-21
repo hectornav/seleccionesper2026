@@ -1,0 +1,89 @@
+{
+  "nombre": "Carlos Espá y Garcés-Alvear",
+  "slug": "carlos-esp-y-garc-s-alvear",
+  "foto_url": "/static/img/candidatos/CarlosEspa.png",
+  "edad": 65,
+  "profesion": "Político",
+  "posicion_politica": "derecha",
+  "lema": "SíCreo en un Perú mejor",
+  "biografia": "Carlos Espa es el candidato presidencial del Partido Político SíCreo para las Elecciones Generales 2026. Presenta el Plan de Gobierno y Trabajo “SíCreo en un Perú mejor”, que recoge las principales propuestas de gobierno y trabajo orientadas a la recuperación de la libertad de todos los peruanos, con fuerte énfasis en seguridad, libre mercado, fortalecimiento institucional y defensa de la familia.[file:36]",
+  "experiencia": "Liderazgo del Partido Político SíCreo y presentación del Plan de Gobierno y Trabajo para las Elecciones Generales 2026.[file:36]",
+  "antecedentes": "Sin información específica de antecedentes penales o investigaciones en el documento del plan de gobierno. Revisar estado actual en el Poder Judicial del Perú.[file:36]",
+  "es_destacado": false,
+  "verificado": true,
+  "orden": 1,
+  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/CarlosEspa.pdf",
+  "resumen_propuestas": "El Plan de Gobierno de SíCreo se basa en 10 mandamientos que resumen su enfoque: lucha frontal contra la corrupción y el crimen dentro del Estado, revalorización de la Policía y Fuerzas Armadas, defensa de la soberanía, impulso de la inversión privada y el libre mercado para crear empleo formal, integración del país mediante infraestructura y conectividad, libertad de elección educativa para las familias, apertura a la participación privada en agua y saneamiento, uso intensivo de tecnología para acercar el Estado al ciudadano y promoción del deporte para un Perú sano y competitivo.[file:36]",
+  "propuestas_destacadas": [
+    "Si nadie roba la plata alcanza: combate frontal a la corrupción para que los recursos públicos alcancen para todos.[file:36]",
+    "Sacar a los delincuentes del Estado y revalorar a la Policía y Fuerzas Armadas para luchar contra el crimen.[file:36]",
+    "Impulsar la inversión privada para generar millones de nuevos puestos de trabajo formales, bajo principios de libre mercado y libre comercio.[file:36]",
+    "Integrar a todos los peruanos mediante infraestructura y conectividad, para cerrar brechas territoriales.[file:36]",
+    "Poner al Estado en el celular de los ciudadanos mediante tecnología de punta para facilitar denuncias e información, y promover el deporte al alcance de todos para un Perú sano y competitivo.[file:36]"
+  ],
+  "posicionamiento_issues": {
+    "asamblea_constituyente": "no especificado",
+    "libre_comercio_tlc": "a favor",
+    "privatizacion_empresas_estado": "a favor parcial (apertura en agua y servicios, manteniendo regulación)",
+    "relaciones_venezuela_cuba": "no especificado"
+  },
+  "fuente_datos": "Plan de Gobierno y Trabajo del Partido Político SíCreo para las Elecciones Generales 2026.[file:36]",
+  "scores": {
+    "score_economia": 8,
+    "score_seguridad": 8,
+    "score_medio_ambiente": 6,
+    "score_educacion": 7,
+    "score_salud": 6
+  },
+  "propuestas": [
+    {
+      "tema": "corrupcion_estado",
+      "titulo": "Si nadie roba la plata alcanza",
+      "descripcion": "Mandamiento que plantea una lucha frontal contra la corrupción, afirmando que si nadie roba, el dinero público alcanza para financiar servicios y obras para todos.[file:36]",
+      "icono": "bi-eye"
+    },
+    {
+      "tema": "seguridad_ciudadana",
+      "titulo": "Lucha contra el crimen y revalorización de fuerzas del orden",
+      "descripcion": "Mandamientos que proponen sacar a los delincuentes del Estado, revalorar a la Policía y Fuerzas Armadas y defender la soberanía nacional sin negociar con mafias.[file:36]",
+      "icono": "bi-shield-check"
+    },
+    {
+      "tema": "economia_empleo",
+      "titulo": "Libre mercado, libre comercio e inversión privada",
+      "descripcion": "Principios que sostienen el libre mercado, el libre comercio y la prosperidad compartida como motores de crecimiento, eliminación de la pobreza y modernización, con inversión privada para crear millones de empleos formales.[file:36]",
+      "icono": "bi-graph-up-arrow"
+    },
+    {
+      "tema": "infraestructura_conectividad",
+      "titulo": "Integración mediante infraestructura y conectividad",
+      "descripcion": "Mandamiento que plantea integrar a todos los peruanos haciendo realidad la infraestructura y la conectividad a nivel nacional.[file:36]",
+      "icono": "bi-geo-alt"
+    },
+    {
+      "tema": "educacion",
+      "titulo": "Educación de calidad con libertad de elección",
+      "descripcion": "Compromiso de alcanzar educación de calidad respetando la libertad de elegir de las familias.[file:36]",
+      "icono": "bi-book"
+    },
+    {
+      "tema": "agua_saneamiento",
+      "titulo": "Romper el monopolio del Estado en agua",
+      "descripcion": "Propuesta de romper el monopolio estatal para que el agua llegue a todos los peruanos, promoviendo participación y competencia regulada.[file:36]",
+      "icono": "bi-droplet"
+    },
+    {
+      "tema": "transformacion_digital",
+      "titulo": "El Estado en tu celular",
+      "descripcion": "Uso de tecnología de punta para poner al Estado en el celular de los ciudadanos, facilitando denuncias, acceso a información y servicios.[file:36]",
+      "icono": "bi-phone"
+    },
+    {
+      "tema": "deporte_salud",
+      "titulo": "Deporte al alcance de todos",
+      "descripcion": "Mandamiento que propone ampliar el acceso al deporte para construir un Perú más sano y competitivo.[file:36]",
+      "icono": "bi-trophy"
+    }
+  ],
+  "partido_nombre": "Partido Político SíCreo"
+}

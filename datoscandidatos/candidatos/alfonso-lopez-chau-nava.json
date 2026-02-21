@@ -1,0 +1,144 @@
+{
+  "nombre": "Alfonso López Chau Nava",
+  "slug": "alfonso-lopez",
+  "foto_url": "/static/img/candidatos/AlfonsoLopez.jpg",
+  "edad": 75,
+  "region": "Lima",
+  "profesion": "Economista",
+  "posicion_politica": "Izquierda",
+  "lema": "Todo el poder a las regiones para conquistar los mercados del mundo",
+  "biografia": "Alfonso López es candidato presidencial de la organización política Ahora Nación para el periodo 2026-2031. Presenta el Plan de Gobierno 2026-2031 de Ahora Nación, cuyo eje central es otorgar 'todo el poder a las regiones para conquistar los mercados del mundo'. El documento desarrolla un ideario basado en principios, objetivos y valores orientados al fortalecimiento del desarrollo regional, la competitividad y la inserción del Perú en los mercados internacionales, estructurado en dimensiones social, institucional, económica y ambiental.",
+  "experiencia": "Liderazgo de la organización política Ahora Nación y presentación del Plan de Gobierno 2026-2031.",
+  "antecedentes": "Sin información específica de antecedentes penales o investigaciones en el documento del plan de gobierno. Revisar estado actual en el Poder Judicial del Perú.",
+  "es_destacado": false,
+  "verificado": true,
+  "orden": 1,
+  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/AlfonsoLopez.pdf",
+  "resumen_propuestas": "El Plan de Gobierno 2026-2031 de Ahora Nación busca transferir poder real a las regiones para impulsar el desarrollo económico y la conquista de mercados internacionales, mediante políticas en las dimensiones social, institucional, económica y ambiental, con énfasis en salud, educación, empleo, seguridad ciudadana, emprendimiento, agricultura, energía y cuidado del medio ambiente.",
+  "propuestas_destacadas": [
+    "Otorgar todo el poder a las regiones para conquistar los mercados del mundo, impulsando el desarrollo productivo descentralizado.",
+    "Implementar propuestas integrales en salud, educación, vivienda, agua y saneamiento y empleo dentro de la dimensión social.",
+    "Desarrollar políticas de seguridad ciudadana, justicia y derechos humanos, relaciones exteriores y defensa nacional en la dimensión institucional.",
+    "Impulsar la economía, el emprendimiento, la industrialización, el transporte, la agricultura y el sector energía y minas en la dimensión económica.",
+    "Promover el cuidado del medio ambiente dentro de la dimensión ambiental, con propuestas específicas para la gestión ambiental."
+  ],
+  "posicionamiento_issues": {
+    "asamblea_constituyente": "no especificado",
+    "libre_comercio_tlc": "a favor de inserción en mercados internacionales",
+    "privatizacion_empresas_estado": "no especificado",
+    "relaciones_venezuela_cuba": "no especificado"
+  },
+  "fuente_datos": "Plan de Gobierno de Ahora Nación 2026-2031.",
+  "scores": {
+    "score_economia": 7,
+    "score_seguridad": 6,
+    "score_medio_ambiente": 7,
+    "score_educacion": 7,
+    "score_salud": 7
+  },
+  "propuestas": [
+    {
+      "tema": "salud",
+      "titulo": "Propuestas para la salud",
+      "descripcion": "Conjunto de propuestas de la dimensión social orientadas a mejorar el sistema de salud, detalladas en el apartado de salud del Plan de Gobierno 2026-2031.",
+      "icono": "bi-heart-pulse"
+    },
+    {
+      "tema": "educacion",
+      "titulo": "Propuestas para la educación",
+      "descripcion": "Propuestas para fortalecer la educación dentro de la dimensión social, abordadas en el capítulo correspondiente a educación.",
+      "icono": "bi-book"
+    },
+    {
+      "tema": "vivienda",
+      "titulo": "Propuestas para la vivienda",
+      "descripcion": "Medidas relacionadas con el acceso y mejora de la vivienda, incluidas en la dimensión social del plan.",
+      "icono": "bi-house-door"
+    },
+    {
+      "tema": "agua_saneamiento",
+      "titulo": "Propuestas para el agua y saneamiento",
+      "descripcion": "Acciones previstas para garantizar el acceso al agua y el saneamiento, descritas en la sección correspondiente de la dimensión social.",
+      "icono": "bi-droplet"
+    },
+    {
+      "tema": "economia_empleo",
+      "titulo": "Propuestas para el fomento del empleo y el emprendimiento",
+      "descripcion": "Iniciativas para fomentar el empleo y el emprendimiento, desarrolladas en los capítulos de empleo y emprendimiento dentro de las dimensiones social y económica.",
+      "icono": "bi-graph-up-arrow"
+    },
+    {
+      "tema": "inclusion_social",
+      "titulo": "Propuestas para inclusión social",
+      "descripcion": "Medidas destinadas a mejorar la inclusión social en la dimensión social del plan.",
+      "icono": "bi-people"
+    },
+    {
+      "tema": "cultura",
+      "titulo": "Propuestas para cultura",
+      "descripcion": "Propuestas orientadas a la promoción y fortalecimiento de la cultura dentro de la dimensión social.",
+      "icono": "bi-music-note-beamed"
+    },
+    {
+      "tema": "seguridad_ciudadana",
+      "titulo": "Propuestas para la seguridad ciudadana",
+      "descripcion": "Estrategias para mejorar la seguridad ciudadana, detalladas en la dimensión institucional.",
+      "icono": "bi-shield-check"
+    },
+    {
+      "tema": "justicia_ddhh",
+      "titulo": "Propuestas para la justicia y derechos humanos",
+      "descripcion": "Líneas de acción relativas a justicia y derechos humanos dentro de la dimensión institucional.",
+      "icono": "bi-balance-scale"
+    },
+    {
+      "tema": "relaciones_exteriores",
+      "titulo": "Propuestas para las relaciones exteriores",
+      "descripcion": "Propuestas en materia de política exterior contenidas en la dimensión institucional.",
+      "icono": "bi-globe"
+    },
+    {
+      "tema": "defensa_nacional",
+      "titulo": "Propuestas para la defensa nacional",
+      "descripcion": "Medidas relacionadas con la defensa nacional detalladas en la dimensión institucional.",
+      "icono": "bi-shield-lock"
+    },
+    {
+      "tema": "economia",
+      "titulo": "Propuestas para la economía",
+      "descripcion": "Conjunto de propuestas económicas incluidas en la dimensión económica del plan.",
+      "icono": "bi-cash-stack"
+    },
+    {
+      "tema": "industrializacion",
+      "titulo": "Propuestas para la industrialización",
+      "descripcion": "Medidas para impulsar la industrialización dentro de la dimensión económica.",
+      "icono": "bi-building"
+    },
+    {
+      "tema": "transporte",
+      "titulo": "Propuestas para el transporte",
+      "descripcion": "Iniciativas relativas al transporte desarrolladas en la dimensión económica.",
+      "icono": "bi-truck"
+    },
+    {
+      "tema": "agricultura",
+      "titulo": "Propuestas para la agricultura",
+      "descripcion": "Propuestas para el sector agrícola contenidas en la dimensión económica.",
+      "icono": "bi-flower3"
+    },
+    {
+      "tema": "energia_minas",
+      "titulo": "Propuestas para energía y minas",
+      "descripcion": "Medidas para el sector energía y minas descritas en la dimensión económica.",
+      "icono": "bi-lightning"
+    },
+    {
+      "tema": "medio_ambiente",
+      "titulo": "Propuestas para el cuidado del medio ambiente",
+      "descripcion": "Acciones específicas para el cuidado del medio ambiente dentro de la dimensión ambiental del plan.",
+      "icono": "bi-tree"
+    }
+  ],
+  "partido_nombre": "Ahora Nación"
+}

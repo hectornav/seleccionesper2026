@@ -1,0 +1,72 @@
+{
+  "nombre": "José Luna Gálvez",
+  "slug": "jose-luna-galvez",
+  "foto_url": "/static/img/candidatos/JoseLuna.jpeg",
+  "edad": 70,
+  "region": "Lima",
+  "profesion": "Empresario / Político",
+  "posicion_politica": "centro",
+  "lema": "Sí Podemos",
+  "biografia": "José Luna Gálvez es el candidato presidencial del partido Podemos Perú para el período 2026–2031. Es el fundador y líder histórico de esta organización política, la cual se autodefine como descentralista y orientada a la justicia social. Ha tenido una amplia presencia como congresista de la República y empresario en el sector educativo. Su plan de gobierno apuesta por una economía social de mercado con crecimiento del PBI del 6 al 8% anual, lucha frontal anticorrupción, reforma educativa, salud universal y soberanía sobre los recursos naturales.",
+  "experiencia": "Congresista de la República en múltiples periodos. Fundador y líder del partido Podemos Perú. Empresario del sector educativo.",
+  "antecedentes": "Sin antecedentes penales conocidos en el documento. Revisar estado actual en el Poder Judicial del Perú.",
+  "es_destacado": false,
+  "verificado": true,
+  "orden": 4,
+  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/JoseLuna.pdf",
+  "resumen_propuestas": "Plan 'Podemos Perú 2026-2031': economía social de mercado con crecimiento 6-8%, 'Comando Perú' para seguridad ciudadana, salud universal, revolución educativa y anticorrupción con rango constitucional.",
+  "propuestas_destacadas": [
+    "Programa 'Comando Perú': despliegue de FFAA + PNP con IA, drones y reconocimiento facial",
+    "Shock de inversiones públicas y privadas: meta 6-8% PBI anual y 1 millón de empleos formales",
+    "Duplicar vacantes en universidades públicas e incrementar su presupuesto",
+    "Sistema anticorrupción con rango constitucional y 'muerte civil' para corruptos",
+    "Traslado de ministerios a las regiones (Ministerio de Cultura a Cusco, Energía y Minas a Arequipa)"
+  ],
+  "posicionamiento_issues": {
+    "asamblea_constituyente": "en contra",
+    "libre_comercio_tlc": "a favor",
+    "privatizacion_empresas_estado": "neutral",
+    "relaciones_venezuela_cuba": "no especificado"
+  },
+  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "scores": {
+    "score_economia": 8,
+    "score_seguridad": 8,
+    "score_medio_ambiente": 6,
+    "score_educacion": 8,
+    "score_salud": 7
+  },
+  "propuestas": [
+    {
+      "tema": "seguridad_ciudadana",
+      "titulo": "Comando Perú: seguridad integral con FFAA, IA y reconocimiento facial",
+      "descripcion": "Creación del programa 'Comando Perú' con despliegue de Fuerzas Armadas en apoyo a la PNP, laboratorios regionales de criminalística e Inteligencia Artificial.",
+      "icono": "bi-shield-check"
+    },
+    {
+      "tema": "economia_empleo",
+      "titulo": "Shock de inversiones y meta de crecimiento PBI 6-8%",
+      "descripcion": "Destrabe de 2,200 obras, zonas económicas especiales, Banco de Desarrollo para MYPEs y fondo de S/100 millones para startups juveniles.",
+      "icono": "bi-graph-up-arrow"
+    },
+    {
+      "tema": "educacion",
+      "titulo": "Revolución educativa: duplicar vacantes en universidades públicas",
+      "descripcion": "Incremento del presupuesto a universidades públicas, duplicar vacantes al 2031, Beca 18 ampliada y cierre de brecha digital en la Amazonía.",
+      "icono": "bi-book"
+    },
+    {
+      "tema": "anticorrupcion",
+      "titulo": "Sistema anticorrupción constitucional y 'muerte civil'",
+      "descripcion": "Refundación del ente de control, 'muerte civil' para condenados por corrupción, veeduría social obligatoria en obras y traslado de ministerios a regiones.",
+      "icono": "bi-eye"
+    },
+    {
+      "tema": "salud",
+      "titulo": "Salud universal con atención primaria y programa 'Anemia Cero'",
+      "descripcion": "Fortalecimiento de atención primaria, programa 'Anemia Cero', ruptura de monopolios farmacéuticos y pensión digna de tres pilares.",
+      "icono": "bi-heart-pulse"
+    }
+  ],
+  "partido_nombre": "Podemos Perú"
+}

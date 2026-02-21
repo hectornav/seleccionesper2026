@@ -1,0 +1,78 @@
+{
+  "nombre": "Carlos Gonzalo Álvarez Loayza",
+  "slug": "carlos-gonzalo-lvarez-loayza",
+  "foto_url": "/static/img/candidatos/CarlosAlvarez.jpg",
+  "edad": 62,
+  "region": "Lima",
+  "profesion": "Actor / Comediante",
+  "posicion_politica": "centro",
+  "lema": "País para Todos",
+  "biografia": "Carlos Álvarez es candidato presidencial de la organización política País para Todos para el periodo 2026-2031. Presenta el Plan de Gobierno 2026-2031, versión para el Jurado Nacional de Elecciones, construido sobre las cuatro dimensiones planteadas por la Resolución 0164-2025-JNE. En su presentación, enfatiza que la inseguridad domina la vida cotidiana del país y plantea como convicción central que sin seguridad no hay país posible, ni trabajo digno, ni educación que funcione, ni economía que crezca.",
+  "experiencia": "Liderazgo de la organización política País para Todos y presentación del Plan de Gobierno 2026-2031.",
+  "antecedentes": "Sin información específica de antecedentes penales o investigaciones en el documento del plan de gobierno. Revisar estado actual en el Poder Judicial del Perú.",
+  "es_destacado": false,
+  "verificado": true,
+  "orden": 1,
+  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/CarlosAlvarez.pdf",
+  "resumen_propuestas": "El Plan de Gobierno 2026-2031 de País para Todos propone un país con seguridad como condición para el progreso, un Estado con orden y autoridad firme contra mafias y corrupción, un enfoque de persona al centro, crecimiento con productividad y empleo digno, desarrollo territorial sostenible y un Estado eficiente, innovador y al servicio de las familias.",
+  "propuestas_destacadas": [
+    "Colocar la seguridad como eje central del desarrollo, enfrentando al crimen organizado, las mafias y la corrupción con mano firme, inteligencia y fortalecimiento institucional.",
+    "Poner a la persona en el centro de la gestión pública, mejorando la vida diaria especialmente de quienes menos protección tienen.",
+    "Impulsar un Estado eficiente e innovador al servicio del ciudadano, eliminando trámites inútiles y usando intensivamente datos y tecnología.",
+    "Promover crecimiento con productividad y empleo digno, con formalización real y seguridad social gradual.",
+    "Desarrollar un modelo de desarrollo territorial sostenible, cerrando brechas de agua, saneamiento, conectividad e infraestructura, protegiendo la Amazonía y gestionando el riesgo climático."
+  ],
+  "posicionamiento_issues": {
+    "asamblea_constituyente": "no especificado",
+    "libre_comercio_tlc": "no especificado",
+    "privatizacion_empresas_estado": "no especificado",
+    "relaciones_venezuela_cuba": "no especificado"
+  },
+  "fuente_datos": "Plan de Gobierno 2026-2031 País para Todos.",
+  "scores": {
+    "score_economia": 7,
+    "score_seguridad": 9,
+    "score_medio_ambiente": 7,
+    "score_educacion": 7,
+    "score_salud": 7
+  },
+  "propuestas": [
+    {
+      "tema": "seguridad_ciudadana",
+      "titulo": "Seguridad para el progreso",
+      "descripcion": "Eje central del plan que afirma que sin seguridad no hay país posible, abarcando combate al crimen organizado, mafias y corrupción, fortalecimiento de instituciones y de un sistema de justicia que no libere delincuentes por la puerta de atrás.",
+      "icono": "bi-shield-check"
+    },
+    {
+      "tema": "ideario_principios",
+      "titulo": "País para Todos: principios, objetivos y valores",
+      "descripcion": "Ideario que resume principios como la persona al centro, seguridad para el progreso, orden y autoridad del Estado, integridad y tolerancia cero a la corrupción, Estado al servicio de las familias, igualdad ante la ley e igualdad de oportunidades.",
+      "icono": "bi-people"
+    },
+    {
+      "tema": "gestion_publica",
+      "titulo": "Estado eficiente e innovador al servicio del ciudadano",
+      "descripcion": "Compromiso de construir un Estado que funcione con eficiencia, transparencia y autoridad moral, eliminando trámites inútiles y usando intensivamente datos y tecnología para respuestas rápidas e inteligentes.",
+      "icono": "bi-bank"
+    },
+    {
+      "tema": "economia_empleo",
+      "titulo": "Crecimiento con productividad y empleo digno",
+      "descripcion": "Objetivo de traducir el crecimiento en ingresos sostenibles, formalización real, seguridad social gradual, fomento de la industria y cierre de brechas de infraestructura para todos.",
+      "icono": "bi-graph-up-arrow"
+    },
+    {
+      "tema": "desarrollo_territorial",
+      "titulo": "Desarrollo territorial sostenible y descentralización",
+      "descripcion": "Líneas de acción para descentralización, desarrollo territorial sostenible, cierre de brechas de agua, saneamiento, conectividad e infraestructura, protección de la Amazonía y gestión del riesgo de desastres y cambio climático.",
+      "icono": "bi-geo-alt"
+    },
+    {
+      "tema": "inclusion_social",
+      "titulo": "Oportunidades de verdad y derechos en serio",
+      "descripcion": "Enfoque en que el desarrollo y las oportunidades lleguen a mujeres, niños, jóvenes, personas con discapacidad, adultos mayores y territorios rurales y amazónicos.",
+      "icono": "bi-heart-pulse"
+    }
+  ],
+  "partido_nombre": "País para Todos"
+}

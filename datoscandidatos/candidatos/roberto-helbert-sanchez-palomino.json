@@ -1,0 +1,49 @@
+{
+  "nombre": "Roberto Helbert Sánchez Palomino",
+  "slug": "roberto-helbert-s-nchez-palomino",
+  "foto_url": "/static/img/candidatos/RobertoSanchez.jpg",
+  "edad": 50,
+  "region": "Junín",
+  "profesion": "Político / Dirigente",
+  "posicion_politica": "centro-izquierda",
+  "lema": "Por un Perú mejor",
+  "biografia": "Roberto Sánchez Palomino es dirigente de Juntos por el Perú, coalición de izquierda moderada. Propone políticas sociales, reforma educativa y descentralización.",
+  "experiencia": "Político / Dirigente. Candidato presidencial 2026.",
+  "antecedentes": "Sin antecedentes penales conocidos de relevancia pública.",
+  "es_destacado": false,
+  "verificado": false,
+  "orden": 36,
+  "link_plan_gobierno": "",
+  "resumen_propuestas": "",
+  "propuestas_destacadas": [],
+  "posicionamiento_issues": {},
+  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "scores": {
+    "score_economia": 5,
+    "score_seguridad": 5,
+    "score_medio_ambiente": 5,
+    "score_educacion": 5,
+    "score_salud": 5
+  },
+  "propuestas": [
+    {
+      "tema": "economia",
+      "titulo": "Rol activo del Estado en la economía",
+      "descripcion": "El Estado debe ser agente activo del desarrollo: inversión pública estratégica en sectores clave como energía, transporte, y agroindustria para zonas excluidas del mercado.",
+      "icono": "bi-graph-up-arrow"
+    },
+    {
+      "tema": "medio_ambiente",
+      "titulo": "Agenda ambiental y sostenibilidad",
+      "descripcion": "Transición ecológica justa: proteger la Amazonía y los ecosistemas frágiles. Prohibición de proyectos extractivos sin consulta previa libre e informada a comunidades indígenas.",
+      "icono": "bi-tree-fill"
+    },
+    {
+      "tema": "social",
+      "titulo": "Reducción de la desigualdad",
+      "descripcion": "Políticas redistributivas para cerrar la brecha entre ricos y pobres. Expansión de programas sociales con enfoque en zonas rurales y periurbanas de extrema pobreza.",
+      "icono": "bi-people-fill"
+    }
+  ],
+  "partido_nombre": "Juntos por el Perú"
+}
