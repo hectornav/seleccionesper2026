@@ -1,4 +1,5 @@
 {% extends 'candidatos/base.html' %}
+{% load static %}
 
 {% block title %}Test Electoral — Elecciones Perú 2026{% endblock %}
 
@@ -16,7 +17,8 @@
             <div style="font-size:2rem">⚡</div>
             <div>
                 <h1 style="font-size:1.8rem;font-weight:800;margin:0">Test Electoral 2026</h1>
-                <p style="color:rgba(255,255,255,0.7);margin:0;font-size:0.9rem">Descubre qué candidato mejor representa tus ideas</p>
+                <p style="color:rgba(255,255,255,0.7);margin:0;font-size:0.9rem">Descubre qué candidato mejor representa
+                    tus ideas</p>
             </div>
         </div>
     </div>
@@ -30,7 +32,8 @@
 
             <!-- ESTADO INICIAL -->
             <div id="quiz-intro">
-                <div style="background:white;border-radius:20px;padding:2rem;box-shadow:var(--card-shadow);text-align:center">
+                <div
+                    style="background:white;border-radius:20px;padding:2rem;box-shadow:var(--card-shadow);text-align:center">
                     <div style="font-size:3.5rem;margin-bottom:1rem">🗳️</div>
                     <h2 style="font-weight:800;font-size:1.4rem;color:var(--dark);margin-bottom:0.75rem">
                         ¿Con quién votas el 2026?
@@ -43,7 +46,8 @@
                         <div class="col-4">
                             <div style="background:#f8f9fa;border-radius:10px;padding:0.6rem;text-align:center">
                                 <div style="font-size:1.3rem">❓</div>
-                                <div style="font-size:0.75rem;font-weight:600;color:var(--dark)">{{ preguntas|length }} preguntas</div>
+                                <div style="font-size:0.75rem;font-weight:600;color:var(--dark)">{{ preguntas|length }}
+                                    preguntas</div>
                             </div>
                         </div>
                         <div class="col-4">
@@ -55,11 +59,13 @@
                         <div class="col-4">
                             <div style="background:#f8f9fa;border-radius:10px;padding:0.6rem;text-align:center">
                                 <div style="font-size:1.3rem">👥</div>
-                                <div style="font-size:0.75rem;font-weight:600;color:var(--dark)">{{ candidatos_count }} candidatos</div>
+                                <div style="font-size:0.75rem;font-weight:600;color:var(--dark)">{{ candidatos_count }}
+                                    candidatos</div>
                             </div>
                         </div>
                     </div>
-                    <button onclick="iniciarQuiz()" class="btn-peru" style="font-size:1rem;padding:0.7rem 2.5rem;border-radius:20px;background:var(--gold);color:var(--dark)">
+                    <button onclick="iniciarQuiz()" class="btn-peru"
+                        style="font-size:1rem;padding:0.7rem 2.5rem;border-radius:20px;background:var(--gold);color:var(--dark)">
                         <i class="bi bi-play-fill"></i> Comenzar Test
                     </button>
                     <p style="font-size:0.75rem;color:var(--text-muted-custom);margin-top:1rem">
@@ -71,8 +77,10 @@
             <!-- PREGUNTAS -->
             <div id="quiz-preguntas" class="d-none">
                 <!-- Progress -->
-                <div style="background:white;border-radius:12px;padding:1rem 1.5rem;box-shadow:var(--card-shadow);margin-bottom:1rem;display:flex;align-items:center;gap:12px">
-                    <span style="font-size:0.8rem;font-weight:600;color:var(--text-muted-custom);white-space:nowrap" id="progress-text">1 / {{ preguntas|length }}</span>
+                <div
+                    style="background:white;border-radius:12px;padding:1rem 1.5rem;box-shadow:var(--card-shadow);margin-bottom:1rem;display:flex;align-items:center;gap:12px">
+                    <span style="font-size:0.8rem;font-weight:600;color:var(--text-muted-custom);white-space:nowrap"
+                        id="progress-text">1 / {{ preguntas|length }}</span>
                     <div class="quiz-progress flex-grow-1">
                         <div class="quiz-progress-bar" id="progress-bar" style="width:0%"></div>
                     </div>
@@ -81,8 +89,10 @@
 
                 <!-- Contenedor de preguntas -->
                 {% for pregunta in preguntas %}
-                <div class="pregunta-card quiz-card d-none" data-pregunta="{{ forloop.counter }}" data-pregunta-id="{{ pregunta.id }}" data-total="{{ preguntas|length }}">
-                    <div style="font-size:0.75rem;font-weight:700;color:var(--text-muted-custom);text-transform:uppercase;margin-bottom:0.5rem;letter-spacing:0.5px">
+                <div class="pregunta-card quiz-card d-none" data-pregunta="{{ forloop.counter }}"
+                    data-pregunta-id="{{ pregunta.id }}" data-total="{{ preguntas|length }}">
+                    <div
+                        style="font-size:0.75rem;font-weight:700;color:var(--text-muted-custom);text-transform:uppercase;margin-bottom:0.5rem;letter-spacing:0.5px">
                         Pregunta {{ forloop.counter }} de {{ preguntas|length }}
                     </div>
                     <h3 style="font-size:1rem;font-weight:700;color:var(--dark);margin-bottom:1.25rem;line-height:1.5">
@@ -91,8 +101,9 @@
 
                     <div class="opciones-container">
                         {% for opcion in pregunta.opciones.all %}
-                        <button class="opcion-btn" onclick="seleccionarOpcion(this, {{ opcion.valor }}, {{ pregunta.id }})"
-                                data-valor="{{ opcion.valor }}">
+                        <button class="opcion-btn"
+                            onclick="seleccionarOpcion(this, {{ opcion.valor }}, {{ pregunta.id }})"
+                            data-valor="{{ opcion.valor }}">
                             <span class="opcion-num">{{ forloop.counter }}</span>
                             {{ opcion.texto }}
                         </button>
@@ -101,7 +112,8 @@
 
                     <div class="d-flex justify-content-between align-items-center mt-3">
                         {% if not forloop.first %}
-                        <button onclick="anteriorPregunta()" class="btn-outline-peru" style="font-size:0.82rem;padding:0.4rem 0.85rem">
+                        <button onclick="anteriorPregunta()" class="btn-outline-peru"
+                            style="font-size:0.82rem;padding:0.4rem 0.85rem">
                             <i class="bi bi-arrow-left"></i> Anterior
                         </button>
                         {% else %}
@@ -109,11 +121,13 @@
                         {% endif %}
 
                         {% if not forloop.last %}
-                        <button class="btn-peru sig-btn" onclick="siguientePregunta(this)" disabled style="font-size:0.82rem;padding:0.4rem 0.85rem;opacity:0.5;cursor:not-allowed">
+                        <button class="btn-peru sig-btn" onclick="siguientePregunta(this)" disabled
+                            style="font-size:0.82rem;padding:0.4rem 0.85rem;opacity:0.5;cursor:not-allowed">
                             Siguiente <i class="bi bi-arrow-right"></i>
                         </button>
                         {% else %}
-                        <button class="btn-peru sig-btn" onclick="verResultados()" disabled style="background:var(--gold);color:var(--dark);font-size:0.9rem;padding:0.5rem 1.2rem;opacity:0.5;cursor:not-allowed">
+                        <button class="btn-peru sig-btn" onclick="verResultados()" disabled
+                            style="background:var(--gold);color:var(--dark);font-size:0.9rem;padding:0.5rem 1.2rem;opacity:0.5;cursor:not-allowed">
                             <i class="bi bi-bar-chart-line"></i> Ver mis resultados
                         </button>
                         {% endif %}
@@ -149,10 +163,12 @@
 
             {% else %}
             <!-- SIN PREGUNTAS -->
-            <div style="background:white;border-radius:16px;padding:2rem;box-shadow:var(--card-shadow);text-align:center">
+            <div
+                style="background:white;border-radius:16px;padding:2rem;box-shadow:var(--card-shadow);text-align:center">
                 <div style="font-size:3rem;margin-bottom:1rem">🚧</div>
                 <h3 style="font-weight:700;color:var(--dark)">Test en construcción</h3>
-                <p style="color:var(--text-muted-custom)">Las preguntas del test electoral estarán disponibles próximamente.</p>
+                <p style="color:var(--text-muted-custom)">Las preguntas del test electoral estarán disponibles
+                    próximamente.</p>
                 <a href="{% url 'candidatos:home' %}" class="btn-peru">
                     <i class="bi bi-arrow-left"></i> Ver candidatos
                 </a>
@@ -166,181 +182,8 @@
 {% endblock %}
 
 {% block extra_js %}
-<script>
-const totalPreguntas = {{ preguntas|length }};
-let preguntaActual = 1;
-let respuestas = {};
-
-function iniciarQuiz() {
-    document.getElementById('quiz-intro').classList.add('d-none');
-    document.getElementById('quiz-preguntas').classList.remove('d-none');
-    mostrarPregunta(1);
-}
-
-function mostrarPregunta(num) {
-    document.querySelectorAll('.pregunta-card').forEach(el => el.classList.add('d-none'));
-    const card = document.querySelector(`.pregunta-card[data-pregunta="${num}"]`);
-    if (card) {
-        card.classList.remove('d-none');
-        // Restaurar selección si ya respondió
-        const pregId = card.dataset.preguntaId;
-        if (respuestas[pregId] !== undefined) {
-            card.querySelectorAll('.opcion-btn').forEach(btn => {
-                if (parseInt(btn.dataset.valor) === respuestas[pregId]) {
-                    btn.classList.add('selected');
-                    btn.querySelector('.opcion-num').style.background = 'var(--peru-red)';
-                    btn.querySelector('.opcion-num').style.color = 'white';
-                }
-            });
-            // Habilitar botón siguiente
-            const sigBtn = card.querySelector('.sig-btn');
-            if (sigBtn) {
-                sigBtn.disabled = false;
-                sigBtn.style.opacity = '1';
-                sigBtn.style.cursor = 'pointer';
-            }
-        }
-    }
-    actualizarProgreso(num);
-}
-
-function actualizarProgreso(num) {
-    const pct = Math.round((num - 1) / totalPreguntas * 100);
-    document.getElementById('progress-text').textContent = `${num} / ${totalPreguntas}`;
-    document.getElementById('progress-bar').style.width = pct + '%';
-    document.getElementById('progress-pct').textContent = pct + '%';
-}
-
-function seleccionarOpcion(btn, valor, preguntaId) {
-    const card = btn.closest('.pregunta-card');
-    // Desmarcar todas
-    card.querySelectorAll('.opcion-btn').forEach(b => {
-        b.classList.remove('selected');
-        b.querySelector('.opcion-num').style.background = '#e9ecef';
-        b.querySelector('.opcion-num').style.color = '';
-    });
-    // Marcar seleccionada
-    btn.classList.add('selected');
-    btn.querySelector('.opcion-num').style.background = 'var(--peru-red)';
-    btn.querySelector('.opcion-num').style.color = 'white';
-    // Guardar respuesta
-    respuestas[preguntaId] = valor;
-    // Habilitar siguiente
-    const sigBtn = card.querySelector('.sig-btn');
-    if (sigBtn) {
-        sigBtn.disabled = false;
-        sigBtn.style.opacity = '1';
-        sigBtn.style.cursor = 'pointer';
-    }
-}
-
-function siguientePregunta(btn) {
-    const card = btn.closest('.pregunta-card');
-    const total = parseInt(card.dataset.total);
-    if (preguntaActual < total) {
-        preguntaActual++;
-        mostrarPregunta(preguntaActual);
-    }
-}
-
-function anteriorPregunta() {
-    if (preguntaActual > 1) {
-        preguntaActual--;
-        mostrarPregunta(preguntaActual);
-    }
-}
-
-async function verResultados() {
-    document.getElementById('quiz-preguntas').classList.add('d-none');
-    document.getElementById('quiz-loading').classList.remove('d-none');
-
-    try {
-        const response = await fetch('{% url "candidatos:quiz_resultado" %}', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'X-CSRFToken': '{{ csrf_token }}'
-            },
-            body: JSON.stringify({ respuestas })
-        });
-
-        const data = await response.json();
-        document.getElementById('quiz-loading').classList.add('d-none');
-        document.getElementById('quiz-resultados').classList.remove('d-none');
-        renderResultados(data.resultados);
-    } catch (e) {
-        document.getElementById('quiz-loading').classList.add('d-none');
-        alert('Error calculando resultados. Intenta de nuevo.');
-    }
-}
-
-function renderResultados(resultados) {
-    const container = document.getElementById('resultados-container');
-    container.innerHTML = '';
-
-    resultados.forEach((r, i) => {
-        const isTop = i === 0;
-        const color = r.color_partido || '#D91023';
-
-        const el = document.createElement('div');
-        el.className = `resultado-card mb-3 ${isTop ? 'top-1' : ''}`;
-        el.style.animation = `fadeInUp 0.4s ease ${i * 0.1}s both`;
-        el.innerHTML = `
-            <div style="display:flex;align-items:center;gap:12px">
-                ${isTop ? '<div style="font-size:1.5rem;flex-shrink:0">🥇</div>' : `<div style="width:28px;height:28px;border-radius:50%;background:#e9ecef;display:flex;align-items:center;justify-content:center;font-size:0.8rem;font-weight:800;color:#6c757d;flex-shrink:0">${i+1}</div>`}
-
-                ${r.foto_url ? `<img src="${r.foto_url}" alt="${r.nombre}" style="width:${isTop?56:44}px;height:${isTop?64:52}px;border-radius:10px;object-fit:cover;object-position:top;flex-shrink:0;border:2px solid ${isTop ? 'var(--gold)' : '#e9ecef'}">` :
-                `<div style="width:${isTop?56:44}px;height:${isTop?64:52}px;border-radius:10px;background:#e9ecef;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:${isTop?28:22}px;color:#adb5bd"><i class='bi bi-person-fill'></i></div>`}
-
-                <div style="flex:1;min-width:0">
-                    <div style="font-weight:${isTop?800:700};font-size:${isTop?'1rem':'0.9rem'};color:var(--dark)">${r.nombre}</div>
-                    <div style="font-size:0.75rem;color:var(--text-muted-custom);margin-bottom:6px">
-                        <span style="background:${color};color:white;border-radius:20px;padding:1px 8px;font-size:0.7rem">${r.partido}</span>
-                        &bull; ${r.posicion}
-                    </div>
-                    <div class="match-bar">
-                        <div class="match-bar-fill" style="width:0%;background:${isTop ? 'linear-gradient(to right,var(--gold),#e8960f)' : 'linear-gradient(to right,var(--peru-red),var(--gold))'}"
-                             data-width="${r.porcentaje}%"></div>
-                    </div>
-                </div>
-                <div style="text-align:center;flex-shrink:0;min-width:50px">
-                    <div style="font-size:${isTop?'1.5rem':'1.2rem'};font-weight:800;color:${isTop ? 'var(--gold)' : 'var(--peru-red)'}">${r.porcentaje}%</div>
-                    <div style="font-size:0.65rem;color:var(--text-muted-custom)">afinidad</div>
-                </div>
-            </div>
-            ${r.lema ? `<p style="font-size:0.78rem;font-style:italic;color:#4a5568;margin:0.75rem 0 0;border-left:3px solid ${isTop ? 'var(--gold)' : 'var(--peru-red)'};padding-left:0.6rem">"${r.lema}"</p>` : ''}
-            <div class="mt-2">
-                <a href="/candidato/${r.slug}/" class="btn-peru" style="font-size:0.78rem;padding:0.3rem 0.7rem">
-                    <i class="bi bi-eye"></i> Ver propuestas
-                </a>
-            </div>
-        `;
-        container.appendChild(el);
-    });
-
-    // Animar barras
-    setTimeout(() => {
-        document.querySelectorAll('.match-bar-fill').forEach(bar => {
-            bar.style.width = bar.dataset.width;
-        });
-    }, 100);
-}
-
-function reiniciarQuiz() {
-    preguntaActual = 1;
-    respuestas = {};
-    document.querySelectorAll('.opcion-btn').forEach(btn => {
-        btn.classList.remove('selected');
-        btn.querySelector('.opcion-num').style.background = '#e9ecef';
-        btn.querySelector('.opcion-num').style.color = '';
-    });
-    document.querySelectorAll('.sig-btn').forEach(btn => {
-        btn.disabled = true;
-        btn.style.opacity = '0.5';
-        btn.style.cursor = 'not-allowed';
-    });
-    document.getElementById('quiz-resultados').classList.add('d-none');
-    document.getElementById('quiz-intro').classList.remove('d-none');
-}
-</script>
+<div id="quiz-data" class="d-none" data-total="{{ preguntas|length }}" data-url="{% url 'candidatos:quiz_resultado' %}"
+    data-csrf="{{ csrf_token }}">
+</div>
+<script src="{% static 'js/quiz.js' %}"></script>
 {% endblock %}

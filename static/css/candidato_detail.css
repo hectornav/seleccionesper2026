@@ -1,0 +1,325 @@
+.card-white {
+        background: white;
+        border-radius: 16px;
+        padding: 1.5rem;
+        box-shadow: var(--card-shadow);
+    }
+
+    .tab-btn {
+        background: transparent;
+        border: none;
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 0.875rem;
+        font-weight: 600;
+        padding: 0.6rem 1rem;
+        cursor: pointer;
+        border-radius: 8px 8px 0 0;
+        transition: all 0.2s;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .tab-btn:hover {
+        color: rgba(255, 255, 255, 0.9);
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .tab-btn.active {
+        color: white;
+        background: rgba(255, 255, 255, 0.15);
+        border-bottom: 3px solid var(--gold);
+    }
+
+    /* Propuestas Destacadas */
+    .propuestas-destacadas {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .propuesta-destacada-item {
+        display: flex;
+        gap: 12px;
+        align-items: flex-start;
+        padding: 1rem;
+        background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);
+        border-radius: 12px;
+        border-left: 4px solid var(--gold);
+    }
+
+    .propuesta-num {
+        width: 28px;
+        height: 28px;
+        background: var(--gold);
+        color: var(--dark);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 800;
+        font-size: 0.85rem;
+        flex-shrink: 0;
+    }
+
+    .propuesta-texto {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        color: #374151;
+    }
+
+    /* Issues Grid */
+    .issues-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .issue-badge {
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem 0.75rem;
+        border-radius: 8px;
+        font-size: 0.75rem;
+        min-width: 120px;
+    }
+
+    .issue-badge.a-favor {
+        background: #dcfce7;
+        border: 1px solid #86efac;
+    }
+
+    .issue-badge.a-favor .issue-value {
+        color: #166534;
+    }
+
+    .issue-badge.en-contra {
+        background: #fef2f2;
+        border: 1px solid #fecaca;
+    }
+
+    .issue-badge.en-contra .issue-value {
+        color: #991b1b;
+    }
+
+    .issue-badge.neutral {
+        background: #f3f4f6;
+        border: 1px solid #d1d5db;
+    }
+
+    .issue-badge.neutral .issue-value {
+        color: #6b7280;
+    }
+
+    .issue-badge.parcial {
+        background: #fef3c7;
+        border: 1px solid #fcd34d;
+    }
+
+    .issue-badge.parcial .issue-value {
+        color: #92400e;
+    }
+
+    .issue-label {
+        font-weight: 600;
+        color: #374151;
+        font-size: 0.72rem;
+        margin-bottom: 2px;
+    }
+
+    .issue-value {
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    /* Tema Header */
+    .tema-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .tema-badge {
+        background: var(--peru-red-light);
+        color: var(--peru-red);
+        border-radius: 8px;
+        padding: 6px 12px;
+        font-size: 0.85rem;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .prioridad-badge {
+        font-size: 0.7rem;
+        padding: 3px 8px;
+        border-radius: 12px;
+        font-weight: 600;
+    }
+
+    .prioridad-badge.alta {
+        background: #fef2f2;
+        color: #dc2626;
+    }
+
+    .prioridad-badge.media {
+        background: #fef3c7;
+        color: #d97706;
+    }
+
+    /* Propuesta Item */
+    .propuesta-item {
+        padding: 0.75rem;
+        background: #f8f9fa;
+        border-radius: 10px;
+        margin-bottom: 0.5rem;
+    }
+
+    .propuesta-content {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 0.9rem;
+        color: #374151;
+        line-height: 1.5;
+    }
+
+    .propuesta-icon {
+        color: var(--peru-red);
+        flex-shrink: 0;
+        margin-top: 2px;
+    }
+
+    /* Posiciones Lista */
+    .posiciones-lista {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .posicion-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background: #f8f9fa;
+        border-radius: 10px;
+        gap: 1rem;
+    }
+
+    .posicion-tema {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 600;
+        color: #374151;
+        font-size: 0.9rem;
+    }
+
+    .posicion-tema i {
+        font-size: 1.1rem;
+        color: #6b7280;
+    }
+
+    .posicion-valor {
+        padding: 0.35rem 0.75rem;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        white-space: nowrap;
+    }
+
+    .posicion-valor.a-favor {
+        background: #dcfce7;
+        color: #166534;
+    }
+
+    .posicion-valor.en-contra {
+        background: #fef2f2;
+        color: #991b1b;
+    }
+
+    .posicion-valor.neutral {
+        background: #f3f4f6;
+        color: #6b7280;
+    }
+
+    .posicion-valor.parcial {
+        background: #fef3c7;
+        color: #92400e;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .hero-candidate-row {
+            flex-direction: column !important;
+            align-items: flex-start !important;
+            gap: 1rem !important;
+        }
+
+        .tab-bar-scroll {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            flex-wrap: nowrap !important;
+            padding-bottom: 2px;
+            scrollbar-width: none;
+        }
+
+        .tab-bar-scroll::-webkit-scrollbar {
+            display: none;
+        }
+
+        .tab-btn {
+            white-space: nowrap;
+            font-size: 0.8rem;
+            padding: 0.5rem 0.75rem;
+        }
+
+        .posicion-row {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .issues-grid {
+            gap: 0.4rem;
+        }
+
+        .issue-badge {
+            min-width: auto;
+            flex: 1 1 45%;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .hero-candidate-photo {
+            width: 90px !important;
+            height: 104px !important;
+        }
+
+        .hero-candidate-name {
+            font-size: 1.3rem !important;
+        }
+
+        .card-white {
+            border-radius: 12px;
+            padding: 1.1rem;
+        }
+
+        .propuesta-destacada-item {
+            padding: 0.75rem;
+        }
+
+        .tema-header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
