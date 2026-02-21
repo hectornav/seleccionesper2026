@@ -2,75 +2,83 @@
   "nombre": "Wolfgang Mario Grozo Costa",
   "slug": "wolfgang-mario-grozo-costa",
   "foto_url": "/static/img/candidatos/WolfgangGrozo.png",
-  "edad": 50,
+  "edad": 58,
   "region": "Lima",
   "profesion": "Abogado / Político",
   "posicion_politica": "centro",
-  "lema": "Ni de izquierda ni de derecha, el Perú es de los que madrugan",
-  "biografia": "Wolfgang Grozo Costa es abogado y candidato de Integridad Democrática. Su partido promueve la transparencia institucional y reformas del sistema judicial.",
-  "experiencia": "Abogado / Político. Candidato presidencial 2026.",
-  "antecedentes": "Sin antecedentes penales conocidos de relevancia pública.",
+  "lema": "No hay libertad si vives con miedo",
+  "biografia": "Wolfgang Grozo es candidato presidencial del Partido Político Integridad Democrática para el periodo 2026-2031 y presenta el Plan de Gobierno 2026-2031 de dicha organización. El plan se articula alrededor de tres grandes ideas fuerza: seguridad (“No hay libertad si vives con miedo”), combate al Estado corrupto (“El crimen no solo está en la calle, está en los escritorios del poder”) y emprendimiento (“Ni de izquierda ni de derecha: el Perú es de los que madrugan”).",
+  "experiencia": "Figura vinculada al mundo jurídico y del emprendimiento, que lidera una propuesta de centro orientada a combinar estabilidad macroeconómica, inversión privada, seguridad ciudadana y protección de derechos, con énfasis en integridad democrática y lucha contra la corrupción.",
+  "antecedentes": "El plan de gobierno no consigna antecedentes penales ni investigaciones sobre el candidato. Se recomienda revisar el Poder Judicial del Perú y otras fuentes oficiales.",
   "es_destacado": false,
   "verificado": true,
-  "orden": 34,
-  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/WolfgangGrozo.pdf",
-  "resumen_propuestas": "Propuesta de centro humanista con énfasis en seguridad, salud y emprendimiento como motores del desarrollo.",
+  "orden": 1,
+  "link_plan_gobierno": "https://plataformaelectoral.jne.gob.pe/candidatos/plan-gobierno-trabajo/buscar",
+  "resumen_propuestas": "El Plan de Gobierno 2026-2031 de Integridad Democrática se organiza en tres dimensiones: social, económica y ambiental. En la dimensión social aborda seguridad ciudadana, restablecimiento de servicios esenciales y salud integral, educación de calidad, programas sociales con movilidad social, vivienda digna, infraestructura sanitaria (“Perú con agua segura”), infraestructura y vías de comunicación, tecnología e innovación y un Estado que proteja a mujeres, peruanos en el exterior, personas con discapacidad, adultos mayores, comunidad LGTBQ+ y bienestar animal. En la dimensión económica prioriza estabilidad macroeconómica, inversión privada como motor del crecimiento, impulso al emprendimiento y a las MYPE para generar trabajo formal y un Perú productivo y competitivo. En la dimensión ambiental se centra en la gestión forestal y la lucha contra la tala ilegal, vinculadas a criminalidad organizada y pérdida de valor económico.",
   "propuestas_destacadas": [
-    "Seguridad ciudadana integral con tecnología e inteligencia ('No hay libertad si vives con miedo')",
-    "Salud integral para todos con cobertura universal",
-    "Educación de calidad cerrando brechas territoriales",
-    "Emprendimiento como motor económico: apoyo a MYPEs y jóvenes",
-    "Igualdad y protección institucional para grupos vulnerables"
+    "Reducir drásticamente la inseguridad ciudadana y restablecer el principio de autoridad mediante un enfoque integral de seguridad como condición de libertad.",
+    "Restablecer servicios esenciales garantizando salud integral para todos, con énfasis en cerrar brechas de acceso y calidad.",
+    "Impulsar una educación de calidad que reduzca la exclusión educativa, cierre brechas territoriales y mejore la estructura del sistema educativo.",
+    "Transformar los programas sociales para que dejen de ser asistencialistas y promuevan movilidad social real, fortaleciendo el sistema de protección social.",
+    "Garantizar vivienda digna, infraestructura sanitaria y acceso a agua segura, así como mejorar la infraestructura de transporte y la conectividad digital del Estado.",
+    "Mantener estabilidad macroeconómica, promover inversión privada como motor del crecimiento y potenciar el emprendimiento de jóvenes, mujeres y poblaciones rurales para generar empleo formal.",
+    "Combatir la deforestación estructural y la tala ilegal como fenómenos ligados al crimen organizado, mediante una gestión forestal robusta."
   ],
   "posicionamiento_issues": {
-    "asamblea_constituyente": "en contra",
-    "matrimonio_igualitario": "neutral",
-    "privatizacion_empresas_estado": "neutral",
-    "libre_comercio_tlc": "a favor"
+    "asamblea_constituyente": "no especificado",
+    "libre_comercio_tlc": "a favor de inserción competitiva y de inversión privada en un marco de estabilidad macroeconómica",
+    "privatizacion_empresas_estado": "favorable a un rol protagónico del sector privado con Estado regulador y garante de servicios esenciales",
+    "relaciones_venezuela_cuba": "no especificado; discurso centrado en integridad democrática y lucha contra la corrupción más que en alineamientos ideológicos externos"
   },
-  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "fuente_datos": "Plan de Gobierno 2026-2031 del Partido Político Integridad Democrática.",
   "scores": {
-    "score_economia": 5,
-    "score_seguridad": 5,
-    "score_medio_ambiente": 5,
-    "score_educacion": 5,
-    "score_salud": 5
+    "score_economia": 8,
+    "score_seguridad": 9,
+    "score_medio_ambiente": 7,
+    "score_educacion": 8,
+    "score_salud": 7
   },
   "propuestas": [
     {
-      "tema": "educacion",
-      "titulo": "Educación cerrando brechas territoriales y estructurales",
-      "descripcion": "Educación cerrando brechas territoriales y estructurales",
-      "icono": "bi-book"
+      "tema": "seguridad_ciudadana",
+      "titulo": "Seguridad: no hay libertad si vives con miedo",
+      "descripcion": "Eje de seguridad que reconoce el alto índice de inseguridad y el deterioro del principio de autoridad y propone recuperar el control territorial, fortalecer instituciones de seguridad y garantizar libertad sin miedo.",
+      "icono": "bi-shield-check"
     },
     {
-      "tema": "mypes_emprendimiento",
-      "titulo": "Apoyo a MYPEs y jóvenes emprendedores como motor económico",
-      "descripcion": "Apoyo a MYPEs y jóvenes emprendedores como motor económico",
-      "icono": "bi-shop"
-    },
-    {
-      "tema": "salud",
-      "titulo": "Restablecimiento de servicios esenciales de salud con cobertura universal",
-      "descripcion": "Restablecimiento de servicios esenciales de salud con cobertura universal",
+      "tema": "servicios_esenciales_salud",
+      "titulo": "Restablecimiento de servicios esenciales y salud integral",
+      "descripcion": "Plan para restablecer servicios básicos y asegurar salud integral para todos, reduciendo brechas de acceso y mejorando la eficiencia de la oferta pública.",
       "icono": "bi-heart-pulse"
     },
     {
-      "tema": "seguridad_ciudadana",
-      "titulo": "Estrategia tecnológica y de inteligencia contra el crimen organizado",
-      "descripcion": "Estrategia tecnológica y de inteligencia contra el crimen organizado",
-      "icono": "bi-shield-check"
+      "tema": "educacion_calidad",
+      "titulo": "Educación de calidad y reducción de brechas",
+      "descripcion": "Estrategias para enfrentar exclusión educativa, brechas territoriales y baja calidad estructural, garantizando acceso y calidad en todos los niveles.",
+      "icono": "bi-mortarboard"
     },
     {
-      "tema": "seguridad_ciudadana",
-      "titulo": "'No hay libertad si vives con miedo'",
-      "descripcion": "'No hay libertad si vives con miedo'",
-      "icono": "bi-shield-check"
+      "tema": "programas_sociales_vivienda_agua",
+      "titulo": "Programas sociales, vivienda digna e infraestructura sanitaria",
+      "descripcion": "Rediseño de programas sociales para impulsar movilidad social, políticas para vivienda digna y un programa 'Perú con agua segura' que cierre brechas de acceso al agua potable y saneamiento.",
+      "icono": "bi-house"
     },
     {
-      "tema": "genero_inclusion",
-      "titulo": "Políticas para discapacitados, adultos mayores y comunidad LGBTQ+",
-      "descripcion": "Políticas para discapacitados, adultos mayores y comunidad LGBTQ+",
+      "tema": "emprendimiento_economia",
+      "titulo": "Estabilidad macroeconómica, inversión y emprendimiento",
+      "descripcion": "Dimensión económica que prioriza estabilidad macroeconómica, inversión privada como motor del crecimiento y emprendimiento de MYPE, jóvenes, mujeres y rurales para un Perú productivo y competitivo.",
+      "icono": "bi-graph-up-arrow"
+    },
+    {
+      "tema": "ambiente_bosques",
+      "titulo": "Gestión forestal y lucha contra tala ilegal",
+      "descripcion": "Dimensión ambiental que aborda la deforestación estructural, la criminalidad organizada asociada a la tala ilegal y la pérdida de valor económico, con estrategias de gestión forestal y control.",
+      "icono": "bi-tree"
+    },
+    {
+      "tema": "derechos_inclusion",
+      "titulo": "Estado para todos: mujeres, LGTBQ+, discapacitados y adultos mayores",
+      "descripcion": "Propuestas específicas para garantizar derechos, protección institucional y bienestar de mujeres, peruanos en el exterior, personas con discapacidad, adultos mayores, comunidad LGTBQ+ y protección del bienestar animal.",
       "icono": "bi-people"
     }
   ],

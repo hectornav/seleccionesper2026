@@ -2,66 +2,65 @@
   "nombre": "Yonhy Lescano Ancieta",
   "slug": "yonhy-lescano-ancieta",
   "foto_url": "/static/img/candidatos/YonhyLescano.jpeg",
-  "edad": 66,
+  "edad": 67,
   "region": "Cusco",
   "profesion": "Abogado / Político",
   "posicion_politica": "centro_izquierda",
-  "lema": "La honestidad no se negocia",
-  "biografia": "Yonhy Lescano Ancieta nació el 14 de junio de 1958 en Cusco. Abogado de la Universidad Nacional San Antonio Abad del Cusco. Militante histórico de Acción Popular, partido fundado por Fernando Belaúnde Terry. Congresista en múltiples periodos. Candidato presidencial en 2021 donde sorprendió liderando las primeras encuestas, terminando en sexto lugar (8.9%). Conocido por su discurso anticorrupción y defensa de los derechos del consumidor en el Congreso. Actualmente representa a Cooperación Popular.",
-  "experiencia": "Congresista de la República en múltiples periodos. Abogado especialista en derecho constitucional. Candidato presidencial 2021.",
-  "antecedentes": "⚠️ INVESTIGADO: En 2021, durante la campaña presidencial, fue acusado de acoso sexual por su entonces asesora. El caso fue ventilado públicamente y alcanzó a la Comisión de Ética del Congreso. Lescano negó los cargos. El proceso quedó inconcluso al terminar el mandato legislativo.",
-  "es_destacado": true,
+  "lema": "Cooperación Popular para un Estado justo",
+  "biografia": "Yonhy Lescano Ancieta es candidato presidencial del Partido Cooperación Popular para las Elecciones Generales 2026, cuya propuesta de plan de gobierno busca generar espacios para que la ciudadanía proponga, participe y fiscalice las acciones del Estado en la solución de los principales problemas del país.",
+  "experiencia": "Excongresista y dirigente político con trayectoria en defensa del consumidor y temas sociales, ahora líder de Cooperación Popular, que plantea un plan articulado en cuatro dimensiones (social, institucional, económica y territorial-ambiental) alineado con el Plan Estratégico de Desarrollo Nacional al 2050 y los planes de desarrollo regional y local.",
+  "antecedentes": "El plan de gobierno no menciona antecedentes penales ni procesos judiciales; se debe verificar en el Poder Judicial del Perú y otros registros oficiales.",
+  "es_destacado": false,
   "verificado": true,
-  "orden": 28,
-  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/YonhyLescano.pdf",
-  "resumen_propuestas": "Gobernanza participativa, combate a la corrupción con vigilancia ciudadana y desarrollo sustentable como ejes.",
+  "orden": 1,
+  "link_plan_gobierno": "https://plataformaelectoral.jne.gob.pe/candidatos/plan-gobierno-trabajo/buscar",
+  "resumen_propuestas": "El plan de gobierno de Cooperación Popular se basa en un ideario centrado en gobernanza, ética y participación, desarrollo social e inclusión y desarrollo sostenible con ciencia y tecnología. Propone institucionalizar la participación ciudadana para enfrentar los principales problemas del país, fortalecer la democracia con enfoque descentralizado e integrar al Estado con las organizaciones sociales mediante el diálogo para mejorar las condiciones de las personas más vulnerables. Se organiza en cuatro dimensiones: social (mejorar calidad de vida, reducir desigualdades y garantizar acceso equitativo a educación, salud, alimentación, vivienda y protección social), institucional (Estado eficiente, transparente, moderno, descentralizado y orientado a resultados), económica (crecimiento sostenible, competitivo e inclusivo, con empleo digno, apoyo a MYPE, diversificación productiva y estabilidad macroeconómica) y territorial-ambiental (desarrollo equilibrado del territorio, descentralización, ordenamiento territorial y acceso equitativo a infraestructura y servicios con respeto al ambiente y culturas locales).",
   "propuestas_destacadas": [
-    "Gobernanza participativa con transparencia total y diálogo ciudadano efectivo",
-    "Combate a la corrupción con participación ciudadana en vigilancia y denuncia",
-    "Acceso universal a educación de calidad",
-    "Sistema de salud accesible y eficiente",
-    "Desarrollo sustentable con crecimiento económico que proteja el medio ambiente"
+    "Institucionalizar la participación ciudadana en la toma de decisiones, fiscalización y construcción de políticas públicas, promoviendo canales efectivos de diálogo y colaboración.",
+    "Impulsar transparencia y ética en la gestión pública, con participación activa de la ciudadanía en la vigilancia y denuncia de la corrupción.",
+    "Garantizar equidad y justicia social mediante acceso universal a educación de calidad y salud eficiente, y políticas inclusivas que reconozcan y protejan la diversidad cultural, étnica y de género.",
+    "Promover un desarrollo económico sostenible y responsable que proteja el medio ambiente, fortalezca la productividad, apoye a las micro y pequeñas empresas y fomente el desarrollo productivo regional.",
+    "Desarrollar infraestructura sostenible y accesibilidad a tecnologías de la información y comunicación, fomentando la inversión en investigación, desarrollo e innovación tecnológica con colaboración público-privada-académica."
   ],
-  "posicionamiento_issues": {},
-  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "posicionamiento_issues": {
+    "asamblea_constituyente": "no especificado (énfasis en fortalecer democracia y participación dentro del marco institucional vigente)",
+    "libre_comercio_tlc": "a favor de crecimiento competitivo e inversión responsable, con enfoque social y ambiental",
+    "privatizacion_empresas_estado": "no especificado; propone equilibrio entre inversión pública y privada responsable",
+    "relaciones_venezuela_cuba": "no especificado"
+  },
+  "fuente_datos": "Propuesta del Plan de Gobierno del Partido Cooperación Popular para las Elecciones Generales 2026.",
   "scores": {
-    "score_economia": 5,
+    "score_economia": 8,
     "score_seguridad": 6,
-    "score_medio_ambiente": 6,
+    "score_medio_ambiente": 8,
     "score_educacion": 8,
-    "score_salud": 7
+    "score_salud": 8
   },
   "propuestas": [
     {
-      "tema": "anticorrupcion",
-      "titulo": "Combate efectivo a la corrupción con participación activa ciudadana en vigilancia y denuncia",
-      "descripcion": "Combate efectivo a la corrupción con participación activa ciudadana en vigilancia y denuncia",
-      "icono": "bi-eye"
+      "tema": "gobernanza_participacion",
+      "titulo": "Gobernanza, ética y participación ciudadana",
+      "descripcion": "Compromiso con transparencia y ética en la gestión, fortalecimiento de la participación ciudadana en la toma de decisiones y combate a la corrupción mediante vigilancia y denuncia social.",
+      "icono": "bi-people"
     },
     {
-      "tema": "educacion",
-      "titulo": "Acceso universal a educación de calidad",
-      "descripcion": "Acceso universal a educación de calidad",
-      "icono": "bi-book"
-    },
-    {
-      "tema": "medio_ambiente",
-      "titulo": "Desarrollo sustentable con crecimiento económico responsable que proteja el medio ambiente",
-      "descripcion": "Desarrollo sustentable con crecimiento económico responsable que proteja el medio ambiente",
-      "icono": "bi-tree"
-    },
-    {
-      "tema": "reforma_estado",
-      "titulo": "Gobernanza participativa: transparencia total con canales efectivos de diálogo ciudadano",
-      "descripcion": "Gobernanza participativa: transparencia total con canales efectivos de diálogo ciudadano",
-      "icono": "bi-bank"
-    },
-    {
-      "tema": "salud",
-      "titulo": "Sistema de salud accesible y eficiente",
-      "descripcion": "Sistema de salud accesible y eficiente",
+      "tema": "desarrollo_social_inclusion",
+      "titulo": "Desarrollo social, equidad e inclusión",
+      "descripcion": "Promoción de equidad y justicia social, acceso universal a educación y salud, y respeto y celebración de la diversidad cultural, étnica y de género con participación ciudadana en el diseño de políticas inclusivas.",
       "icono": "bi-heart-pulse"
+    },
+    {
+      "tema": "sostenibilidad_ciencia_tecnologia",
+      "titulo": "Desarrollo sostenible, ciencia y tecnología",
+      "descripcion": "Impulso de crecimiento económico responsable que proteja el ambiente, infraestructura sostenible, accesibilidad a TIC e inversión en I+D, con alianzas entre sector público, privado y académico.",
+      "icono": "bi-cpu"
+    },
+    {
+      "tema": "dimensiones_plan",
+      "titulo": "Cuatro dimensiones: social, institucional, económica y territorial-ambiental",
+      "descripcion": "Estructura del plan en dimensiones social, institucional, económica y territorial-ambiental, orientadas a reducir brechas, fortalecer el Estado, generar empleo digno y promover un desarrollo territorial equilibrado y respetuoso del ambiente.",
+      "icono": "bi-diagram-3"
     }
   ],
-  "partido_nombre": "Partido Político Cooperación Popular"
+  "partido_nombre": "Cooperación Popular"
 }

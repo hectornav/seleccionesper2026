@@ -2,70 +2,70 @@
   "nombre": "Vladimir Roy Cerrón Rojas",
   "slug": "vladimir-roy-cerr-n-rojas",
   "foto_url": "/static/img/candidatos/VladimirCerron.jpeg",
-  "edad": 57,
+  "edad": 55,
   "region": "Junín",
   "profesion": "Médico / Político",
   "posicion_politica": "izquierda",
-  "lema": "#PorLaRevancha",
-  "biografia": "Vladimir Cerrón nació el 10 de enero de 1968 en Chupaca, Junín. Es médico cirujano egresado de la Universidad Nacional del Centro del Perú y tiene estudios en Cuba. Fundador y secretario general de Perú Libre. Fue gobernador regional de Junín en dos períodos (2011-2014 y 2018-2019). Fue quien postuló a Pedro Castillo como candidato presidencial de Perú Libre en 2021. Ideológicamente se define como marxista-leninista y chavista.",
-  "experiencia": "Gobernador Regional de Junín (2011-2014, 2018-2019). Fundador y líder del partido Perú Libre. Médico cirujano.",
-  "antecedentes": "Condenado por corrupción de funcionarios. Revisar estado actual en Poder Judicial del Perú.",
+  "lema": "Por la revancha del pueblo",
+  "biografia": "Vladimir Cerrón Rojas es candidato presidencial del Partido Político Nacional Perú Libre para el periodo 2026-2031 y presenta el “Plan de Gobierno por la Revancha del Pueblo 2026-2031”. El documento se declara como expresión del pensamiento ideológico, político y programático de Perú Libre, incorporando las lecciones de la experiencia de gobierno de izquierda de 2021-2022 y de la primera presencia legislativa del partido.",
+  "experiencia": "Médico y dirigente de izquierda, fundador y líder de Perú Libre, que articula un proyecto orientado a superar el neoliberalismo y construir un país más justo, soberano y digno, con fuerte énfasis en lucha de clases, rol activo del Estado y alianza pluriclasista entre proletariado, campesinado, pequeña burguesía y empresariado nacional patriota.",
+  "antecedentes": "El plan de gobierno no detalla antecedentes penales ni procesos judiciales; se requiere revisión específica en el Poder Judicial del Perú y otras fuentes oficiales.",
   "es_destacado": true,
   "verificado": true,
-  "orden": 7,
-  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/VladimirCerron.pdf",
-  "resumen_propuestas": "Plan Por la Revancha del Pueblo: superación del modelo neoliberal, educación liberadora, Sistema Único de Salud y recuperación de recursos.",
+  "orden": 1,
+  "link_plan_gobierno": "https://plataformaelectoral.jne.gob.pe/candidatos/plan-gobierno-trabajo/buscar",
+  "resumen_propuestas": "El Plan de Gobierno por la Revancha del Pueblo sostiene que el modelo neoliberal privatizó empresas estratégicas, destruyó la industria, precarizó el empleo, amplió desigualdades y empujó al Perú hacia una forma de neocolonia, relegando a millones de peruanos. Propone un camino distinto donde el Estado recupere un rol activo, la economía esté al servicio del ser humano, la cultura e identidad sean pilares de desarrollo y la política recupere su sentido de servicio, bajo el lema “No más pobres en un país rico”. En la dimensión social plantea educación liberadora e inclusiva y salud universal, con metas como 100 % de acceso a agua potable y saneamiento básico, cobertura efectiva de salud de al menos 95 % y analfabetismo reducido a 0 % al 2031.",
   "propuestas_destacadas": [
-    "100% de la población con acceso a agua potable y saneamiento al 2031",
-    "Sistema Único de Salud con cobertura efectiva ≥95%",
-    "Educación pública liberadora, reduciendo el analfabetismo al 0%",
-    "Superación de la matriz neoliberal y recuperación de empresas estratégicas",
-    "Lucha de clases orientada a eliminar las brechas de desigualdad y pobreza"
+    "Romper con el modelo neoliberal y reconstruir un Estado con rol activo, que oriente la economía al servicio del ser humano y no del mercado, enfrentando desigualdad, precarización y monopolios extranjeros.",
+    "Impulsar una educación pública liberadora, inclusiva y de calidad orientada a la formación integral, la identidad nacional y la igualdad de oportunidades, reduciendo la deserción escolar a 5 % o menos y logrando cobertura universal en educación básica e inicial hacia 2030.",
+    "Garantizar derechos sociales fundamentales como responsabilidad indelegable del Estado, asegurando acceso universal, gratuito y de calidad a educación, salud, agua potable y saneamiento, con metas de 100 % de cobertura en agua y saneamiento y al menos 95 % en servicios de salud al 2031.",
+    "Construir una alianza pluriclasista integrada por proletariado, campesinado, pequeña burguesía y empresariado nacional patriota para recuperar el poder para el pueblo y enfrentar la “izquierda caviar” y la derecha vinculadas al neoliberalismo.",
+    "Plantear una transformación ideológica y cultural donde una población consciente, organizada y con visión histórica lidere la revancha del pueblo frente a la explotación y la desigualdad."
   ],
   "posicionamiento_issues": {
-    "asamblea_constituyente": "a favor",
-    "privatizacion_empresas_estado": "en contra",
-    "libre_comercio_tlc": "en contra",
-    "relaciones_venezuela_cuba": "a favor"
+    "asamblea_constituyente": "implícitamente a favor de cambios estructurales profundos y mayor rol estatal; el texto no detalla el mecanismo constitucional en el fragmento citado",
+    "libre_comercio_tlc": "crítico del neoliberalismo, de monopolios extranjeros privilegiados y de la neocolonialidad económica",
+    "privatizacion_empresas_estado": "en contra; propone revertir la privatización de empresas estratégicas y fortalecer la capacidad productiva nacional bajo control estatal o nacional",
+    "relaciones_venezuela_cuba": "no especificado en el fragmento; se enmarca en una izquierda anti‑neoliberal y soberanista"
   },
-  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "fuente_datos": "Plan de Gobierno por la Revancha del Pueblo 2026-2031 del Partido Político Nacional Perú Libre.",
   "scores": {
-    "score_economia": 2,
-    "score_seguridad": 3,
-    "score_medio_ambiente": 5,
-    "score_educacion": 6,
-    "score_salud": 7
+    "score_economia": 7,
+    "score_seguridad": 7,
+    "score_medio_ambiente": 8,
+    "score_educacion": 9,
+    "score_salud": 9
   },
   "propuestas": [
     {
-      "tema": "infraestructura_agua_saneamiento",
-      "titulo": "Agua y Saneamiento Universal",
-      "descripcion": "Garantizar que el 100% de la población tenga agua potable al 2031.",
-      "icono": "bi-water"
+      "tema": "diagnostico_neoliberalismo",
+      "titulo": "Crítica al neoliberalismo y neocolonialidad",
+      "descripcion": "Diagnóstico que sostiene que el neoliberalismo redujo el papel del Estado, privatizó empresas estratégicas, destruyó la industria, precarizó el empleo, amplió brechas de desigualdad, consolidó monopolios extranjeros y empujó al país hacia una forma moderna de neocolonia.",
+      "icono": "bi-exclamation-triangle"
     },
     {
-      "tema": "salud",
-      "titulo": "Sistema Único de Salud",
-      "descripcion": "Atención universal, gratuita y preventiva con cobertura al 95%.",
+      "tema": "dimension_social",
+      "titulo": "Educación liberadora y salud universal",
+      "descripcion": "Agenda social que busca garantizar derechos sociales fundamentales como responsabilidad indelegable del Estado, con acceso universal, gratuito y de calidad a educación, salud, agua potable y saneamiento, y metas cuantificadas de cobertura total y eliminación del analfabetismo al 2031.",
       "icono": "bi-heart-pulse"
     },
     {
-      "tema": "educacion",
-      "titulo": "Educación Pública Liberadora",
-      "descripcion": "Erradicación del analfabetismo y cobertura total en educación básica.",
-      "icono": "bi-book"
+      "tema": "educacion_liberadora",
+      "titulo": "Sistema educativo público liberador",
+      "descripcion": "Objetivo de construir una educación pública liberadora, inclusiva y de calidad, orientada a identidad nacional e igualdad de oportunidades, reduciendo la deserción escolar, cerrando brechas urbano–rurales y logrando cobertura universal en educación básica e inicial.",
+      "icono": "bi-mortarboard"
     },
     {
-      "tema": "economia_empleo",
-      "titulo": "Modelo Económico Popular",
-      "descripcion": "Fin del modelo neoliberal y nacionalización de sectores estratégicos.",
-      "icono": "bi-graph-up-arrow"
+      "tema": "alianza_pluriclasista",
+      "titulo": "Alianza pluriclasista contra la explotación",
+      "descripcion": "Propuesta de consolidar un verdadero partido de izquierda nacido del pueblo, compuesto por proletariado, campesinado, pequeña burguesía y empresariado nacional patriota, enfrentando tanto a la derecha como a una “izquierda caviar” domesticada.",
+      "icono": "bi-people"
     },
     {
-      "tema": "reforma_estado",
-      "titulo": "No más pobres en un país rico",
-      "descripcion": "Estado con rol activo para poner la economía al servicio del ser humano.",
-      "icono": "bi-bank"
+      "tema": "revancha_pueblo",
+      "titulo": "Revancha del pueblo y ‘No más pobres en un país rico’",
+      "descripcion": "Marco político y simbólico que define el plan como revancha del pueblo, con compromiso de que ningún niño sufra hambre, ningún joven deba migrar por falta de oportunidades, ningún adulto mayor sea abandonado y ninguna mujer sufra violencia, bajo el lema ‘No más pobres en un país rico’.",
+      "icono": "bi-flag"
     }
   ],
   "partido_nombre": "Partido Político Nacional Perú Libre"

@@ -2,76 +2,76 @@
   "nombre": "Ronald Darwin Atencio Sotomayor",
   "slug": "ronald-darwin-atencio-sotomayor",
   "foto_url": "/static/img/candidatos/RonaldDarwin.jpeg",
-  "edad": 50,
-  "region": "Ayacucho",
+  "edad": 44,
+  "region": "Lima",
   "profesion": "Político / Dirigente",
   "posicion_politica": "izquierda",
-  "lema": "Por un Perú mejor",
-  "biografia": "Ronald Atencio Sotomayor es líder de la Alianza Electoral Venceremos, coalición de izquierda. Promueve la economía popular, los derechos de los pueblos originarios y la reforma agraria.",
-  "experiencia": "Político / Dirigente. Candidato presidencial 2026.",
-  "antecedentes": "Sin antecedentes penales conocidos de relevancia pública.",
+  "lema": "Venceremos",
+  "biografia": "Ronald Atencio Sotomayor es candidato presidencial de la alianza electoral Venceremos para el periodo 2026-2031, integrada por Voces del Pueblo, Nuevo Perú por el Buen Vivir, Unidad Popular, Partido Comunista del Perú: Patria Roja, Humanismo Andino y Dignidad Nacional. Presenta el “Plan para la Patria: 31 propuestas para cambiar el Perú en el período 2026-2031”.",
+  "experiencia": "Abogado y dirigente de izquierda que encabeza una alianza de partidos populares, progresistas y de inspiración comunera y andina, articulando un plan de transformación estructural del Estado, la economía y la sociedad con fuerte énfasis en soberanía, derechos sociales y plurinacionalidad.",
+  "antecedentes": "El documento del plan de gobierno no consigna antecedentes penales ni investigaciones. Revisar estado actual en el Poder Judicial del Perú.",
   "es_destacado": false,
   "verificado": true,
-  "orden": 16,
-  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/RonaldAtencio.pdf",
-  "resumen_propuestas": "Nueva Constitución plurinacional vía Asamblea Constituyente, Segunda Reforma Agraria y soberanía energética como pilares.",
+  "orden": 1,
+  "link_plan_gobierno": "https://plataformaelectoral.jne.gob.pe/candidatos/plan-gobierno-trabajo/buscar",
+  "resumen_propuestas": "El “Plan para la Patria” de la alianza Venceremos se estructura en 31 propuestas para cambiar el Perú al 2031, que incluyen una nueva Constitución plurinacional nacida del pueblo, lucha frontal contra crimen organizado y corrupción, justicia y memoria, reforma del Estado y descentralización, recuperación de recursos estratégicos e industrialización, segunda reforma agraria, nueva minería al servicio del país, reforma tributaria con enfoque de igualdad, impulso a turismo, pesca artesanal y empleo digno, nuevo sistema de pensiones, vivienda popular, transporte urbano incluyente, caminos rurales, red de gas y electrificación rural, internet como derecho humano, reforma integral de salud y revolución educativa, educación intercultural con enfoque de género, lucha contra violencia de género, cuidados para la vida digna, tierra, agua y energías limpias, fortalecimiento cultural, soberanía e integración regional, seguridad y defensa nacional y atención a la diáspora peruana.",
   "propuestas_destacadas": [
-    "Nueva Constitución plurinacional mediante Asamblea Constituyente",
-    "Segunda Reforma Agraria priorizando agricultura familiar y comunera",
-    "Sistema de pensiones solidario y digno con pensiones no contributivas ampliadas",
-    "Red Nacional de Ductos del Gas y Gasoducto del Sur",
-    "Reforma tributaria progresiva e 'Impunidad cero'"
+    "Impulsar una nueva Constitución plurinacional, democrática y nacida del pueblo, como base de un nuevo pacto político y social.",
+    "Aniquilar el crimen mediante una lucha frontal contra el crimen organizado y la corrupción, con impunidad cero y reorganización del sistema anticorrupción.",
+    "Recuperar soberanía nacional mediante la recuperación de recursos estratégicos, la industrialización del país y el financiamiento popular.",
+    "Lanzar una II Reforma Agraria que priorice la agricultura familiar y la pequeña producción de base comunera, junto con una nueva minería que proteja el ambiente y respete derechos.",
+    "Declarar el internet un derecho humano innegociable y ampliar la electrificación rural, caminos y transporte incluyente para articular territorios y oportunidades."
   ],
   "posicionamiento_issues": {
-    "asamblea_constituyente": "a favor",
-    "privatizacion_empresas_estado": "en contra",
-    "libre_comercio_tlc": "en contra",
-    "relaciones_venezuela_cuba": "neutral"
+    "asamblea_constituyente": "a favor (nueva Constitución plurinacional nacida del pueblo)",
+    "libre_comercio_tlc": "crítico de monopolios y concesiones abusivas; prioriza soberanía económica y control de recursos estratégicos",
+    "privatizacion_empresas_estado": "en contra en sectores estratégicos; propone recuperación de recursos y empresas clave para el Estado y el pueblo",
+    "relaciones_venezuela_cuba": "no especificado; énfasis general en soberanía, integración regional y solidaridad internacional"
   },
-  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "fuente_datos": "Plan para la Patria 2026-2031 de la alianza electoral Venceremos.",
   "scores": {
-    "score_economia": 5,
-    "score_seguridad": 5,
-    "score_medio_ambiente": 5,
-    "score_educacion": 5,
-    "score_salud": 5
+    "score_economia": 7,
+    "score_seguridad": 8,
+    "score_medio_ambiente": 9,
+    "score_educacion": 8,
+    "score_salud": 8
   },
   "propuestas": [
     {
-      "tema": "anticorrupcion",
-      "titulo": "'Impunidad cero': erradicación de la impunidad y la corrupción",
-      "descripcion": "'Impunidad cero': erradicación de la impunidad y la corrupción",
-      "icono": "bi-eye"
-    },
-    {
-      "tema": "economia_empleo",
-      "titulo": "Segunda Reforma Agraria priorizando agricultura familiar y comunera",
-      "descripcion": "Segunda Reforma Agraria priorizando agricultura familiar y comunera",
-      "icono": "bi-graph-up-arrow"
-    },
-    {
-      "tema": "economia_empleo",
-      "titulo": "Reforma tributaria progresiva con impuestos justos",
-      "descripcion": "Reforma tributaria progresiva con impuestos justos",
-      "icono": "bi-graph-up-arrow"
-    },
-    {
-      "tema": "infraestructura_agua_saneamiento",
-      "titulo": "Red Nacional de Ductos del Gas y Gasoducto del Sur para soberanía energética",
-      "descripcion": "Red Nacional de Ductos del Gas y Gasoducto del Sur para soberanía energética",
-      "icono": "bi-water"
-    },
-    {
-      "tema": "pensiones_adulto_mayor",
-      "titulo": "Sistema de pensiones solidario, digno y sostenible ampliando pensiones no contributivas",
-      "descripcion": "Sistema de pensiones solidario, digno y sostenible ampliando pensiones no contributivas",
-      "icono": "bi-person-heart"
-    },
-    {
-      "tema": "reforma_estado",
-      "titulo": "Nueva Constitución plurinacional, democrática y popular mediante Asamblea Constituyente",
-      "descripcion": "Nueva Constitución plurinacional, democrática y popular mediante Asamblea Constituyente",
+      "tema": "nueva_constitucion",
+      "titulo": "Nueva Constitución plurinacional democrática",
+      "descripcion": "Propuesta N.º 1 orientada a una nueva Constitución plurinacional, democrática y nacida del pueblo, para refundar el Estado sobre bases de soberanía, justicia social y reconocimiento de la diversidad.",
       "icono": "bi-bank"
+    },
+    {
+      "tema": "seguridad_anticorrupcion",
+      "titulo": "Lucha contra crimen organizado y corrupción",
+      "descripcion": "Propuestas N.º 2, 3, 4 y 5: aniquilar el crimen, justicia, reparación y memoria, impunidad cero con gobierno transparente y sistema anticorrupción reorganizado, y democracia social de los pueblos sin mafias.",
+      "icono": "bi-shield-check"
+    },
+    {
+      "tema": "soberania_economica",
+      "titulo": "Soberanía económica, recursos estratégicos e industrialización",
+      "descripcion": "Propuesta N.º 7 para recuperar recursos estratégicos, industrializar el país y promover financiamiento popular; más una reforma tributaria justa (Propuesta N.º 10) para resolver problemas de la gente.",
+      "icono": "bi-graph-up-arrow"
+    },
+    {
+      "tema": "agro_mineria_turismo_pesca",
+      "titulo": "II Reforma Agraria, nueva minería, turismo y pesca artesanal",
+      "descripcion": "Propuestas N.º 8, 9, 11 y 12: segunda reforma agraria centrada en agricultura familiar, nueva minería al servicio del país con respeto ambiental, desarrollo turístico sin monopolios y promoción de pesca artesanal y de consumo humano.",
+      "icono": "bi-tree"
+    },
+    {
+      "tema": "infraestructura_derechos_sociales",
+      "titulo": "Infraestructura, salud, educación y cuidados",
+      "descripcion": "Propuestas N.º 15-22 y 24-26: vivienda popular hecha por pueblos y barrios, transporte urbano incluyente, caminos rurales, gasoductos, electrificación rural, internet como derecho humano, reforma integral de salud, revolución educativa, educación intercultural con enfoque de género, lucha contra violencia de género y políticas de cuidados para una vida digna.",
+      "icono": "bi-heart-pulse"
+    },
+    {
+      "tema": "territorio_cultura_diaspora",
+      "titulo": "Tierra, agua, cultura, defensa y diáspora",
+      "descripcion": "Mensajes y propuestas N.º 27-31: tierra, agua y energías limpias para una vida digna, fortalecimiento de raíces culturales, soberanía e integración regional, seguridad y defensa nacional como tarea de todos y atención integral a peruanos en el exterior.",
+      "icono": "bi-geo-alt"
     }
   ],
   "partido_nombre": "Alianza Electoral Venceremos"

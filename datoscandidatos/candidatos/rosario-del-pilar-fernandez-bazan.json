@@ -2,65 +2,71 @@
   "nombre": "Rosario del Pilar Fernández Bazán",
   "slug": "rosario-del-pilar-fern-ndez-baz-n",
   "foto_url": "/static/img/candidatos/RosarioFernandez.png",
-  "edad": 59,
-  "region": "La Libertad",
+  "edad": 51,
+  "region": "Lima",
   "profesion": "Abogada / Política",
   "posicion_politica": "centro",
-  "lema": "Un camino diferente para el Perú",
-  "biografia": "Rosario Fernández Bazán nació en 1965 en La Libertad. Abogada con especialización en derecho constitucional y administrativo. Fue Ministra de Justicia y Presidenta del Consejo de Ministros durante el gobierno de Alan García (2011). Su breve gestión como Premier estuvo marcada por el intento de diálogo con comunidades en conflicto. Candidata presidencial por Un Camino Diferente.",
-  "experiencia": "Ministra de Justicia (2011). Presidenta del Consejo de Ministros (2011). Abogada constitucionalista.",
-  "antecedentes": "Sin antecedentes penales conocidos.",
+  "lema": "Un Camino Diferente",
+  "biografia": "Rosario Fernández es candidata presidencial del partido Un Camino Diferente, que presenta un plan de gobierno centrado en reformas estructurales a nivel nacional, con fuerte énfasis en descentralización del poder político, seguridad ciudadana, salud, educación y reforma de consultorías en el sector público.",
+  "experiencia": "Figura política con experiencia en gestión pública y enfoque en reformas institucionales, que encabeza un plan que propone mover las principales sedes de poder fuera de Lima, reorganizar el sector seguridad en un nuevo Ministerio de Guerra y modernizar salud, educación y administración pública tomando como referencia modelos europeos e italianos.",
+  "antecedentes": "El documento del plan de gobierno no consigna antecedentes penales ni investigaciones. Revisar estado actual en el Poder Judicial del Perú.",
   "es_destacado": false,
   "verificado": true,
-  "orden": 29,
-  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/RosarioFernandez.pdf",
-  "resumen_propuestas": "Descentralización radical del poder del Estado, militarización de la seguridad y bachillerato automático bajo estándares internacionales.",
+  "orden": 1,
+  "link_plan_gobierno": "https://plataformaelectoral.jne.gob.pe/candidatos/plan-gobierno-trabajo/buscar",
+  "resumen_propuestas": "El Plan de Gobierno del partido Un Camino Diferente propone reformas estructurales como la descentralización del poder (Congreso en Puno, Presidencia en Trujillo y ministerios en el interior del país), la unificación del Ministerio de Defensa y del Interior en un Ministerio de Guerra con enfoque en tecnología e inteligencia artificial, campañas masivas de salud preventiva y expansión de postas médicas 24/7, fortalecimiento de la educación pública con comedores escolares, ampliación de vacantes universitarias y bachillerato automático, y la eliminación de consultorías innecesarias y corruptas en el sector público inspirándose en el modelo de consultoría pública italiano.",
   "propuestas_destacadas": [
-    "Descentralización radical: Congreso a Puno, Presidencia a Trujillo",
-    "Ministerio de Guerra unificado con IA y videocámaras en todos los agentes",
-    "'Escuadrones de la Vida': 10 grupos de inteligencia mil efectivos cada uno",
-    "Bachillerato automático con homologación universitaria modelo Bolonia europeo",
-    "Observatorio Nacional de Precios de Medicamentos (ONPAM)"
+    "Descentralizar el poder político instalando el Congreso de la República en Puno, la Presidencia en Trujillo y trasladando ministerios al interior del país.",
+    "Fusionar el Ministerio de Defensa y el Ministerio del Interior en un solo Ministerio de Guerra, con énfasis en tecnología, educación, eficiencia e inteligencia artificial, creación de escuadrones de inteligencia ('Escuadrones de la Vida') y obligación de cámaras y chalecos antibalas para policías y militares.",
+    "Implementar campañas anuales de salud preventiva gratuitas para todos, crear y reforzar postas médicas con atención 24/7, múltiples ambulancias, farmacias de turno y telemedicina, y reformar el mercado farmacéutico para promover medicinas genéricas y combatir monopolios.",
+    "Crear comedores en todos los colegios nacionales, ampliar vacantes en universidades públicas y reformar la educación primaria y secundaria agregando años con fines técnicos.",
+    "Otorgar bachillerato automático a egresados universitarios y técnicos, homologar créditos y programas bajo estándares internacionales, crear un sistema de títulos digitales con QR y un programa Perú–Europa de movilidad académica similar a Erasmus.",
+    "Eliminar asesorías y consultorías innecesarias y corruptas en el sector público, sustituyéndolas por un esquema más eficiente de consultoría estratégica y de gestión inspirado en la experiencia del sector público italiano."
   ],
-  "posicionamiento_issues": {},
-  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "posicionamiento_issues": {
+    "asamblea_constituyente": "no especificado",
+    "libre_comercio_tlc": "no especificado",
+    "privatizacion_empresas_estado": "no especificado (enfatiza reforma del Estado y del mercado farmacéutico más que privatizaciones)",
+    "relaciones_venezuela_cuba": "no especificado"
+  },
+  "fuente_datos": "Plan de Gobierno del partido Un Camino Diferente.",
   "scores": {
-    "score_economia": 6,
-    "score_seguridad": 6,
-    "score_medio_ambiente": 6,
-    "score_educacion": 7,
-    "score_salud": 6
+    "score_economia": 7,
+    "score_seguridad": 9,
+    "score_medio_ambiente": 5,
+    "score_educacion": 8,
+    "score_salud": 8
   },
   "propuestas": [
     {
-      "tema": "educacion",
-      "titulo": "Bachillerato automático y homologación universitaria bajo estándares Bolonia con plataforma digital",
-      "descripcion": "Bachillerato automático y homologación universitaria bajo estándares Bolonia con plataforma digital",
-      "icono": "bi-book"
+      "tema": "descentralizacion_poder",
+      "titulo": "Descentralización del poder político",
+      "descripcion": "Propuesta de trasladar el Congreso de la República a Puno, la Presidencia de la República a Trujillo y ubicar los ministerios en el interior del país como parte de una reforma estructural para descentralizar el poder.",
+      "icono": "bi-geo-alt"
     },
     {
-      "tema": "reforma_estado",
-      "titulo": "Descentralización radical: Congreso a Puno, Presidencia a Trujillo y ministerios al interior",
-      "descripcion": "Descentralización radical: Congreso a Puno, Presidencia a Trujillo y ministerios al interior",
-      "icono": "bi-bank"
+      "tema": "seguridad_ministerio_guerra",
+      "titulo": "Nuevo Ministerio de Guerra y escuadrones de inteligencia",
+      "descripcion": "Unión del Ministerio de Defensa y del Interior en un Ministerio de Guerra, obligatorio uso de chaleco antibalas y videocámara en policías y militares, creación de 10 grupos de inteligencia 'Escuadrones de la Vida' con apoyo de Fuerzas Armadas y uso intensivo de tecnología y coordinación con empresas telefónicas.",
+      "icono": "bi-shield-check"
     },
     {
-      "tema": "salud",
-      "titulo": "Observatorio Nacional de Precios y Abastecimiento de Medicamentos (ONPAM)",
-      "descripcion": "Observatorio Nacional de Precios y Abastecimiento de Medicamentos (ONPAM)",
+      "tema": "salud_preventiva_farmacos",
+      "titulo": "Salud preventiva, postas 24/7 y reforma farmacéutica",
+      "descripcion": "Campañas anuales de salud preventiva gratuitas, creación y fortalecimiento de postas médicas con atención 24/7, ambulancias, telemedicina y comedores populares contra la anemia, además de un Observatorio Nacional de Precios de Medicamentos, etiquetado QR obligatorio y fortalecimiento de INDECOPI contra monopolios.",
       "icono": "bi-heart-pulse"
     },
     {
-      "tema": "seguridad_ciudadana",
-      "titulo": "Ministerio de Guerra unificado (FFAA+Interior) con IA y cámaras en todos los agentes",
-      "descripcion": "Ministerio de Guerra unificado (FFAA+Interior) con IA y cámaras en todos los agentes",
-      "icono": "bi-shield-check"
+      "tema": "educacion_bachillerato_automatico",
+      "titulo": "Comedores escolares y bachillerato automático",
+      "descripcion": "Comedores en todos los colegios públicos, ampliación de vacantes universitarias, reforma de primaria y secundaria con orientación técnica, bachillerato automático para egresados universitarios y técnicos, homologación de créditos, plataforma de títulos digitales y programa de movilidad académica Perú–Europa (PREMA).!",
+      "icono": "bi-mortarboard"
     },
     {
-      "tema": "seguridad_ciudadana",
-      "titulo": "'Escuadrones de la Vida': 10 grupos de inteligencia con mil efectivos cada uno",
-      "descripcion": "'Escuadrones de la Vida': 10 grupos de inteligencia con mil efectivos cada uno",
-      "icono": "bi-shield-check"
+      "tema": "consultorias_publicas",
+      "titulo": "Reforma de consultorías y eliminación de asesorías corruptas",
+      "descripcion": "Eliminación de asesorías innecesarias y corruptas en el sector público y propuesta de un sistema de consultoría estratégico y de gestión pública inspirado en la práctica italiana para mejorar eficiencia y diseño de políticas.",
+      "icono": "bi-clipboard-check"
     }
   ],
   "partido_nombre": "Un Camino Diferente"
