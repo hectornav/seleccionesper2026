@@ -432,5 +432,7 @@
 {% endblock %}
 
 {% block extra_js %}
+<!-- hidden element to provide CSRF token for AJAX -->
+<div id="vote-csrf" class="d-none" data-csrf="{{ csrf_token }}"></div>
 <script src="{% static 'js/candidato_detail.js' %}"></script>
 {% endblock %}

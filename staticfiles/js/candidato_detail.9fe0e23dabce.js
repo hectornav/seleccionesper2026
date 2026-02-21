@@ -6,14 +6,34 @@ function showTab(tab) {
         document.getElementById('tab-' + tab).classList.add('active');
     }
 
+    function getCookie(name) {
+        let cookieValue = null;
+        if (document.cookie && document.cookie !== '') {
+            const cookies = document.cookie.split(';');
+            for (let i = 0; i < cookies.length; i++) {
+                const cookie = cookies[i].trim();
+                if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                    break;
+                }
+            }
+        }
+        return cookieValue;
+    }
+
     function votarDesdeDetalle(candidatoId) {
         const btn = document.getElementById('voteBtn');
         if (btn && btn.disabled) return;
+        let csrftoken = getCookie('csrftoken');
+        if (!csrftoken) {
+            const el = document.getElementById('vote-csrf');
+            if (el) csrftoken = el.dataset.csrf;
+        }
 
         fetch(`/votacion/votar/${candidatoId}/`, {
             method: 'POST',
             headers: {
-                'X-CSRFToken': '{{ csrf_token }}',
+                'X-CSRFToken': csrftoken,
                 'Content-Type': 'application/json'
             }
         })
