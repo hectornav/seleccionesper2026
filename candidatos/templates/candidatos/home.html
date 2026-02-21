@@ -74,7 +74,7 @@
                 <select name="posicion" id="posicion-filter" class="form-select">
                     <option value="">Todas las posiciones</option>
                     {% for value, label in posicion_choices %}
-                    <option value="{{ value }}" {% if filtro_posicion==value %}selected{% endif %}>{{ label }}</option>
+                    <option value="{{ value }}" {% if filtro_posicion == value %}selected{% endif %}>{{ label }}</option>
                     {% endfor %}
                 </select>
             </div>
@@ -82,8 +82,7 @@
                 <select name="partido" id="partido-filter" class="form-select">
                     <option value="">Todos los partidos</option>
                     {% for partido in partidos %}
-                    <option value="{{ partido.id }}" {% if filtro_partido==partido.id|stringformat:"i" %}selected{%
-                        endif %}>
+                    <option value="{{ partido.id }}" {% if filtro_partido == partido.id|stringformat:"i" %}selected{% endif %}>
                         {{ partido.nombre }} ({{ partido.siglas }})
                     </option>
                     {% endfor %}
@@ -179,6 +178,7 @@
                             style="justify-content:center">
                             <i class="bi bi-eye"></i> Ver perfil
                         </a>
+                        {% if candidato.link_plan_gobierno %}
                         <a href="{{ candidato.link_plan_gobierno }}" target="_blank" rel="noopener"
                             class="btn-outline-peru" title="Ver Plan en JNE" style="border-color:#6b7280;color:#6b7280">
                             <i class="bi bi-box-arrow-up-right"></i>

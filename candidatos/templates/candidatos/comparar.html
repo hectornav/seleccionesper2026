@@ -35,7 +35,7 @@
                         style="border:2px solid var(--border-color);border-radius:10px;font-size:0.875rem">
                         <option value="">— Seleccionar —</option>
                         {% for c in candidatos_todos %}
-                        <option value="{{ c.id }}" {% if c.id==slots.0 %}selected{% endif %}>{{ c.nombre }} ({{
+                        <option value="{{ c.id }}" {% if c.id == slots.0 %}selected{% endif %}>{{ c.nombre }} ({{
                             c.partido.siglas }})</option>
                         {% endfor %}
                     </select>
@@ -48,7 +48,7 @@
                         style="border:2px solid var(--border-color);border-radius:10px;font-size:0.875rem">
                         <option value="">— Seleccionar —</option>
                         {% for c in candidatos_todos %}
-                        <option value="{{ c.id }}" {% if c.id==slots.1 %}selected{% endif %}>{{ c.nombre }} ({{
+                        <option value="{{ c.id }}" {% if c.id == slots.1 %}selected{% endif %}>{{ c.nombre }} ({{
                             c.partido.siglas }})</option>
                         {% endfor %}
                     </select>
@@ -61,7 +61,7 @@
                         style="border:2px solid var(--border-color);border-radius:10px;font-size:0.875rem">
                         <option value="">— Seleccionar —</option>
                         {% for c in candidatos_todos %}
-                        <option value="{{ c.id }}" {% if c.id==slots.2 %}selected{% endif %}>{{ c.nombre }} ({{
+                        <option value="{{ c.id }}" {% if c.id == slots.2 %}selected{% endif %}>{{ c.nombre }} ({{
                             c.partido.siglas }})</option>
                         {% endfor %}
                     </select>
