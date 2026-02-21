@@ -51,8 +51,16 @@ function showTab(tab) {
                     alert(data.message);
                 }
             })
-            .catch(err => {
-                alert('Ocurrió un error al procesar tu voto.');
-                console.error(err);
+            .catch(async err => {
+                // try to provide more info to developer
+                console.error('Fetch error:', err);
+                let text;
+                try {
+                    const resText = await err?.response?.text?.();
+                    text = resText || '';
+                } catch (e) {
+                    text = '';
+                }
+                alert('Ocurrió un error al procesar tu voto. Revisa la consola para más detalles.');
             });
     }
