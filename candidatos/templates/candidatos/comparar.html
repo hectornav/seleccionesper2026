@@ -35,8 +35,7 @@
                         style="border:2px solid var(--border-color);border-radius:10px;font-size:0.875rem">
                         <option value="">— Seleccionar —</option>
                         {% for c in candidatos_todos %}
-                        <option value="{{ c.id }}" {% if c.id == slots.0 %}selected{% endif %}>{{ c.nombre }} ({{
-                            c.partido.siglas }})</option>
+                        <option value="{{ c.id }}" {% if c.id == slots.0 %}selected{% endif %}>{{ c.nombre }} ({{ c.partido.siglas }})</option>
                         {% endfor %}
                     </select>
                 </div>
@@ -48,8 +47,7 @@
                         style="border:2px solid var(--border-color);border-radius:10px;font-size:0.875rem">
                         <option value="">— Seleccionar —</option>
                         {% for c in candidatos_todos %}
-                        <option value="{{ c.id }}" {% if c.id == slots.1 %}selected{% endif %}>{{ c.nombre }} ({{
-                            c.partido.siglas }})</option>
+                        <option value="{{ c.id }}" {% if c.id == slots.1 %}selected{% endif %}>{{ c.nombre }} ({{ c.partido.siglas }})</option>
                         {% endfor %}
                     </select>
                 </div>
@@ -61,8 +59,7 @@
                         style="border:2px solid var(--border-color);border-radius:10px;font-size:0.875rem">
                         <option value="">— Seleccionar —</option>
                         {% for c in candidatos_todos %}
-                        <option value="{{ c.id }}" {% if c.id == slots.2 %}selected{% endif %}>{{ c.nombre }} ({{
-                            c.partido.siglas }})</option>
+                        <option value="{{ c.id }}" {% if c.id == slots.2 %}selected{% endif %}>{{ c.nombre }} ({{ c.partido.siglas }})</option>
                         {% endfor %}
                     </select>
                 </div>
@@ -243,8 +240,7 @@
                                 class="bi bi-x-circle-fill"></i> En contra</span>
                         {% elif pos %}
                         <span
-                            style="background:#f3f4f6;color:#6b7280;border-radius:20px;padding:3px 10px;font-size:0.75rem;font-weight:700">{{
-                            pos|title }}</span>
+                            style="background:#f3f4f6;color:#6b7280;border-radius:20px;padding:3px 10px;font-size:0.75rem;font-weight:700">{{ pos|title }}</span>
                         {% else %}
                         <span class="text-muted">—</span>
                         {% endif %}
@@ -270,8 +266,7 @@
                                 class="bi bi-x-circle-fill"></i> En contra</span>
                         {% elif pos %}
                         <span
-                            style="background:#fef3c7;color:#92400e;border-radius:20px;padding:3px 10px;font-size:0.75rem;font-weight:700">{{
-                            pos|title }}</span>
+                            style="background:#fef3c7;color:#92400e;border-radius:20px;padding:3px 10px;font-size:0.75rem;font-weight:700">{{ pos|title }}</span>
                         {% else %}
                         <span class="text-muted">—</span>
                         {% endif %}
@@ -297,8 +292,7 @@
                                 class="bi bi-x-circle-fill"></i> En contra</span>
                         {% elif pos %}
                         <span
-                            style="background:#fef3c7;color:#92400e;border-radius:20px;padding:3px 10px;font-size:0.75rem;font-weight:700">{{
-                            pos|title }}</span>
+                            style="background:#fef3c7;color:#92400e;border-radius:20px;padding:3px 10px;font-size:0.75rem;font-weight:700">{{ pos|title }}</span>
                         {% else %}
                         <span class="text-muted">—</span>
                         {% endif %}
