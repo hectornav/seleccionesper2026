@@ -2,69 +2,70 @@
   "nombre": "Ricardo Pablo Belmont Cassinelli",
   "slug": "ricardo-pablo-belmont-cassinelli",
   "foto_url": "/static/img/candidatos/RicardoBelmont.jpeg",
-  "edad": 77,
+  "edad": 80,
   "region": "Lima",
   "profesion": "Comunicador / Empresario / Político",
   "posicion_politica": "centro",
-  "lema": "Lima para todos",
-  "biografia": "Ricardo Belmont nació el 30 de junio de 1947 en Lima. Pionero de la televisión peruana, conductor del programa \"El show de los sueños\". Fue alcalde de Lima Metropolitana en dos períodos (1990-1992 y 1993-1995) con el movimiento Obras. Intentó nuevamente la alcaldía en 2022 sin éxito. Su gestión en Lima fue recordada por obras de infraestructura y programas sociales populares. Figura histórica de la política limeña con perfil populista y pragmático.",
-  "experiencia": "Alcalde de Lima Metropolitana (1990-1995). Conductor televisivo y radial por décadas. Empresario del entretenimiento.",
-  "antecedentes": "⚠️ INVESTIGADO: Belmont ha enfrentado investigaciones por irregularidades durante sus gestiones municipales en la década de 1990. En 2001 fue incluido en investigaciones sobre enriquecimiento ilícito. Los casos prescribieron sin condena definitiva.",
+  "lema": "OBRAS sí, palabras no",
+  "biografia": "Ricardo Belmont Cassinelli es candidato presidencial del Partido Cívico Obras para el periodo 2026-2031. Presenta el Plan de Gobierno 2026-2031 del Partido Cívico Obras, sustentado en la experiencia de dos gobiernos municipales previos y en las '10 vigas maestras' que, según el documento, permitieron generar políticas públicas y que ahora se proponen para planificar la inversión, fortalecer el crecimiento económico y lograr desarrollo sostenible para las próximas generaciones.",
+  "experiencia": "Exalcalde y figura pública con experiencia en gestión municipal, ahora presidente del Partido Cívico Obras, que se presenta como un partido humanista promotor de una economía social de mercado con rostro humano, orientada a generar mayores oportunidades para los ciudadanos.",
+  "antecedentes": "Sin información específica de antecedentes penales o investigaciones en el documento del plan de gobierno. Revisar estado actual en el Poder Judicial del Perú.",
   "es_destacado": false,
   "verificado": true,
-  "orden": 24,
-  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/RicardoBelmont.pdf",
-  "resumen_propuestas": "Economía social de mercado con rostro humano, industrialización de recursos naturales e integración a la OCDE.",
+  "orden": 1,
+  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/RicardoBelmontCassinelli.pdf",
+  "resumen_propuestas": "El Plan de Gobierno 2026-2031 del Partido Cívico Obras diagnostica amenazas como corrupción estatal y privada, narco-terrorismo, contrabando, minería ilegal, conflictos sociales, informalidad, inseguridad ciudadana, pobreza, anemia y desnutrición infantil, colapso de salud y educación públicas, brechas de infraestructura y debilidad institucional. Propone cambios estructurales con reformas inclusivas en justicia, política, economía, educación, salud, tributación, descentralización y otros ámbitos, promoviendo una economía social de mercado con rostro humano, impulsando inversión privada nacional y extranjera bajo la premisa de que puedan venir cuando quieran, pero no como quieran. Se organiza en cuatro dimensiones (social, institucional, económica y territorial-ambiental) con énfasis en fortalecimiento del tejido social y bienestar comunitario, un Estado ágil y honesto, una economía productiva y formal desde lo local, y ordenamiento y desarrollo sostenible del territorio, con participación ciudadana.",
   "propuestas_destacadas": [
-    "Economía social de mercado 'con rostro humano'",
-    "Industrialización progresiva de recursos naturales con valor agregado",
-    "Cambios constitucionales en justicia y tributación dentro del marco democrático",
-    "Integración a la OCDE como modernización del Estado y la economía",
-    "Infraestructura universal (puertos, aeropuertos, hidroeléctricas, carreteras)"
+    "Impulsar reformas inclusivas en justicia, política, economía, educación, salud, tributación, descentralización y otros campos para encaminar al país hacia el desarrollo económico, social y cultural e integrarlo a la OCDE.",
+    "Promover una economía social de mercado con rostro humano, generando mayores oportunidades para los ciudadanos y trabajando con empresarios patriotas grandes y pequeños que generen empleo e inversión.",
+    "Fortalecer el tejido social y el bienestar comunitario, abordando inseguridad ciudadana, pobreza, anemia y desnutrición infantil, colapso de salud y educación y brechas de infraestructura mediante políticas sociales desde lo local.",
+    "Construir un Estado ágil, honesto y al servicio del ciudadano, combatiendo la corrupción, mejorando la gestión estatal y haciendo más eficientes las autoridades regionales y locales.",
+    "Desarrollar una economía productiva y formal desde lo local, ordenando el territorio y promoviendo un desarrollo sostenible que aproveche el potencial humano, natural, turístico, gastronómico, climático e hídrico del país."
   ],
   "posicionamiento_issues": {
-    "asamblea_constituyente": "en contra",
-    "libre_comercio_tlc": "a favor",
-    "privatizacion_empresas_estado": "a favor parcial"
+    "asamblea_constituyente": "no especificado",
+    "libre_comercio_tlc": "a favor de integración económica internacional e inversión privada regulada",
+    "privatizacion_empresas_estado": "a favor de una economía social de mercado con rol relevante de inversión privada y Estado regulador",
+    "relaciones_venezuela_cuba": "no especificado"
   },
-  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "fuente_datos": "Plan de Gobierno 2026-2031 del Partido Cívico Obras.",
   "scores": {
-    "score_economia": 5,
-    "score_seguridad": 5,
-    "score_medio_ambiente": 4,
-    "score_educacion": 5,
-    "score_salud": 6
+    "score_economia": 8,
+    "score_seguridad": 7,
+    "score_medio_ambiente": 7,
+    "score_educacion": 7,
+    "score_salud": 7
   },
   "propuestas": [
     {
-      "tema": "economia_empleo",
-      "titulo": "Economía social de mercado 'con rostro humano': inversión privada con reglas claras del Estado",
-      "descripcion": "Economía social de mercado 'con rostro humano': inversión privada con reglas claras del Estado",
-      "icono": "bi-graph-up-arrow"
+      "tema": "diagnostico_nacional",
+      "titulo": "Diagnóstico nacional de amenazas y brechas",
+      "descripcion": "Identifica amenazas como corrupción estatal y privada, narco-terrorismo, contrabando, minería ilegal e informal, conflictos sociales, informalidad empresarial, inseguridad ciudadana, pobreza y pobreza extrema, anemia y desnutrición infantil, brechas de infraestructura y un sistema de justicia politizado y corrupto.",
+      "icono": "bi-exclamation-triangle"
     },
     {
-      "tema": "economia_empleo",
-      "titulo": "Industrialización progresiva de recursos naturales para exportar con valor agregado",
-      "descripcion": "Industrialización progresiva de recursos naturales para exportar con valor agregado",
-      "icono": "bi-graph-up-arrow"
-    },
-    {
-      "tema": "economia_empleo",
-      "titulo": "Integración a la OCDE como objetivo de modernización",
-      "descripcion": "Integración a la OCDE como objetivo de modernización",
-      "icono": "bi-graph-up-arrow"
-    },
-    {
-      "tema": "infraestructura_agua_saneamiento",
-      "titulo": "Puertos, aeropuertos, hidroeléctricas y carreteras para conectar regiones y generar empleo",
-      "descripcion": "Puertos, aeropuertos, hidroeléctricas y carreteras para conectar regiones y generar empleo",
-      "icono": "bi-water"
-    },
-    {
-      "tema": "reforma_estado",
-      "titulo": "Cambios constitucionales en justicia, tributación y sistema electoral dentro del marco democrático",
-      "descripcion": "Cambios constitucionales en justicia, tributación y sistema electoral dentro del marco democrático",
+      "tema": "reformas_estructurales",
+      "titulo": "Cambios estructurales y reformas inclusivas",
+      "descripcion": "Propone reformas inclusivas en justicia, política, economía, educación, salud, tributación, descentralización y otros ámbitos para sentar las bases del futuro del Perú mediante planificación y decisiones de Estado orientadas a desarrollo integral.",
       "icono": "bi-bank"
+    },
+    {
+      "tema": "economia_social_mercado",
+      "titulo": "Economía social de mercado con rostro humano",
+      "descripcion": "Como partido humanista, promueve una economía social de mercado con rostro humano para generar oportunidades, trabajando con empresarios patriotas y promoviendo la inversión privada nacional y extranjera bajo reglas claras ('vendrán cuando quieran, pero no como quieran').",
+      "icono": "bi-graph-up-arrow"
+    },
+    {
+      "tema": "dimensiones_plan",
+      "titulo": "Cuatro dimensiones y 10 vigas maestras",
+      "descripcion": "Organiza el plan en dimensiones social, institucional, económica y territorial-ambiental, apoyado en 10 vigas maestras diseñadas en sus gobiernos municipales, para orientar políticas públicas, inversión y crecimiento sostenible.",
+      "icono": "bi-geo-alt"
+    },
+    {
+      "tema": "participacion_ciudadana",
+      "titulo": "Gestión, financiamiento y participación ciudadana",
+      "descripcion": "Incluye componentes sobre gestión, financiamiento y participación ciudadana para asegurar que el plan se construya y ejecute con involucramiento de la población y control social.",
+      "icono": "bi-people"
     }
   ],
   "partido_nombre": "Partido Cívico Obras"

@@ -2,65 +2,82 @@
   "nombre": "Herbert Caller Gutiérrez",
   "slug": "herbert-caller-guti-rrez",
   "foto_url": "/static/img/candidatos/HerbertCaller.jpg",
-  "edad": 50,
+  "edad": 47,
   "region": "Lima",
   "profesion": "Abogado / Político",
   "posicion_politica": "centro_derecha",
-  "lema": "Por un Perú mejor",
-  "biografia": "Herbert Caller Gutiérrez es abogado y político vinculado al Partido Patriótico del Perú. Ha tenido participación en política regional y propone orden, seguridad y libre mercado.",
-  "experiencia": "Abogado / Político. Candidato presidencial 2026.",
-  "antecedentes": "Sin antecedentes penales conocidos de relevancia pública.",
+  "lema": "Por un Perú Productivo, Próspero y Potente",
+  "biografia": "Herbert Caller Gutiérrez es fundador, presidente del Partido Patriótico del Perú y candidato presidencial para el periodo 2026-2031. El Partido Patriótico del Perú, organización política de alcance nacional fundada el 28 de julio de 2017 e inscrita formalmente ante el Jurado Nacional de Elecciones en marzo de 2022, presenta un plan de gobierno de 2026-2031 que destaca el principio de 'menos es más' y plantea una agenda de reformas estructurales en contrataciones del Estado, descentralización, educación, seguridad y proyección internacional del país.",
+  "experiencia": "Presidente fundador del Partido Patriótico del Perú y candidato presidencial, con experiencia en liderazgo político y propuestas de reforma en contrataciones públicas, descentralización educativa y económica, y seguridad ciudadana.",
+  "antecedentes": "Sin información específica de antecedentes penales o investigaciones en el documento del plan de gobierno. Revisar estado actual en el Poder Judicial del Perú.",
   "es_destacado": false,
   "verificado": true,
-  "orden": 31,
-  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/HerbertCaller.pdf",
-  "resumen_propuestas": "Revolución educativa con IA, Economía Azul y Naranja como nuevos motores y crédito internacional a MYPEs a tasas bajas.",
+  "orden": 1,
+  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/HerbertCallerGutierrez.pdf",
+  "resumen_propuestas": "El Plan de Gobierno 2026-2031 del Partido Patriótico del Perú propone cambiar el sistema de contrataciones del Estado para asegurar obras completas y de calidad, una verdadera descentralización iniciando por la educativa y reubicación de ministerios a regiones, una revolución educativa basada en súper aprendizaje e inteligencia artificial, fortalecimiento de la producción nacional y acceso a financiamiento barato para MYPE, impulso a economías azul y naranja, seguridad prioritaria con evaluación por resultados a mandos policiales, modernización de las Fuerzas Armadas y una agresiva agenda de inserción comercial internacional.",
   "propuestas_destacadas": [
-    "Revolución educativa con superAprendizaje e Inteligencia Artificial en el currículo",
-    "Descentralización real: UNMSM, UNI y UNALM en cada región del país",
-    "Economía Azul (circular) y Economía Naranja (creativa) como nuevos motores",
-    "Crédito internacional para MYPEs a tasas menores al 5% anual",
-    "Pago a contratistas del Estado solo al completar obra con calidad exigida"
+    "Cambiar el sistema de contrataciones del Estado para pagar solo servicios y obras ejecutados en su totalidad, en el tiempo dispuesto y con la calidad exigida, logrando hospitales de alta complejidad y colegios emblemáticos competitivos internacionalmente.",
+    "Materializar una verdadera descentralización, comenzando por la educativa, con presencia de universidades nacionales (San Marcos, UNI, La Molina) en cada región y descentralización de cinco ministerios a Loreto, Piura, Junín, Arequipa y Cusco.",
+    "Establecer que al menos 60% del gasto de municipalidades y gobiernos regionales se destine a políticas públicas, servicios y proyectos de inversión de gran impacto social, limitando el peso de planillas.",
+    "Impulsar el crecimiento exponencial de la producción nacional apoyando a micro y pequeños emprendedores con crédito MYPE a través del Banco de la Nación y líneas de financiamiento externo con tasas menores al 5% anual.",
+    "Liderar una revolución educativa basada en métodos de súper aprendizaje y uso de inteligencia artificial, junto con políticas de seguridad que premien resultados en reducción de delitos y fortalezcan la participación de licenciados de las Fuerzas Armadas en seguridad ciudadana."
   ],
-  "posicionamiento_issues": {},
-  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "posicionamiento_issues": {
+    "asamblea_constituyente": "no especificado",
+    "libre_comercio_tlc": "a favor de ampliar mercados y balanza comercial",
+    "privatizacion_empresas_estado": "a favor de fortalecer líneas de bandera y competir en mercados externos",
+    "relaciones_venezuela_cuba": "no especificado"
+  },
+  "fuente_datos": "Plan de Gobierno 2026-2031 del Partido Patriótico del Perú.",
   "scores": {
-    "score_economia": 5,
-    "score_seguridad": 5,
-    "score_medio_ambiente": 5,
-    "score_educacion": 5,
-    "score_salud": 5
+    "score_economia": 8,
+    "score_seguridad": 8,
+    "score_medio_ambiente": 7,
+    "score_educacion": 9,
+    "score_salud": 7
   },
   "propuestas": [
     {
-      "tema": "economia_empleo",
-      "titulo": "Economía Azul (circular) y Economía Naranja (creativa) como nuevos motores",
-      "descripcion": "Economía Azul (circular) y Economía Naranja (creativa) como nuevos motores",
-      "icono": "bi-graph-up-arrow"
+      "tema": "contrataciones_estado",
+      "titulo": "Reforma del sistema de contrataciones del Estado",
+      "descripcion": "Cambio del sistema de contrataciones para que el pago de servicios y obras se realice solo cuando se ejecuten completamente, en plazo y con la calidad exigida, con el fin de lograr hospitales de alta complejidad y colegios emblemáticos de estándar internacional en todas las provincias.",
+      "icono": "bi-file-earmark-text"
     },
     {
-      "tema": "economia_empleo",
-      "titulo": "Bancos de Alemania, Francia y Corea del Sur para créditos a MYPEs <5% anual",
-      "descripcion": "Bancos de Alemania, Francia y Corea del Sur para créditos a MYPEs <5% anual",
-      "icono": "bi-graph-up-arrow"
+      "tema": "descentralizacion_educativa",
+      "titulo": "Verdadera descentralización y universidades en cada región",
+      "descripcion": "Materializar la descentralización comenzando por la educación, instalando sedes de la Universidad Nacional Mayor de San Marcos, la UNI y la Universidad Agraria La Molina en cada región, y descentralizando cinco ministerios clave hacia Loreto, Piura, Junín, Arequipa y Cusco.",
+      "icono": "bi-geo-alt"
     },
     {
-      "tema": "educacion",
-      "titulo": "Revolución educativa con métodos de superAprendizaje e IA integrada al currículo",
-      "descripcion": "Revolución educativa con métodos de superAprendizaje e IA integrada al currículo",
-      "icono": "bi-book"
-    },
-    {
-      "tema": "educacion",
-      "titulo": "Descentralización real: UNMSM, UNI y UNALM en cada región",
-      "descripcion": "Descentralización real: UNMSM, UNI y UNALM en cada región",
-      "icono": "bi-book"
-    },
-    {
-      "tema": "reforma_estado",
-      "titulo": "Cambio del sistema de contrataciones: pago solo al completar obra con calidad exigida",
-      "descripcion": "Cambio del sistema de contrataciones: pago solo al completar obra con calidad exigida",
+      "tema": "finanzas_publicas",
+      "titulo": "Reglas de gasto público subnacional",
+      "descripcion": "Establecer por ley que al menos 60% del gasto de municipalidades y gobiernos regionales se destine a políticas públicas, servicios y proyectos de inversión de gran impacto social, reduciendo el peso del gasto en planillas.",
       "icono": "bi-bank"
+    },
+    {
+      "tema": "economia_emprendimiento",
+      "titulo": "Impulso a MYPE, economía azul y naranja",
+      "descripcion": "Impulsar la producción nacional apoyando a micro y pequeños emprendedores y agricultores con crédito MYPE vía Banco de la Nación y bancos internacionales con tasas inferiores al 5% anual, posicionar al Perú bajo la métrica de Producto Bruto Nacional, y promover la economía azul (circular) y la economía naranja (industria creativa).",
+      "icono": "bi-graph-up-arrow"
+    },
+    {
+      "tema": "revolucion_educativa",
+      "titulo": "Revolución educativa e inteligencia artificial",
+      "descripcion": "Revolución educativa como estandarte del partido, basada en una población altamente educada y capacitada, aplicando métodos de súper aprendizaje y promoviendo el uso de inteligencia artificial en procesos de enseñanza y aprendizaje.",
+      "icono": "bi-book"
+    },
+    {
+      "tema": "seguridad_defensa",
+      "titulo": "Seguridad prioritaria y modernización de Fuerzas Armadas",
+      "descripcion": "Priorizar la seguridad vinculando ascensos policiales a resultados en reducción de delitos, relevando a mandos sin resultados; contratar licenciados de las Fuerzas Armadas para seguridad municipal, INPE y luego PNP; y renovar equipamiento y unidades del Ejército, Fuerza Aérea y Marina de Guerra.",
+      "icono": "bi-shield-check"
+    },
+    {
+      "tema": "apertura_internacional",
+      "titulo": "Apertura comercial y líneas de bandera",
+      "descripcion": "Asignar a embajadas, consulados y agregadurías de defensa la responsabilidad de abrir mercados en la Unión Europea, Canadá y Estados Unidos, fortalecer líneas de bandera nacionales (aérea, pesquera, mercante y trenes) y priorizar exportación a países con monedas más fuertes, mientras se compra a países con monedas iguales o más débiles que el sol.",
+      "icono": "bi-globe"
     }
   ],
   "partido_nombre": "Partido Patriótico del Perú"

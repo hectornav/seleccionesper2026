@@ -2,70 +2,70 @@
   "nombre": "Francisco Ernesto Diez-Canseco Távara",
   "slug": "francisco-ernesto-diez-canseco-t-vara",
   "foto_url": "/static/img/candidatos/DiezCanseco.jpg",
-  "edad": 50,
+  "edad": 79,
   "region": "Lima",
   "profesion": "Empresario / Político",
   "posicion_politica": "derecha",
-  "lema": "El estado únicamente al servicio de los ciudadanos",
-  "biografia": "Francisco Diez-Canseco es empresario y candidato de Perú Acción. Propone reactivación económica, inversión privada y lucha anticorrupción.",
-  "experiencia": "Empresario / Político. Candidato presidencial 2026.",
-  "antecedentes": "Sin antecedentes penales conocidos de relevancia pública.",
+  "lema": "Mano de Hierro: el Estado únicamente al servicio de los ciudadanos",
+  "biografia": "Francisco Diez Canseco Távara es candidato presidencial por el Partido Político Perú Acción para el período 2026-2031. Su Plan de Gobierno “Mano de Hierro” propone una revolución pacífica para reestructurar completamente el Estado desde la raíz, separando a corruptos y delincuentes del aparato estatal y consolidando un sistema integrado por personas honestas, con capacidad de gestión, vocación de servicio y sensibilidad social.",
+  "experiencia": "Liderazgo del Partido Político Perú Acción y presentación del Plan de Gobierno Mano de Hierro 2026-2031, centrado en reforma del Estado, seguridad, lucha anticorrupción y defensa de la libertad económica.",
+  "antecedentes": "Sin información específica de antecedentes penales o investigaciones en el documento del plan de gobierno. Revisar estado actual en el Poder Judicial del Perú.",
   "es_destacado": false,
   "verificado": true,
-  "orden": 17,
-  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/FranciscoDiez.pdf",
-  "resumen_propuestas": "Revolución pacífica con el Plan Mano de Hierro: erradicación de la corrupción, pago de la deuda social y mano dura contra la criminalidad.",
+  "orden": 1,
+  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/FranciscoDiezCansecoTavara.pdf",
+  "resumen_propuestas": "El Plan de Gobierno Mano de Hierro de Perú Acción plantea pagar la deuda social mediante provisión efectiva de seguridad, educación, salud, justicia e infraestructura; reestructurar moral e institucionalmente el Estado; implementar un plan de seguridad y lucha anticorrupción de línea dura; defender la libertad económica y la propiedad privada a través del libre mercado y la libre competencia; y promover una verdadera descentralización e infraestructura educativa accesible.",
   "propuestas_destacadas": [
-    "Pago de la Deuda Social: seguridad, educación, salud e infraestructura",
-    "Reconstrucción Moral: rendición de cuentas y sanciones severas a funcionarios corruptos",
-    "Lucha drástica contra la delincuencia, minería ilegal y narcotráfico",
-    "Restitución del principio de autoridad de las Fuerzas Policiales",
-    "Unión nacional sin discriminación para solucionar los grandes problemas del país"
+    "Implementar una revolución pacífica para reestructurar completamente el Estado, separando a los corruptos y delincuentes del aparato estatal y reconstruyendo la moral pública.",
+    "Pagar la deuda social mediante provisión efectiva y sin discriminación de seguridad, educación, salud, justicia e infraestructura de calidad para todos los peruanos.",
+    "Crear el Consejo Nacional de Moral Pública (CNMP), ratificado por votación popular, con la misión de erradicar la corrupción en instituciones del Estado y velar por la independencia de poderes.",
+    "Establecer el Plan Mano de Hierro para recuperar el orden y la seguridad, reduciendo drásticamente la delincuencia, inmigración ilegal, minería ilegal, narcotráfico y terrorismo, restituyendo el principio de autoridad a las fuerzas policiales.",
+    "Defender la libertad económica y el derecho de propiedad, restableciendo el libre mercado y la libre competencia, eliminando el mercantilismo y apoyando la inversión y reinversión de emprendedores de todo tamaño."
   ],
   "posicionamiento_issues": {
-    "asamblea_constituyente": "en contra",
-    "privatizacion_empresas_estado": "a favor",
-    "libre_comercio_tlc": "a favor",
-    "pena_muerte": "a favor parcial"
+    "asamblea_constituyente": "no especificado",
+    "libre_comercio_tlc": "a favor (defensa de libre mercado y libre competencia)",
+    "privatizacion_empresas_estado": "a favor de reducir mercantilismo estatal y fortalecer iniciativa privada",
+    "relaciones_venezuela_cuba": "no especificado"
   },
-  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "fuente_datos": "Plan de Gobierno Mano de Hierro 2026-2031 del Partido Político Perú Acción.",
   "scores": {
-    "score_economia": 5,
-    "score_seguridad": 5,
-    "score_medio_ambiente": 5,
-    "score_educacion": 5,
-    "score_salud": 5
+    "score_economia": 8,
+    "score_seguridad": 9,
+    "score_medio_ambiente": 6,
+    "score_educacion": 7,
+    "score_salud": 7
   },
   "propuestas": [
     {
-      "tema": "reforma_estado",
-      "titulo": "Pago de la Deuda Social",
-      "descripcion": "Atención equitativa en seguridad, salud, educación e infraestructura.",
-      "icono": "bi-bank"
+      "tema": "ideario_principios",
+      "titulo": "Revolución pacífica y pago de la deuda social",
+      "descripcion": "Ideario que propone una revolución pacífica para reestructurar el Estado, pagar la deuda social mediante provisión de seguridad, educación, salud, justicia e infraestructura de calidad y reconstruir la confianza ciudadana en el Estado.",
+      "icono": "bi-people"
     },
     {
-      "tema": "anticorrupcion",
-      "titulo": "Reconstrucción Moral del Perú",
-      "descripcion": "Rendición de cuentas obligatoria y sanción drástica a funcionarios corruptos.",
+      "tema": "reconstruccion_moral",
+      "titulo": "Reconstrucción moral del Perú",
+      "descripcion": "Principio que exige que quienes ejercen el poder político, administrativo y judicial rindan cuentas, mantengan alta moral y sean severamente sancionados si se aprovechan de sus cargos.",
       "icono": "bi-eye"
     },
     {
       "tema": "seguridad_ciudadana",
-      "titulo": "Plan Mano de Hierro contra el Crimen",
-      "descripcion": "Reducción real de delincuencia, extorsión, minería ilegal y terrorismo.",
+      "titulo": "Plan Mano de Hierro: orden y seguridad",
+      "descripcion": "Objetivo de establecer una lucha frontal y directa contra la delincuencia, inmigración ilegal, minería ilegal, narcotráfico y terrorismo, fortaleciendo instituciones de seguridad y el principio de autoridad.",
       "icono": "bi-shield-check"
     },
     {
-      "tema": "educacion",
-      "titulo": "Revalorización de Salud y Educación",
-      "descripcion": "Énfasis en salud mental, protección a la niñez, mujeres y personas con discapacidad.",
-      "icono": "bi-book"
+      "tema": "libertad_economica",
+      "titulo": "Defensa de la libertad económica y propiedad privada",
+      "descripcion": "Reestablecer el libre mercado y la libre competencia, eliminando el mercantilismo, y proteger el derecho a la propiedad y la inversión de pequeños, medianos y grandes emprendedores como vía para combatir la pobreza mediante crecimiento sostenido.",
+      "icono": "bi-graph-up-arrow"
     },
     {
-      "tema": "economia_empleo",
-      "titulo": "Capacidad de Gestión y Eficiencia",
-      "descripcion": "Manejo del gobierno con profesionales capacitados erradicando el mercantilismo.",
-      "icono": "bi-graph-up-arrow"
+      "tema": "descentralizacion_educacion",
+      "titulo": "Desarrollo de infraestructura educativa y descentralización verdadera",
+      "descripcion": "Impulso a infraestructura educativa accesible que forme ciudadanos conscientes de sus derechos y obligaciones, y propuesta de una descentralización verdadera que integre económicamente y socialmente las diversas áreas geográficas del país.",
+      "icono": "bi-book"
     }
   ],
   "partido_nombre": "Partido Político Perú Acción"

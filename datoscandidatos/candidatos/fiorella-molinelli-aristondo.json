@@ -2,69 +2,88 @@
   "nombre": "Fiorella Molinelli Aristondo",
   "slug": "fiorella-molinelli-aristondo",
   "foto_url": "/static/img/candidatos/FiorellaMollinelli.jpg",
-  "edad": 50,
+  "edad": 51,
   "region": "Lima",
   "profesion": "Economista / Política",
-  "posicion_politica": "centro_derecha",
-  "lema": "Por un Perú mejor",
-  "biografia": "Giannina Molinelli es economista y candidata por Fuerza y Libertad. Propone política económica liberal, reducción del gasto público y fomento a la inversión privada.",
-  "experiencia": "Economista / Política. Candidato presidencial 2026.",
-  "antecedentes": "Sin antecedentes penales conocidos de relevancia pública.",
+  "posicion_politica": "centro",
+  "lema": "Crecimiento con equidad y sostenibilidad",
+  "biografia": "Fiorella Molinelli es candidata presidencial para el periodo 2026-2031 y presenta un Plan de Gobierno con una fuerte orientación técnico-gestora, estructurado en visión de país al 2050, diagnóstico territorial por macro regiones y un modelo económico de crecimiento con equidad y sostenibilidad. El documento destaca la importancia de la diversificación productiva, la transformación digital, la reducción de brechas territoriales y de acceso a servicios públicos, así como la construcción de un nuevo pacto de gobernanza multinivel y participativa.",
+  "experiencia": "Gestora pública con experiencia en diseño e implementación de políticas públicas en salud, seguridad social e infraestructura, y liderazgo de equipos técnicos para la formulación del Plan de Gobierno 2026-2031.",
+  "antecedentes": "Sin información específica de antecedentes penales o investigaciones en el documento del plan de gobierno. Revisar estado actual en el Poder Judicial del Perú.",
   "es_destacado": false,
   "verificado": true,
-  "orden": 27,
+  "orden": 1,
   "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/FiorellaMolinelli.pdf",
-  "resumen_propuestas": "Seguridad ciudadana con autoridad y firmeza, salud universal de calidad, diversificación productiva y guerra frontal al crimen organizado.",
+  "resumen_propuestas": "El Plan de Gobierno 2026-2031 propone un modelo de crecimiento con equidad y sostenibilidad basado en diversificación productiva, empleo digno y formalización, atracción de inversiones e infraestructura estratégica, descentralización fiscal, salud universal, educación de calidad con conectividad digital, políticas de seguridad ciudadana con enfoque integral, defensa moderna, infraestructura para acceso universal a agua y energía, descentralización efectiva y reactivación del campo y la agroindustria.",
   "propuestas_destacadas": [
-    "Seguridad ciudadana con autoridad y firmeza: modernización policial integral",
-    "Salud universal de calidad: medicamentos accesibles y hospitales equipados",
-    "Diversificación productiva y competitividad con inversiones estratégicas",
-    "Educación moderna con tecnología y capacitación docente",
-    "Guerra frontal contra extorsión y narcotráfico con cooperación internacional"
+    "Impulsar un modelo económico de crecimiento con equidad y sostenibilidad, con diversificación productiva, competitividad nacional y reactivación con empleo digno y formalización.",
+    "Implementar salud universal, integral y de calidad, y educación de calidad con conectividad digital para reducir brechas de aprendizaje.",
+    "Desarrollar un plan nacional de infraestructura productiva y social, con foco en conectividad vial, ferroviaria y logística por macro región y acceso universal a agua potable.",
+    "Aplicar una estrategia integral de seguridad ciudadana y lucha contra el crimen organizado, con modernización de la PNP, control financiero del delito, uso intensivo de tecnología y reforma del sistema de justicia.",
+    "Promover descentralización y autonomía regional mediante un nuevo pacto de competencias, fortalecimiento de gobiernos regionales y locales, y reactivación del campo con modernización del agro y seguridad alimentaria."
   ],
   "posicionamiento_issues": {
-    "asamblea_constituyente": "en contra",
-    "libre_comercio_tlc": "a favor",
-    "pena_muerte": "a favor parcial"
+    "asamblea_constituyente": "no especificado",
+    "libre_comercio_tlc": "a favor de atracción de inversiones y apertura competitiva",
+    "privatizacion_empresas_estado": "no especificado",
+    "relaciones_venezuela_cuba": "no especificado"
   },
-  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "fuente_datos": "Plan de Gobierno 2026-2031.",
   "scores": {
-    "score_economia": 5,
-    "score_seguridad": 5,
-    "score_medio_ambiente": 5,
-    "score_educacion": 5,
-    "score_salud": 5
+    "score_economia": 8,
+    "score_seguridad": 7,
+    "score_medio_ambiente": 7,
+    "score_educacion": 8,
+    "score_salud": 8
   },
   "propuestas": [
     {
-      "tema": "economia_empleo",
-      "titulo": "Diversificación productiva y competitividad nacional con inversiones e infraestructura estratégica",
-      "descripcion": "Diversificación productiva y competitividad nacional con inversiones e infraestructura estratégica",
+      "tema": "vision_pais",
+      "titulo": "Visión Perú 2050 y misión de gobierno",
+      "descripcion": "Definición de una visión de país al 2050 basada en crecimiento sostenible, cohesión territorial, resiliencia climática y transformación digital, acompañada de una misión de gobierno centrada en reducir brechas y mejorar la calidad de vida mediante gestión pública eficiente.",
+      "icono": "bi-geo-alt"
+    },
+    {
+      "tema": "modelo_economico",
+      "titulo": "Modelo económico: crecimiento con equidad y sostenibilidad",
+      "descripcion": "Modelo económico que prioriza diversificación productiva, competitividad, reactivación con empleo digno y formalización, atracción de inversiones e infraestructura estratégica, descentralización fiscal y un turismo fortalecido como motor económico.",
       "icono": "bi-graph-up-arrow"
     },
     {
-      "tema": "educacion",
-      "titulo": "Educación moderna con tecnología, infraestructura moderna y capacitación docente",
-      "descripcion": "Educación moderna con tecnología, infraestructura moderna y capacitación docente",
-      "icono": "bi-book"
-    },
-    {
       "tema": "salud",
-      "titulo": "Acceso oportuno, medicamentos esenciales a precios accesibles y hospitales equipados en todo el país",
-      "descripcion": "Acceso oportuno, medicamentos esenciales a precios accesibles y hospitales equipados en todo el país",
+      "titulo": "Salud universal, integral y de calidad",
+      "descripcion": "Políticas para avanzar hacia la cobertura universal de salud con servicios integrales y de calidad, cerrando brechas territoriales y modernizando la gestión sanitaria.",
       "icono": "bi-heart-pulse"
     },
     {
-      "tema": "seguridad_ciudadana",
-      "titulo": "Estrategia integral con modernización policial y equipamiento",
-      "descripcion": "Estrategia integral con modernización policial y equipamiento",
-      "icono": "bi-shield-check"
+      "tema": "educacion_trabajo",
+      "titulo": "Educación de calidad y trabajo digno",
+      "descripcion": "Educación de calidad con conectividad digital, modernización del mercado laboral, trabajo digno y fortalecimiento de la protección social.",
+      "icono": "bi-book"
     },
     {
       "tema": "seguridad_ciudadana",
-      "titulo": "Guerra frontal contra extorsión y 'Gota a Gota' con cooperación internacional contra narcotráfico",
-      "descripcion": "Guerra frontal contra extorsión y 'Gota a Gota' con cooperación internacional contra narcotráfico",
+      "titulo": "Seguridad ciudadana y lucha contra el crimen organizado",
+      "descripcion": "Estrategia nacional de seguridad con liderazgo central, reforma y modernización de la PNP, lucha contra el crimen organizado y el “gota a gota”, reforma del sistema penal y uso intensivo de tecnología para prevención y patrullaje inteligente.",
       "icono": "bi-shield-check"
+    },
+    {
+      "tema": "infraestructura_agua_energia",
+      "titulo": "Infraestructura para desarrollo, agua y energía",
+      "descripcion": "Plan Nacional de Infraestructura productiva y social, desarrollo vial y ferroviario por macro región, acceso universal a agua potable, seguridad energética y transformación digital e inclusión tecnológica.",
+      "icono": "bi-building"
+    },
+    {
+      "tema": "descentralizacion",
+      "titulo": "Descentralización y autonomía regional",
+      "descripcion": "Nuevo pacto de competencias entre gobierno nacional y gobiernos regionales, impulso al desarrollo regional e infraestructura y fortalecimiento de gobiernos locales como motores de desarrollo.",
+      "icono": "bi-bank"
+    },
+    {
+      "tema": "agro_seguridad_alimentaria",
+      "titulo": "Agroindustria, seguridad alimentaria y reactivación del campo",
+      "descripcion": "Modernización del agro, incorporación de tecnología en el sector rural y políticas de seguridad alimentaria para reactivar el campo y reducir vulnerabilidades.",
+      "icono": "bi-tree"
     }
   ],
   "partido_nombre": "Fuerza y Libertad"

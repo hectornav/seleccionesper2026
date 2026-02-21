@@ -2,29 +2,77 @@
   "nombre": "Jorge Nieto Montesinos",
   "slug": "jorge-nieto-montesinos",
   "foto_url": "/static/img/candidatos/JorgeNieto.jpg",
-  "edad": 67,
+  "edad": 74,
   "region": "Lima",
   "profesion": "Sociólogo / Político / Analista",
   "posicion_politica": "centro-izquierda",
-  "lema": "Buen gobierno para todos",
-  "biografia": "Jorge Nieto Montesinos nació en 1957 en Lima. Sociólogo con amplia trayectoria en análisis político y derechos humanos. Fue Ministro de Defensa durante el gobierno de Pedro Pablo Kuczynski (2016–2017). Ha sido investigador y consultor de organismos internacionales. Candidato por el Partido del Buen Gobierno, agrupación de centro-reformista.",
-  "experiencia": "Ministro de Defensa del Perú (2016-2017). Analista político y sociólogo. Consultor de organismos internacionales.",
-  "antecedentes": "Sin antecedentes penales conocidos.",
+  "lema": "Buen Gobierno para el Bienestar",
+  "biografia": "Jorge Nieto Montesinos es candidato presidencial del Partido del Buen Gobierno (PBG) para el periodo 2026-2031. Su plan de gobierno se estructura en una síntesis programática y nueve grandes ejes, con fuerte énfasis en diversidad y territorio, Estado y gobernabilidad, economía para el bienestar, transición energética y medioambiente, educación y salud de calidad, y el aprovechamiento estratégico de la Amazonía, la sierra y el mar como motores de desarrollo.",
+  "experiencia": "Dirigente político y exministro con experiencia en gestión pública y formulación de políticas en desarrollo, cultura y defensa, ahora líder del Partido del Buen Gobierno y responsable de un plan con matrices de objetivos, indicadores y metas al 2031 en dimensiones social, económica, territorial e institucional.",
+  "antecedentes": "Sin información específica de antecedentes penales o investigaciones en el documento del plan de gobierno. Revisar estado actual en el Poder Judicial del Perú.",
   "es_destacado": false,
-  "verificado": false,
-  "orden": 25,
-  "link_plan_gobierno": "",
-  "resumen_propuestas": "",
-  "propuestas_destacadas": [],
-  "posicionamiento_issues": {},
-  "fuente_datos": "Plan de Gobierno JNE 2026",
-  "scores": {
-    "score_economia": 5,
-    "score_seguridad": 6,
-    "score_medio_ambiente": 7,
-    "score_educacion": 8,
-    "score_salud": 7
+  "verificado": true,
+  "orden": 1,
+  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/JorgeNietoMontesinos.pdf",
+  "resumen_propuestas": "El Plan del Partido del Buen Gobierno propone una visión de país al 2031 basada en una economía para el bienestar, un Estado eficaz y confiable, territorios integrados y resilientes al cambio climático, servicios de salud y educación de calidad, seguridad ciudadana sin miedo, justicia cercana a la gente, igualdad de género, protagonismo juvenil y un modelo de desarrollo sostenido, inclusivo y territorialmente equilibrado.",
+  "propuestas_destacadas": [
+    "Implementar una economía para el bienestar con desarrollo sostenido, inclusivo y territorial, articulando crecimiento económico con reducción de desigualdades y fortalecimiento de capacidades productivas regionales.",
+    "Construir un sistema de salud y protección social que garantice acceso universal y de calidad al 2031, con objetivos, líneas de acción prioritarias y metas medibles.",
+    "Desarrollar un Perú educado, equitativo, científico y diverso mediante reformas educativas, inversión en ciencia y tecnología y políticas de equidad en el acceso a oportunidades.",
+    "Aplicar una estrategia integral de seguridad ciudadana para vivir sin miedo, reforzada por políticas específicas contra la extorsión y una reforma de justicia bajo el enfoque “Justicia para la Gente”.",
+    "Convertir la Amazonía, la sierra y el mar en motores estratégicos de desarrollo sostenible, en el marco de una transición energética y una política ambiental robusta."
+  ],
+  "posicionamiento_issues": {
+    "asamblea_constituyente": "no especificado",
+    "libre_comercio_tlc": "no especificado (prioriza desarrollo territorial e inclusivo)",
+    "privatizacion_empresas_estado": "no especificado",
+    "relaciones_venezuela_cuba": "no especificado"
   },
-  "propuestas": [],
+  "fuente_datos": "Plan de Gobierno del Partido del Buen Gobierno 2026-2031.",
+  "scores": {
+    "score_economia": 8,
+    "score_seguridad": 7,
+    "score_medio_ambiente": 8,
+    "score_educacion": 8,
+    "score_salud": 8
+  },
+  "propuestas": [
+    {
+      "tema": "sintesis_vision",
+      "titulo": "Visión general y ejes estratégicos del PBG",
+      "descripcion": "Síntesis del plan que define la visión general al 2031 y siete ejes estratégicos: diversidad y territorio, Estado y gobernabilidad, economía para el bienestar, transición energética y medioambiente, educación y salud de calidad, Amazonía-Sierra-Mar como motores estratégicos y compromisos estratégicos medibles.",
+      "icono": "bi-geo-alt"
+    },
+    {
+      "tema": "salud_proteccion_social",
+      "titulo": "Salud y protección social al 2031",
+      "descripcion": "Agenda para salud y protección social con visión al 2031, objetivos estratégicos, líneas de acción prioritarias, matriz de objetivos, indicadores y metas, y mecanismos de seguimiento y evaluación.",
+      "icono": "bi-heart-pulse"
+    },
+    {
+      "tema": "educacion_ciencia",
+      "titulo": "Un Perú educado, equitativo, científico y diverso",
+      "descripcion": "Políticas para construir un sistema educativo equitativo y de calidad, con enfoque científico y respeto a la diversidad, incluyendo lineamientos por objetivo y una matriz de indicadores y metas al 2031.",
+      "icono": "bi-book"
+    },
+    {
+      "tema": "seguridad_justicia",
+      "titulo": "Seguridad sin miedo y justicia para la gente",
+      "descripcion": "Estrategia de seguridad ciudadana para vivir sin miedo, políticas específicas contra la extorsión y un programa de Reforma y Fortalecimiento del Sistema de Justicia 2026–2031 con metas e indicadores.",
+      "icono": "bi-shield-check"
+    },
+    {
+      "tema": "igualdad_genero_jovenes_cultura",
+      "titulo": "Igualdad de género, juventud y cultura",
+      "descripcion": "Programas 'Perú con igualdad: mujeres protagonistas del desarrollo', 'Jóvenes protagonistas de nuestro desarrollo' y 'Un Perú que vive su cultura', cada uno con visión, objetivos, líneas de acción, matrices de metas y mecanismos de seguimiento.",
+      "icono": "bi-people"
+    },
+    {
+      "tema": "economia_territorial",
+      "titulo": "Plan económico para desarrollo sostenido, inclusivo y territorial",
+      "descripcion": "Perú 2031: plan económico con objetivos estratégicos, líneas de acción prioritarias y metas para lograr crecimiento sostenido, inclusión social y equilibrio territorial, respaldado por políticas de finanzas para el desarrollo, la inclusión y la innovación.",
+      "icono": "bi-graph-up-arrow"
+    }
+  ],
   "partido_nombre": "Partido del Buen Gobierno"
 }

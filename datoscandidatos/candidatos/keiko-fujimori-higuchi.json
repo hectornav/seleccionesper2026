@@ -2,34 +2,33 @@
   "nombre": "Keiko Fujimori Higuchi",
   "slug": "keiko-fujimori-higuchi",
   "foto_url": "/static/img/candidatos/KeikoFujimori.jpg",
-  "edad": 49,
+  "edad": 50,
   "region": "Lima",
   "profesion": "Administradora de Empresas / Política",
   "posicion_politica": "derecha",
-  "lema": "Mano firme, corazón grande",
-  "biografia": "Keiko Sofía Fujimori Higuchi nació el 25 de mayo de 1975 en Lima. Es hija del expresidente Alberto Fujimori. Estudió Administración de Empresas en la Universidad de Boston (EE.UU.) y tiene un MBA de la Columbia Business School. Sirvió como Primera Dama durante parte del gobierno de su padre (1994-2000). Fue congresista por Lima en los períodos 2006-2011 y 2011-2016. Candidata presidencial en 2011 (segunda vuelta), 2016 (segunda vuelta) y 2021 (segunda vuelta, perdió ante Pedro Castillo). Fundadora y lideresa del partido Fuerza Popular, heredero del fujimorismo. Sus propuestas se centran en seguridad ciudadana, libre mercado y estabilidad macroeconómica.",
-  "experiencia": "Primera Dama de la República (1994-2000). Congresista de la República por Lima (2006-2011, 2011-2016). Tres veces candidata presidencial (2011, 2016, 2021).",
-  "antecedentes": "Múltiples procesos judiciales activos. Revisar estado actual en Poder Judicial del Perú.",
+  "lema": "Perú con Orden",
+  "biografia": "Keiko Fujimori Higuchi es candidata presidencial por Fuerza Popular para el período 2026-2031. Lidera el Plan de Gobierno 2026–2031: “Perú con Orden”, que se presenta como una propuesta para enfrentar la inseguridad, el estancamiento económico y la pérdida de confianza en las instituciones, rescatando lecciones de la década de 1990 en la que, bajo el gobierno de Alberto Fujimori, se derrotó al terrorismo, se estabilizó la economía y se sentaron bases de crecimiento, según el propio documento.",
+  "experiencia": "Lideresa de Fuerza Popular, con experiencia como congresista y tres veces candidata presidencial, y conducción política de un plan que articula tres ejes estratégicos (Orden, Economía y Social) y 22 temas prioritarios, con visión país al 2031.",
+  "antecedentes": "Múltiples procesos judiciales y acusaciones de corrupción han sido mencionados en otros contextos, pero el documento del plan de gobierno no detalla dichos antecedentes. Revisar estado actual en el Poder Judicial del Perú.",
   "es_destacado": true,
   "verificado": true,
   "orden": 21,
   "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/KeikoFujimori.pdf",
-  "resumen_propuestas": "Plan 'Perú con Orden': recuperación del control territorial, economía social de mercado con shock desregulatorio y capitalismo popular.",
+  "resumen_propuestas": "El Plan de Gobierno 2026–2031: “Perú con Orden” plantea tres ejes estratégicos: Orden (recuperación del control territorial, fortalecimiento de la PNP, modernización del sistema judicial, disciplina fiscal, shock desregulatorio y lucha anticorrupción), Economía (impulso a sectores productivos como emprendimiento, minería, energía, agricultura, pesca, turismo, manufactura y transporte para generar empleo formal y desarrollo regional) y Social (prioridad en educación, salud, vivienda, agua y saneamiento, seguridad alimentaria, pensiones y deporte), con la meta de un país seguro, competitivo y justo, basado en una economía social de mercado y una gestión pública moderna, digital y transparente.",
   "propuestas_destacadas": [
-    "Plan 'Perú con Orden': control territorial y fortalecimiento PNP",
-    "Shock desregulatorio para economía social de mercado",
-    "Reforma institucional anticorrupción con gestión pública digital",
-    "Acceso universal a salud, educación, agua y saneamiento",
-    "Capitalismo popular: libre mercado con protección a trabajadores y MYPEs"
+    "Recuperar el orden ciudadano, económico y jurídico mediante acciones para recuperar el control territorial, fortalecer la Policía Nacional, modernizar el sistema judicial, garantizar disciplina fiscal, aplicar un shock desregulatorio y combatir la corrupción.",
+    "Impulsar sectores productivos —emprendimiento, minería, energía, agricultura, pesca, turismo, manufactura y transporte— para promover competitividad, empleo formal y desarrollo regional sostenible.",
+    "Priorizar educación, salud, vivienda, agua y saneamiento, seguridad alimentaria, pensiones y deporte, garantizando igualdad de oportunidades y acceso universal a servicios básicos de calidad.",
+    "Consolidar una economía social de mercado que genere empleo formal y digno, sobre la base de estabilidad, promoción de la inversión y reglas claras.",
+    "Modernizar la gestión pública hacia un Estado presente, moderno, digital y transparente, que llegue a tiempo a las personas y reconstruya la confianza entre ciudadanía, empresa y Estado."
   ],
   "posicionamiento_issues": {
     "asamblea_constituyente": "en contra",
-    "privatizacion_empresas_estado": "a favor",
     "libre_comercio_tlc": "a favor",
-    "pena_muerte": "a favor parcial",
-    "relaciones_venezuela_cuba": "en contra"
+    "privatizacion_empresas_estado": "a favor parcial (economía social de mercado, promoción de inversión privada con rol regulador del Estado)",
+    "relaciones_venezuela_cuba": "en contra de modelos que asocia con inestabilidad y pobreza"
   },
-  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "fuente_datos": "Plan de Gobierno 2026–2031: Perú con Orden de Fuerza Popular.",
   "scores": {
     "score_economia": 8,
     "score_seguridad": 9,
@@ -39,34 +38,34 @@
   },
   "propuestas": [
     {
-      "tema": "anticorrupcion",
-      "titulo": "Reforma institucional anticorrupción con gestión pública moderna, digital y transparente",
-      "descripcion": "Reforma institucional anticorrupción con gestión pública moderna, digital y transparente",
-      "icono": "bi-eye"
-    },
-    {
-      "tema": "economia_empleo",
-      "titulo": "Shock desregulatorio y fortalecimiento de la economía social de mercado",
-      "descripcion": "Shock desregulatorio y fortalecimiento de la economía social de mercado",
-      "icono": "bi-graph-up-arrow"
-    },
-    {
-      "tema": "economia_empleo",
-      "titulo": "Capitalismo popular: libre mercado con protección a trabajadores, MYPEs, sector agrario y consumidores",
-      "descripcion": "Capitalismo popular: libre mercado con protección a trabajadores, MYPEs, sector agrario y consumidores",
-      "icono": "bi-graph-up-arrow"
-    },
-    {
-      "tema": "genero_inclusion",
-      "titulo": "Acceso universal a servicios básicos de calidad: salud, educación, agua y saneamiento",
-      "descripcion": "Acceso universal a servicios básicos de calidad: salud, educación, agua y saneamiento",
-      "icono": "bi-people"
-    },
-    {
-      "tema": "seguridad_ciudadana",
-      "titulo": "Recuperación del control territorial, fortalecimiento de la PNP y modernización del sistema judicial",
-      "descripcion": "Recuperación del control territorial, fortalecimiento de la PNP y modernización del sistema judicial",
+      "tema": "orden_ciudadano_economico_juridico",
+      "titulo": "Eje Orden: orden ciudadano, económico y jurídico",
+      "descripcion": "Eje que plantea recuperar el control territorial, fortalecer a la Policía Nacional, modernizar el sistema judicial, garantizar disciplina fiscal, aplicar un shock desregulatorio, fortalecer instituciones públicas y combatir la corrupción para crear un entorno de confianza y estabilidad.",
       "icono": "bi-shield-check"
+    },
+    {
+      "tema": "economia_empleo",
+      "titulo": "Eje Economía: sectores productivos y empleo formal",
+      "descripcion": "Líneas para impulsar emprendimiento, minería, energía, agricultura, pesca, turismo, manufactura y transporte, promoviendo competitividad, empleo formal y desarrollo regional sostenible dentro de un marco de economía social de mercado.",
+      "icono": "bi-graph-up-arrow"
+    },
+    {
+      "tema": "politica_social",
+      "titulo": "Eje Social: servicios básicos y protección social",
+      "descripcion": "Prioriza educación, salud, vivienda, agua y saneamiento, seguridad alimentaria, pensiones y deporte, con el objetivo de garantizar igualdad de oportunidades y acceso universal a servicios básicos de calidad.",
+      "icono": "bi-heart-pulse"
+    },
+    {
+      "tema": "gestion_publica_modernizacion",
+      "titulo": "Gestión pública moderna, digital y transparente",
+      "descripcion": "Propuesta de transformar la gestión pública en un Estado moderno, digital y transparente que llegue a tiempo a los ciudadanos, mejore la calidad de los servicios y fortalezca la confianza en las instituciones.",
+      "icono": "bi-bank"
+    },
+    {
+      "tema": "inversion_confianza",
+      "titulo": "Orden para inversión, empleo y bienestar",
+      "descripcion": "Enfoque que vincula orden con inversión, empleo y bienestar: sin orden no hay inversión, sin inversión no hay empleo y sin empleo no hay bienestar, orientando políticas a generar estabilidad para que empresas inviertan y se creen oportunidades laborales.",
+      "icono": "bi-cash-stack"
     }
   ],
   "partido_nombre": "Fuerza Popular"

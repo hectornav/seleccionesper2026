@@ -2,70 +2,71 @@
   "nombre": "Roberto Enrique Chiabra León",
   "slug": "roberto-enrique-chiabra-le-n",
   "foto_url": "/static/img/candidatos/RobertoChiabra.jpg",
-  "edad": 68,
+  "edad": 76,
   "region": "Lima",
-  "profesion": "General del Ejército (r) / Político",
+  "profesion": "Militar / Político",
   "posicion_politica": "centro_derecha",
-  "lema": "Unidad y desarrollo",
-  "biografia": "Roberto Chiabra León nació en 1956 en Lima. General de División del Ejército Peruano en situación de retiro. Fue Ministro de Defensa durante el gobierno de Alejandro Toledo. Congresista en múltiples períodos, destacando en temas de seguridad y defensa. Candidato por Unidad Nacional, coalición de partidos de centro-derecha.",
-  "experiencia": "General de División del Ejército (r). Ministro de Defensa (gobierno de Toledo). Congresista de la República.",
-  "antecedentes": "Sin antecedentes penales conocidos.",
+  "lema": "Orden y Unidad",
+  "biografia": "Roberto Chiabra León es candidato presidencial de la Alianza Unidad Nacional para el periodo 2026-2031, conformada por los partidos Popular Cristiano, Unidad y Paz y Peruanos Unidos Somos Libres. La alianza declara que su propósito común es contribuir al fortalecimiento democrático y alcanzar el poder para brindar seguridad y progreso al Perú.",
+  "experiencia": "Militar en retiro y dirigente político, hoy líder visible de la Alianza Unidad Nacional, que presenta un plan de gobierno organizado por sectores (seguridad ciudadana, defensa, relaciones internacionales, empleo y MYPE, recursos naturales y medio ambiente, infraestructura, agricultura-pesca-minería-turismo, educación-salud-deporte, vivienda y agua, programas sociales, modernización del Estado y un plan especial de solidaridad focalizada) e integrado en cinco ejes políticos estratégicos.",
+  "antecedentes": "Sin información específica de antecedentes penales o investigaciones en el documento del plan de gobierno. Revisar estado actual en el Poder Judicial del Perú.",
   "es_destacado": false,
   "verificado": true,
-  "orden": 8,
-  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/RobertoChiabra.pdf",
-  "resumen_propuestas": "Las cuatro fortalezas económicas (agricultura, pesca, minería, turismo) con economía social de mercado, seguridad y justicia.",
+  "orden": 1,
+  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/RobertoChiabraLeon.pdf",
+  "resumen_propuestas": "El Plan de Gobierno 2026-2031 de la Alianza Unidad Nacional se basa en una concepción humanista donde la persona humana y la familia son el centro de la acción, con democracia como sistema político, economía social de mercado como modelo económico, libertad como fundamento, educación como herramienta de superación, orden como condición para el desarrollo en seguridad y justicia como valor esencial. Su visión define como intereses vitales del Estado la integridad territorial, el ejercicio de la soberanía, el mantenimiento de la democracia, el cuidado del patrimonio y biodiversidad y la preservación de la identidad nacional, con intereses estratégicos permanentes de mantener un ambiente internacional de paz y un ambiente interno democrático. El plan integra las propuestas sectoriales en cinco ejes: institucionalidad (reestructurar el Estado, descentralizar y construir ciudadanía), igualdad (lucha contra pobreza y desigualdad), crecimiento personal (alimentación, salud, educación de calidad y deporte), desarrollo (productividad, competitividad y desarrollo de agricultura, pesca, minería y turismo) y seguridad (seguridad ciudadana, defensa nacional y desarrollo sostenible).",
   "propuestas_destacadas": [
-    "Las cuatro fortalezas económicas: agricultura, pesca, minería y turismo",
-    "Seguridad ciudadana, orden interno y reforma de la administración de justicia",
-    "Economía social de mercado con libertad, educación y justicia como pilares",
-    "Plan especial de solidaridad para sectores excluidos",
-    "Simplificación administrativa y modernización del Estado"
+    "Fortalecer la institucionalidad reestructurando el Estado, descentralizando y construyendo ciudadanía, asegurando participación efectiva de los sectores menos representados mediante instituciones eficientes y transparentes.",
+    "Impulsar la igualdad a través de la lucha contra la pobreza y la desigualdad, con programas sociales y políticas que integren a poblaciones excluidas que hoy no se sienten representadas por la institucionalidad formal.",
+    "Promover el crecimiento personal mediante políticas públicas a favor de la alimentación, la salud, la educación de calidad y el deporte, como base de la superación individual y colectiva.",
+    "Desarrollar productividad y competitividad potenciando las cuatro fortalezas de la economía peruana: agricultura, pesca, minería y turismo, articuladas con infraestructura y recursos naturales bien gestionados.",
+    "Reforzar la seguridad ciudadana, la defensa nacional y el desarrollo sostenible como un eje integrado, asegurando integridad territorial, soberanía y paz social bajo el lema de gobernar con orden y unidad."
   ],
   "posicionamiento_issues": {
-    "asamblea_constituyente": "en contra",
-    "libre_comercio_tlc": "a favor",
-    "privatizacion_empresas_estado": "a favor parcial"
+    "asamblea_constituyente": "no especificado (prioriza fortalecimiento institucional y reformas dentro del marco democrático)",
+    "libre_comercio_tlc": "a favor de promover ventajas competitivas y comercio exterior en un contexto de paz internacional",
+    "privatizacion_empresas_estado": "a favor de economía social de mercado con rol regulador y promotor del Estado",
+    "relaciones_venezuela_cuba": "no especificado (énfasis general en democracia, paz y defensa del Estado-Nación)"
   },
-  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "fuente_datos": "Plan de Gobierno 2026-2031 de la Alianza Unidad Nacional.",
   "scores": {
-    "score_economia": 7,
+    "score_economia": 8,
     "score_seguridad": 9,
-    "score_medio_ambiente": 4,
-    "score_educacion": 5,
-    "score_salud": 5
+    "score_medio_ambiente": 7,
+    "score_educacion": 7,
+    "score_salud": 7
   },
   "propuestas": [
     {
-      "tema": "economia_empleo",
-      "titulo": "Agricultura, pesca, minería y turismo como ejes del desarrollo productivo",
-      "descripcion": "Agricultura, pesca, minería y turismo como ejes del desarrollo productivo",
-      "icono": "bi-graph-up-arrow"
-    },
-    {
-      "tema": "economia_empleo",
-      "titulo": "Economía social de mercado con libertad",
-      "descripcion": "Economía social de mercado con libertad",
-      "icono": "bi-graph-up-arrow"
-    },
-    {
-      "tema": "reforma_estado",
-      "titulo": "Simplificación administrativa y modernización del Estado",
-      "descripcion": "Simplificación administrativa y modernización del Estado",
-      "icono": "bi-bank"
-    },
-    {
-      "tema": "seguridad_ciudadana",
-      "titulo": "Seguridad ciudadana, orden interno y reforma de la administración de justicia como prioridad",
-      "descripcion": "Seguridad ciudadana, orden interno y reforma de la administración de justicia como prioridad",
-      "icono": "bi-shield-check"
-    },
-    {
-      "tema": "genero_inclusion",
-      "titulo": "Plan especial de solidaridad focalizado para sectores más excluidos",
-      "descripcion": "Plan especial de solidaridad focalizado para sectores más excluidos",
+      "tema": "ideario_principios",
+      "titulo": "Ideario humanista y economía social de mercado",
+      "descripcion": "Concepción humanista que coloca a la persona humana y la familia como centro, con democracia como sistema político, economía social de mercado como modelo económico, libertad, educación, orden y justicia como fundamentos.",
       "icono": "bi-people"
+    },
+    {
+      "tema": "vision_estado_nacion",
+      "titulo": "Intereses vitales del Estado-Nación",
+      "descripcion": "Define como intereses vitales la integridad territorial, la soberanía, la democracia, el cuidado del patrimonio y biodiversidad y la identidad nacional, con intereses estratégicos de mantener paz internacional y ambiente interno democrático.",
+      "icono": "bi-geo-alt"
+    },
+    {
+      "tema": "ejes_politicos",
+      "titulo": "Cinco ejes políticos estratégicos",
+      "descripcion": "Integra todas las propuestas en cinco ejes: institucionalidad, igualdad, crecimiento personal, desarrollo y seguridad, articulando reestructuración del Estado, lucha contra pobreza, servicios básicos, competitividad y seguridad integral.",
+      "icono": "bi-diagram-3"
+    },
+    {
+      "tema": "sectores_clave",
+      "titulo": "Doce sectores de acción gubernamental",
+      "descripcion": "Plan sectorial que abarca seguridad ciudadana y justicia, defensa nacional, relaciones internacionales y comercio exterior, empleo y MYPE, recursos naturales y ambiente, infraestructura, agricultura-pesca-minería-turismo, educación-salud-deporte, vivienda y agua, programas sociales, modernización del Estado y un plan especial de solidaridad focalizada.",
+      "icono": "bi-grid-3x3-gap"
+    },
+    {
+      "tema": "inclusion_formalizacion",
+      "titulo": "Inclusión de sectores menos representados",
+      "descripcion": "Propone asegurar participación efectiva en igualdad de condiciones para sectores poco representados, facilitando formalización y otorgando incentivos para que se sientan representados y sean corresponsables frente a las normas de interés nacional.",
+      "icono": "bi-union"
     }
   ],
-  "partido_nombre": "Unidad Nacional"
+  "partido_nombre": "Alianza Unidad Nacional"
 }

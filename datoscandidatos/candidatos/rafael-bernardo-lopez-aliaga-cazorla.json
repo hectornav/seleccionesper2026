@@ -2,65 +2,70 @@
   "nombre": "Rafael Bernardo López Aliaga Cazorla",
   "slug": "rafael-bernardo-l-pez-aliaga-cazorla",
   "foto_url": "/static/img/candidatos/RafaelLopez.jpg",
-  "edad": 58,
+  "edad": 65,
   "region": "Lima",
   "profesion": "Empresario / Ingeniero",
   "posicion_politica": "derecha",
   "lema": "Sin corruptos, sin comunistas",
-  "biografia": "Rafael López Aliaga nació el 27 de noviembre de 1966 en Lima. Ingeniero Industrial por la Universidad de Piura. Empresario exitoso, presidente del Grupo RPP durante años. Actual alcalde de la Municipalidad de Lima Metropolitana (desde enero 2023). Conocido por su devota fe católica y posturas social-conservadoras. Promueve la economía de libre mercado extrema y la reducción drástica del Estado. Candidato presidencial en 2021 (5to lugar en primera vuelta con 11.7% de votos).",
-  "experiencia": "Empresario del sector transporte y seguros (Rímac, RPP). Alcalde de Lima Metropolitana (2023-presente). Candidato presidencial 2021.",
-  "antecedentes": "⚠️ INVESTIGADO: Investigado por presunto enriquecimiento ilícito y lavado de activos vinculados a su gestión empresarial. Su gestión como alcalde de Lima ha sido cuestionada por la judicialización de decisiones administrativas y polémicas declaraciones públicas. Tuvo una demanda por difamación presentada por una periodista.",
-  "es_destacado": true,
+  "biografia": "Rafael López Aliaga es candidato presidencial de un partido que se define como humanista y cristiano, cuyo plan de gobierno 2026-2031 plantea el desarrollo integral de la persona y la familia sobre la base del bien común del pueblo peruano, con principios de libertad, igualdad, justicia, solidaridad y una visión descentralista del Estado.",
+  "experiencia": "Liderazgo político y empresarial, encabezando un plan de gobierno que promete buen gobierno eficiente, moderno y transparente, preocupado por los que menos tienen y enfocado en reestructurar el aparato estatal para lograr eficiencia, descentralización y desconcentración.",
+  "antecedentes": "Sin información específica de antecedentes penales o investigaciones en el documento del plan de gobierno. Revisar estado actual en el Poder Judicial del Perú.",
+  "es_destacado": false,
   "verificado": true,
-  "orden": 5,
-  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/RafaelLopez.pdf",
-  "resumen_propuestas": "Central de Lucha contra la Corrupción con plenos poderes, unidades itinerantes de pacificación y canastas básicas de productores nacionales.",
+  "orden": 1,
+  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/RafaelLopezAliaga.pdf",
+  "resumen_propuestas": "El plan de gobierno 2026-2031 propone impulsar un buen gobierno eficiente, moderno y transparente, reactivar la economía por sectores, reestructurar el aparato estatal buscando eficiencia y descentralización, fortalecer servicios públicos básicos (alimentación, educación, salud y seguridad) e implementar grandes proyectos de infraestructura e inversión, junto con medidas drásticas contra la corrupción.",
   "propuestas_destacadas": [
-    "Central de Lucha contra la Corrupción (CCC) con plenos poderes",
-    "Unidades Itinerantes de Pacificación con inteligencia y agentes encubiertos",
-    "Canastas básicas de productores nacionales para erradicar pobreza extrema",
-    "Clubes Zonales en todo el país para fortalecer valores familiares",
-    "Habilitación de terrenos estatales para vivienda social accesible"
+    "Crear una Central de Lucha Contra la Corrupción (CCC) con plenos poderes para detectar, infiltrar y capturar delitos en flagrancia e irregularidades funcionales en todos los niveles de gobierno, verificando además la información patrimonial de los funcionarios.",
+    "Derrotar la delincuencia común, el pandillaje, el terrorismo urbano y la microcomercialización de drogas mediante Unidades Itinerantes de Pacificación Ciudadana, inteligencia, agentes encubiertos e integración de todas las instituciones del sistema de seguridad ciudadana, incluyendo convenios con Estados Unidos para inteligencia, tecnología y extradición de cabecillas.",
+    "Luchar para erradicar la pobreza extrema reforzando organizaciones populares para distribuir ayuda alimentaria, fortaleciendo programas sociales, eliminando duplicidades y filtraciones, reduciendo costos administrativos y priorizando productos nacionales.",
+    "Disminuir significativamente la desnutrición y la anemia infantil mediante programas alimentarios desde el embarazo, guarderías y colegios, comprando a productores nacionales.",
+    "Extender a todo el país la experiencia de los Clubes Zonales para aumentar los espacios de esparcimiento familiar y fortalecer valores familiares, así como habilitar terrenos del Estado con servicios básicos para mejorar las viviendas sociales."
   ],
-  "posicionamiento_issues": {},
-  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "posicionamiento_issues": {
+    "asamblea_constituyente": "no especificado",
+    "libre_comercio_tlc": "no especificado",
+    "privatizacion_empresas_estado": "no especificado",
+    "relaciones_venezuela_cuba": "no especificado"
+  },
+  "fuente_datos": "Plan de Gobierno 2026-2031.",
   "scores": {
-    "score_economia": 10,
+    "score_economia": 7,
     "score_seguridad": 9,
-    "score_medio_ambiente": 2,
-    "score_educacion": 5,
-    "score_salud": 3
+    "score_medio_ambiente": 5,
+    "score_educacion": 6,
+    "score_salud": 7
   },
   "propuestas": [
     {
       "tema": "anticorrupcion",
-      "titulo": "Central de Lucha contra la Corrupción (CCC) con plenos poderes para detectar, infiltrar y capturar",
-      "descripcion": "Central de Lucha contra la Corrupción (CCC) con plenos poderes para detectar, infiltrar y capturar",
+      "titulo": "Central de Lucha Contra la Corrupción (CCC)",
+      "descripcion": "Creación de una CCC con plenos poderes para detectar, infiltrar y capturar delitos de corrupción en flagrancia, revisar la información patrimonial de funcionarios, reducir sustancialmente la corrupción y recuperar la confianza ciudadana.",
       "icono": "bi-eye"
     },
     {
-      "tema": "genero_inclusion",
-      "titulo": "Canastas básicas de productores agrícolas nacionales para erradicar pobreza extrema y desnutrición",
-      "descripcion": "Canastas básicas de productores agrícolas nacionales para erradicar pobreza extrema y desnutrición",
-      "icono": "bi-people"
-    },
-    {
       "tema": "seguridad_ciudadana",
-      "titulo": "Unidades Itinerantes de Pacificación Ciudadana con inteligencia y agentes encubiertos",
-      "descripcion": "Unidades Itinerantes de Pacificación Ciudadana con inteligencia y agentes encubiertos",
+      "titulo": "Unidades Itinerantes de Pacificación Ciudadana",
+      "descripcion": "Implementar unidades itinerantes con participación de Policía, serenazgo, Poder Judicial, Fiscalía y organizaciones sociales, apoyadas por tecnología de videovigilancia e inteligencia, y un convenio con Estados Unidos para combatir terrorismo urbano, extorsión y microcomercialización de drogas.",
       "icono": "bi-shield-check"
     },
     {
-      "tema": "infraestructura_agua_saneamiento",
-      "titulo": "Habilitación de terrenos estatales con servicios básicos para vivienda social",
-      "descripcion": "Habilitación de terrenos estatales con servicios básicos para vivienda social",
-      "icono": "bi-water"
+      "tema": "pobreza_programas_sociales",
+      "titulo": "Erradicación de pobreza extrema y fortalecimiento de programas sociales",
+      "descripcion": "Reforzar organizaciones populares para distribuir ayuda alimentaria, convertir grupos en emprendedores, fortalecer programas sociales eliminando filtraciones, reducir costos administrativos y basar los programas alimentarios en productos nacionales.",
+      "icono": "bi-people"
     },
     {
-      "tema": "reforma_estado",
-      "titulo": "Clubes Zonales en todo el país para fortalecer valores familiares en zonas vulnerables",
-      "descripcion": "Clubes Zonales en todo el país para fortalecer valores familiares en zonas vulnerables",
-      "icono": "bi-bank"
+      "tema": "nutricion_infantil",
+      "titulo": "Erradicación de anemia y desnutrición infantil",
+      "descripcion": "Asegurar la alimentación desde el vientre materno, continuando en guarderías y colegios, con programas sociales de alimentación que compren a productores nacionales.",
+      "icono": "bi-heart-pulse"
+    },
+    {
+      "tema": "esparcimiento_vivienda",
+      "titulo": "Clubes Zonales y vivienda social",
+      "descripcion": "Extender los Clubes Zonales a todo el país para aumentar espacios de esparcimiento familiar y habilitar terrenos del Estado con servicios básicos y acceso a transporte para mejorar las viviendas sociales durante los cinco años de gestión.",
+      "icono": "bi-house"
     }
   ],
   "partido_nombre": "Renovación Popular"

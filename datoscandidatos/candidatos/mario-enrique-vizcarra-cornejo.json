@@ -2,70 +2,77 @@
   "nombre": "Mario Enrique Vizcarra Cornejo",
   "slug": "mario-enrique-vizcarra-cornejo",
   "foto_url": "/static/img/candidatos/MarioVizcarra.png",
-  "edad": 60,
+  "edad": 71,
   "region": "Moquegua",
   "profesion": "Ingeniero / Político",
   "posicion_politica": "centro",
   "lema": "Volvamos a sonreír",
-  "biografia": "Mario Vizcarra Cornejo nació en 1964 en Moquegua. Hermano del expresidente Martín Vizcarra Cornejo. Ingeniero civil con experiencia en gestión pública regional. Fue funcionario regional en Moquegua durante gobiernos anteriores. Candidato presidencial por Perú Primero en 2026.",
-  "experiencia": "Funcionario e ingeniero civil en Moquegua. Hermano del expresidente Martín Vizcarra.",
-  "antecedentes": "⚠️ Su hermano Martín Vizcarra fue destituido de la presidencia en 2020 y enfrenta múltiples investigaciones por corrupción. Mario no tiene condenas propias registradas.",
+  "biografia": "Mario Enrique Vizcarra Cornejo es candidato presidencial del Partido Político Perú Primero para el periodo 2026–2031. Encabeza un plan de gobierno que nace de la iniciativa ciudadana de hombres y mujeres comprometidos con construir un país próspero, justo y solidario, con un Estado moderno y humano que sirva, escuche y rinda cuentas, recuperando la confianza de la población frente a la corrupción, la inseguridad y la desigualdad.",
+  "experiencia": "Líder del Partido Político Perú Primero, impulsor de un plan de gobierno organizado en cuatro dimensiones estratégicas (social, institucional, económico-productiva y territorial-ambiental), orientado a cambios profundos que devuelvan la confianza en el Estado y fortalezcan el Estado de derecho, la participación ciudadana y la rendición de cuentas.",
+  "antecedentes": "Sin información específica de antecedentes penales o investigaciones en el documento del plan de gobierno. Revisar estado actual en el Poder Judicial del Perú.",
   "es_destacado": false,
   "verificado": true,
-  "orden": 22,
-  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/MarioVizcarra.pdf",
-  "resumen_propuestas": "Un Estado moderno, eficiente y descentralizado enfocado en el ciudadano, la lucha frontal contra la pobreza, la seguridad y el desarrollo productivo.",
+  "orden": 1,
+  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/MarioEnriqueVizcarraCornejo.pdf",
+  "resumen_propuestas": "El Plan de Gobierno 2026–2031 de Perú Primero propone, bajo un ideario humanista que pone a la persona en el centro de las decisiones políticas, cuatro dimensiones estratégicas: social (lucha contra la pobreza e inclusión social, educación, salud, mujer y poblaciones vulnerables, cultura), institucional (reforma política y constitucional, justicia y derechos humanos, seguridad ciudadana y reforma policial, defensa nacional, modernización del Estado, lucha contra la corrupción, descentralización y gestión de riesgos), económico-productiva (economía y finanzas, producción y pesca, agricultura y riego, energía y minas, vivienda y saneamiento, infraestructura y conectividad, empleo con derechos, comercio exterior y turismo, relaciones exteriores) y territorial-ambiental (gestión del territorio, deforestación y cambio climático), complementadas con mecanismos de control ciudadano como rendición pública descentralizada y plataforma digital de seguimiento.",
   "propuestas_destacadas": [
-    "Programa de Vivienda Social Sostenible 'Una Casita Para Ti'",
-    "Fondo rotatorio 'Mi Chacra Crece' para 300,000 familias agricultoras",
-    "Reforma integral de la Policía Nacional e intervención de FFAA en prisiones de máxima seguridad",
-    "Programa nacional 'Anemia Cero' e intervención en primera infancia",
-    "Plan Nacional de Conectividad Digital para internet en el 90% de zonas rurales"
+    "Construir un país próspero, justo y solidario con un Estado moderno y humano que sirva, escuche, rinda cuentas y recupere el sentido de servicio al pueblo.",
+    "Implementar políticas de lucha contra la pobreza e inclusión social, fortaleciendo educación, salud, protección a la mujer y poblaciones vulnerables y promoción de la cultura.",
+    "Impulsar una reforma política y constitucional, fortalecer la justicia y los derechos humanos, reforzar la seguridad ciudadana y la defensa nacional, y modernizar el Estado combatiendo frontalmente la corrupción y promoviendo la descentralización.",
+    "Desarrollar una economía con empleo digno y sostenible mediante políticas en economía y finanzas, producción, pesca, agro, energía, vivienda, infraestructura, conectividad digital, empleo con derechos y promoción del comercio exterior y turismo.",
+    "Gestionar el territorio y el ambiente enfrentando la deforestación y el cambio climático, con una visión de desarrollo sostenible y con mecanismos de control ciudadano como rendición pública descentralizada y una plataforma digital de seguimiento del plan."
   ],
   "posicionamiento_issues": {
-    "asamblea_constituyente": "en contra",
-    "privatizacion_empresas_estado": "neutral",
-    "libre_comercio_tlc": "a favor"
+    "asamblea_constituyente": "a favor de reforma política y constitucional dentro del Estado de derecho",
+    "libre_comercio_tlc": "a favor (promoción del comercio exterior y turismo e integración al mundo)",
+    "privatizacion_empresas_estado": "no explícito (enfoque en economía con empleo digno y sostenible y rol activo del Estado)",
+    "relaciones_venezuela_cuba": "en contra de ideologías extremistas o totalitarias, cualquiera sea su origen"
   },
-  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "fuente_datos": "Plan de Gobierno 2026–2031 del Partido Político Perú Primero.",
   "scores": {
-    "score_economia": 6,
-    "score_seguridad": 6,
-    "score_medio_ambiente": 6,
-    "score_educacion": 6,
-    "score_salud": 6
+    "score_economia": 8,
+    "score_seguridad": 7,
+    "score_medio_ambiente": 7,
+    "score_educacion": 8,
+    "score_salud": 8
   },
   "propuestas": [
     {
-      "tema": "infraestructura_agua_saneamiento",
-      "titulo": "Vivienda Sostenible 'Una Casita Para Ti'",
-      "descripcion": "Implementación masiva de viviendas sociales en ciudades intermedias.",
-      "icono": "bi-house"
+      "tema": "ideario_principios",
+      "titulo": "Ideario humanista y principios democráticos",
+      "descripcion": "Ideario basado en principios humanistas que ponen a la persona en el centro de toda decisión política, con compromiso con el Estado de derecho, participación ciudadana, rendición de cuentas, ética, democracia, legalidad y justicia, libertad, independencia frente a ideologías extremistas y transparencia en la gestión.",
+      "icono": "bi-people"
     },
     {
-      "tema": "economia_empleo",
-      "titulo": "Mi Chacra Crece",
-      "descripcion": "Fondo rotatorio, crédito y asistencia técnica para la agricultura familiar.",
-      "icono": "bi-graph-up-arrow"
-    },
-    {
-      "tema": "seguridad_ciudadana",
-      "titulo": "Reforma Policial y Nuevas Cárceles",
-      "descripcion": "Reforma de la PNP y construcción de penales de máxima seguridad bajo control de FFAA.",
-      "icono": "bi-shield-check"
-    },
-    {
-      "tema": "salud",
-      "titulo": "Atención Primaria y Nutrición",
-      "descripcion": "Erradicación de la anemia y cobertura de salud universal en zonas alejadas.",
+      "tema": "dimension_social",
+      "titulo": "Dimensión social: pobreza, inclusión, educación y salud",
+      "descripcion": "Conjunto de políticas en lucha contra la pobreza e inclusión social, educación, salud, atención a la mujer y poblaciones vulnerables y cultura, con foco en bienestar y equidad.",
       "icono": "bi-heart-pulse"
     },
     {
-      "tema": "educacion",
-      "titulo": "Conectividad Digital Rural",
-      "descripcion": "Llevar internet de alta velocidad al 90% de las escuelas y localidades rurales.",
-      "icono": "bi-wifi"
+      "tema": "dimension_institucional",
+      "titulo": "Dimensión institucional: reforma política, justicia y seguridad",
+      "descripcion": "Agenda institucional que incluye reforma política y constitucional, justicia y derechos humanos, seguridad ciudadana, orden interno y reforma policial, defensa nacional, modernización del Estado, lucha contra la corrupción, descentralización, gestión de conflictos y gestión de riesgo de desastres.",
+      "icono": "bi-bank"
+    },
+    {
+      "tema": "dimension_economica",
+      "titulo": "Dimensión económico-productiva: empleo digno y desarrollo",
+      "descripcion": "Políticas económicas y productivas en economía y finanzas, producción y pesca, agricultura y riego, energía y minas, vivienda y saneamiento, infraestructura y conectividad digital, promoción del empleo con derechos, comercio exterior y turismo y relaciones exteriores.",
+      "icono": "bi-graph-up-arrow"
+    },
+    {
+      "tema": "dimension_territorial_ambiental",
+      "titulo": "Dimensión territorial-ambiental: territorio y cambio climático",
+      "descripcion": "Líneas de acción en gestión del territorio, combate a la deforestación y respuesta al cambio climático, integrando sostenibilidad ambiental en el desarrollo nacional.",
+      "icono": "bi-tree"
+    },
+    {
+      "tema": "control_ciudadano",
+      "titulo": "Mecanismos de control ciudadano y rendición de cuentas",
+      "descripcion": "Propuesta de mecanismos de control ciudadano como rendición pública descentralizada y participativa y una plataforma digital de seguimiento del plan de gobierno, para fortalecer la transparencia y la participación.",
+      "icono": "bi-eye"
     }
   ],
-  "partido_nombre": "Partido Político Perú Primero"
+  "partido_nombre": "Perú Primero"
 }

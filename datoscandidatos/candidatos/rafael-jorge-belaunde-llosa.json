@@ -2,35 +2,71 @@
   "nombre": "Rafael Jorge Belaunde Llosa",
   "slug": "rafael-jorge-belaunde-llosa",
   "foto_url": "/static/img/candidatos/RafaelBelaunde.jpg",
-  "edad": 71,
+  "edad": 51,
   "region": "Lima",
   "profesion": "Abogado / Político / Empresario",
   "posicion_politica": "centro",
-  "lema": "Plan para Sacar al Perú Adelante",
-  "biografia": "Rafael Belaunde Llosa nació en 1953 en Lima. Es sobrino del expresidente Fernando Belaúnde Terry. Abogado y empresario con trayectoria en el sector privado y la política liberal. Candidato de Libertad Popular, partido de corte liberal-democrático. Propone reducción del Estado, inversión privada y reformas institucionales.",
-  "experiencia": "Abogado y empresario. Militante de partidos liberales y demócrata-cristianos.",
-  "antecedentes": "Sin antecedentes penales conocidos.",
+  "lema": "Plan para sacar al Perú adelante",
+  "biografia": "Rafael Belaunde Llosa es candidato presidencial de Libertad Popular para el periodo 2026-2031 y encabeza el “Plan para sacar al Perú adelante”, plan de gobierno 2026-2031 de dicho partido.",
+  "experiencia": "Dirigente político y técnico en temas económicos e institucionales, ahora líder de Libertad Popular, que propone una agenda de reformas sociales, institucionales, económicas, territoriales y ambientales para romper el estancamiento y abrir una etapa de prosperidad inclusiva.",
+  "antecedentes": "Sin información específica de antecedentes penales o investigaciones en el documento del plan de gobierno. Revisar estado actual en el Poder Judicial del Perú.",
   "es_destacado": false,
   "verificado": true,
-  "orden": 10,
-  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/JorgeNieto.pdf",
-  "resumen_propuestas": "Fortalecimiento democrático, anticorrupción meritocrática y reducción de brechas territoriales.",
+  "orden": 1,
+  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/RafaelBelaundeLlosa.pdf",
+  "resumen_propuestas": "El Plan de Gobierno 2026-2031 de Libertad Popular parte de la premisa de que la Constitución de 1993 permitió reformas que lograron crecimiento y reducción de la pobreza, pero que la prosperidad no ha sido inclusiva, y plantea corregir el modelo fortaleciendo instituciones para que el libre mercado funcione con servicios públicos esenciales, infraestructura de calidad y un Estado que facilite el desarrollo. Propone instituciones inclusivas, eliminación de monopolios y oligopolios, apoyo intenso al emprendimiento, presencia estatal efectiva en territorios excluidos, reforma política para restaurar el equilibrio presidencialista frente al parlamentarismo de facto, y una lucha frontal contra la corrupción estructural y la inseguridad ciudadana.",
   "propuestas_destacadas": [
-    "Reforma institucional para fortalecer la democracia y el estado de derecho",
-    "Lucha anticorrupción con transparencia y meritocracia en el Estado",
-    "Inversión en educación y salud pública de calidad",
-    "Seguridad ciudadana con enfoque preventivo e integral",
-    "Desarrollo económico con equidad y reducción de brechas territoriales"
+    "Corregir el modelo económico fortaleciendo instituciones para que el libre mercado funcione para todos, con servicios públicos esenciales y un Estado que facilite el desarrollo en lugar de obstaculizarlo.",
+    "Eliminar monopolios y oligopolios, apoyar intensamente el emprendimiento y llevar servicios e infraestructura a las poblaciones más pobres, especialmente en comunidades indígenas, fronteras y zonas andinas y amazónicas.",
+    "Restaurar el equilibrio presidencialista mediante una reforma política que corrija el parlamentarismo de facto y garantice verdadera representación ciudadana.",
+    "Combatir la corrupción estructural y recuperar democráticamente un Estado capturado por mafias, mediante instituciones sólidas y rendición de cuentas.",
+    "Enfrentar la inseguridad ciudadana bajo el principio de que sin seguridad no hay libertad, sin libertad no hay inversión y sin inversión no hay crecimiento ni empleo."
   ],
-  "posicionamiento_issues": {},
-  "fuente_datos": "Plan de Gobierno JNE 2026",
-  "scores": {
-    "score_economia": 8,
-    "score_seguridad": 7,
-    "score_medio_ambiente": 4,
-    "score_educacion": 6,
-    "score_salud": 5
+  "posicionamiento_issues": {
+    "asamblea_constituyente": "en contra (defiende y busca aprovechar la Constitución de 1993 con reformas políticas e institucionales)",
+    "libre_comercio_tlc": "a favor (libre mercado, eliminación de monopolios/oligopolios, apertura competitiva)",
+    "privatizacion_empresas_estado": "a favor de mercados libres con Estado limitado y regulador, reduciendo intervencionismo y mercantilismo estatal",
+    "relaciones_venezuela_cuba": "en contra de modelos estatistas que se perciben como ineficientes y corruptos (implícito en la defensa de mercados libres e instituciones inclusivas)"
   },
-  "propuestas": [],
+  "fuente_datos": "Plan de Gobierno de Libertad Popular 2026-2031: Plan para sacar al Perú adelante.",
+  "scores": {
+    "score_economia": 9,
+    "score_seguridad": 8,
+    "score_medio_ambiente": 7,
+    "score_educacion": 7,
+    "score_salud": 7
+  },
+  "propuestas": [
+    {
+      "tema": "modelo_economico",
+      "titulo": "Libre mercado con instituciones inclusivas",
+      "descripcion": "Afirma que el crecimiento 1993-2025 se basó en control fiscal, autonomía del BCR y responsabilidad macroeconómica, pero plantea corregir el modelo con instituciones inclusivas en lo económico y político, que eliminen monopolios y oligopolios, y garanticen igualdad de condiciones para la inversión y la actividad económica.",
+      "icono": "bi-graph-up-arrow"
+    },
+    {
+      "tema": "lucha_pobreza",
+      "titulo": "Políticas basadas en evidencia contra la pobreza",
+      "descripcion": "Incorpora el enfoque de Banerjee y Duflo, proponiendo políticas contra la pobreza basadas en evidencia rigurosa y un entendimiento granular de las decisiones de los pobres, en lugar de grandes teorías o soluciones milagrosas.",
+      "icono": "bi-people"
+    },
+    {
+      "tema": "seguridad_inversion",
+      "titulo": "Seguridad, libertad, inversión y empleo",
+      "descripcion": "Sostiene que sin seguridad no hay libertad, sin libertad no hay inversión y sin inversión no hay crecimiento ni empleo, articulando la lucha contra la inseguridad ciudadana con un entorno favorable a la inversión.",
+      "icono": "bi-shield-check"
+    },
+    {
+      "tema": "reforma_politica",
+      "titulo": "Reforma política y equilibrio presidencialista",
+      "descripcion": "Propone revertir el parlamentarismo de facto surgido desde 2016 por abuso de herramientas constitucionales, restaurar el equilibrio presidencialista y emprender una reforma política que asegure verdadera representación y rendición de cuentas.",
+      "icono": "bi-bank"
+    },
+    {
+      "tema": "anticorrupcion",
+      "titulo": "Combate a la corrupción estructural",
+      "descripcion": "Reconoce la corrupción estructural documentada por Alfonso Quiroz y plantea recuperar el poder del Estado para el pueblo mediante un proceso de cinco años de fortalecimiento institucional, transparencia y sanción efectiva a mafias que capturaron el Estado.",
+      "icono": "bi-eye"
+    }
+  ],
   "partido_nombre": "Libertad Popular"
 }

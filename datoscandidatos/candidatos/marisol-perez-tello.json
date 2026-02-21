@@ -2,66 +2,57 @@
   "nombre": "Marisol Pérez Tello",
   "slug": "marisol-p-rez-tello",
   "foto_url": "/static/img/candidatos/MarisolPérez.jpg",
-  "edad": 54,
+  "edad": 56,
   "region": "Lima",
   "profesion": "Abogada / Política",
   "posicion_politica": "centro",
-  "lema": "Primero la gente",
-  "biografia": "Marisol Pérez Tello nació el 21 de enero de 1971 en Lima. Abogada por la Pontificia Universidad Católica del Perú. Ha sido congresista por Lima en varios períodos. Fue Ministra de Justicia y Derechos Humanos durante el gobierno de PPK (2016-2017). Candidata presidencial por el Partido Popular Cristiano en 2011. Es conocida por sus posiciones moderadas en materia de derechos humanos y justicia.",
-  "experiencia": "Congresista de la República por Lima (múltiples períodos). Ministra de Justicia y Derechos Humanos (2016-2017). Candidata presidencial 2011.",
-  "antecedentes": "Sin antecedentes penales conocidos.",
+  "lema": "Primero la Gente",
+  "biografia": "Marisol Pérez Tello es candidata presidencial por el Partido Político Primero La Gente para el periodo 2026-2031. Presenta un resumen del Plan de Gobierno 2026-2031 elaborado conforme al formato del Jurado Nacional de Elecciones, que organiza las propuestas en dimensiones y ejes con problemas identificados, objetivos estratégicos, indicadores y metas concretas para el periodo.",
+  "experiencia": "Política y abogada con experiencia en reforma institucional y derechos humanos, ahora liderando el Partido Primero La Gente con un plan de gobierno basado en enfoque de derechos, igualdad y metas cuantificables en educación, salud, protección social y otros ámbitos.",
+  "antecedentes": "Sin información específica de antecedentes penales o investigaciones en el documento del plan de gobierno. Revisar estado actual en el Poder Judicial del Perú.",
   "es_destacado": false,
   "verificado": true,
-  "orden": 18,
-  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/MarisolPerez.pdf",
-  "resumen_propuestas": "Plan educativo con metas cuantificadas al 2031: mejora en lectura, conclusión oportuna de primaria y formación técnica con acreditación.",
+  "orden": 1,
+  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/MarisolPerezTello.pdf",
+  "resumen_propuestas": "El resumen del Plan de Gobierno 2026-2031 de Primero La Gente, en la dimensión social – Eje 2: Sociedad y Derechos, plantea compromisos con educación de calidad accesible en todos sus niveles, abordando bajos logros de aprendizaje y habilidades socioemocionales, trayectorias educativas incompletas y baja conclusión oportuna, y oferta insuficiente de educación técnico-productiva y tecnológica mediante objetivos estratégicos, indicadores y metas al 2031.",
   "propuestas_destacadas": [
-    "+15pp estudiantes de primaria con nivel satisfactorio en lectura al 2031",
-    "98% tasa de conclusión oportuna de primaria (ninguna región bajo 96%)",
-    "Duplicar adultos que concluyen Educación Básica Alternativa (50% mujeres, 50% rural)",
-    "+15pp egresados de secundaria en programas técnicos o tecnológicos formales",
-    "70% de programas técnico-productivos públicos con acreditación de calidad al 2031"
+    "Mejorar los aprendizajes fundamentales y las habilidades socioemocionales en educación básica, reduciendo brechas territoriales, de género y por tipo de gestión.",
+    "Cerrar el rezago educativo y asegurar la conclusión oportuna de la educación básica, especialmente secundaria, con énfasis en jóvenes, mujeres y población rural.",
+    "Impulsar la educación técnico-productiva y superior tecnológica pertinente para jóvenes, especialmente de zonas rurales y amazónicas, para mejorar su empleabilidad y la diversificación productiva."
   ],
-  "posicionamiento_issues": {},
-  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "posicionamiento_issues": {
+    "asamblea_constituyente": "no especificado",
+    "libre_comercio_tlc": "no especificado",
+    "privatizacion_empresas_estado": "no especificado",
+    "relaciones_venezuela_cuba": "no especificado"
+  },
+  "fuente_datos": "Formato Resumen del Plan de Gobierno 2026-2031 del Partido Primero La Gente.",
   "scores": {
-    "score_economia": 6,
+    "score_economia": 7,
     "score_seguridad": 6,
-    "score_medio_ambiente": 6,
-    "score_educacion": 7,
+    "score_medio_ambiente": 7,
+    "score_educacion": 9,
     "score_salud": 7
   },
   "propuestas": [
     {
-      "tema": "educacion",
-      "titulo": "Incrementar 15pp los estudiantes de primaria con nivel satisfactorio en lectura (brecha urbano-rural <10pp al 2031)",
-      "descripcion": "Incrementar 15pp los estudiantes de primaria con nivel satisfactorio en lectura (brecha urbano-rural <10pp al 2031)",
+      "tema": "educacion_calidad",
+      "titulo": "Compromiso con educación de calidad accesible",
+      "descripcion": "Objetivo estratégico de mejorar los aprendizajes y habilidades socioemocionales en educación básica, con indicadores como el porcentaje de estudiantes de 4.º de primaria en nivel satisfactorio en lectura y matemática y estudiantes de 6.º con alta autorregulación socioemocional, con metas de aumento significativo y reducción de brechas urbano-rural, regionales y de género al 2031.",
       "icono": "bi-book"
     },
     {
-      "tema": "educacion",
-      "titulo": "Tasa de conclusión oportuna de primaria al 98% (ninguna región bajo 96%)",
-      "descripcion": "Tasa de conclusión oportuna de primaria al 98% (ninguna región bajo 96%)",
-      "icono": "bi-book"
+      "tema": "trayectorias_educativas",
+      "titulo": "Cierre del rezago y conclusión oportuna de la educación básica",
+      "descripcion": "Objetivo estratégico orientado a incrementar la proporción de adolescentes de 17–19 años con secundaria completa, elevar la conclusión oportuna de primaria a al menos 98 % y duplicar la cantidad de jóvenes y adultos que concluyen ciclos de Educación Básica Alternativa o certifican estudios, con enfoque en mujeres y áreas rurales o periurbanas vulnerables.",
+      "icono": "bi-mortarboard"
     },
     {
-      "tema": "educacion",
-      "titulo": "Duplicar jóvenes y adultos que concluyen ciclos de Educación Básica Alternativa",
-      "descripcion": "Duplicar jóvenes y adultos que concluyen ciclos de Educación Básica Alternativa",
-      "icono": "bi-book"
-    },
-    {
-      "tema": "educacion",
-      "titulo": "Incrementar 15pp la proporción de egresados de secundaria en programas técnicos formales",
-      "descripcion": "Incrementar 15pp la proporción de egresados de secundaria en programas técnicos formales",
-      "icono": "bi-book"
-    },
-    {
-      "tema": "educacion",
-      "titulo": "70% de programas técnico-productivos públicos con acreditación de calidad al 2031",
-      "descripcion": "70% de programas técnico-productivos públicos con acreditación de calidad al 2031",
-      "icono": "bi-book"
+      "tema": "educacion_tecnica",
+      "titulo": "Impulso de la educación técnico-productiva y tecnológica",
+      "descripcion": "Objetivo estratégico que busca incrementar la matrícula de egresados de secundaria en programas técnicos o tecnológicos formales dentro de los 2 años posteriores al egreso y lograr que al menos 70 % de los programas públicos técnico-productivos y tecnológicos estén acreditados o certificados en calidad al 2031, con énfasis en regiones amazónicas y rurales.",
+      "icono": "bi-gear"
     }
   ],
-  "partido_nombre": "Primero la Gente"
+  "partido_nombre": "Primero La Gente"
 }

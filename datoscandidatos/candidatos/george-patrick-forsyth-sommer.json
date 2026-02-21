@@ -2,64 +2,69 @@
   "nombre": "George Patrick Forsyth Sommer",
   "slug": "george-patrick-forsyth-sommer",
   "foto_url": "/static/img/candidatos/GeorgeForsyth.jpg",
-  "edad": 42,
+  "edad": 43,
   "region": "Lima",
   "profesion": "Empresario / Exfutbolista / Político",
   "posicion_politica": "centro",
-  "lema": "¡A Paso de Vencedores!",
-  "biografia": "George Forsyth nació el 7 de octubre de 1982 en Lima. Exarquero de la selección peruana de fútbol (Alianza Lima, CN Miraflores). Estudió en el colegio La Inmaculada y tiene estudios universitarios en administración. Fue alcalde del distrito de La Victoria (Lima) de 2019 a 2022, conocido por sus iniciativas de seguridad ciudadana. Candidato presidencial en 2021 (llegó a la primera vuelta). Actualmente milita en Somos Perú.",
-  "experiencia": "Arquero profesional de fútbol (Alianza Lima, selección peruana). Alcalde de La Victoria - Lima (2019-2022). Candidato presidencial 2021.",
-  "antecedentes": "⚠️ INVESTIGADO: Fue investigado por presunto nepotismo en su gestión como alcalde de La Victoria y por contratos cuestionados con empresas de seguridad. También fue objeto de atención mediática por su separación y vida personal pública.",
-  "es_destacado": true,
+  "lema": "A paso de vencedores",
+  "biografia": "George Forsyth es candidato presidencial del Partido Democrático Somos Perú para el periodo 2026-2031. El Plan de Gobierno 2026-2031 ha sido elaborado por el equipo técnico del partido bajo la dirección de la presidenta Patricia Li Sotelo y el Comité Ejecutivo Nacional, y plantea una mejora estructural del país basada en el ciudadano, la familia y la municipalidad como célula base de la administración pública.",
+  "experiencia": "Exalcalde y dirigente político con experiencia en gestión municipal, ahora candidato presidencial del Partido Democrático Somos Perú, respaldado por un equipo técnico nacional para la formulación de su plan de gobierno.",
+  "antecedentes": "Sin información específica de antecedentes penales o investigaciones en el documento del plan de gobierno. Revisar estado actual en el Poder Judicial del Perú.",
+  "es_destacado": false,
   "verificado": true,
-  "orden": 32,
+  "orden": 1,
   "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/GeorgeForsyth.pdf",
-  "resumen_propuestas": "Modernización del Estado, protección a instituciones autónomas, 'Anemia Cero', desarrollo industrial y Policía al servicio del ciudadano.",
+  "resumen_propuestas": "El Plan de Gobierno 2026-2031 de Somos Perú propone, sobre la base de su ideario humanista y democrático, un conjunto de estrategias en las dimensiones social, ambiental, económica e institucional orientadas a construir un Estado moderno, democrático y constitucional, con democracia participativa desde lo local, economía al servicio de la persona, justicia social, integración latinoamericana y rendición de cuentas efectiva.",
   "propuestas_destacadas": [
-    "Blindaje constitucional de órganos autónomos (JNJ, ONPE, Defensoría)",
-    "Programa 'Anemia Cero' articulando transferencias condicionadas y salud rural",
-    "Programa 'Técnicos para la Industria' con 50,000 becas y modelo de formación dual",
-    "Creación de 10 plataformas regionales de exportación y clústeres productivos",
-    "Reforma policial con descentralización y uso de Inteligencia Artificial"
+    "Fortalecer la democracia participativa desde la base, consolidando la democracia local, distrital y provincial como soporte del sistema democrático peruano.",
+    "Construir un Estado moderno, democrático y constitucional que garantice derechos humanos, dignidad del trabajo, participación en la riqueza y responsabilidad de quienes ejercen función pública.",
+    "Impulsar políticas sociales, ambientales, económicas e institucionales integrales para los próximos cinco años de gobierno, sustentadas en un diagnóstico por dimensiones.",
+    "Afirmar la importancia de la familia como célula básica de la sociedad y del trabajo como base del bienestar nacional.",
+    "Promover una sociedad justa, libre y culta, sin discriminación, donde la economía esté al servicio de la persona y se impulse la integración latinoamericana y la defensa de los recursos naturales."
   ],
-  "posicionamiento_issues": {},
-  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "posicionamiento_issues": {
+    "asamblea_constituyente": "no especificado",
+    "libre_comercio_tlc": "no especificado",
+    "privatizacion_empresas_estado": "no especificado",
+    "relaciones_venezuela_cuba": "en contra de toda forma de imperialismo, cualquiera sea su origen"
+  },
+  "fuente_datos": "Plan de Gobierno del Partido Democrático Somos Perú 2026-2031.",
   "scores": {
-    "score_economia": 6,
-    "score_seguridad": 8,
-    "score_medio_ambiente": 5,
-    "score_educacion": 6,
-    "score_salud": 6
+    "score_economia": 7,
+    "score_seguridad": 7,
+    "score_medio_ambiente": 7,
+    "score_educacion": 8,
+    "score_salud": 7
   },
   "propuestas": [
     {
-      "tema": "reforma_estado",
-      "titulo": "Perú Democrático",
-      "descripcion": "Blindaje constitucional para proteger a los órganos autónomos de la captura política.",
+      "tema": "ideario_principios",
+      "titulo": "Principios humanistas y democráticos de Somos Perú",
+      "descripcion": "Ideario basado en la primacía de la persona humana, igualdad en dignidad, familia como célula básica de la sociedad, trabajo como base del bienestar, justicia, bien común y solidaridad, y construcción de una sociedad justa, libre y culta, sin discriminación, donde la economía esté al servicio del ser humano.",
+      "icono": "bi-people"
+    },
+    {
+      "tema": "vision_estado",
+      "titulo": "Estado moderno, democrático y constitucional",
+      "descripcion": "Aspiración de convertir al Perú en un Estado moderno y democrático basado en la voluntad popular, con instituciones estables y legítimas que garanticen derechos humanos, unidad de la República, dignidad del trabajo, participación en la riqueza y sometimiento de gobernantes y gobernados a la Constitución y la ley.",
       "icono": "bi-bank"
     },
     {
-      "tema": "salud",
-      "titulo": "Programa Anemia Cero",
-      "descripcion": "Transferencias condicionadas y contratación de enfermeras especialistas en zonas rurales.",
+      "tema": "democracia_participativa",
+      "titulo": "Democracia participativa desde lo local",
+      "descripcion": "Fortalecer la democracia local, distrital y provincial como base del sistema democrático, con partidos de funcionamiento institucional estable y amplia participación ciudadana en la toma de decisiones públicas.",
+      "icono": "bi-geo-alt"
+    },
+    {
+      "tema": "politicas_sociales",
+      "titulo": "Dimensión social: bienestar y servicios",
+      "descripcion": "Conjunto de estrategias en la dimensión social del plan orientadas a atender problemáticas de salud, educación, protección social y otras necesidades ciudadanas, sobre la base del diagnóstico social nacional.",
       "icono": "bi-heart-pulse"
     },
     {
-      "tema": "educacion",
-      "titulo": "Técnicos para la Industria",
-      "descripcion": "50,000 becas integrales para carreras técnicas y reconversión laboral.",
-      "icono": "bi-book"
-    },
-    {
-      "tema": "seguridad_ciudadana",
-      "titulo": "Policía al Servicio del Ciudadano",
-      "descripcion": "Descentralización policial, mapas del delito en tiempo real y uso de IA.",
-      "icono": "bi-shield-check"
-    },
-    {
-      "tema": "economia_empleo",
-      "titulo": "Diversificación Exportadora",
-      "descripcion": "Plataformas regionales de exportación y compras estatales con contenido nacional.",
+      "tema": "ambiente_economia_instituciones",
+      "titulo": "Dimensiones ambiental, económica e institucional",
+      "descripcion": "Estrategias para enfrentar desafíos ambientales, económicos e institucionales, promoviendo desarrollo sostenible, modernización económica y fortalecimiento de las instituciones y la rendición de cuentas.",
       "icono": "bi-graph-up-arrow"
     }
   ],

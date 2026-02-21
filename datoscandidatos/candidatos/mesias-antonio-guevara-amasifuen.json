@@ -2,75 +2,82 @@
   "nombre": "Mesías Antonio Guevara Amasifuén",
   "slug": "mes-as-antonio-guevara-amasifu-n",
   "foto_url": "/static/img/candidatos/MesíasGuevara.jpg",
-  "edad": 50,
+  "edad": 53,
   "region": "San Martín",
   "profesion": "Abogado / Político",
   "posicion_politica": "centro",
-  "lema": "La República, todas las peruanas y peruanos, la soñamos juntos",
-  "biografia": "Mesías Guevara Amasifuén es abogado y exgobernador regional de Cajamarca (2019-2022). Candidato por Partido Morado, propone descentralización y lucha anticorrupción.",
-  "experiencia": "Abogado / Político. Candidato presidencial 2026.",
-  "antecedentes": "Sin antecedentes penales conocidos de relevancia pública.",
+  "lema": "Haciendo Patria",
+  "biografia": "Mesías Guevara Amasifuén es candidato presidencial del Partido Morado para el periodo 2026-2031. Encabeza el Plan de Gobierno Nacional 2026-2031 titulado “Haciendo Patria”, que se apoya en una visión republicana de centro y plantea que la República es un proyecto que todas las peruanas y peruanos deben soñar y construir juntos.",
+  "experiencia": "Ingeniero y dirigente político con experiencia parlamentaria y de gestión, ahora líder del Partido Morado en un plan de gobierno estructurado en diagnóstico nacional, visión al 2050, doctrina de republicanismo de centro y tres grandes ejes estratégicos: desarrollo humano, desarrollo económico y transformación del Estado.",
+  "antecedentes": "Sin información específica de antecedentes penales o investigaciones en el documento del plan de gobierno. Revisar estado actual en el Poder Judicial del Perú.",
   "es_destacado": false,
   "verificado": true,
-  "orden": 2,
-  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/AntonioOrtiz.pdf",
-  "resumen_propuestas": "Partido de centro progresista con eje en familia, libertades individuales, economía social de mercado y preparación tecnológica del país ante la Revolución Robótica.",
+  "orden": 1,
+  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/MesiasGuevara.pdf",
+  "resumen_propuestas": "El Plan de Gobierno Nacional del Partido Morado identifica diez problemas críticos del Perú (inseguridad ciudadana, corrupción sistémica, crisis política e institucional, desempleo y precarización laboral, pobreza y desigualdad, colapso del sistema de salud, crisis de la educación pública, minería ilegal y economías criminales, condiciones de vida precarias y conflictos socioambientales) y propone una transformación republicana basada en una visión de país al 2050, un republicanismo de centro como doctrina y tres ejes estratégicos: desarrollo humano, desarrollo económico y transformación del Estado.",
   "propuestas_destacadas": [
-    "Reforma integral del Estado con separación de poderes e independencia judicial real",
-    "Economía social de mercado con distribución equitativa y combate a la desigualdad",
-    "Cero anemia y desnutrición: inversión en primera infancia con metas medibles",
-    "Preparación tecnológica ante la Revolución Robótica e IA con reconversión productiva",
-    "Descentralización con infraestructura e industrias en todas las regiones"
+    "Impulsar una transformación republicana frente a diez problemas críticos como la inseguridad ciudadana, la corrupción sistémica, la crisis política, el desempleo y los conflictos socioambientales.",
+    "Desarrollar una visión de Perú al 2050 alineada con el Acuerdo Nacional y los Objetivos de Desarrollo Sostenible, orientada a un país democrático, justo y próspero.",
+    "Adoptar el republicanismo de centro como doctrina, combinando pragmatismo y equilibrio para construir instituciones sólidas, combatir la corrupción y garantizar derechos y libertades.",
+    "Implementar el Eje de Desarrollo Humano para garantizar el desarrollo biológico de las personas, la pertenencia y construcción de sociedad, condiciones de vida digna y la protección del futuro en armonía con el entorno.",
+    "Aplicar el Eje de Transformación del Estado mediante estrategias de recuperación de la integridad republicana, rediseño institucional del aparato estatal, descentralización funcional y presencia territorial efectiva, y reposicionamiento internacional del Perú como Estado sólido y de principios republicanos."
   ],
   "posicionamiento_issues": {
-    "asamblea_constituyente": "en contra",
-    "libre_comercio_tlc": "a favor",
-    "privatizacion_empresas_estado": "a favor parcial"
+    "asamblea_constituyente": "no especificado (habla de transformación republicana e institucional, sin detallar mecanismo constitucional en el resumen)",
+    "libre_comercio_tlc": "no especificado",
+    "privatizacion_empresas_estado": "no especificado",
+    "relaciones_venezuela_cuba": "no especificado"
   },
-  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "fuente_datos": "Plan de Gobierno Nacional del Partido Morado 2026-2031: Haciendo Patria.",
   "scores": {
-    "score_economia": 5,
-    "score_seguridad": 5,
-    "score_medio_ambiente": 5,
-    "score_educacion": 5,
-    "score_salud": 5
+    "score_economia": 8,
+    "score_seguridad": 7,
+    "score_medio_ambiente": 8,
+    "score_educacion": 8,
+    "score_salud": 7
   },
   "propuestas": [
     {
-      "tema": "economia_empleo",
-      "titulo": "Economía social de mercado con libertad de empresa y distribución equitativa",
-      "descripcion": "Economía social de mercado con libertad de empresa y distribución equitativa",
-      "icono": "bi-graph-up-arrow"
+      "tema": "diagnostico_nacional",
+      "titulo": "Diez problemas críticos del Perú",
+      "descripcion": "Diagnóstico que identifica diez problemas críticos: inseguridad ciudadana y criminalidad, corrupción sistémica, crisis política y colapso institucional, desempleo y estancamiento económico, pobreza y crisis nutricional, sistema de salud colapsado, educación pública en crisis, minería ilegal y economías criminales, condiciones de vida precarias y conflictos socioambientales.",
+      "icono": "bi-exclamation-triangle"
     },
     {
-      "tema": "economia_empleo",
-      "titulo": "Preparación tecnológica ante la Revolución Robótica e IA: reconversión productiva",
-      "descripcion": "Preparación tecnológica ante la Revolución Robótica e IA: reconversión productiva",
-      "icono": "bi-graph-up-arrow"
+      "tema": "vision_pais_2050",
+      "titulo": "Visión de un Perú al 2050",
+      "descripcion": "Visión de país al 2050 alineada con el Acuerdo Nacional actualizado y los Objetivos de Desarrollo Sostenible, que busca un Perú democrático, justo y próspero con instituciones sólidas y ciudadanía plena.",
+      "icono": "bi-geo-alt"
     },
     {
-      "tema": "infraestructura_agua_saneamiento",
-      "titulo": "Descentralización con infraestructura e industrias en todas las regiones",
-      "descripcion": "Descentralización con infraestructura e industrias en todas las regiones",
-      "icono": "bi-water"
-    },
-    {
-      "tema": "reforma_estado",
-      "titulo": "Plena separación de poderes e independencia judicial real",
-      "descripcion": "Plena separación de poderes e independencia judicial real",
+      "tema": "doctrina_republicanismo_centro",
+      "titulo": "Republicanismo de centro como doctrina",
+      "descripcion": "Marco doctrinario que define el republicanismo, explica el centro político como espacio de pragmatismo y equilibrio y fundamenta la elección del centro republicano como base del Partido Morado.",
       "icono": "bi-bank"
     },
     {
-      "tema": "reforma_estado",
-      "titulo": "Modernización del sistema judicial y del Ministerio Público",
-      "descripcion": "Modernización del sistema judicial y del Ministerio Público",
-      "icono": "bi-bank"
-    },
-    {
-      "tema": "salud",
-      "titulo": "Cero anemia y desnutrición: inversión prioritaria en primera infancia con metas medibles",
-      "descripcion": "Cero anemia y desnutrición: inversión prioritaria en primera infancia con metas medibles",
+      "tema": "eje_desarrollo_humano",
+      "titulo": "Eje 1: Desarrollo humano",
+      "descripcion": "Eje estratégico que comprende garantizar el desarrollo biológico del ser humano, la pertenencia y construcción de sociedad, condiciones de vida digna y seguridad, y un futuro en armonía con el entorno.",
       "icono": "bi-heart-pulse"
+    },
+    {
+      "tema": "eje_desarrollo_economico",
+      "titulo": "Eje 2: Desarrollo económico",
+      "descripcion": "Estrategias de empoderamiento económico y social del ciudadano, transformación productiva y competitiva de la economía e integración territorial sostenible, articuladas para un crecimiento inclusivo.",
+      "icono": "bi-graph-up-arrow"
+    },
+    {
+      "tema": "eje_transformacion_estado",
+      "titulo": "Eje 3: Transformación del Estado",
+      "descripcion": "Estrategias para recuperar la integridad republicana, rediseñar el aparato estatal, descentralizar funcionalmente y asegurar presencia territorial efectiva, y recuperar la imagen del Perú como Estado sólido y de principios republicanos.",
+      "icono": "bi-shield-check"
+    },
+    {
+      "tema": "matriz_desarrollo_nacional",
+      "titulo": "Matriz de desarrollo nacional 11×8",
+      "descripcion": "Matriz de desarrollo nacional que integra transversalmente los ejes de desarrollo humano, económico y transformación del Estado en 88 áreas (11×8), con metodología de integración y articulación de políticas.",
+      "icono": "bi-table"
     }
   ],
   "partido_nombre": "Partido Morado"

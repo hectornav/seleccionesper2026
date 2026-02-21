@@ -2,66 +2,74 @@
   "nombre": "Napoleón Becerra García",
   "slug": "napole-n-becerra-garc-a",
   "foto_url": "/static/img/candidatos/NapoleonBecerra.jpg",
-  "edad": 50,
+  "edad": 61,
   "region": "Lima",
   "profesion": "Político / Dirigente Sindical",
   "posicion_politica": "centro_izquierda",
   "lema": " ",
-  "biografia": "Napoleón Becerra García es dirigente sindical y candidato del Partido de los Trabajadores y Emprendedores. Propone derechos laborales, economía popular y reforma agraria moderada.",
-  "experiencia": "Político / Dirigente Sindical. Candidato presidencial 2026.",
-  "antecedentes": "Sin antecedentes penales conocidos de relevancia pública.",
+  "biografia": "Napoleón Becerra es candidato presidencial del partido PTE-Perú, que presenta un formato resumen de su Plan de Gobierno 2026-2031 siguiendo el esquema del Jurado Nacional de Elecciones, identificando problemas en dimensiones social, institucional, económica y territorial-ambiental, y planteando objetivos estratégicos, indicadores y metas cuantificadas.",
+  "experiencia": "Liderazgo de PTE-Perú en la formulación de un plan de gobierno centrado en justicia comunitaria, derechos laborales, emprendimiento, fortalecimiento institucional e infraestructura territorial.",
+  "antecedentes": "Sin información específica de antecedentes penales o investigaciones en el resumen del plan de gobierno. Revisar estado actual en el Poder Judicial del Perú.",
   "es_destacado": false,
   "verificado": true,
-  "orden": 6,
+  "orden": 1,
   "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/NapoleonBecerra.pdf",
-  "resumen_propuestas": "Seguridad preventiva, salud rural, nutrición escolar, anticorrupción con cadena perpetua y revolución del emprendimiento.",
+  "resumen_propuestas": "El resumen del Plan de Gobierno de PTE-Perú para 2026-2031 plantea, en la dimensión social, fortalecer la justicia comunitaria y la seguridad preventiva, crear una red nacional de atención médica preventiva, reforzar derechos laborales, implementar un programa nacional de nutrición escolar y reformar universidades e institutos públicos. En la dimensión institucional propone cadena perpetua para delitos graves de corrupción, convocar a un nuevo pacto social y reestructurar la carrera pública y entidades estatales. En la dimensión económica apuesta por una revolución del emprendimiento, apoyo financiero y técnico a emprendedores, desarrollo de cadenas productivas e impulso a la micro y pequeña agricultura. En la dimensión territorial-ambiental establece un plan nacional de infraestructura pública, un impuesto ecológico y un programa de vivienda digna, todo acompañado de una propuesta de rendición de cuentas periódica.",
   "propuestas_destacadas": [
-    "Justicia comunitaria y seguridad preventiva: reducir criminalidad 40% en 5 años",
-    "Red nacional de atención médica preventiva con 100% cobertura rural",
-    "Programa nacional de nutrición escolar para reducir desnutrición al 5%",
-    "Cadena perpetua para corrupción grave con 100% de casos judicializados",
-    "Revolución del emprendimiento: +500,000 nuevas MYPEs y 1 millón de emprendedores apoyados"
+    "Reducir en 40 % el índice de criminalidad fortaleciendo la justicia comunitaria y la seguridad preventiva.",
+    "Lograr 100 % de cobertura de atención primaria en zonas rurales mediante una red nacional de atención médica preventiva.",
+    "Alcanzar 100 % de cumplimiento laboral y normativo reforzando derechos laborales de trabajadores estatales y privados.",
+    "Reducir la desnutrición infantil al 5 % con un programa nacional de nutrición escolar.",
+    "Imponer cadena perpetua para delitos graves de corrupción y judicializar el 100 % de los casos graves, como parte de la lucha contra la corrupción estructural.",
+    "Crear 500 000 nuevas MYPES y apoyar a 1 millón de emprendedores con crédito y asistencia técnica en una revolución del emprendimiento.",
+    "Incrementar en 30 % la producción agropecuaria en 5 años impulsando la micro y pequeña agricultura.",
+    "Alcanzar 100 % de cobertura vial y sanitaria en zonas fronterizas con un plan nacional de infraestructura pública, recaudar 500 millones de soles anuales mediante un impuesto ecológico y beneficiar a 1 millón de hogares con un programa de vivienda digna."
   ],
-  "posicionamiento_issues": {},
-  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "posicionamiento_issues": {
+    "asamblea_constituyente": "a favor de un nuevo pacto social nacional (mecanismo no detallado en el resumen)",
+    "libre_comercio_tlc": "no especificado",
+    "privatizacion_empresas_estado": "no especificado",
+    "relaciones_venezuela_cuba": "no especificado"
+  },
+  "fuente_datos": "Formato Resumen del Plan de Gobierno 2026-2031 de PTE-Perú.",
   "scores": {
-    "score_economia": 5,
-    "score_seguridad": 5,
-    "score_medio_ambiente": 5,
-    "score_educacion": 5,
-    "score_salud": 5
+    "score_economia": 7,
+    "score_seguridad": 9,
+    "score_medio_ambiente": 7,
+    "score_educacion": 7,
+    "score_salud": 8
   },
   "propuestas": [
     {
-      "tema": "anticorrupcion",
-      "titulo": "Cadena perpetua para delitos graves de corrupción con 100% de casos judicializados",
-      "descripcion": "Cadena perpetua para delitos graves de corrupción con 100% de casos judicializados",
-      "icono": "bi-eye"
-    },
-    {
-      "tema": "educacion",
-      "titulo": "Programa nacional de nutrición escolar para reducir desnutrición infantil al 5%",
-      "descripcion": "Programa nacional de nutrición escolar para reducir desnutrición infantil al 5%",
-      "icono": "bi-book"
-    },
-    {
-      "tema": "mypes_emprendimiento",
-      "titulo": "Creación de +500,000 nuevas MYPEs y apoyo a 1 millón de emprendedores",
-      "descripcion": "Creación de +500,000 nuevas MYPEs y apoyo a 1 millón de emprendedores",
-      "icono": "bi-shop"
-    },
-    {
-      "tema": "salud",
-      "titulo": "Red nacional de atención médica preventiva con 100% de cobertura en zonas rurales",
-      "descripcion": "Red nacional de atención médica preventiva con 100% de cobertura en zonas rurales",
+      "tema": "dimension_social",
+      "titulo": "Seguridad, salud preventiva, derechos laborales y nutrición",
+      "descripcion": "Plantea reducir en 40 % la criminalidad con justicia comunitaria y seguridad preventiva, lograr 100 % de cobertura de atención primaria en zonas rurales, alcanzar 100 % de cumplimiento laboral y normativo, reducir la desnutrición infantil al 5 % y reformar universidades e institutos públicos para mejorar su posición en rankings latinoamericanos en 20 puestos.",
       "icono": "bi-heart-pulse"
     },
     {
-      "tema": "seguridad_ciudadana",
-      "titulo": "Justicia comunitaria y seguridad preventiva: reducir criminalidad en 40% en 5 años",
-      "descripcion": "Justicia comunitaria y seguridad preventiva: reducir criminalidad en 40% en 5 años",
+      "tema": "dimension_institucional",
+      "titulo": "Lucha contra la corrupción y nuevo pacto social",
+      "descripcion": "Propone cadena perpetua para delitos graves de corrupción, judicializar el 100 % de casos graves, convocar a un nuevo pacto social nacional con participación del 80 % de las regiones y reestructurar la carrera pública y entidades estatales para mejorar en 30 % la eficiencia institucional.",
       "icono": "bi-shield-check"
+    },
+    {
+      "tema": "dimension_economica",
+      "titulo": "Revolución del emprendimiento e impulso a la agricultura",
+      "descripcion": "Busca enfrentar el estancamiento económico mediante una revolución del emprendimiento con 500 000 nuevas MYPES, apoyo financiero y técnico a 1 millón de emprendedores, desarrollo de cadenas productivas que aumenten en 25 % el valor agregado industrial y un incremento del 30 % de la producción agropecuaria en cinco años.",
+      "icono": "bi-graph-up-arrow"
+    },
+    {
+      "tema": "dimension_territorial_ambiental",
+      "titulo": "Infraestructura, impuesto ecológico y vivienda digna",
+      "descripcion": "Incluye un plan nacional de infraestructura pública para alcanzar 100 % de cobertura vial y sanitaria en zonas fronterizas, creación de un impuesto ecológico que genere 500 millones de soles anuales y un programa de vivienda digna para 1 millón de hogares.",
+      "icono": "bi-tree"
+    },
+    {
+      "tema": "rendicion_cuentas",
+      "titulo": "Rendición de cuentas y participación ciudadana",
+      "descripcion": "Propone publicación semestral de avances en portales oficiales, audiencias públicas regionales anuales, informe anual ante el Congreso Nacional del PTE-Perú y participación ciudadana en la evaluación de metas mediante plataformas digitales.",
+      "icono": "bi-eye"
     }
   ],
-  "partido_nombre": "Partido de los Trabajadores y Emprendedores PTE-Perú"
+  "partido_nombre": "Partido de los Trabajadores y Emprendedores PTE"
 }

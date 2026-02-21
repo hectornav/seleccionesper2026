@@ -6,43 +6,72 @@
   "region": "Junín",
   "profesion": "Político / Dirigente",
   "posicion_politica": "centro-izquierda",
-  "lema": "Por un Perú mejor",
-  "biografia": "Roberto Sánchez Palomino es dirigente de Juntos por el Perú, coalición de izquierda moderada. Propone políticas sociales, reforma educativa y descentralización.",
-  "experiencia": "Político / Dirigente. Candidato presidencial 2026.",
-  "antecedentes": "Sin antecedentes penales conocidos de relevancia pública.",
+  "lema": "Caminemos juntos hasta vencer",
+  "biografia": "Roberto Sánchez Palomino es candidato presidencial de Juntos por el Perú para el periodo 2026-2031 y presenta el Plan de Gobierno 2026-2031 de esta organización.[file:56] El documento se plantea como una hoja de ruta para transitar hacia un verdadero Estado social y democrático de derecho, con soberanía y justicia social, frente a una coyuntura de crisis institucional, de seguridad, económica y social.[file:56]",
+  "experiencia": "Dirigente de izquierda democrática y popular, vinculado a procesos de articulación social y política, que lidera una propuesta de cambio de modelo de Estado y de desarrollo, alejándose del modelo neoliberal basado en exportación de materias primas, desregulación laboral y contracción del Estado social.[file:56]",
+  "antecedentes": "El plan de gobierno no incluye información sobre antecedentes penales o investigaciones. Revisar estado actual en el Poder Judicial del Perú.[file:56]",
   "es_destacado": false,
-  "verificado": false,
-  "orden": 36,
-  "link_plan_gobierno": "",
-  "resumen_propuestas": "",
-  "propuestas_destacadas": [],
-  "posicionamiento_issues": {},
-  "fuente_datos": "Plan de Gobierno JNE 2026",
+  "verificado": true,
+  "orden": 1,
+  "link_plan_gobierno": "https://declara.jne.gob.pe/assets/plangobierno/fileplangobierno/RobertoSanchezPalomino.pdf",
+  "resumen_propuestas": "El Plan de Gobierno 2026-2031 de Juntos por el Perú parte del diagnóstico de agotamiento del modelo neoliberal peruano y propone una transición hacia un Estado social y democrático de derecho con soberanía y justicia social.[file:56] Se estructura en tres partes principales: un ideario político que define al partido como de izquierda democrática, popular, plural y ecohumanista; una visión orientada al rescate de la patria y la soberanía nacional; y una estrategia basada en doce ejes de gobierno, que incluyen nueva Constitución, derechos humanos y justicia, seguridad ciudadana, salud, vivienda, revolución productiva sostenible, agricultura y soberanía alimentaria, protección del agua, transformación de la pequeña minería, educación pública universal y un futuro digno para niños, niñas, adolescentes y jóvenes.[file:56]",
+  "propuestas_destacadas": [
+    "Impulsar el retorno a la democracia plena y la elaboración de una nueva Constitución como parte de la transición hacia un Estado social y democrático de derecho.[file:56]",
+    "Reorientar el modelo de desarrollo dejando atrás el neoliberalismo basado en exportación de materias primas y desregulación laboral, hacia una revolución productiva sostenible que articule innovación y saberes ancestrales.[file:56]",
+    "Fortalecer los derechos humanos, la justicia y la interculturalidad, reconociendo al Perú como Estado plurinacional, pluricultural y multiétnico.[file:56]",
+    "Erradicar la criminalidad y garantizar seguridad ciudadana como condición para la dignidad y el ejercicio pleno de derechos.[file:56]",
+    "Asegurar la salud como prioridad pública, el acceso a vivienda digna y servicios públicos, la soberanía alimentaria y la protección del agua como bienes estratégicos para la vida.[file:56]"
+  ],
+  "posicionamiento_issues": {
+    "asamblea_constituyente": "a favor (retorno a la democracia y nueva Constitución como primer eje de gobierno)",
+    "libre_comercio_tlc": "crítico del neoliberalismo y de la sacralización del mercado; propone un modelo alternativo con soberanía económica",
+    "privatizacion_empresas_estado": "en contra de la mercantilización de derechos y de la contracción del Estado social; a favor de un Estado fuerte en áreas estratégicas",
+    "relaciones_venezuela_cuba": "no especificado en el fragmento, pero se inscribe en una izquierda que reivindica soberanía, solidaridad internacional y crítica al modelo neoliberal global"
+  },
+  "fuente_datos": "Plan de Gobierno 2026-2031 de Juntos por el Perú.[file:56]",
   "scores": {
-    "score_economia": 5,
-    "score_seguridad": 5,
-    "score_medio_ambiente": 5,
-    "score_educacion": 5,
-    "score_salud": 5
+    "score_economia": 7,
+    "score_seguridad": 7,
+    "score_medio_ambiente": 9,
+    "score_educacion": 8,
+    "score_salud": 8
   },
   "propuestas": [
     {
-      "tema": "economia",
-      "titulo": "Rol activo del Estado en la economía",
-      "descripcion": "El Estado debe ser agente activo del desarrollo: inversión pública estratégica en sectores clave como energía, transporte, y agroindustria para zonas excluidas del mercado.",
+      "tema": "ideario_izquierda_ecohumanista",
+      "titulo": "Ideario de izquierda democrática, popular y ecohumanista",
+      "descripcion": "Define a Juntos por el Perú como partido de izquierda democrática, popular, plural y ecohumanista, que repudia el neoliberalismo y la sacralización del mercado, busca una revolución democrática anticolonial y aspira a una sociedad soberana, descentralizada, plurinacional, pluricultural, multiétnica y sustentable.[file:56]",
+      "icono": "bi-people"
+    },
+    {
+      "tema": "nueva_constitucion",
+      "titulo": "Retorno a la democracia y nueva Constitución",
+      "descripcion": "Primer eje estratégico orientado a recuperar la democracia frente a su captura por poderes económicos y políticos, promoviendo una nueva Constitución que consagre un Estado social y democrático de derecho.[file:56]",
+      "icono": "bi-bank"
+    },
+    {
+      "tema": "seguridad_ciudadana",
+      "titulo": "Erradicación de la criminalidad y seguridad ciudadana",
+      "descripcion": "Eje dedicado a enfrentar la inseguridad y la criminalidad como parte de la crisis estructural, articulando medidas integrales para proteger a la ciudadanía, especialmente a los sectores más vulnerables.[file:56]",
+      "icono": "bi-shield-check"
+    },
+    {
+      "tema": "revolucion_productiva",
+      "titulo": "Revolución productiva sostenible e innovación con saberes ancestrales",
+      "descripcion": "Propone una revolución productiva sostenible que combine innovación científica y tecnológica con saberes ancestrales, reorientando la economía hacia la diversificación productiva y la sostenibilidad.[file:56]",
       "icono": "bi-graph-up-arrow"
     },
     {
-      "tema": "medio_ambiente",
-      "titulo": "Agenda ambiental y sostenibilidad",
-      "descripcion": "Transición ecológica justa: proteger la Amazonía y los ecosistemas frágiles. Prohibición de proyectos extractivos sin consulta previa libre e informada a comunidades indígenas.",
-      "icono": "bi-tree-fill"
+      "tema": "soberania_alimentaria_agua_mineria",
+      "titulo": "Agricultura, soberanía alimentaria, agua y pequeña minería",
+      "descripcion": "Ejes dedicados a consolidar la agricultura y la soberanía alimentaria como garantías de independencia nacional, proteger el agua como base de la vida y transformar la pequeña minería hacia prácticas sostenibles y justas.[file:56]",
+      "icono": "bi-droplet"
     },
     {
-      "tema": "social",
-      "titulo": "Reducción de la desigualdad",
-      "descripcion": "Políticas redistributivas para cerrar la brecha entre ricos y pobres. Expansión de programas sociales con enfoque en zonas rurales y periurbanas de extrema pobreza.",
-      "icono": "bi-people-fill"
+      "tema": "educacion_juventud",
+      "titulo": "Educación pública universal y futuro para la juventud",
+      "descripcion": "Compromiso con una educación pública universal para erradicar la inequidad y con políticas específicas para asegurar un futuro digno para niños, niñas, adolescentes y jóvenes.[file:56]",
+      "icono": "bi-mortarboard"
     }
   ],
   "partido_nombre": "Juntos por el Perú"
