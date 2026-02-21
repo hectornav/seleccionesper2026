@@ -2,7 +2,7 @@ import json
 from django.shortcuts import render, get_object_or_404
 from django.http import JsonResponse
 from django.views.decorators.http import require_POST
-from .models import Candidato, Partido, Propuesta, PreguntaQuiz
+from .models import Candidato, Partido, Propuesta, PreguntaQuiz, ResultadoQuiz
 
 
 def home(request):
@@ -142,6 +142,21 @@ def quiz_resultado(request):
             })
 
         resultados.sort(key=lambda x: x['porcentaje'], reverse=True)
+        top_candidato = None
+        if resultados:
+            top_candidato = Candidato.objects.get(id=resultados[0]['id'])
+        
+        # Save to DB
+        ip = request.META.get('HTTP_X_FORWARDED_FOR')
+        if not ip:
+            ip = request.META.get('REMOTE_ADDR')
+
+        ResultadoQuiz.objects.create(
+            ip=ip, 
+            candidato_top=top_candidato,
+            respuestas_json=respuestas
+        )
+
         return JsonResponse({'resultados': resultados[:5]})
 
     except Exception as e:

@@ -36,7 +36,7 @@
                     style="background:white;border-radius:20px;padding:2rem;box-shadow:var(--card-shadow);text-align:center">
                     <div style="font-size:3.5rem;margin-bottom:1rem">🗳️</div>
                     <h2 style="font-weight:800;font-size:1.4rem;color:var(--dark);margin-bottom:0.75rem">
-                        ¿Con quién votas el 2026?
+                        ¿Para quién es tu voto en el 2026?
                     </h2>
                     <p style="color:#4a5568;line-height:1.7;max-width:420px;margin:0 auto 1.5rem;font-size:0.9rem">
                         Responde <strong>{{ preguntas|length }} preguntas</strong> sobre temas clave para Perú y
@@ -69,7 +69,8 @@
                         <i class="bi bi-play-fill"></i> Comenzar Test
                     </button>
                     <p style="font-size:0.75rem;color:var(--text-muted-custom);margin-top:1rem">
-                        <i class="bi bi-shield-check"></i> Anónimo · No guardamos tus respuestas
+                        <i class="bi bi-shield-check"></i> Las respuestas son para calcular tu afinidad, no revelan
+                        identidad personal
                     </p>
                 </div>
             </div>
@@ -147,6 +148,17 @@
                         Basado en tus respuestas, estos candidatos se alinean más con tu visión de Perú
                     </p>
                 </div>
+
+                <div class="alert alert-warning d-flex align-items-center mb-4" role="alert"
+                    style="font-size: 0.85rem; border-radius: 12px; border-left: 4px solid var(--gold);">
+                    <i class="bi bi-info-circle-fill me-2" style="font-size: 1.25rem;"></i>
+                    <div>
+                        <strong>Disclaimer:</strong> Este test es únicamente una herramienta de orientación y
+                        entretenimiento basada en posicionamientos políticos. El resultado no es definitivo ni implica
+                        que debas votar por el candidato sugerido. Mantén tu voto secreto y consciente.
+                    </div>
+                </div>
+
                 <div id="resultados-container"></div>
                 <div class="text-center mt-3">
                     <button onclick="reiniciarQuiz()" class="btn-outline-peru" style="font-size:0.85rem">

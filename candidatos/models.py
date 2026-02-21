@@ -199,3 +199,19 @@ class Visita(models.Model):
 
     def __str__(self):
         return f"{self.pais} - {self.ciudad} ({self.fecha})"
+
+
+class ResultadoQuiz(models.Model):
+    ip = models.GenericIPAddressField(null=True, blank=True)
+    fecha = models.DateTimeField(auto_now_add=True)
+    candidato_top = models.ForeignKey(Candidato, on_delete=models.SET_NULL, null=True, blank=True)
+    respuestas_json = models.JSONField(default=dict)
+
+    class Meta:
+        verbose_name = 'Resultado de Quiz'
+        verbose_name_plural = 'Resultados de Quiz'
+        ordering = ['-fecha']
+
+    def __str__(self):
+        candidato_nombre = self.candidato_top.nombre if self.candidato_top else "Ninguno"
+        return f"Test de {self.ip} - Top: {candidato_nombre}"

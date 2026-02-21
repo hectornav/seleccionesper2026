@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Partido, Candidato, Propuesta, PreguntaQuiz, OpcionQuiz, Visita
+from .models import Partido, Candidato, Propuesta, PreguntaQuiz, OpcionQuiz, Visita, ResultadoQuiz
 
 
 class PropuestaInline(admin.TabularInline):
@@ -55,3 +55,12 @@ class VisitaAdmin(admin.ModelAdmin):
 
     def has_add_permission(self, request):
         return False # No queremos añadir visitas manualmente
+
+@admin.register(ResultadoQuiz)
+class ResultadoQuizAdmin(admin.ModelAdmin):
+    list_display = ['ip', 'fecha', 'candidato_top']
+    list_filter = ['fecha', 'candidato_top']
+    readonly_fields = ['ip', 'fecha', 'candidato_top', 'respuestas_json']
+
+    def has_add_permission(self, request):
+        return False
