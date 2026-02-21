@@ -44,12 +44,15 @@
                         {{ candidato.posicion_label }}
                     </span>
                     {% if candidato.verificado %}
-                    <span style="background:rgba(39,174,96,0.2);color:#27ae60;border-radius:20px;padding:2px 10px;font-size:0.72rem;font-weight:600">
+                    <span
+                        style="background:rgba(39,174,96,0.2);color:#27ae60;border-radius:20px;padding:2px 10px;font-size:0.72rem;font-weight:600">
                         <i class="bi bi-check-circle-fill"></i> Verificado
                     </span>
                     {% endif %}
                 </div>
-                <h1 class="hero-candidate-name" style="font-size:clamp(1.35rem,3vw,2.2rem);font-weight:800;margin-bottom:0.4rem">{{ candidato.nombre }}</h1>
+                <h1 class="hero-candidate-name"
+                    style="font-size:clamp(1.35rem,3vw,2.2rem);font-weight:800;margin-bottom:0.4rem">{{ candidato.nombre
+                    }}</h1>
                 <div style="color:rgba(255,255,255,0.7);font-size:0.9rem;margin-bottom:0.75rem">
                     <i class="bi bi-briefcase"></i> {{ candidato.profesion }} &bull;
                     <i class="bi bi-geo-alt"></i> {{ candidato.region }} &bull;
@@ -61,7 +64,8 @@
                 </div>
                 {% endif %}
                 {% if candidato.lema %}
-                <p style="font-style:italic;color:rgba(255,255,255,0.85);font-size:0.95rem;border-left:3px solid var(--gold);padding-left:0.75rem;max-width:500px;margin-bottom:0">
+                <p
+                    style="font-style:italic;color:rgba(255,255,255,0.85);font-size:0.95rem;border-left:3px solid var(--gold);padding-left:0.75rem;max-width:500px;margin-bottom:0">
                     "{{ candidato.lema }}"
                 </p>
                 {% endif %}
@@ -134,17 +138,18 @@
                     </h3>
                     <div class="issues-grid">
                         {% for issue, posicion in candidato.posicionamiento_issues.items %}
-                        <div class="issue-badge {% if posicion == 'a favor' %}a-favor{% elif posicion == 'en contra' %}en-contra{% elif posicion == 'neutral' %}neutral{% else %}parcial{% endif %}">
+                        <div
+                            class="issue-badge {% if posicion == 'a favor' %}a-favor{% elif posicion == 'en contra' %}en-contra{% elif posicion == 'neutral' %}neutral{% else %}parcial{% endif %}">
                             <span class="issue-label">{{ issue|cut:"_"|title }}</span>
                             <span class="issue-value">
                                 {% if posicion == 'a favor' %}
-                                    <i class="bi bi-check-circle-fill"></i> A favor
+                                <i class="bi bi-check-circle-fill"></i> A favor
                                 {% elif posicion == 'en contra' %}
-                                    <i class="bi bi-x-circle-fill"></i> En contra
+                                <i class="bi bi-x-circle-fill"></i> En contra
                                 {% elif posicion == 'neutral' %}
-                                    <i class="bi bi-dash-circle-fill"></i> Neutral
+                                <i class="bi bi-dash-circle-fill"></i> Neutral
                                 {% else %}
-                                    <i class="bi bi-circle-half"></i> {{ posicion|title }}
+                                <i class="bi bi-circle-half"></i> {{ posicion|title }}
                                 {% endif %}
                             </span>
                         </div>
@@ -155,17 +160,22 @@
 
                 <!-- Link al Plan de Gobierno -->
                 {% if candidato.link_plan_gobierno %}
-                <div class="card-white" style="background:linear-gradient(135deg,#f8f9fa,#fff);border:2px solid var(--gold)">
+                <div class="card-white"
+                    style="background:linear-gradient(135deg,#f8f9fa,#fff);border:2px solid var(--gold)">
                     <div class="d-flex align-items-center gap-3">
-                        <div style="width:50px;height:50px;background:var(--gold);border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0">
-                            <i class="bi bi-file-earmark-pdf-fill" style="font-size:1.5rem;color:var(--dark)"></i>
+                        <div
+                            style="width:50px;height:50px;background:var(--gold);border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+                            <i class="bi bi-bank" style="font-size:1.5rem;color:var(--dark)"></i>
                         </div>
                         <div class="flex-grow-1">
-                            <h5 style="margin:0;font-weight:700;font-size:0.95rem;color:var(--dark)">Plan de Gobierno Oficial</h5>
-                            <p style="margin:0;font-size:0.82rem;color:#6c757d">Documento completo registrado en el JNE</p>
+                            <h5 style="margin:0;font-weight:700;font-size:0.95rem;color:var(--dark)">Plan de Gobierno
+                                (JNE)</h5>
+                            <p style="margin:0;font-size:0.82rem;color:#6c757d">Consulta oficial en la Plataforma
+                                Electoral</p>
                         </div>
-                        <a href="{{ candidato.link_plan_gobierno }}" target="_blank" rel="noopener" class="btn-peru" style="white-space:nowrap">
-                            <i class="bi bi-download"></i> Ver PDF
+                        <a href="{{ candidato.link_plan_gobierno }}" target="_blank" rel="noopener" class="btn-peru"
+                            style="white-space:nowrap">
+                            <i class="bi bi-box-arrow-up-right"></i> Ver en JNE
                         </a>
                     </div>
                 </div>
@@ -204,8 +214,9 @@
                     <div class="d-flex align-items-center gap-2">
                         <i class="bi bi-info-circle" style="color:#0ea5e9"></i>
                         <span style="font-size:0.85rem;color:#0369a1">
-                            Para ver todas las propuestas detalladas, consulta el 
-                            <a href="{{ candidato.link_plan_gobierno }}" target="_blank" rel="noopener" style="color:#0ea5e9;font-weight:600">Plan de Gobierno completo en el JNE</a>.
+                            Para ver todas las propuestas detalladas, consulta el
+                            <a href="{{ candidato.link_plan_gobierno }}" target="_blank" rel="noopener"
+                                style="color:#0ea5e9;font-weight:600">Plan de Gobierno completo en el JNE</a>.
                         </span>
                     </div>
                 </div>
@@ -217,7 +228,7 @@
                     <p style="font-size:0.95rem">No hay propuestas detalladas registradas aún.</p>
                     {% if candidato.link_plan_gobierno %}
                     <a href="{{ candidato.link_plan_gobierno }}" target="_blank" rel="noopener" class="btn-peru">
-                        <i class="bi bi-file-earmark-pdf"></i> Ver Plan de Gobierno en JNE
+                        <i class="bi bi-box-arrow-up-right"></i> Ver Plan de Gobierno en JNE
                     </a>
                     {% endif %}
                 </div>
@@ -239,34 +250,35 @@
                         <div class="posicion-row">
                             <div class="posicion-tema">
                                 {% if issue == 'asamblea_constituyente' %}
-                                    <i class="bi bi-bank2"></i> Asamblea Constituyente
+                                <i class="bi bi-bank2"></i> Asamblea Constituyente
                                 {% elif issue == 'privatizacion_empresas_estado' %}
-                                    <i class="bi bi-building"></i> Privatización de Empresas del Estado
+                                <i class="bi bi-building"></i> Privatización de Empresas del Estado
                                 {% elif issue == 'libre_comercio_tlc' %}
-                                    <i class="bi bi-globe-americas"></i> Libre Comercio / TLC
+                                <i class="bi bi-globe-americas"></i> Libre Comercio / TLC
                                 {% elif issue == 'pena_muerte' %}
-                                    <i class="bi bi-exclamation-octagon"></i> Pena de Muerte
+                                <i class="bi bi-exclamation-octagon"></i> Pena de Muerte
                                 {% elif issue == 'relaciones_venezuela_cuba' %}
-                                    <i class="bi bi-flag"></i> Relaciones con Venezuela/Cuba
+                                <i class="bi bi-flag"></i> Relaciones con Venezuela/Cuba
                                 {% elif issue == 'matrimonio_igualitario' %}
-                                    <i class="bi bi-heart"></i> Matrimonio Igualitario
+                                <i class="bi bi-heart"></i> Matrimonio Igualitario
                                 {% elif issue == 'medio_ambiente_prioridad_absoluta' %}
-                                    <i class="bi bi-tree"></i> Medio Ambiente como Prioridad
+                                <i class="bi bi-tree"></i> Medio Ambiente como Prioridad
                                 {% elif issue == 'derechos_animales' %}
-                                    <i class="bi bi-emoji-heart-eyes"></i> Derechos de los Animales
+                                <i class="bi bi-emoji-heart-eyes"></i> Derechos de los Animales
                                 {% else %}
-                                    <i class="bi bi-question-circle"></i> {{ issue|cut:"_"|title }}
+                                <i class="bi bi-question-circle"></i> {{ issue|cut:"_"|title }}
                                 {% endif %}
                             </div>
-                            <div class="posicion-valor {% if posicion == 'a favor' %}a-favor{% elif posicion == 'en contra' %}en-contra{% elif posicion == 'neutral' %}neutral{% else %}parcial{% endif %}">
+                            <div
+                                class="posicion-valor {% if posicion == 'a favor' %}a-favor{% elif posicion == 'en contra' %}en-contra{% elif posicion == 'neutral' %}neutral{% else %}parcial{% endif %}">
                                 {% if posicion == 'a favor' %}
-                                    <i class="bi bi-check-circle-fill"></i> A favor
+                                <i class="bi bi-check-circle-fill"></i> A favor
                                 {% elif posicion == 'en contra' %}
-                                    <i class="bi bi-x-circle-fill"></i> En contra
+                                <i class="bi bi-x-circle-fill"></i> En contra
                                 {% elif posicion == 'neutral' %}
-                                    <i class="bi bi-dash-circle-fill"></i> Neutral
+                                <i class="bi bi-dash-circle-fill"></i> Neutral
                                 {% else %}
-                                    <i class="bi bi-circle-half"></i> {{ posicion|title }}
+                                <i class="bi bi-circle-half"></i> {{ posicion|title }}
                                 {% endif %}
                             </div>
                         </div>
@@ -275,7 +287,8 @@
                 </div>
                 {% else %}
                 <div class="text-center py-5" style="color:var(--text-muted-custom)">
-                    <i class="bi bi-clipboard-x" style="font-size:3rem;display:block;margin-bottom:1rem;opacity:0.5"></i>
+                    <i class="bi bi-clipboard-x"
+                        style="font-size:3rem;display:block;margin-bottom:1rem;opacity:0.5"></i>
                     <p style="font-size:0.95rem">No hay posicionamiento registrado en temas clave.</p>
                 </div>
                 {% endif %}
@@ -299,15 +312,19 @@
                 <div class="card-white" style="border-left:4px solid #e67e22">
                     <div class="d-flex align-items-center gap-2 mb-3">
                         <i class="bi bi-exclamation-triangle-fill" style="font-size:1.5rem;color:#e67e22"></i>
-                        <h3 style="font-weight:800;color:#e67e22;font-size:1.1rem;margin:0">Antecedentes Legales y Judiciales</h3>
+                        <h3 style="font-weight:800;color:#e67e22;font-size:1.1rem;margin:0">Antecedentes Legales y
+                            Judiciales</h3>
                     </div>
                     <p style="line-height:1.9;color:#4a5568;font-size:0.95rem">{{ candidato.antecedentes }}</p>
                     <div style="background:#fff8ef;border-radius:8px;padding:0.75rem;margin-top:1rem">
                         <p style="font-size:0.78rem;color:#9ca3af;margin:0">
                             <i class="bi bi-info-circle"></i>
-                            Esta información proviene de registros públicos, sentencias judiciales y medios de comunicación verificados.
-                            La plataforma es informativa y no toma partido ni emite opinión sobre los procesos judiciales.
-                            Para mayor información consulta el <a href="https://www.pj.gob.pe" target="_blank" rel="noopener" style="color:var(--peru-red)">Poder Judicial del Perú</a>.
+                            Esta información proviene de registros públicos, sentencias judiciales y medios de
+                            comunicación verificados.
+                            La plataforma es informativa y no toma partido ni emite opinión sobre los procesos
+                            judiciales.
+                            Para mayor información consulta el <a href="https://www.pj.gob.pe" target="_blank"
+                                rel="noopener" style="color:var(--peru-red)">Poder Judicial del Perú</a>.
                         </p>
                     </div>
                 </div>
@@ -324,13 +341,15 @@
                     <i class="bi bi-flag"></i> Partido Político
                 </h5>
                 <div style="display:flex;align-items:center;gap:10px">
-                    <div style="width:40px;height:40px;border-radius:8px;background:{{ candidato.partido.color_primario }};display:flex;align-items:center;justify-content:center;color:white;font-weight:800;font-size:0.75rem;flex-shrink:0">
+                    <div
+                        style="width:40px;height:40px;border-radius:8px;background:{{ candidato.partido.color_primario }};display:flex;align-items:center;justify-content:center;color:white;font-weight:800;font-size:0.75rem;flex-shrink:0">
                         {{ candidato.partido.siglas|slice:":2" }}
                     </div>
                     <div>
                         <div style="font-weight:600;font-size:0.9rem">{{ candidato.partido.nombre }}</div>
                         {% if candidato.partido.ideologia %}
-                        <div style="font-size:0.78rem;color:var(--text-muted-custom)">{{ candidato.partido.ideologia }}</div>
+                        <div style="font-size:0.78rem;color:var(--text-muted-custom)">{{ candidato.partido.ideologia }}
+                        </div>
                         {% endif %}
                     </div>
                 </div>
@@ -354,14 +373,18 @@
                 <h5 style="font-weight:700;font-size:0.9rem;margin-bottom:1rem;color:var(--dark)">Acciones</h5>
                 <div class="d-flex flex-column gap-2">
                     {% if candidato.link_plan_gobierno %}
-                    <a href="{{ candidato.link_plan_gobierno }}" target="_blank" rel="noopener" class="btn-peru" style="background:var(--gold);color:var(--dark);border-color:var(--gold);justify-content:center">
-                        <i class="bi bi-file-earmark-pdf"></i> Ver Plan de Gobierno
+                    <a href="{{ candidato.link_plan_gobierno }}" target="_blank" rel="noopener" class="btn-peru"
+                        style="background:var(--gold);color:var(--dark);border-color:var(--gold);justify-content:center">
+                        <i class="bi bi-box-arrow-up-right"></i> Ver Plan de Gobierno (JNE)
                     </a>
                     {% endif %}
-                    <button onclick="votarDesdeDetalle({{ candidato.id }})" class="btn-outline-peru vote-btn-{{ candidato.id }}" style="justify-content:center" id="voteBtn">
+                    <button onclick="votarDesdeDetalle({{ candidato.id }})"
+                        class="btn-outline-peru vote-btn-{{ candidato.id }}" style="justify-content:center"
+                        id="voteBtn">
                         <i class="bi bi-box2-heart"></i> Votar por este candidato
                     </button>
-                    <a href="{% url 'candidatos:comparar' %}?c={{ candidato.id }}" class="btn-outline-peru" style="justify-content:center">
+                    <a href="{% url 'candidatos:comparar' %}?c={{ candidato.id }}" class="btn-outline-peru"
+                        style="justify-content:center">
                         <i class="bi bi-columns-gap"></i> Comparar con otros
                     </a>
                     <a href="{% url 'candidatos:quiz' %}" class="btn-peru" style="justify-content:center">
@@ -380,11 +403,14 @@
                 <a href="{% url 'candidatos:candidato_detail' otro.slug %}"
                     style="text-decoration:none;display:flex;align-items:center;gap:10px;padding:0.5rem;border-radius:8px;transition:background 0.2s;margin-bottom:0.25rem"
                     onmouseover="this.style.background='#f8f9fa'" onmouseout="this.style.background='transparent'">
-                    <div style="width:36px;height:36px;border-radius:50%;background:#e9ecef;overflow:hidden;flex-shrink:0">
+                    <div
+                        style="width:36px;height:36px;border-radius:50%;background:#e9ecef;overflow:hidden;flex-shrink:0">
                         {% if otro.get_foto %}
-                        <img src="{{ otro.get_foto }}" alt="{{ otro.nombre }}" style="width:100%;height:100%;object-fit:cover">
+                        <img src="{{ otro.get_foto }}" alt="{{ otro.nombre }}"
+                            style="width:100%;height:100%;object-fit:cover">
                         {% else %}
-                        <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:18px;color:#adb5bd">
+                        <div
+                            style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:18px;color:#adb5bd">
                             <i class="bi bi-person-fill"></i>
                         </div>
                         {% endif %}
@@ -492,6 +518,7 @@
         background: #dcfce7;
         border: 1px solid #86efac;
     }
+
     .issue-badge.a-favor .issue-value {
         color: #166534;
     }
@@ -500,6 +527,7 @@
         background: #fef2f2;
         border: 1px solid #fecaca;
     }
+
     .issue-badge.en-contra .issue-value {
         color: #991b1b;
     }
@@ -508,6 +536,7 @@
         background: #f3f4f6;
         border: 1px solid #d1d5db;
     }
+
     .issue-badge.neutral .issue-value {
         color: #6b7280;
     }
@@ -516,6 +545,7 @@
         background: #fef3c7;
         border: 1px solid #fcd34d;
     }
+
     .issue-badge.parcial .issue-value {
         color: #92400e;
     }
@@ -732,7 +762,7 @@
     function showTab(tab) {
         document.querySelectorAll('.tab-content-pane').forEach(el => el.classList.add('d-none'));
         document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
-        
+
         document.getElementById('content-' + tab).classList.remove('d-none');
         document.getElementById('tab-' + tab).classList.add('active');
     }
