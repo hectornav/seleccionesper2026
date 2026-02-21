@@ -15,15 +15,32 @@ def get_client_ip(request):
 @require_POST
 def votar(request, candidato_id):
     ip = get_client_ip(request)
-    # Check if this IP has already voted
-    has_voted = Voto.objects.filter(ip_address=ip).exists()
-    
-    if has_voted:
-        return JsonResponse({'success': False, 'message': 'Ya has registrado un voto.'}, status=400)
-    
+
+    # ensure we have a session key (Django will create one if it doesn't
+    # already exist).  this value is stored in a cookie and is unique per
+    # browser, so two people on the same network can vote separately.
+    if not request.session.session_key:
+        request.session.create()
+    session_key = request.session.session_key
+
+    # first check: has this browser/session already voted in the last hour?
+    from django.utils import timezone
+    from datetime import timedelta
+    cutoff = timezone.now() - timedelta(hours=1)
+    has_voted_recently = Voto.objects.filter(session_key=session_key, fecha_voto__gte=cutoff).exists()
+
+    # you can still keep the old IP‑based check if you want to restrict one
+    # vote per network; leaving it off ensures people on the same Wi‑Fi can
+    # each vote once per hour.
+    # has_voted_recently = has_voted_recently or Voto.objects.filter(
+    #     ip_address=ip, fecha_voto__gte=cutoff).exists()
+
+    if has_voted_recently:
+        return JsonResponse({'success': False, 'message': 'Ya has registrado un voto recientemente. Intenta de nuevo más tarde.'}, status=400)
+
     try:
         candidato = Candidato.objects.get(id=candidato_id)
-        Voto.objects.create(candidato=candidato, ip_address=ip)
+        Voto.objects.create(candidato=candidato, ip_address=ip, session_key=session_key)
         
         # Calculate new vote count and percentage to return
         total_votos = Voto.objects.count()
