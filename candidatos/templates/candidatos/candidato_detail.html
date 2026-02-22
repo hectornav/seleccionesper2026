@@ -42,7 +42,11 @@
                     </span>
                     <span
                         style="background:{{ candidato.posicion_color }};color:white;border-radius:20px;padding:2px 12px;font-size:0.78rem;font-weight:600">
-                        {{ candidato.posicion_label }}
+                        {% if candidato.posicion_label %}
+                            {{ candidato.posicion_label }}
+                        {% else %}
+                            {{ candidato.posicion_politica|default:"(no informado)" }}
+                        {% endif %}
                     </span>
                     {% if candidato.verificado %}
                     <span

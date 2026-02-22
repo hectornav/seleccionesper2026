@@ -134,7 +134,11 @@
 
                     <!-- Badge posición -->
                     <span class="posicion-badge" style="--pos-color: {{ candidato.posicion_color }};">
-                        {{ candidato.posicion_label }}
+                        {% if candidato.posicion_label %}
+                            {{ candidato.posicion_label }}
+                        {% else %}
+                            {{ candidato.posicion_politica|default:"(no informado)" }}
+                        {% endif %}
                     </span>
 
                     <!-- Badge partido -->

@@ -72,6 +72,16 @@ class Candidato(models.Model):
         ordering = ['orden', 'nombre']
 
     def save(self, *args, **kwargs):
+        # ensure posicion_politica always matches one of the choice keys
+        if self.posicion_politica:
+            # lower case and replace spaces/hyphens with underscore
+            cleaned = self.posicion_politica.lower().replace('-', '_').replace(' ', '_')
+            # also map a couple of common variants
+            variants = {
+                'centroizquierda': 'centro_izquierda',
+                'centroderecha': 'centro_derecha',
+            }
+            self.posicion_politica = variants.get(cleaned, cleaned)
         if not self.slug:
             self.slug = slugify(self.nombre)
         super().save(*args, **kwargs)

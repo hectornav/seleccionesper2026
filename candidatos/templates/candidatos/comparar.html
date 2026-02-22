@@ -169,7 +169,11 @@
                     <td style="padding:0.75rem 1rem;text-align:center;border-bottom:1px solid #e9ecef">
                         <span
                             style="background:{{ c.posicion_color }};color:white;border-radius:20px;padding:2px 10px;font-size:0.75rem;font-weight:600">
-                            {{ c.posicion_label }}
+                            {% if c.posicion_label %}
+                                {{ c.posicion_label }}
+                            {% else %}
+                                {{ c.posicion_politica|default:"(no informado)" }}
+                            {% endif %}
                         </span>
                     </td>
                     {% endfor %}

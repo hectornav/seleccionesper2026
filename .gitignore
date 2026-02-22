@@ -16,3 +16,4 @@ parse_json*.py
 update_script.py
 replace_seed_data.py
 generated_lists.py
+db.sqlite3
