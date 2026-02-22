@@ -186,10 +186,10 @@
                 {% endif %}
                 {% if not propuestas_por_tema %}
                 <div class="alert alert-info mt-3" role="alert">
-                    <strong>Advertencia:</strong> No se han importado propuestas detalladas para este
-                    candidato.
+                    <strong>Advertencia:</strong> No se ha encontrado un PDF de plan de gobierno
+                    accesible para este candidato, por lo que no es posible mostrar propuestas.
                     {% if candidato.link_plan_gobierno %}
-                    Revisa el plan de gobierno en el JNE, puede que el documento no contenga secciones parseables.
+                    Aún así puedes revisar el plan en el JNE usando el botón de arriba.
                     {% endif %}
                 </div>
                 {% endif %}
