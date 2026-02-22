@@ -234,6 +234,8 @@
                     <a href="{{ candidato.link_plan_gobierno }}" target="_blank" rel="noopener" class="btn-peru">
                         <i class="bi bi-box-arrow-up-right"></i> Ver Plan de Gobierno en JNE
                     </a>
+                    {% else %}
+                    <p style="font-size:0.85rem;color:var(--text-muted-custom);margin-top:0.5rem">No se encontró plan de gobierno oficial.</p>
                     {% endif %}
                 </div>
                 {% endif %}
