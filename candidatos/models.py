@@ -58,6 +58,8 @@ class Candidato(models.Model):
     score_medio_ambiente = models.IntegerField(default=5, help_text='1=Conservador, 10=Progresista')
     score_educacion = models.IntegerField(default=5, help_text='1=Pública, 10=Privada')
     score_salud = models.IntegerField(default=5, help_text='1=Universal, 10=Privada')
+    score_corrupcion = models.IntegerField(default=5, help_text='1=Investigado/StatusQuo, 10=AnticorrupcionRadical')
+    score_descentralizacion = models.IntegerField(default=5, help_text='1=Centralista, 10=Federalista/Regionalista')
 
     # Metadatos
     ultima_actualizacion = models.DateField(auto_now=True)
@@ -225,3 +227,27 @@ class ResultadoQuiz(models.Model):
     def __str__(self):
         candidato_nombre = self.candidato_top.nombre if self.candidato_top else "Ninguno"
         return f"Test de {self.ip} - Top: {candidato_nombre}"
+
+
+class Encuesta(models.Model):
+    """Estadísticas de intención de voto de encuestadoras oficiales del Perú."""
+    encuestadora = models.CharField(max_length=120, help_text='Ej: IEP, CPI, Datum, etc.')
+    siglas = models.CharField(max_length=20, blank=True, help_text='Siglas de la encuestadora')
+    fecha_terreno = models.DateField(help_text='Fecha de realización del trabajo de campo')
+    fecha_publicacion = models.DateField(null=True, blank=True)
+    resultados = models.JSONField(
+        default=list,
+        help_text='Lista de {"nombre": "Apellido Nombre", "porcentaje": 15.5}. Ordenar por porcentaje descendente.'
+    )
+    fuente_url = models.URLField(blank=True, help_text='Enlace a la publicación oficial')
+    nota = models.CharField(max_length=300, blank=True, help_text='Ej: Solo Lima, nacional, etc.')
+    activo = models.BooleanField(default=True)
+    orden = models.IntegerField(default=0)
+
+    class Meta:
+        verbose_name = 'Encuesta de intención de voto'
+        verbose_name_plural = 'Encuestas de intención de voto'
+        ordering = ['-fecha_terreno', '-fecha_publicacion', 'orden']
+
+    def __str__(self):
+        return f"{self.encuestadora} – {self.fecha_terreno}"

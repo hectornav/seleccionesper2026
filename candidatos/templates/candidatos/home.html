@@ -135,9 +135,9 @@
                     <!-- Badge posición -->
                     <span class="posicion-badge" style="--pos-color: {{ candidato.posicion_color }};">
                         {% if candidato.posicion_label %}
-                            {{ candidato.posicion_label }}
+                        {{ candidato.posicion_label }}
                         {% else %}
-                            {{ candidato.posicion_politica|default:"(no informado)" }}
+                        {{ candidato.posicion_politica|default:"(no informado)" }}
                         {% endif %}
                     </span>
 
@@ -165,7 +165,8 @@
                     {% if candidato.lema %}
                     <p class="candidato-lema">"{{ candidato.lema }}"</p>
                     {% elif candidato.resumen_propuestas %}
-                    <p class="candidato-lema" style="font-style:normal;border-color:#e9ecef">{{ candidato.resumen_propuestas|truncatewords:15 }}</p>
+                    <p class="candidato-lema" style="font-style:normal;border-color:#e9ecef">{{
+                        candidato.resumen_propuestas|truncatewords:15 }}</p>
                     {% endif %}
 
                     <!-- Propuesta destacada -->

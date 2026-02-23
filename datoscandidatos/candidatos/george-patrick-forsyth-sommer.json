@@ -30,11 +30,13 @@
   },
   "fuente_datos": "Plan de Gobierno del Partido Democrático Somos Perú 2026-2031.",
   "scores": {
-    "score_economia": 7,
-    "score_seguridad": 7,
-    "score_medio_ambiente": 7,
-    "score_educacion": 8,
-    "score_salud": 7
+    "score_economia": 8,
+    "score_seguridad": 8,
+    "score_medio_ambiente": 6,
+    "score_educacion": 7,
+    "score_salud": 7,
+    "score_corrupcion": 7,
+    "score_descentralizacion": 4
   },
   "propuestas": [
     {

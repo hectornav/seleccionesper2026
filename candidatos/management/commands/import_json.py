@@ -86,6 +86,15 @@ class Command(BaseCommand):
             scores = item.get('scores', {})
             slug = item.get('slug') or slugify(item['nombre'])
             
+            # Check if candidate has meaningful data
+            has_propuestas = len(item.get('propuestas', [])) > 0
+            has_resumen = len(item.get('resumen_propuestas', '')) > 20
+            
+            if not has_propuestas and not has_resumen:
+                def_score = 0
+            else:
+                def_score = 5
+            
             candidato, _ = Candidato.objects.update_or_create(
                 slug=slug,
                 defaults={
@@ -108,11 +117,13 @@ class Command(BaseCommand):
                     'propuestas_destacadas': item.get('propuestas_destacadas', []),
                     'posicionamiento_issues': item.get('posicionamiento_issues', {}),
                     'fuente_datos': item.get('fuente_datos', 'Plan de Gobierno JNE 2026'),
-                    'score_economia': scores.get('score_economia', 5),
-                    'score_seguridad': scores.get('score_seguridad', 5),
-                    'score_medio_ambiente': scores.get('score_medio_ambiente', 5),
-                    'score_educacion': scores.get('score_educacion', 5),
-                    'score_salud': scores.get('score_salud', 5),
+                    'score_economia': scores.get('score_economia', def_score),
+                    'score_seguridad': scores.get('score_seguridad', def_score),
+                    'score_medio_ambiente': scores.get('score_medio_ambiente', def_score),
+                    'score_educacion': scores.get('score_educacion', def_score),
+                    'score_salud': scores.get('score_salud', def_score),
+                    'score_corrupcion': scores.get('score_corrupcion', def_score),
+                    'score_descentralizacion': scores.get('score_descentralizacion', def_score),
                 }
             )
             imported_ids.append(candidato.id)

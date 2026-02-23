@@ -2,7 +2,7 @@ import json
 from django.shortcuts import render, get_object_or_404
 from django.http import JsonResponse
 from django.views.decorators.http import require_POST
-from .models import Candidato, Partido, Propuesta, PreguntaQuiz, ResultadoQuiz
+from .models import Candidato, Partido, Propuesta, PreguntaQuiz, ResultadoQuiz, Encuesta
 
 
 def home(request):
@@ -104,6 +104,10 @@ def quiz_resultado(request):
         resultados = []
 
         for candidato in candidatos:
+            # Omitir candidatos que aún no han sido evaluados (scores en 0)
+            if sum([candidato.score_economia, candidato.score_seguridad, candidato.score_medio_ambiente, candidato.score_educacion, candidato.score_salud, candidato.score_corrupcion, candidato.score_descentralizacion]) == 0:
+                continue
+
             score_total = 0
             max_score = 0
 
@@ -113,16 +117,33 @@ def quiz_resultado(request):
                 'medio_ambiente': candidato.score_medio_ambiente,
                 'educacion': candidato.score_educacion,
                 'salud': candidato.score_salud,
+                'corrupcion': candidato.score_corrupcion,
+                'descentralizacion': candidato.score_descentralizacion,
+            }
+            
+            pesos = {
+                'economia': 2.0,
+                'seguridad': 2.0,
+                'educacion': 1.5,
+                'salud': 1.5,
+                'medio_ambiente': 1.0,
+                'corrupcion': 1.5,
+                'descentralizacion': 1.0,
             }
 
             for pregunta_id, valor_usuario in respuestas.items():
                 try:
                     pregunta = PreguntaQuiz.objects.get(id=pregunta_id)
                     score_candidato = scores_candidato.get(pregunta.tema, 5)
+                    peso = pesos.get(pregunta.tema, 1.0)
+                    
                     diferencia = abs(int(valor_usuario) - score_candidato)
-                    similitud = max(0, 10 - diferencia)
+                    # Metodología ponderada con penalización no lineal (penaliza distancias grandes)
+                    penalizacion = (diferencia / 9.0) ** 1.5
+                    similitud = max(0, 10 - (10 * penalizacion)) * peso
+                    
                     score_total += similitud
-                    max_score += 10
+                    max_score += 10 * peso
                 except PreguntaQuiz.DoesNotExist:
                     pass
 
@@ -165,3 +186,13 @@ def quiz_resultado(request):
 
 def sobre_el_proyecto(request):
     return render(request, 'candidatos/sobre.html')
+
+
+def encuestas_popup(request):
+    """Devuelve el HTML del contenido del modal de encuestas (para cargar vía AJAX).
+
+    Se muestran todas las encuestas activas ordenadas por fecha para poder ver
+    la evolución histórica en el tiempo.
+    """
+    encuestas = Encuesta.objects.filter(activo=True)
+    return render(request, 'candidatos/partial_encuestas_popup.html', {'encuestas': encuestas})

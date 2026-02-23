@@ -30,11 +30,13 @@
   },
   "fuente_datos": "Plan de Gobierno JNE 2026",
   "scores": {
-    "score_economia": 7,
-    "score_seguridad": 6,
-    "score_medio_ambiente": 7,
-    "score_educacion": 8,
-    "score_salud": 8
+    "score_economia": 8,
+    "score_seguridad": 8,
+    "score_medio_ambiente": 4,
+    "score_educacion": 7,
+    "score_salud": 7,
+    "score_corrupcion": 7,
+    "score_descentralizacion": 4
   },
   "propuestas": [
     {

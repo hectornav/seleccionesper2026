@@ -30,11 +30,13 @@
   },
   "fuente_datos": "Plan de Gobierno Nacional del Partido Morado 2026-2031: Haciendo Patria.",
   "scores": {
-    "score_economia": 8,
-    "score_seguridad": 7,
-    "score_medio_ambiente": 8,
-    "score_educacion": 8,
-    "score_salud": 7
+    "score_economia": 5,
+    "score_seguridad": 6,
+    "score_medio_ambiente": 6,
+    "score_educacion": 5,
+    "score_salud": 5,
+    "score_corrupcion": 7,
+    "score_descentralizacion": 6
   },
   "propuestas": [
     {

@@ -30,11 +30,13 @@
   },
   "fuente_datos": "Plan de Gobierno 2026-2031 de Juntos por el Perú.",
   "scores": {
-    "score_economia": 7,
-    "score_seguridad": 7,
-    "score_medio_ambiente": 9,
-    "score_educacion": 8,
-    "score_salud": 8
+    "score_economia": 3,
+    "score_seguridad": 5,
+    "score_medio_ambiente": 8,
+    "score_educacion": 2,
+    "score_salud": 2,
+    "score_corrupcion": 8,
+    "score_descentralizacion": 7
   },
   "propuestas": [
     {

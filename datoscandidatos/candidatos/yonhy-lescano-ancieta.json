@@ -30,11 +30,13 @@
   },
   "fuente_datos": "Propuesta del Plan de Gobierno del Partido Cooperación Popular para las Elecciones Generales 2026.",
   "scores": {
-    "score_economia": 8,
+    "score_economia": 3,
     "score_seguridad": 6,
     "score_medio_ambiente": 8,
-    "score_educacion": 8,
-    "score_salud": 8
+    "score_educacion": 2,
+    "score_salud": 2,
+    "score_corrupcion": 8,
+    "score_descentralizacion": 6
   },
   "propuestas": [
     {

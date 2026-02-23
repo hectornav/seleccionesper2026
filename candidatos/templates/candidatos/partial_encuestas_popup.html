@@ -1,0 +1,112 @@
+{% load static %}
+<div class="encuestas-popup-content">
+    <div class="encuestas-popup-intro mb-3 p-3 rounded-3">
+        <p class="small mb-1">
+            <i class="bi bi-info-circle"></i>
+            Intención de voto según encuestadoras que publican estudios de opinión en el Perú.
+        </p>
+        <p class="small mb-0">
+            La fila <span class="badge bg-warning text-dark">resaltada</span> es el candidato con mayor
+            intención en esa encuesta. Se muestran todas las encuestas (histórico). Consulta la <strong>fuente oficial</strong>.
+        </p>
+    </div>
+    {% if encuestas %}
+    <div class="accordion" id="accordionEncuestas">
+        {% for encuesta in encuestas %}
+        <div class="accordion-item encuesta-card border-0 shadow-sm mb-3 rounded-3 overflow-hidden">
+            <h3 class="accordion-header">
+                <button class="accordion-button collapsed py-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#encuesta-{{ encuesta.id }}" aria-expanded="false">
+                    <span class="d-flex align-items-center gap-3 w-100 flex-wrap">
+                        <span class="badge encuesta-badge rounded-pill fw-semibold px-3 py-2">
+                            {{ encuesta.siglas|default:encuesta.encuestadora }}
+                        </span>
+                        <span class="d-flex flex-column flex-grow-1">
+                            <strong class="small">{{ encuesta.encuestadora }}</strong>
+                            {% if encuesta.nota %}
+                            <span class="small text-muted">{{ encuesta.nota|truncatewords:12 }}</span>
+                            {% endif %}
+                        </span>
+                        <span class="text-end small ms-auto">
+                            <span class="badge bg-secondary bg-opacity-25 text-dark">
+                                {{ encuesta.fecha_terreno|date:"d/m/Y" }}
+                            </span>
+                        </span>
+                    </span>
+                </button>
+            </h3>
+            <div id="encuesta-{{ encuesta.id }}" class="accordion-collapse collapse" data-bs-parent="#accordionEncuestas">
+                <div class="accordion-body pt-3 pb-3">
+                    <div class="table-responsive mb-2">
+                        <table class="table table-sm align-middle mb-0 encuesta-tabla">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Candidato(a) / Opción</th>
+                                    <th class="text-end">%</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for item in encuesta.resultados %}
+                                <tr class="{% if forloop.first %}table-warning fw-semibold{% endif %}">
+                                    <td>
+                                        {% if forloop.first %}
+                                        <i class="bi bi-trophy-fill text-warning me-1"></i>
+                                        {% endif %}
+                                        {{ item.nombre }}
+                                    </td>
+                                    <td class="text-end">
+                                        <span class="badge {% if forloop.first %}bg-warning text-dark{% else %}bg-light text-dark border{% endif %} px-2">
+                                            {{ item.porcentaje|floatformat:1 }}%
+                                        </span>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    {% if encuesta.fuente_url %}
+                    <a href="{{ encuesta.fuente_url }}" target="_blank" rel="noopener" class="small mt-2 d-inline-flex align-items-center gap-1 encuesta-link">
+                        <i class="bi bi-box-arrow-up-right"></i> Ver fuente oficial
+                    </a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+    <div class="text-center py-4 text-muted">
+        <i class="bi bi-bar-chart-line" style="font-size:2rem"></i>
+        <p class="mb-0 mt-2">Aún no hay encuestas cargadas.</p>
+        <p class="small">Puedes agregar datos desde el panel de administración.</p>
+    </div>
+    {% endif %}
+</div>
+<style>
+    .encuestas-popup-intro {
+        background: linear-gradient(135deg, rgba(13, 110, 253, 0.08), rgba(111, 66, 193, 0.08));
+        border: 1px solid rgba(13, 110, 253, 0.2);
+    }
+    .encuesta-card .accordion-button {
+        background: #fff;
+    }
+    .encuesta-card .accordion-button:not(.collapsed) {
+        background: linear-gradient(135deg, #f8f9fa, #fff);
+        color: inherit;
+    }
+    .encuesta-badge {
+        background: linear-gradient(135deg, #0d6efd, #6f42c1);
+        color: #fff;
+    }
+    .encuesta-tabla tbody tr:hover {
+        background-color: rgba(0, 0, 0, 0.02);
+    }
+    .encuesta-link {
+        color: #0d6efd;
+        text-decoration: none;
+    }
+    .encuesta-link:hover {
+        color: #0a58ca;
+        text-decoration: underline;
+    }
+</style>

@@ -23,7 +23,9 @@
     "score_seguridad": 0,
     "score_medio_ambiente": 0,
     "score_educacion": 0,
-    "score_salud": 0
+    "score_salud": 0,
+    "score_corrupcion": 0,
+    "score_descentralizacion": 0
   },
   "propuestas": [],
   "partido_nombre": "Partido Demócrata Federal"

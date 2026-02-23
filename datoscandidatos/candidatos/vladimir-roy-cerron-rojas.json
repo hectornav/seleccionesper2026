@@ -30,11 +30,13 @@
   },
   "fuente_datos": "Plan de Gobierno por la Revancha del Pueblo 2026-2031 del Partido Político Nacional Perú Libre.",
   "scores": {
-    "score_economia": 7,
-    "score_seguridad": 7,
+    "score_economia": 1,
+    "score_seguridad": 5,
     "score_medio_ambiente": 8,
-    "score_educacion": 9,
-    "score_salud": 9
+    "score_educacion": 1,
+    "score_salud": 1,
+    "score_corrupcion": 9,
+    "score_descentralizacion": 8
   },
   "propuestas": [
     {

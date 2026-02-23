@@ -1,5 +1,7 @@
 from django.contrib import admin
-from .models import Partido, Candidato, Propuesta, PreguntaQuiz, OpcionQuiz, Visita, ResultadoQuiz
+from django.utils.html import format_html
+from django.utils.safestring import mark_safe
+from .models import Partido, Candidato, Propuesta, PreguntaQuiz, OpcionQuiz, Visita, ResultadoQuiz, Encuesta
 
 
 class PropuestaInline(admin.TabularInline):
@@ -64,3 +66,43 @@ class ResultadoQuizAdmin(admin.ModelAdmin):
 
     def has_add_permission(self, request):
         return False
+
+
+@admin.register(Encuesta)
+class EncuestaAdmin(admin.ModelAdmin):
+    list_display = ['encuestadora', 'siglas', 'fecha_terreno', 'fecha_publicacion', 'activo', 'link_fuente']
+    list_filter = ['activo', 'encuestadora']
+    search_fields = ['encuestadora', 'nota']
+    date_hierarchy = 'fecha_terreno'
+    list_editable = ['activo']
+    readonly_fields = ['link_fuente_lectura']
+
+    def link_fuente(self, obj):
+        if not obj.fuente_url:
+            return '—'
+        return format_html(
+            '<a href="{}" target="_blank" rel="noopener">Ver fuente</a>',
+            obj.fuente_url,
+        )
+    link_fuente.short_description = 'Fuente'
+
+    def link_fuente_lectura(self, obj):
+        if not obj or not obj.fuente_url:
+            return '—'
+        return format_html(
+            '<a href="{}" target="_blank" rel="noopener" class="button">Abrir fuente oficial</a>',
+            obj.fuente_url,
+        )
+    link_fuente_lectura.short_description = 'Enlace a la fuente'
+
+    fieldsets = (
+        (None, {
+            'fields': ('encuestadora', 'siglas', 'fecha_terreno', 'fecha_publicacion', 'activo', 'orden'),
+        }),
+        ('Fuente (donde obtuviste los datos)', {
+            'fields': ('fuente_url', 'link_fuente_lectura'),
+        }),
+        ('Contenido', {
+            'fields': ('resultados', 'nota'),
+        }),
+    )

@@ -28,11 +28,13 @@
   },
   "fuente_datos": "Formato Resumen del Plan de Gobierno 2026-2031 del Partido Primero La Gente.",
   "scores": {
-    "score_economia": 7,
+    "score_economia": 5,
     "score_seguridad": 6,
-    "score_medio_ambiente": 7,
-    "score_educacion": 9,
-    "score_salud": 7
+    "score_medio_ambiente": 6,
+    "score_educacion": 5,
+    "score_salud": 5,
+    "score_corrupcion": 7,
+    "score_descentralizacion": 6
   },
   "propuestas": [
     {

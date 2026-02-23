@@ -10,4 +10,5 @@ urlpatterns = [
     path('quiz/', views.quiz, name='quiz'),
     path('quiz/resultado/', views.quiz_resultado, name='quiz_resultado'),
     path('sobre/', views.sobre_el_proyecto, name='sobre'),
+    path('encuestas-popup/', views.encuestas_popup, name='encuestas_popup'),
 ]

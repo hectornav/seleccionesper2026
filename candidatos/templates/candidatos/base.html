@@ -51,6 +51,9 @@
                         class="nav-link-custom {% if request.resolver_match.url_name == 'intencion' %}active{% endif %}">
                         <i class="bi bi-bar-chart"></i> Votos
                     </a>
+                    <a href="#" class="nav-link-custom" data-bs-toggle="modal" data-bs-target="#modalEncuestas" id="btnEncuestas">
+                        <i class="bi bi-graph-up-arrow"></i> Encuestas
+                    </a>
                     <a href="{% url 'candidatos:sobre' %}"
                         class="nav-link-custom {% if request.resolver_match.url_name == 'sobre' %}active{% endif %}">
                         <i class="bi bi-info-circle"></i> Acerca de
@@ -74,6 +77,9 @@
                     <a href="{% url 'votacion:intencion' %}" class="nav-link-custom">
                         <i class="bi bi-bar-chart"></i> Intención de Voto
                     </a>
+                    <a href="#" class="nav-link-custom" data-bs-toggle="modal" data-bs-target="#modalEncuestas">
+                        <i class="bi bi-graph-up-arrow"></i> Encuestas
+                    </a>
                     <a href="{% url 'candidatos:sobre' %}" class="nav-link-custom">
                         <i class="bi bi-info-circle"></i> Acerca del Proyecto
                     </a>
@@ -86,6 +92,26 @@
     </nav>
 
     {% block content %}{% endblock %}
+
+    <!-- Modal Encuestas (estadísticas encuestadoras) -->
+    <div class="modal fade" id="modalEncuestas" tabindex="-1" aria-labelledby="modalEncuestasLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0 pb-0">
+                    <h2 class="modal-title fw-bold" id="modalEncuestasLabel">
+                        <i class="bi bi-graph-up-arrow text-primary"></i> Encuestas de intención de voto
+                    </h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body pt-2" id="modalEncuestasBody">
+                    <div class="text-center py-4 text-muted" id="modalEncuestasLoading">
+                        <div class="spinner-border text-primary" role="status"></div>
+                        <p class="mt-2 mb-0 small">Cargando estadísticas...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- FOOTER -->
     <footer class="footer">
@@ -138,6 +164,28 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="{% static 'js/base.js' %}"></script>
+    <script>
+        (function() {
+            var modalEl = document.getElementById('modalEncuestas');
+            if (!modalEl) return;
+            var bodyEl = document.getElementById('modalEncuestasBody');
+            var loadingEl = document.getElementById('modalEncuestasLoading');
+            var loaded = false;
+            modalEl.addEventListener('show.bs.modal', function() {
+                if (loaded) return;
+                loaded = true;
+                fetch('{% url "candidatos:encuestas_popup" %}')
+                    .then(function(r) { return r.text(); })
+                    .then(function(html) {
+                        loadingEl.classList.add('d-none');
+                        bodyEl.innerHTML = html;
+                    })
+                    .catch(function() {
+                        loadingEl.innerHTML = '<p class="text-danger">No se pudieron cargar las encuestas.</p>';
+                    });
+            });
+        })();
+    </script>
     {% block extra_js %}{% endblock %}
 </body>
 

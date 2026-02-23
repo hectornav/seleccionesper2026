@@ -43,9 +43,9 @@
                     <span
                         style="background:{{ candidato.posicion_color }};color:white;border-radius:20px;padding:2px 12px;font-size:0.78rem;font-weight:600">
                         {% if candidato.posicion_label %}
-                            {{ candidato.posicion_label }}
+                        {{ candidato.posicion_label }}
                         {% else %}
-                            {{ candidato.posicion_politica|default:"(no informado)" }}
+                        {{ candidato.posicion_politica|default:"(no informado)" }}
                         {% endif %}
                     </span>
                     {% if candidato.verificado %}
@@ -144,7 +144,28 @@
                         {% for issue, posicion in candidato.posicionamiento_issues.items %}
                         <div
                             class="issue-badge {% if posicion == 'a favor' %}a-favor{% elif posicion == 'en contra' %}en-contra{% elif posicion == 'neutral' %}neutral{% else %}parcial{% endif %}">
-                            <span class="issue-label">{{ issue|cut:"_"|title }}</span>
+                            <span class="issue-label"
+                                style="font-size: 0.85rem; font-weight: 800; color: #1e293b; padding-bottom: 6px; border-bottom: 1px solid rgba(0,0,0,0.1); margin-bottom: 6px; display: block;">
+                                {% if issue == 'asamblea_constituyente' %}
+                                <i class="bi bi-bank2"></i> Asamblea Constituyente
+                                {% elif issue == 'privatizacion_empresas_estado' %}
+                                <i class="bi bi-building"></i> Privatización de Empresas del Estado
+                                {% elif issue == 'libre_comercio_tlc' %}
+                                <i class="bi bi-globe-americas"></i> Libre Comercio / TLC
+                                {% elif issue == 'pena_muerte' %}
+                                <i class="bi bi-exclamation-octagon"></i> Pena de Muerte
+                                {% elif issue == 'relaciones_venezuela_cuba' %}
+                                <i class="bi bi-flag"></i> Relaciones con Venezuela/Cuba
+                                {% elif issue == 'matrimonio_igualitario' %}
+                                <i class="bi bi-heart"></i> Matrimonio Igualitario
+                                {% elif issue == 'medio_ambiente_prioridad_absoluta' %}
+                                <i class="bi bi-tree"></i> Medio Ambiente como Prioridad
+                                {% elif issue == 'derechos_animales' %}
+                                <i class="bi bi-emoji-heart-eyes"></i> Derechos de los Animales
+                                {% else %}
+                                <i class="bi bi-hash"></i> {{ issue|cut:"_"|title }}
+                                {% endif %}
+                            </span>
                             <span class="issue-value">
                                 {% if posicion == 'a favor' %}
                                 <i class="bi bi-check-circle-fill"></i> A favor
