@@ -19,11 +19,11 @@
   "posicionamiento_issues": {},
   "fuente_datos": "Plan de Gobierno JNE 2026",
   "scores": {
-    "score_economia": 5,
-    "score_seguridad": 5,
-    "score_medio_ambiente": 5,
-    "score_educacion": 5,
-    "score_salud": 5
+    "score_economia": 0,
+    "score_seguridad": 0,
+    "score_medio_ambiente": 0,
+    "score_educacion": 0,
+    "score_salud": 0
   },
   "propuestas": [],
   "partido_nombre": "Partido Demócrata Federal"
