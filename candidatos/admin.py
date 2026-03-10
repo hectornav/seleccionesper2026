@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.utils.html import format_html
 from django.utils.safestring import mark_safe
-from .models import Partido, Candidato, Propuesta, PreguntaQuiz, OpcionQuiz, Visita, ResultadoQuiz, Encuesta
+from .models import Partido, Candidato, Propuesta, PreguntaQuiz, OpcionQuiz, Visita, ResultadoQuiz, Encuesta, Sugerencia
 
 
 class PropuestaInline(admin.TabularInline):
@@ -106,3 +106,18 @@ class EncuestaAdmin(admin.ModelAdmin):
             'fields': ('resultados', 'nota'),
         }),
     )
+
+
+@admin.register(Sugerencia)
+class SugerenciaAdmin(admin.ModelAdmin):
+    list_display = ['tipo', 'mensaje_corto', 'fecha']
+    list_filter = ['tipo', 'fecha']
+    readonly_fields = ['tipo', 'mensaje', 'fecha']
+    date_hierarchy = 'fecha'
+
+    def mensaje_corto(self, obj):
+        return obj.mensaje[:100] + ('...' if len(obj.mensaje) > 100 else '')
+    mensaje_corto.short_description = 'Mensaje'
+
+    def has_add_permission(self, request):
+        return False

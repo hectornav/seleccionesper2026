@@ -2,7 +2,7 @@ import json
 from django.shortcuts import render, get_object_or_404
 from django.http import JsonResponse
 from django.views.decorators.http import require_POST
-from .models import Candidato, Partido, Propuesta, PreguntaQuiz, ResultadoQuiz, Encuesta
+from .models import Candidato, Partido, Propuesta, PreguntaQuiz, ResultadoQuiz, Encuesta, Sugerencia
 
 
 def home(request):
@@ -112,23 +112,23 @@ def quiz_resultado(request):
             max_score = 0
 
             scores_candidato = {
-                'economia': candidato.score_economia,
-                'seguridad': candidato.score_seguridad,
+                'economia_empleo': candidato.score_economia,
+                'seguridad_ciudadana': candidato.score_seguridad,
                 'medio_ambiente': candidato.score_medio_ambiente,
                 'educacion': candidato.score_educacion,
                 'salud': candidato.score_salud,
-                'corrupcion': candidato.score_corrupcion,
-                'descentralizacion': candidato.score_descentralizacion,
+                'anticorrupcion': candidato.score_corrupcion,
+                'reforma_estado': candidato.score_descentralizacion,
             }
             
             pesos = {
-                'economia': 2.0,
-                'seguridad': 2.0,
+                'economia_empleo': 2.0,
+                'seguridad_ciudadana': 2.0,
                 'educacion': 1.5,
                 'salud': 1.5,
                 'medio_ambiente': 1.0,
-                'corrupcion': 1.5,
-                'descentralizacion': 1.0,
+                'anticorrupcion': 1.5,
+                'reforma_estado': 1.0,
             }
 
             for pregunta_id, valor_usuario in respuestas.items():
@@ -149,6 +149,43 @@ def quiz_resultado(request):
 
             porcentaje = round((score_total / max_score * 100) if max_score > 0 else 0)
 
+            # Brújula de Confianza: datos verificables
+            posiciones = candidato.posicionamiento_issues or {}
+            total_issues = len(posiciones) if posiciones else 0
+            issues_claros = sum(1 for v in posiciones.values() if v and v != 'no especificado') if posiciones else 0
+            transparencia = round(issues_claros / total_issues * 100) if total_issues > 0 else 0
+
+            ant_lower = (candidato.antecedentes or '').lower()
+            # Positive indicators: real legal issues (affirmative phrasing only)
+            indicadores_alerta = [
+                'múltiples procesos', 'acusaciones de corrupción',
+                'sentenciado', 'condenado', 'prófugo', 'prisión preventiva',
+                'lavado de activos', 'organización criminal',
+                'inhabilitado', 'vacado', 'tiene procesos',
+                'acusado de', 'investigado por',
+            ]
+            tiene_antecedentes = bool(
+                candidato.antecedentes
+                and len(candidato.antecedentes.strip()) > 10
+                and any(ind in ant_lower for ind in indicadores_alerta)
+            )
+
+            # Posiciones en temas clave formateadas
+            labels_issues = {
+                'asamblea_constituyente': '🏛️ Constituyente',
+                'libre_comercio_tlc': '💹 Libre comercio',
+                'privatizacion_empresas_estado': '🏭 Privatización',
+                'relaciones_venezuela_cuba': '🌎 Venezuela/Cuba',
+                'pena_muerte': '⚖️ Pena de muerte',
+            }
+            posiciones_fmt = []
+            for key, label in labels_issues.items():
+                val = posiciones.get(key)
+                if val and val != 'no especificado':
+                    posiciones_fmt.append({'label': label, 'valor': val, 'claro': True})
+                elif key in posiciones:
+                    posiciones_fmt.append({'label': label, 'valor': 'No se pronuncia', 'claro': False})
+
             resultados.append({
                 'id': candidato.id,
                 'nombre': candidato.nombre,
@@ -160,6 +197,13 @@ def quiz_resultado(request):
                 'posicion': candidato.posicion_label(),
                 'lema': candidato.lema,
                 'porcentaje': porcentaje,
+                # Brújula de Confianza
+                'transparencia': transparencia,
+                'score_anticorrupcion': candidato.score_corrupcion,
+                'tiene_antecedentes': tiene_antecedentes,
+                'antecedentes_texto': candidato.antecedentes if tiene_antecedentes else '',
+                'posiciones': posiciones_fmt,
+                'experiencia': candidato.experiencia[:150] if candidato.experiencia else '',
             })
 
         resultados.sort(key=lambda x: x['porcentaje'], reverse=True)
@@ -196,3 +240,17 @@ def encuestas_popup(request):
     """
     encuestas = Encuesta.objects.filter(activo=True)
     return render(request, 'candidatos/partial_encuestas_popup.html', {'encuestas': encuestas})
+
+
+def sugerencias(request):
+    enviado = False
+    if request.method == 'POST':
+        tipo = request.POST.get('tipo', 'mejora')
+        mensaje = request.POST.get('mensaje', '').strip()
+        if mensaje and len(mensaje) <= 2000:
+            tipos_validos = [c[0] for c in Sugerencia.TIPO_CHOICES]
+            if tipo not in tipos_validos:
+                tipo = 'mejora'
+            Sugerencia.objects.create(tipo=tipo, mensaje=mensaje)
+            enviado = True
+    return render(request, 'candidatos/sugerencias.html', {'enviado': enviado})

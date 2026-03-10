@@ -479,6 +479,8 @@
             box-shadow: var(--card-shadow);
             border: 2px solid transparent;
             transition: all 0.3s;
+            overflow: hidden;
+            word-break: break-word;
         }
 
         .resultado-card.top-1 {

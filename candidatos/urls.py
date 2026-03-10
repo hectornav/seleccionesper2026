@@ -11,4 +11,5 @@ urlpatterns = [
     path('quiz/resultado/', views.quiz_resultado, name='quiz_resultado'),
     path('sobre/', views.sobre_el_proyecto, name='sobre'),
     path('encuestas-popup/', views.encuestas_popup, name='encuestas_popup'),
+    path('sugerencias/', views.sugerencias, name='sugerencias'),
 ]

@@ -140,7 +140,7 @@ if not DEBUG:
     # Security Middleware settings
     # Commented out SECURE_SSL_REDIRECT for local development even when DEBUG is False
     # If using DigitalOcean App Platform, it handles SSL termination for you.
-    SECURE_SSL_REDIRECT = True
+    #SECURE_SSL_REDIRECT = True
     SESSION_COOKIE_SECURE = True
     CSRF_COOKIE_SECURE = True
     # HSTS settings

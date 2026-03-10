@@ -106,6 +106,12 @@ async function verResultados() {
     }
 }
 
+function escapeHtml(text) {
+    const el = document.createElement('span');
+    el.textContent = text;
+    return el.innerHTML;
+}
+
 function renderResultados(resultados) {
     const container = document.getElementById('resultados-container');
     container.innerHTML = '';
@@ -113,6 +119,52 @@ function renderResultados(resultados) {
     resultados.forEach((r, i) => {
         const isTop = i === 0;
         const color = r.color_partido || '#D91023';
+
+        // Brújula de Confianza HTML
+        const transColor = r.transparencia >= 60 ? '#10b981' : r.transparencia >= 30 ? '#f59e0b' : '#ef4444';
+        const antiCorColor = r.score_anticorrupcion >= 7 ? '#10b981' : r.score_anticorrupcion >= 4 ? '#f59e0b' : '#ef4444';
+
+        let posicionesHtml = '';
+        if (r.posiciones && r.posiciones.length > 0) {
+            posicionesHtml = r.posiciones.map(p => {
+                const pillBg = p.claro ? '#e0f2fe' : '#f3f4f6';
+                const pillColor = p.claro ? '#0369a1' : '#9ca3af';
+                const pillBorder = p.claro ? '#bae6fd' : '#e5e7eb';
+                return `<span style="display:inline-block;font-size:0.68rem;padding:3px 8px;border-radius:10px;background:${pillBg};color:${pillColor};border:1px solid ${pillBorder};margin:2px;word-break:break-word" title="${escapeHtml(p.valor)}">${p.label}: <strong>${p.claro ? escapeHtml(p.valor) : '🤐'}</strong></span>`;
+            }).join('');
+        }
+
+        let alertaHtml = '';
+        if (r.tiene_antecedentes) {
+            alertaHtml = `<div style="background:#fef2f2;border:1px solid #fecaca;border-radius:8px;padding:6px 10px;font-size:0.72rem;color:#991b1b;margin-top:8px">
+                <strong>⚠️ Antecedentes:</strong> ${escapeHtml(r.antecedentes_texto)}
+            </div>`;
+        }
+
+        const brujulaHtml = `
+            <div class="brujula-confianza" style="margin-top:12px;padding-top:12px;border-top:1px dashed #e5e7eb;overflow:hidden">
+                <div style="font-size:0.72rem;font-weight:700;color:var(--dark);margin-bottom:8px">🧭 Brújula de Confianza</div>
+                <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:8px">
+                    <div style="flex:1;min-width:120px">
+                        <div style="font-size:0.68rem;color:#6b7280;margin-bottom:3px">Transparencia</div>
+                        <div style="background:#f3f4f6;border-radius:6px;height:8px;overflow:hidden">
+                            <div style="width:${r.transparencia}%;height:100%;background:${transColor};border-radius:6px;transition:width 0.6s ease"></div>
+                        </div>
+                        <div style="font-size:0.65rem;color:${transColor};font-weight:600;margin-top:2px">${r.transparencia}% de temas claros</div>
+                    </div>
+                    <div style="flex:1;min-width:120px">
+                        <div style="font-size:0.68rem;color:#6b7280;margin-bottom:3px">Anticorrupción</div>
+                        <div style="background:#f3f4f6;border-radius:6px;height:8px;overflow:hidden">
+                            <div style="width:${r.score_anticorrupcion * 10}%;height:100%;background:${antiCorColor};border-radius:6px;transition:width 0.6s ease"></div>
+                        </div>
+                        <div style="font-size:0.65rem;color:${antiCorColor};font-weight:600;margin-top:2px">${r.score_anticorrupcion}/10</div>
+                    </div>
+                </div>
+                ${alertaHtml}
+                ${posicionesHtml ? `<div style="margin-top:8px"><div style="font-size:0.68rem;color:#6b7280;margin-bottom:4px">Posiciones clave:</div><div style="line-height:2">${posicionesHtml}</div></div>` : ''}
+                ${r.experiencia ? `<div style="font-size:0.68rem;color:#6b7280;margin-top:6px;word-break:break-word"><strong>Experiencia:</strong> ${escapeHtml(r.experiencia)}</div>` : ''}
+            </div>
+        `;
 
         const el = document.createElement('div');
         el.className = `resultado-card mb-3 ${isTop ? 'top-1' : ''}`;
@@ -141,6 +193,7 @@ function renderResultados(resultados) {
                 </div>
             </div>
             ${r.lema ? `<p style="font-size:0.78rem;font-style:italic;color:#4a5568;margin:0.75rem 0 0;border-left:3px solid ${isTop ? 'var(--gold)' : 'var(--peru-red)'};padding-left:0.6rem">"${r.lema}"</p>` : ''}
+            ${brujulaHtml}
             <div class="mt-2">
                 <a href="/candidato/${r.slug}/" class="btn-peru" style="font-size:0.78rem;padding:0.3rem 0.7rem">
                     <i class="bi bi-eye"></i> Ver propuestas

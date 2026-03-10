@@ -251,3 +251,24 @@ class Encuesta(models.Model):
 
     def __str__(self):
         return f"{self.encuestadora} – {self.fecha_terreno}"
+
+
+class Sugerencia(models.Model):
+    TIPO_CHOICES = [
+        ('mejora', 'Mejora de la plataforma'),
+        ('dato', 'Corrección de datos'),
+        ('idea', 'Idea nueva'),
+        ('otro', 'Otro'),
+    ]
+
+    tipo = models.CharField(max_length=20, choices=TIPO_CHOICES, default='mejora')
+    mensaje = models.TextField(help_text='Sugerencia o comentario del ciudadano')
+    fecha = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        verbose_name = 'Sugerencia'
+        verbose_name_plural = 'Sugerencias'
+        ordering = ['-fecha']
+
+    def __str__(self):
+        return f"{self.get_tipo_display()} – {self.fecha.strftime('%d/%m/%Y %H:%M')}"
