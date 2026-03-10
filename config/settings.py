@@ -25,7 +25,7 @@ load_dotenv(BASE_DIR / '.env')
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-%5ynqs9m0vcv25w!tvd$2sal%fy^v=2tih@hz1gr45#!77w(^l')
+SECRET_KEY = os.environ.get('SECRET_KEY', 'ew#(ta_$&^+n4&tm@_rc%i1b=l*$t6dn5p8%ma(z96vpdi-&9b')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', 'False').lower() == 'true'
@@ -89,10 +89,9 @@ DATABASES = {
     }
 }
 
-db_from_env = dj_database_url.config(conn_max_age=600)
-if db_from_env:
+if os.environ.get('DATABASE_URL'):
+    db_from_env = dj_database_url.config(conn_max_age=600)
     DATABASES['default'].update(db_from_env)
-
 
 # Password validation
 # https://docs.djangoproject.com/en/6.0/ref/settings/#auth-password-validators
@@ -141,7 +140,7 @@ if not DEBUG:
     # Security Middleware settings
     # Commented out SECURE_SSL_REDIRECT for local development even when DEBUG is False
     # If using DigitalOcean App Platform, it handles SSL termination for you.
-    # SECURE_SSL_REDIRECT = True
+    SECURE_SSL_REDIRECT = True
     SESSION_COOKIE_SECURE = True
     CSRF_COOKIE_SECURE = True
     # HSTS settings
