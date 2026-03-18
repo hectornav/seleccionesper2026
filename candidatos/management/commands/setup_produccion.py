@@ -31,17 +31,25 @@ def normalize(name):
 
 
 def match_candidato(nombre_norm, candidatos_lookup):
-    """Intenta matchear por nombre normalizado, luego por coincidencia parcial."""
+    """Intenta matchear por nombre normalizado, luego por mejor coincidencia parcial."""
     if nombre_norm in candidatos_lookup:
         return candidatos_lookup[nombre_norm]
-    # Match parcial
-    parts = nombre_norm.split()
+    # Match parcial: buscar el MEJOR match, no el primero
+    parts = set(nombre_norm.split())
+    best_match = None
+    best_score = 0
     for key, cand in candidatos_lookup.items():
-        key_parts = key.split()
-        common = set(parts) & set(key_parts)
-        if len(common) >= 3 or (len(common) >= 2 and len(parts) <= 3):
-            return cand
-    return None
+        key_parts = set(key.split())
+        common = len(parts & key_parts)
+        # Calcular score como proporción de palabras que coinciden
+        max_words = min(len(parts), len(key_parts))
+        if max_words == 0:
+            continue
+        ratio = common / max_words
+        if common >= 2 and ratio >= 0.5 and common > best_score:
+            best_score = common
+            best_match = cand
+    return best_match
 
 
 def match_partido(org_politica, partidos_lookup):
@@ -128,7 +136,7 @@ class Command(BaseCommand):
                 candidato = match_candidato(nombre_norm, candidatos_lookup)
 
                 # Si no existe y se pidió crear
-                if not candidato and options['crear_faltantes'] and partido and rol:
+                if not candidato and options.get('crear_faltantes') and partido and rol:
                     slug = slugify(nombre)
                     base_slug = slug
                     counter = 1
