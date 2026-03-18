@@ -141,8 +141,9 @@ class Command(BaseCommand):
                 )
                 p_count += 1
 
-        # Eliminar candidatos que no están en el nuevo set de archivos
-        eliminados, _ = Candidato.objects.exclude(id__in=imported_ids).delete()
+        # Eliminar solo candidatos presidenciales que ya no están en el JSON
+        # No borrar VPs porque se importan desde candidatos_jne.json via setup_produccion
+        eliminados, _ = Candidato.objects.filter(rol_plancha='presidente').exclude(id__in=imported_ids).delete()
         if eliminados:
             self.stdout.write(self.style.WARNING(f'🗑️ {eliminados} candidatos antiguos eliminados de la BD.'))
 

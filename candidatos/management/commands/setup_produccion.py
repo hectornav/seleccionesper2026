@@ -125,7 +125,19 @@ class Command(BaseCommand):
         for party_data in data:
             org = party_data.get('organizacion_politica', '')
             plan = party_data.get('plan_gobierno', {})
-            partido = match_partido(org, {normalize(p.nombre): p for p in Partido.objects.all()})
+            partido_generico = match_partido(org, {normalize(p.nombre): p for p in Partido.objects.all()})
+
+            # First pass: find the president to get the correct partido
+            partido_del_presidente = None
+            for cand_jne in party_data.get('plancha', []):
+                if CARGO_TO_ROL.get(cand_jne.get('cargo', '')) == 'presidente':
+                    pres_match = match_candidato(normalize(cand_jne['nombre_completo']), candidatos_lookup)
+                    if pres_match:
+                        partido_del_presidente = pres_match.partido
+                    break
+
+            # Use president's partido (most reliable), fallback to generic match
+            partido = partido_del_presidente or partido_generico
 
             for cand_jne in party_data.get('plancha', []):
                 nombre = cand_jne.get('nombre_completo', '')
@@ -134,6 +146,12 @@ class Command(BaseCommand):
                 nombre_norm = normalize(nombre)
 
                 candidato = match_candidato(nombre_norm, candidatos_lookup)
+
+                # Protección: no matchear un presidente existente como VP de otro partido
+                if candidato and rol in ('vp1', 'vp2'):
+                    if candidato.rol_plancha == 'presidente' and candidato.partido_id != (partido.id if partido else None):
+                        # False positive: this matched a president from another party
+                        candidato = None
 
                 # Si no existe y se pidió crear
                 if not candidato and options.get('crear_faltantes') and partido and rol:
@@ -192,10 +210,13 @@ class Command(BaseCommand):
                     stats['no_match'].append(f'{nombre} ({cargo_jne}) [{org}]')
                     continue
 
-                # 1. Asignar rol_plancha
+                # 1. Asignar rol_plancha (nunca degradar presidente a VP)
                 if rol and candidato.rol_plancha != rol:
-                    candidato.rol_plancha = rol
-                    stats['rol_asignado'] += 1
+                    if candidato.rol_plancha == 'presidente' and rol != 'presidente':
+                        pass  # No degradar presidente
+                    else:
+                        candidato.rol_plancha = rol
+                        stats['rol_asignado'] += 1
 
                 # 2. Importar hoja_vida_jne
                 hoja_vida = cand_jne.get('hoja_vida', {})
