@@ -10,6 +10,12 @@ class Partido(models.Model):
     logo = models.ImageField(upload_to='partidos/', blank=True, null=True)
     ideologia = models.CharField(max_length=100, blank=True)
 
+    # Transparencia ONPE (Agregados)
+    transparencia_onpe_total_candidatos = models.IntegerField(default=0, help_text='Total de candidatos presentados en el registro ONPE')
+    transparencia_onpe_presentaron = models.IntegerField(default=0, help_text='Número de candidatos que declararon cuentas dentro/fuera de plazo')
+    transparencia_porcentaje = models.FloatField(default=0.0, help_text='Porcentaje de cumplimiento (0 a 100)')
+    transparencia_ultima_actualizacion = models.DateField(null=True, blank=True, help_text='Última vez que se actualizó con reporte ONPE')
+
     class Meta:
         verbose_name = 'Partido'
         verbose_name_plural = 'Partidos'
@@ -27,6 +33,18 @@ class Candidato(models.Model):
         ('centro_derecha', 'Centro-Derecha'),
         ('derecha', 'Derecha'),
     ]
+
+    ROL_PLANCHA_CHOICES = [
+        ('presidente', 'Candidato/a a la Presidencia'),
+        ('vp1', '1er Vicepresidente/a'),
+        ('vp2', '2do Vicepresidente/a'),
+    ]
+
+    ROL_PLANCHA_LABELS = {
+        'presidente': '🇵🇪 Candidato/a Presidencial',
+        'vp1': '1er Vicepresidente/a',
+        'vp2': '2do Vicepresidente/a',
+    }
 
     nombre = models.CharField(max_length=200)
     slug = models.SlugField(max_length=200, unique=True, blank=True)
@@ -66,7 +84,28 @@ class Candidato(models.Model):
     fuente_datos = models.CharField(max_length=200, default='Plan de Gobierno JNE 2026')
     verificado = models.BooleanField(default=False)
 
+    # Estado
+    fallecido = models.BooleanField(default=False, help_text='Marcar si el candidato ha fallecido')
+    fecha_fallecimiento = models.DateField(null=True, blank=True, help_text='Fecha de fallecimiento (opcional)')
+
+    # Transparencia Financiera (ONPE)
+    info_financiera_estado = models.CharField(max_length=50, blank=True, help_text='Ej: DENTRO DE PLAZO, NO PRESENTO')
+    info_financiera_ingresos = models.DecimalField(max_digits=12, decimal_places=2, null=True, blank=True, help_text='Ingresos declarados (S/)')
+    info_financiera_gastos = models.DecimalField(max_digits=12, decimal_places=2, null=True, blank=True, help_text='Gastos declarados (S/)')
+    info_financiera_fecha = models.DateField(null=True, blank=True, help_text='Fecha de presentación en ONPE')
+
     orden = models.IntegerField(default=0)
+
+    # Hoja de Vida JNE (datos completos del JSON del JNE)
+    hoja_vida_jne = models.JSONField(default=dict, blank=True, help_text='Datos completos de la hoja de vida del JNE')
+
+    # Plancha Presidencial
+    rol_plancha = models.CharField(
+        max_length=20,
+        choices=ROL_PLANCHA_CHOICES,
+        default='presidente',
+        help_text='Rol dentro de la plancha presidencial',
+    )
 
     class Meta:
         verbose_name = 'Candidato'
@@ -110,6 +149,75 @@ class Candidato(models.Model):
             'derecha': '#8e44ad',
         }
         return colors.get(self.posicion_politica, '#95a5a6')
+
+    def rol_plancha_label(self):
+        return self.ROL_PLANCHA_LABELS.get(self.rol_plancha, self.rol_plancha)
+
+    def companeros_plancha(self):
+        """Devuelve los otros miembros de la plancha presidencial (mismo partido).
+        Si soy presidente: devuelve solo VPs.
+        Si soy VP: devuelve presidente + otro VP.
+        """
+        if self.rol_plancha == 'presidente':
+            roles = ['vp1', 'vp2']
+        else:
+            roles = ['presidente', 'vp1', 'vp2']
+        return (
+            Candidato.objects
+            .filter(partido=self.partido, rol_plancha__in=roles)
+            .exclude(pk=self.pk)
+            .order_by('rol_plancha')
+        )
+
+
+class CandidatoCongresal(models.Model):
+    """Candidatos al Congreso (Diputados, Senadores, Parlamento Andino) con info financiera ONPE."""
+    CARGO_CHOICES = [
+        ('DIPUTADO', 'Diputado'),
+        ('SENADOR', 'Senador'),
+        ('REPRESENTANTE DEL PARLAMENTO ANDINO', 'Parlamento Andino'),
+    ]
+
+    ESTADO_CHOICES = [
+        ('DENTRO DE PLAZO', 'Dentro de plazo'),
+        ('FUERA DE PLAZO', 'Fuera de plazo'),
+        ('NO PRESENTO', 'No presentó'),
+    ]
+
+    GENERO_CHOICES = [
+        ('MASCULINO', 'Masculino'),
+        ('FEMENINO', 'Femenino'),
+    ]
+
+    dni = models.CharField(max_length=15)
+    nombre = models.CharField(max_length=250)
+    genero = models.CharField(max_length=15, choices=GENERO_CHOICES, blank=True)
+    edad = models.IntegerField(null=True, blank=True)
+    cargo = models.CharField(max_length=60, choices=CARGO_CHOICES)
+    organizacion_politica = models.CharField(max_length=200)
+    partido = models.ForeignKey(Partido, on_delete=models.SET_NULL, null=True, blank=True, related_name='congresales')
+    departamento = models.CharField(max_length=80, blank=True)
+    provincia = models.CharField(max_length=80, blank=True)
+    distrito = models.CharField(max_length=80, blank=True)
+    estado = models.CharField(max_length=30, choices=ESTADO_CHOICES, default='NO PRESENTO')
+    fecha_presentacion = models.CharField(max_length=30, blank=True)
+    ingresos = models.DecimalField(max_digits=12, decimal_places=2, null=True, blank=True)
+    gastos = models.DecimalField(max_digits=12, decimal_places=2, null=True, blank=True)
+    entrega = models.CharField(max_length=40, blank=True)
+
+    class Meta:
+        verbose_name = 'Candidato Congresal'
+        verbose_name_plural = 'Candidatos Congresales'
+        ordering = ['organizacion_politica', 'cargo', 'nombre']
+        indexes = [
+            models.Index(fields=['cargo']),
+            models.Index(fields=['departamento']),
+            models.Index(fields=['organizacion_politica']),
+            models.Index(fields=['estado']),
+        ]
+
+    def __str__(self):
+        return f"{self.nombre} ({self.cargo} - {self.organizacion_politica})"
 
 
 class Propuesta(models.Model):

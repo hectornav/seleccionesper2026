@@ -17,11 +17,36 @@
             box-sizing: border-box;
         }
 
+        html {
+            background: #f8f9fa;
+        }
+
         body {
             font-family: 'Inter', sans-serif;
-            background: #f8f9fa;
+            background: transparent;
             color: #2d3748;
             min-height: 100vh;
+            position: relative;
+        }
+
+        /* Peru watermark background — visible on all views */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('../img/peru.png') center/cover no-repeat;
+            opacity: 0.12;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* All content above the watermark */
+        body > * {
+            position: relative;
+            z-index: 1;
         }
 
         /* NAVBAR */
@@ -146,6 +171,18 @@
             border-color: var(--peru-red);
             box-shadow: var(--card-shadow-hover);
             transform: translateY(-4px);
+        }
+
+        /* Candidato fallecido */
+        .card-candidato.candidato-fallecido {
+            opacity: 0.82;
+            border-color: #555;
+        }
+
+        .card-candidato.candidato-fallecido:hover {
+            border-color: #888;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
+            transform: translateY(-2px);
         }
 
         .card-candidato .foto-wrapper {
@@ -352,6 +389,135 @@
             font-size: 0.8rem;
             color: var(--text-muted-custom);
             font-weight: 500;
+        }
+
+        /* POSICIONES - Candidate Detail */
+        .posiciones-lista {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .posicion-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 0.75rem;
+            background: #f8fafc;
+            border-radius: 10px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .posicion-tema {
+            flex-shrink: 0;
+            width: 160px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #334155;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .posicion-tema i {
+            font-size: 1rem;
+            color: #64748b;
+        }
+
+        .posicion-valor {
+            flex: 1;
+            min-width: 0;
+            font-size: 0.82rem;
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 8px;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            line-height: 1.5;
+        }
+
+        .posicion-valor.a-favor {
+            background: #dcfce7;
+            color: #166534;
+            border: 1px solid #bbf7d0;
+        }
+
+        .posicion-valor.en-contra {
+            background: #fef2f2;
+            color: #991b1b;
+            border: 1px solid #fecaca;
+        }
+
+        .posicion-valor.neutral {
+            background: #f3f4f6;
+            color: #6b7280;
+            border: 1px solid #e5e7eb;
+        }
+
+        .posicion-valor.parcial {
+            background: #fef3c7;
+            color: #92400e;
+            border: 1px solid #fde68a;
+        }
+
+        @media (max-width: 576px) {
+            .posicion-row {
+                flex-direction: column;
+                gap: 0.4rem;
+            }
+
+            .posicion-tema {
+                width: 100%;
+                font-size: 0.8rem;
+            }
+
+            .posicion-valor {
+                font-size: 0.78rem;
+                width: 100%;
+            }
+        }
+
+        /* ISSUES GRID - Resumen tab */
+        .issues-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .issue-badge {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            padding: 0.6rem 0.75rem;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            background: #f8fafc;
+        }
+
+        .issue-badge.a-favor {
+            background: #f0fdf4;
+            border-color: #bbf7d0;
+        }
+
+        .issue-badge.en-contra {
+            background: #fef2f2;
+            border-color: #fecaca;
+        }
+
+        .issue-badge.neutral {
+            background: #f9fafb;
+            border-color: #e5e7eb;
+        }
+
+        .issue-badge.parcial {
+            background: #fffbeb;
+            border-color: #fde68a;
+        }
+
+        .issue-label {
+            font-size: 0.85rem;
+            font-weight: 800;
+            color: #1e293b;
         }
 
         /* FOOTER */
@@ -695,6 +861,69 @@
             }
         }
 
+        /* Phone: Comparator table */
+        @media (max-width: 576px) {
+            /* Comparator: horizontal scroll with sticky labels */
+            .comparar-table-wrap {
+                -webkit-overflow-scrolling: touch;
+            }
+
+            /* Tab bar scroll on mobile */
+            .tab-bar-scroll {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                scrollbar-width: none;
+                -ms-overflow-style: none;
+                flex-wrap: nowrap !important;
+                padding-bottom: 2px;
+            }
+
+            .tab-bar-scroll::-webkit-scrollbar {
+                display: none;
+            }
+
+            .tab-btn {
+                white-space: nowrap;
+                font-size: 0.75rem !important;
+                padding: 0.5rem 0.65rem !important;
+            }
+
+            /* Detail hero candidate responsive */
+            .hero-candidate-row {
+                flex-direction: column !important;
+                align-items: flex-start !important;
+                gap: 0.75rem !important;
+            }
+
+            .hero-candidate-photo {
+                width: 90px !important;
+                height: 105px !important;
+            }
+
+            .hero-candidate-name {
+                font-size: 1.3rem !important;
+            }
+
+            /* Countdown responsive */
+            #countdown-display {
+                gap: 0.4rem !important;
+            }
+
+            #countdown-display > div > div:first-child {
+                font-size: 1.2rem !important;
+            }
+
+            /* Card-white padding on mobile */
+            .card-white {
+                padding: 1rem !important;
+            }
+
+            /* Sidebar hide on mobile — show below */
+            .col-lg-4.sidebar-detail {
+                order: 2;
+            }
+        }
+
         /* Extra small (≤400px) */
         @media (max-width: 400px) {
             .hero-section h1 {
@@ -755,6 +984,83 @@
 
         .breadcrumb-custom .breadcrumb-item.active {
             color: white;
+        }
+
+        /* SHARE BUTTONS — Modern Design */
+        .share-bar {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .share-bar .share-label {
+            font-size: 0.78rem;
+            font-weight: 700;
+            color: #475569;
+            margin-right: 0.25rem;
+        }
+
+        .share-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            text-decoration: none;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            letter-spacing: 0.2px;
+        }
+
+        .share-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+            color: white;
+        }
+
+        .share-btn:active {
+            transform: translateY(0);
+        }
+
+        .share-btn i {
+            font-size: 1rem;
+        }
+
+        .share-btn.wa {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+        }
+
+        .share-btn.fb {
+            background: linear-gradient(135deg, #1877F2, #0d5bbf);
+        }
+
+        .share-btn.tw {
+            background: linear-gradient(135deg, #1a1a1a, #333);
+        }
+
+        .share-btn.tt {
+            background: linear-gradient(135deg, #ff0050, #00f2ea);
+        }
+
+        .share-btn.copy-link {
+            background: linear-gradient(135deg, #64748b, #475569);
+        }
+
+        @media (max-width: 576px) {
+            .share-btn {
+                padding: 8px 12px;
+                font-size: 0.9rem;
+            }
+            .share-btn span.share-text {
+                display: none;
+            }
         }
 
         /* NAVBAR TOGGLER */

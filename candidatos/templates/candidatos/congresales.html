@@ -1,0 +1,282 @@
+{% extends 'candidatos/base.html' %}
+{% load static %}
+
+{% block title %}Candidatos al Congreso — Elecciones Perú 2026{% endblock %}
+
+{% block content %}
+<!-- HERO -->
+<div style="background:linear-gradient(135deg,#0f172a,#1e293b);color:white;padding:2.5rem 0 2rem;margin-top:-2rem">
+    <div class="container">
+        <nav aria-label="breadcrumb" class="mb-2">
+            <ol class="breadcrumb breadcrumb-custom" style="font-size:0.82rem">
+                <li class="breadcrumb-item"><a href="{% url 'candidatos:home' %}">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'candidatos:transparencia_partidos' %}">Legislativo</a></li>
+                <li class="breadcrumb-item active">Candidatos</li>
+            </ol>
+        </nav>
+        <div class="d-flex align-items-center gap-3 mb-2">
+            <i class="bi bi-bank2" style="font-size:2.5rem;color:#60a5fa"></i>
+            <div>
+                <h1 style="font-weight:800;font-size:clamp(1.5rem,3vw,2.2rem);margin:0">Candidatos al Congreso</h1>
+                <p style="font-size:0.95rem;opacity:0.75;margin:0.25rem 0 0">
+                    Diputados, Senadores y Parlamento Andino — Transparencia Financiera (ONPE)
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container py-4">
+
+    <!-- STATS CARDS -->
+    <div class="row g-3 mb-4">
+        <div class="col-6 col-md-3">
+            <div class="card-white text-center h-100" style="padding:1rem">
+                <div style="font-size:0.72rem;color:#64748b;font-weight:600;text-transform:uppercase">Candidatos</div>
+                <div style="font-size:1.8rem;font-weight:800;color:#1e293b">{{ total|default:"0" }}</div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="card-white text-center h-100" style="padding:1rem">
+                <div style="font-size:0.72rem;color:#64748b;font-weight:600;text-transform:uppercase">Declararon</div>
+                <div style="font-size:1.8rem;font-weight:800;color:#15803d">{{ total_presentaron }}</div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="card-white text-center h-100" style="padding:1rem">
+                <div style="font-size:0.72rem;color:#64748b;font-weight:600;text-transform:uppercase">No presentaron</div>
+                <div style="font-size:1.8rem;font-weight:800;color:#dc2626">{{ total_no_presentaron }}</div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="card-white text-center h-100" style="padding:1rem">
+                <div style="font-size:0.72rem;color:#64748b;font-weight:600;text-transform:uppercase">Transparencia</div>
+                <div style="font-size:1.8rem;font-weight:800;color:{% if porcentaje_presento > 50 %}#15803d{% else %}#dc2626{% endif %}">{{ porcentaje_presento }}%</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Resumen por cargo -->
+    {% if stats_cargo %}
+    <div class="d-flex flex-wrap gap-2 mb-4">
+        {% for sc in stats_cargo %}
+        <span class="badge-cargo {% if sc.cargo == 'DIPUTADO' %}diputado{% elif sc.cargo == 'SENADOR' %}senador{% else %}parlamento{% endif %}">
+            {% if sc.cargo == 'DIPUTADO' %}<i class="bi bi-person-badge"></i>{% elif sc.cargo == 'SENADOR' %}<i class="bi bi-person-lines-fill"></i>{% else %}<i class="bi bi-globe-americas"></i>{% endif %}
+            {{ sc.cargo }}: {{ sc.total }}
+        </span>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    <!-- MAPA + FILTROS -->
+    <div class="row g-4 mb-4">
+        <!-- Mapa de Perú (OpenStreetMap + Leaflet) -->
+        <div class="col-lg-4 col-md-5">
+            <div class="card-white h-100" style="padding:1rem">
+                <h6 style="font-weight:700;font-size:0.85rem;color:var(--dark);margin-bottom:0.5rem;text-align:center">
+                    <i class="bi bi-geo-alt-fill" style="color:#3b82f6"></i> Selecciona un departamento
+                </h6>
+                <div id="peru-map" style="height:420px;border-radius:8px;z-index:1"></div>
+                {% if filtro_departamento %}
+                <div class="text-center mt-2">
+                    <span class="badge" style="background:#3b82f6;color:white;font-size:0.78rem;padding:4px 12px;border-radius:12px">
+                        <i class="bi bi-geo-alt"></i> {{ filtro_departamento|title }}
+                    </span>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        <!-- Filtros -->
+        <div class="col-lg-8 col-md-7">
+    <div class="card-white h-100" style="padding:1rem 1.25rem">
+        <h6 style="font-weight:700;font-size:0.85rem;color:var(--dark);margin-bottom:0.75rem">
+            <i class="bi bi-funnel"></i> Filtros de búsqueda
+        </h6>
+        <form method="get" id="filtros-form">
+            <div class="row g-2 align-items-end">
+                <!-- Búsqueda -->
+                <div class="col-12 col-md-3">
+                    <label class="cong-filter-label">
+                        <i class="bi bi-search"></i> Buscar candidato
+                    </label>
+                    <input type="text" name="q" value="{{ busqueda }}"
+                        class="form-control form-control-sm cong-input"
+                        placeholder="Nombre o DNI...">
+                </div>
+                <!-- Cargo -->
+                <div class="col-6 col-md-2">
+                    <label class="cong-filter-label"><i class="bi bi-briefcase"></i> Cargo</label>
+                    <select name="cargo" class="form-select form-select-sm cong-input" onchange="this.form.submit()">
+                        <option value="">Todos</option>
+                        {% for c in cargos_opciones %}
+                        <option value="{{ c }}" {% if c == filtro_cargo %}selected{% endif %}>
+                            {% if c == 'REPRESENTANTE DEL PARLAMENTO ANDINO' %}Parlamento Andino{% else %}{{ c|title }}{% endif %}
+                        </option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <!-- Departamento -->
+                <div class="col-6 col-md-2">
+                    <label class="cong-filter-label"><i class="bi bi-geo-alt"></i> Departamento</label>
+                    <select name="departamento" class="form-select form-select-sm cong-input" onchange="this.form.submit()">
+                        <option value="">Todos</option>
+                        {% for d in departamentos_opciones %}
+                        <option value="{{ d }}" {% if d == filtro_departamento %}selected{% endif %}>{{ d|title }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <!-- Partido -->
+                <div class="col-6 col-md-3">
+                    <label class="cong-filter-label"><i class="bi bi-flag"></i> Partido</label>
+                    <select name="partido" class="form-select form-select-sm cong-input" onchange="this.form.submit()">
+                        <option value="">Todos los partidos</option>
+                        {% for p in partidos_opciones %}
+                        <option value="{{ p }}" {% if p == filtro_partido %}selected{% endif %}>{{ p|title }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <!-- Estado -->
+                <div class="col-6 col-md-2">
+                    <label class="cong-filter-label"><i class="bi bi-check-circle"></i> Estado</label>
+                    <select name="estado" class="form-select form-select-sm cong-input" onchange="this.form.submit()">
+                        <option value="">Todos</option>
+                        <option value="DENTRO DE PLAZO" {% if filtro_estado == 'DENTRO DE PLAZO' %}selected{% endif %}>Presentaron</option>
+                        <option value="NO PRESENTO" {% if filtro_estado == 'NO PRESENTO' %}selected{% endif %}>No presentaron</option>
+                    </select>
+                </div>
+            </div>
+            {% if busqueda or filtro_cargo or filtro_departamento or filtro_partido or filtro_estado %}
+            <div class="mt-2">
+                <a href="{% url 'candidatos:congresales' %}" class="btn btn-sm btn-outline-secondary" style="border-radius:20px;font-size:0.78rem">
+                    <i class="bi bi-x-circle"></i> Limpiar filtros
+                </a>
+            </div>
+            {% endif %}
+        </form>
+    </div>
+        </div>
+    </div>
+
+    <!-- TABLA DE RESULTADOS -->
+    <div class="card-white" style="padding:0;overflow:hidden">
+        <div class="table-responsive">
+            <table class="table table-hover mb-0 cong-table">
+                <thead>
+                    <tr>
+                        <th>Candidato</th>
+                        <th class="d-none d-md-table-cell">Partido</th>
+                        <th>Cargo</th>
+                        <th class="d-none d-sm-table-cell">Departamento</th>
+                        <th>Estado</th>
+                        <th class="d-none d-lg-table-cell text-end">Ingresos</th>
+                        <th class="d-none d-lg-table-cell text-end">Gastos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for c in page %}
+                    <tr>
+                        <td>
+                            <div class="cong-nombre">{{ c.nombre|title }}</div>
+                            <div class="cong-dni">DNI: {{ c.dni }}</div>
+                            <div class="d-md-none cong-partido-mobile">{{ c.organizacion_politica|title }}</div>
+                        </td>
+                        <td class="d-none d-md-table-cell">
+                            <span class="cong-partido-tag">{{ c.organizacion_politica|title }}</span>
+                        </td>
+                        <td>
+                            <span class="badge-cargo-sm {% if c.cargo == 'DIPUTADO' %}diputado{% elif c.cargo == 'SENADOR' %}senador{% else %}parlamento{% endif %}">
+                                {{ c.cargo|title }}
+                            </span>
+                        </td>
+                        <td class="d-none d-sm-table-cell">
+                            <span style="font-size:0.82rem;color:#475569">{{ c.departamento|title }}</span>
+                        </td>
+                        <td>
+                            {% if c.estado == 'DENTRO DE PLAZO' %}
+                            <span class="cong-estado presento"><i class="bi bi-check-circle-fill"></i> Declaró</span>
+                            {% elif c.estado == 'FUERA DE PLAZO' %}
+                            <span class="cong-estado fuera"><i class="bi bi-clock-history"></i> Fuera de plazo</span>
+                            {% else %}
+                            <span class="cong-estado no-presento"><i class="bi bi-x-circle-fill"></i> No</span>
+                            {% endif %}
+                        </td>
+                        <td class="d-none d-lg-table-cell text-end">
+                            {% if c.ingresos is not None %}
+                            <span style="font-size:0.85rem;font-weight:600;color:#15803d">S/ {{ c.ingresos|floatformat:2 }}</span>
+                            {% else %}
+                            <span style="font-size:0.82rem;color:#94a3b8">—</span>
+                            {% endif %}
+                        </td>
+                        <td class="d-none d-lg-table-cell text-end">
+                            {% if c.gastos is not None %}
+                            <span style="font-size:0.85rem;font-weight:600;color:#dc2626">S/ {{ c.gastos|floatformat:2 }}</span>
+                            {% else %}
+                            <span style="font-size:0.82rem;color:#94a3b8">—</span>
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="7" class="text-center py-5" style="color:#94a3b8">
+                            <i class="bi bi-search" style="font-size:2rem;display:block;margin-bottom:0.5rem"></i>
+                            No se encontraron candidatos con esos filtros.
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        <!-- PAGINACIÓN -->
+        {% if page.paginator.num_pages > 1 %}
+        <div style="padding:1rem;border-top:1px solid #e2e8f0;display:flex;justify-content:center;align-items:center;gap:0.5rem;flex-wrap:wrap">
+            {% if page.has_previous %}
+            <a href="?page={{ page.previous_page_number }}{% if filtro_cargo %}&cargo={{ filtro_cargo }}{% endif %}{% if filtro_departamento %}&departamento={{ filtro_departamento }}{% endif %}{% if filtro_partido %}&partido={{ filtro_partido }}{% endif %}{% if filtro_estado %}&estado={{ filtro_estado }}{% endif %}{% if busqueda %}&q={{ busqueda }}{% endif %}"
+               class="cong-page-btn"><i class="bi bi-chevron-left"></i></a>
+            {% endif %}
+
+            <span style="font-size:0.82rem;color:#64748b;font-weight:600">
+                Página {{ page.number }} de {{ page.paginator.num_pages }}
+            </span>
+
+            {% if page.has_next %}
+            <a href="?page={{ page.next_page_number }}{% if filtro_cargo %}&cargo={{ filtro_cargo }}{% endif %}{% if filtro_departamento %}&departamento={{ filtro_departamento }}{% endif %}{% if filtro_partido %}&partido={{ filtro_partido }}{% endif %}{% if filtro_estado %}&estado={{ filtro_estado }}{% endif %}{% if busqueda %}&q={{ busqueda }}{% endif %}"
+               class="cong-page-btn"><i class="bi bi-chevron-right"></i></a>
+            {% endif %}
+        </div>
+        {% endif %}
+    </div>
+
+    <!-- FUENTE -->
+    <div class="card-white mt-4" style="background:#f0fdf4;border:1px solid #86efac">
+        <div class="d-flex align-items-center gap-3">
+            <img src="https://claridadportal.onpe.gob.pe/assets/images/logo_claridad.png" alt="ONPE" style="height:36px;opacity:0.85" onerror="this.style.display='none'">
+            <div>
+                <p style="margin:0;font-size:0.85rem;color:#166534">
+                    Datos del <strong>Reporte de Información Financiera de Campaña Electoral</strong> de la ONPE.
+                    La transparencia financiera es fundamental para elegir representantes honestos.
+                </p>
+                <a href="https://claridadportal.onpe.gob.pe/" target="_blank" rel="noopener" style="font-size:0.82rem;font-weight:600;color:#16a34a;text-decoration:none">
+                    Consultar Portal Claridad <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-4 mb-3">
+        <a href="{% url 'candidatos:transparencia_partidos' %}" class="btn btn-outline-secondary" style="border-radius:20px;padding:0.5rem 1.5rem">
+            <i class="bi bi-arrow-left"></i> Ranking de Partidos
+        </a>
+    </div>
+</div>
+
+<link rel="stylesheet" href="{% static 'css/congresales.css' %}">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="{% static 'js/peru_leaflet_map.js' %}"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    initPeruLeafletMap('peru-map');
+});
+</script>
+{% endblock %}

@@ -1,0 +1,34 @@
+{
+  "fuente": "ONPE – Elecciones Generales 2026",
+  "entrega": "Segunda entrega",
+  "fecha_actualizacion": "2026-03-17",
+  "total_candidatos": 8860,
+  "total_presentaron": 2,
+  "total_no_presentaron": 8858,
+  "porcentaje_global_transparencia": 0.02,
+  "total_partidos": 38,
+  "por_cargo": {
+    "DIPUTADO": {
+      "total": 5421,
+      "presentaron": 2
+    },
+    "SENADOR": {
+      "total": 2910,
+      "presentaron": 0
+    },
+    "REPRESENTANTE DEL PARLAMENTO ANDINO": {
+      "total": 529,
+      "presentaron": 0
+    }
+  },
+  "por_genero": {
+    "MASCULINO": {
+      "total": 4432,
+      "presentaron": 1
+    },
+    "FEMENINO": {
+      "total": 4428,
+      "presentaron": 1
+    }
+  }
+}

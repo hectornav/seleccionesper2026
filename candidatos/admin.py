@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.utils.html import format_html
 from django.utils.safestring import mark_safe
-from .models import Partido, Candidato, Propuesta, PreguntaQuiz, OpcionQuiz, Visita, ResultadoQuiz, Encuesta, Sugerencia
+from .models import Partido, Candidato, CandidatoCongresal, Propuesta, PreguntaQuiz, OpcionQuiz, Visita, ResultadoQuiz, Encuesta, Sugerencia
 
 
 class PropuestaInline(admin.TabularInline):
@@ -16,23 +16,40 @@ class OpcionInline(admin.TabularInline):
 
 @admin.register(Partido)
 class PartidoAdmin(admin.ModelAdmin):
-    list_display = ['nombre', 'siglas', 'ideologia', 'color_primario']
+    list_display = ['siglas', 'nombre', 'transparencia_porcentaje', 'transparencia_onpe_total_candidatos']
     search_fields = ['nombre', 'siglas']
+
+    fieldsets = (
+        (None, {
+            'fields': ('nombre', 'siglas', 'color_primario', 'color_secundario', 'logo', 'ideologia')
+        }),
+        ('Estadísticas Transparencia Financiera (ONPE)', {
+            'fields': ('transparencia_onpe_total_candidatos', 'transparencia_onpe_presentaron', 'transparencia_porcentaje', 'transparencia_ultima_actualizacion'),
+            'classes': ('collapse',),
+            'description': 'Datos agregados a partir del cruce con los reportes financieros de la ONPE.'
+        })
+    )
+    readonly_fields = ('transparencia_porcentaje',)
 
 
 @admin.register(Candidato)
 class CandidatoAdmin(admin.ModelAdmin):
-    list_display = ['nombre', 'partido', 'posicion_politica', 'region', 'es_destacado']
-    list_filter = ['posicion_politica', 'partido', 'es_destacado']
+    list_display = ['nombre', 'partido', 'rol_plancha', 'posicion_politica', 'region', 'es_destacado', 'fallecido', 'info_financiera_estado']
+    list_filter = ['rol_plancha', 'posicion_politica', 'partido', 'es_destacado', 'fallecido', 'info_financiera_estado']
     search_fields = ['nombre', 'partido__nombre']
     prepopulated_fields = {'slug': ('nombre',)}
     inlines = [PropuestaInline]
     fieldsets = (
         ('Información Personal', {
-            'fields': ('nombre', 'slug', 'partido', 'foto', 'foto_url', 'edad', 'region', 'profesion', 'lema')
+            'fields': ('nombre', 'slug', 'partido', 'rol_plancha', 'foto', 'foto_url', 'edad', 'region', 'profesion', 'lema', 'fallecido', 'fecha_fallecimiento')
         }),
         ('Posición Política', {
             'fields': ('posicion_politica', 'biografia', 'experiencia', 'es_destacado', 'orden')
+        }),
+        ('Transparencia Financiera (ONPE)', {
+            'fields': ('info_financiera_estado', 'info_financiera_ingresos', 'info_financiera_gastos', 'info_financiera_fecha'),
+            'classes': ('collapse',),
+            'description': 'Información extraída del reporte de ingresos y gastos de campaña del Portal Claridad.'
         }),
         ('Scores para Quiz', {
             'fields': ('score_economia', 'score_seguridad', 'score_medio_ambiente', 'score_educacion', 'score_salud'),
@@ -106,6 +123,18 @@ class EncuestaAdmin(admin.ModelAdmin):
             'fields': ('resultados', 'nota'),
         }),
     )
+
+
+@admin.register(CandidatoCongresal)
+class CandidatoCongressalAdmin(admin.ModelAdmin):
+    list_display = ['nombre', 'cargo', 'organizacion_politica', 'departamento', 'estado', 'ingresos', 'gastos']
+    list_filter = ['cargo', 'estado', 'departamento', 'organizacion_politica']
+    search_fields = ['nombre', 'dni', 'organizacion_politica']
+    list_per_page = 50
+    readonly_fields = ['dni', 'nombre', 'genero', 'edad', 'cargo', 'organizacion_politica', 'departamento', 'provincia', 'distrito', 'estado', 'fecha_presentacion', 'ingresos', 'gastos', 'entrega']
+
+    def has_add_permission(self, request):
+        return False
 
 
 @admin.register(Sugerencia)

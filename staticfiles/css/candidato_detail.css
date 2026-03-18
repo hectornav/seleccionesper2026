@@ -258,6 +258,543 @@
         color: #92400e;
     }
 
+    /* ═══════════════════════════════════════════
+       HOJA DE VIDA JNE
+       ═══════════════════════════════════════════ */
+
+    .jne-section-icon {
+        width: 36px;
+        height: 36px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 1.1rem;
+        flex-shrink: 0;
+    }
+
+    /* Datos personales grid */
+    .jne-datos-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 0.75rem;
+    }
+
+    .jne-dato-item {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        padding: 0.65rem 0.85rem;
+        background: #f8fafc;
+        border-radius: 10px;
+        border: 1px solid #e2e8f0;
+    }
+
+    .jne-dato-label {
+        font-size: 0.72rem;
+        color: #94a3b8;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .jne-dato-value {
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: #1e293b;
+    }
+
+    /* Subsection titles */
+    .jne-subsection-title {
+        font-size: 0.82rem;
+        font-weight: 700;
+        color: #475569;
+        margin-bottom: 0.75rem;
+        padding-bottom: 0.4rem;
+        border-bottom: 1px solid #e2e8f0;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    /* Timeline items */
+    .jne-timeline-item {
+        display: flex;
+        gap: 12px;
+        padding: 0.75rem 0;
+        border-bottom: 1px solid #f1f5f9;
+        position: relative;
+    }
+
+    .jne-timeline-item:last-child {
+        border-bottom: none;
+    }
+
+    .jne-timeline-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        flex-shrink: 0;
+        margin-top: 6px;
+    }
+
+    .jne-timeline-content {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .jne-timeline-title {
+        font-weight: 700;
+        font-size: 0.9rem;
+        color: #1e293b;
+        text-transform: capitalize;
+    }
+
+    .jne-timeline-subtitle {
+        font-size: 0.82rem;
+        color: #64748b;
+        margin-top: 1px;
+    }
+
+    .jne-timeline-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-top: 6px;
+        align-items: center;
+    }
+
+    .jne-timeline-year {
+        font-size: 0.75rem;
+        color: #64748b;
+        font-weight: 600;
+    }
+
+    .jne-timeline-location {
+        font-size: 0.75rem;
+        color: #94a3b8;
+        display: flex;
+        align-items: center;
+        gap: 3px;
+    }
+
+    /* Badges */
+    .badge.bg-success-soft {
+        background: #dcfce7 !important;
+        color: #166534 !important;
+        font-weight: 600;
+        font-size: 0.7rem;
+    }
+
+    .badge.bg-warning-soft {
+        background: #fef3c7 !important;
+        color: #92400e !important;
+        font-weight: 600;
+        font-size: 0.7rem;
+    }
+
+    .badge.bg-purple-soft {
+        background: #ede9fe !important;
+        color: #6d28d9 !important;
+        font-weight: 600;
+        font-size: 0.7rem;
+    }
+
+    /* Educación básica tags */
+    .jne-educacion-basica {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .jne-edu-basica-tag {
+        font-size: 0.78rem;
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .jne-edu-basica-tag.concluida {
+        background: #dcfce7;
+        color: #166534;
+    }
+
+    .jne-edu-basica-tag.no-concluida {
+        background: #fef3c7;
+        color: #92400e;
+    }
+
+    /* Cargos grid */
+    .jne-cargos-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 0.65rem;
+    }
+
+    .jne-cargo-card {
+        background: #fffbeb;
+        border: 1px solid #fde68a;
+        border-radius: 10px;
+        padding: 0.75rem;
+    }
+
+    .jne-cargo-titulo {
+        font-weight: 700;
+        font-size: 0.85rem;
+        color: #92400e;
+        text-transform: capitalize;
+    }
+
+    .jne-cargo-org {
+        font-size: 0.78rem;
+        color: #78716c;
+        margin-top: 2px;
+    }
+
+    .jne-cargo-periodo {
+        font-size: 0.72rem;
+        color: #a8a29e;
+        margin-top: 4px;
+        font-weight: 600;
+    }
+
+    /* Ingresos */
+    .jne-ingresos-total {
+        background: linear-gradient(135deg, #064e3b, #065f46);
+        color: white;
+        border-radius: 14px;
+        padding: 1.25rem 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .jne-ingresos-label {
+        font-size: 0.85rem;
+        font-weight: 600;
+        opacity: 0.85;
+    }
+
+    .jne-ingresos-monto {
+        font-size: 1.6rem;
+        font-weight: 800;
+    }
+
+    .jne-ingresos-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 0.65rem;
+    }
+
+    .jne-ingreso-item {
+        background: #f0fdf4;
+        border: 1px solid #bbf7d0;
+        border-radius: 10px;
+        padding: 0.75rem;
+    }
+
+    .jne-ingreso-label {
+        font-size: 0.75rem;
+        color: #166534;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        margin-bottom: 4px;
+    }
+
+    .jne-ingreso-monto {
+        font-size: 1rem;
+        font-weight: 800;
+        color: #15803d;
+    }
+
+    /* Bienes */
+    .jne-bien-card {
+        background: #f0f9ff;
+        border: 1px solid #bae6fd;
+        border-radius: 10px;
+        padding: 0.75rem 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .jne-bien-tipo {
+        font-weight: 700;
+        font-size: 0.85rem;
+        color: #0c4a6e;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .jne-bien-direccion {
+        font-size: 0.8rem;
+        color: #64748b;
+        margin-top: 2px;
+    }
+
+    .jne-bien-valor {
+        font-size: 0.82rem;
+        color: #0369a1;
+        margin-top: 4px;
+    }
+
+    /* Sentencias */
+    .jne-sentencia-card {
+        border-radius: 10px;
+        padding: 0.85rem 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .jne-sentencia-card.penal {
+        background: #fef2f2;
+        border: 1px solid #fecaca;
+        border-left: 4px solid #ef4444;
+    }
+
+    .jne-sentencia-card.civil {
+        background: #fffbeb;
+        border: 1px solid #fde68a;
+        border-left: 4px solid #f59e0b;
+    }
+
+    .jne-sentencia-header {
+        font-weight: 700;
+        font-size: 0.85rem;
+        color: #1e293b;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        margin-bottom: 6px;
+    }
+
+    .jne-sentencia-card.penal .jne-sentencia-header i {
+        color: #ef4444;
+    }
+
+    .jne-sentencia-card.civil .jne-sentencia-header i {
+        color: #f59e0b;
+    }
+
+    .jne-sentencia-detalle {
+        font-size: 0.82rem;
+        color: #475569;
+        padding: 2px 0;
+        padding-left: 22px;
+    }
+
+    /* Info adicional */
+    .jne-info-adicional-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .jne-info-adicional-list li {
+        padding: 0.5rem 0.75rem;
+        background: #f8fafc;
+        border-radius: 8px;
+        margin-bottom: 0.4rem;
+        font-size: 0.88rem;
+        color: #334155;
+        border-left: 3px solid #6366f1;
+    }
+
+    /* Anotaciones */
+    .jne-anotacion {
+        padding: 0.75rem;
+        background: #fffbeb;
+        border-radius: 8px;
+        margin-bottom: 0.4rem;
+        font-size: 0.88rem;
+        color: #78350f;
+        border-left: 3px solid #f59e0b;
+    }
+
+    /* ═══════════════════════════════════════════
+       PLANCHA PRESIDENCIAL RESALTADA
+       ═══════════════════════════════════════════ */
+
+    .plancha-member {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 0.6rem 0.65rem;
+        border-radius: 10px;
+        margin-bottom: 0.35rem;
+        text-decoration: none;
+        transition: all 0.2s;
+    }
+
+    .plancha-link:hover {
+        background: #f1f5f9;
+        transform: translateX(2px);
+    }
+
+    .plancha-photo {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        overflow: hidden;
+        flex-shrink: 0;
+        border: 2.5px solid;
+    }
+
+    .plancha-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .plancha-photo-placeholder {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #e9ecef;
+        font-size: 18px;
+        color: #adb5bd;
+    }
+
+    .plancha-info {
+        min-width: 0;
+        flex: 1;
+    }
+
+    .plancha-name {
+        font-size: 0.84rem;
+        font-weight: 700;
+        color: var(--dark);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .plancha-role {
+        font-size: 0.72rem;
+        font-weight: 600;
+        color: #64748b;
+    }
+
+    .plancha-hint {
+        font-size: 0.68rem;
+        color: #94a3b8;
+        margin-top: 1px;
+    }
+
+    .plancha-link:hover .plancha-hint {
+        color: #3b82f6;
+    }
+
+    .plancha-you-badge {
+        font-size: 0.65rem;
+        color: white;
+        border-radius: 6px;
+        padding: 2px 7px;
+        font-weight: 700;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+    .plancha-arrow {
+        font-size: 1.1rem;
+        flex-shrink: 0;
+        opacity: 0.4;
+        transition: opacity 0.2s;
+    }
+
+    .plancha-link:hover .plancha-arrow {
+        opacity: 1;
+    }
+
+    /* ═══════════════════════════════════════════
+       CONGRESALES EN SIDEBAR
+       ═══════════════════════════════════════════ */
+
+    .cong-sidebar-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 0.45rem 0;
+        border-bottom: 1px solid #f1f5f9;
+    }
+
+    .cong-sidebar-item:last-child {
+        border-bottom: none;
+    }
+
+    .cong-sidebar-info {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .cong-sidebar-name {
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: #1e293b;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .cong-sidebar-meta {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        margin-top: 1px;
+    }
+
+    .badge-cargo-xs {
+        font-size: 0.62rem;
+        padding: 1px 5px;
+        border-radius: 8px;
+        font-weight: 700;
+    }
+
+    .badge-cargo-xs.diputado {
+        background: #dbeafe;
+        color: #1e40af;
+    }
+
+    .badge-cargo-xs.senador {
+        background: #ede9fe;
+        color: #5b21b6;
+    }
+
+    .badge-cargo-xs.parlamento {
+        background: #fef3c7;
+        color: #92400e;
+    }
+
+    .cong-sidebar-depto {
+        font-size: 0.68rem;
+        color: #94a3b8;
+    }
+
+    .cong-estado-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        flex-shrink: 0;
+    }
+
+    .cong-estado-dot.presento {
+        background: #22c55e;
+    }
+
+    .cong-estado-dot.no-presento {
+        background: #fca5a5;
+    }
+
     /* Responsive */
     @media (max-width: 768px) {
         .hero-candidate-row {
@@ -321,5 +858,27 @@
         .tema-header {
             flex-direction: column;
             align-items: flex-start;
+        }
+
+        .jne-datos-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .jne-ingresos-total {
+            flex-direction: column;
+            text-align: center;
+            gap: 0.25rem;
+        }
+
+        .jne-ingresos-monto {
+            font-size: 1.3rem;
+        }
+
+        .jne-ingresos-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .jne-cargos-grid {
+            grid-template-columns: 1fr;
         }
     }

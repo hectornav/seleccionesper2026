@@ -163,8 +163,22 @@ function renderResultados(resultados) {
                 ${alertaHtml}
                 ${posicionesHtml ? `<div style="margin-top:8px"><div style="font-size:0.68rem;color:#6b7280;margin-bottom:4px">Posiciones clave:</div><div style="line-height:2">${posicionesHtml}</div></div>` : ''}
                 ${r.experiencia ? `<div style="font-size:0.68rem;color:#6b7280;margin-top:6px;word-break:break-word"><strong>Experiencia:</strong> ${escapeHtml(r.experiencia)}</div>` : ''}
+                ${r.formacion && r.formacion.length ? `<div style="font-size:0.68rem;color:#6b7280;margin-top:4px"><strong><i class="bi bi-mortarboard"></i> Formación:</strong> ${r.formacion.map(f => escapeHtml(f)).join(' · ')}</div>` : ''}
+                ${r.tiene_sentencias_jne ? `<div style="font-size:0.68rem;color:#dc2626;margin-top:4px;font-weight:600"><i class="bi bi-exclamation-triangle-fill"></i> Registra sentencias en su Hoja de Vida JNE</div>` : ''}
             </div>
         `;
+
+        // Ejes del Plan de Gobierno (JNE)
+        let ejesHtml = '';
+        if (r.ejes_plan && r.ejes_plan.length) {
+            ejesHtml = '<div style="margin-top:10px;padding-top:10px;border-top:1px dashed #e5e7eb">' +
+                '<div style="font-size:0.72rem;font-weight:700;color:var(--dark);margin-bottom:6px"><i class="bi bi-journal-text"></i> Plan de Gobierno (JNE)</div>' +
+                '<div style="display:grid;grid-template-columns:1fr 1fr;gap:4px">' +
+                r.ejes_plan.map(e => `<div style="font-size:0.65rem;padding:4px 6px;background:#f8fafc;border-radius:4px;border-left:3px solid ${e.dim==='Social'?'#e11d48':e.dim==='Económica'?'#2563eb':e.dim==='Ambiental'?'#16a34a':'#9333ea'}"><strong>${escapeHtml(e.dim)}:</strong> ${escapeHtml(e.objetivo)}</div>`).join('') +
+                '</div>' +
+                (r.plan_pdf ? `<a href="${r.plan_pdf}" target="_blank" rel="noopener" style="font-size:0.65rem;color:#3b82f6;text-decoration:none;margin-top:4px;display:inline-block"><i class="bi bi-file-pdf"></i> Ver plan completo</a>` : '') +
+                '</div>';
+        }
 
         const el = document.createElement('div');
         el.className = `resultado-card mb-3 ${isTop ? 'top-1' : ''}`;
@@ -194,14 +208,49 @@ function renderResultados(resultados) {
             </div>
             ${r.lema ? `<p style="font-size:0.78rem;font-style:italic;color:#4a5568;margin:0.75rem 0 0;border-left:3px solid ${isTop ? 'var(--gold)' : 'var(--peru-red)'};padding-left:0.6rem">"${r.lema}"</p>` : ''}
             ${brujulaHtml}
+            ${ejesHtml}
             <div class="mt-2">
                 <a href="/candidato/${r.slug}/" class="btn-peru" style="font-size:0.78rem;padding:0.3rem 0.7rem">
-                    <i class="bi bi-eye"></i> Ver propuestas
+                    <i class="bi bi-eye"></i> Ver perfil completo
                 </a>
             </div>
         `;
         container.appendChild(el);
     });
+
+    // Share bar after results
+    const shareDiv = document.createElement('div');
+    shareDiv.className = 'share-bar mt-4 justify-content-center';
+    shareDiv.style.cssText = 'padding:1rem;background:#f8fafc;border-radius:12px;border:1px solid #e2e8f0';
+    const topName = resultados[0] ? resultados[0].nombre : '';
+    // Save quiz result to localStorage for personalized sharing on home
+    if (topName) {
+        localStorage.setItem('quiz_resultado_nombre', topName);
+    }
+    const shareText = topName ? `Mi candidato más afín es ${topName}. Haz el Test Electoral y descubre el tuyo` : 'Haz el Test Electoral — Elecciones Perú 2026';
+    shareDiv.innerHTML = `
+        <span class="share-label" style="width:100%;text-align:center;display:block;margin-bottom:8px;font-size:0.85rem">
+            <i class="bi bi-megaphone"></i> Comparte tu resultado y anima a otros a votar informados
+        </span>
+        <div class="d-flex flex-wrap gap-2 justify-content-center">
+            <button class="share-btn wa" onclick="shareOn('whatsapp','${shareText.replace(/'/g,"\\'")}')">
+                <i class="bi bi-whatsapp"></i> <span class="share-text">WhatsApp</span>
+            </button>
+            <button class="share-btn fb" onclick="shareOn('facebook')">
+                <i class="bi bi-facebook"></i> <span class="share-text">Facebook</span>
+            </button>
+            <button class="share-btn tw" onclick="shareOn('twitter','${shareText.replace(/'/g,"\\'")}')">
+                <i class="bi bi-twitter-x"></i> <span class="share-text">X</span>
+            </button>
+            <button class="share-btn tt" onclick="shareOn('tiktok')">
+                <i class="bi bi-tiktok"></i> <span class="share-text">TikTok</span>
+            </button>
+            <button class="share-btn copy-link" onclick="shareOn('copy')">
+                <i class="bi bi-link-45deg"></i> <span class="share-text">Copiar link</span>
+            </button>
+        </div>
+    `;
+    container.appendChild(shareDiv);
 
     // Animar barras
     setTimeout(() => {

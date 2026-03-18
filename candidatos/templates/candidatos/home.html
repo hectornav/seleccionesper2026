@@ -9,7 +9,7 @@
 <section class="hero-section">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-8">
+            <div class="col-lg-7">
                 <div class="d-flex align-items-center gap-2 mb-2">
                     <span
                         style="background:rgba(245,166,35,0.2);color:var(--gold);border:1px solid rgba(245,166,35,0.4);border-radius:20px;padding:2px 12px;font-size:0.78rem;font-weight:700">
@@ -35,23 +35,105 @@
                     </a>
                 </div>
             </div>
-            <div class="col-lg-4 d-none d-lg-block text-end">
-                <div class="d-flex justify-content-end gap-3">
-                    <div class="stat-card"
-                        style="background:rgba(255,255,255,0.1);border-radius:12px;padding:1rem 1.5rem;text-align:center">
-                        <div style="font-size:2rem;font-weight:800;color:var(--gold)">{{ total_candidatos }}</div>
-                        <div style="font-size:0.75rem;color:rgba(255,255,255,0.6)">Candidatos</div>
+            <div class="col-lg-5 text-center text-lg-end mt-4 mt-lg-0">
+                <!-- Fecha de Elecciones + Countdown -->
+                <div style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:16px;padding:1.25rem 1.5rem;display:inline-block;backdrop-filter:blur(8px)">
+                    <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:1.5px;color:rgba(255,255,255,0.5);font-weight:700;margin-bottom:0.4rem">Elecciones Generales</div>
+                    <div style="font-size:clamp(1.8rem,4vw,2.8rem);font-weight:900;color:var(--gold);line-height:1.1">
+                        12 de Abril
                     </div>
-                    <div class="stat-card"
-                        style="background:rgba(255,255,255,0.1);border-radius:12px;padding:1rem 1.5rem;text-align:center">
-                        <div style="font-size:2rem;font-weight:800;color:var(--gold)">🗳️</div>
-                        <div style="font-size:0.75rem;color:rgba(255,255,255,0.6)">Elecciones 2026</div>
+                    <div style="font-size:clamp(1.3rem,3vw,1.8rem);font-weight:800;color:white;line-height:1.2">
+                        2026
+                    </div>
+                    <div style="margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid rgba(255,255,255,0.12)">
+                        <div id="countdown-display" style="display:flex;justify-content:center;gap:0.6rem">
+                            <div style="text-align:center">
+                                <div id="cd-days" style="font-size:1.5rem;font-weight:800;color:white;line-height:1">--</div>
+                                <div style="font-size:0.6rem;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:0.5px">días</div>
+                            </div>
+                            <div style="color:rgba(255,255,255,0.3);font-size:1.2rem;font-weight:300">:</div>
+                            <div style="text-align:center">
+                                <div id="cd-hours" style="font-size:1.5rem;font-weight:800;color:white;line-height:1">--</div>
+                                <div style="font-size:0.6rem;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:0.5px">horas</div>
+                            </div>
+                            <div style="color:rgba(255,255,255,0.3);font-size:1.2rem;font-weight:300">:</div>
+                            <div style="text-align:center">
+                                <div id="cd-mins" style="font-size:1.5rem;font-weight:800;color:white;line-height:1">--</div>
+                                <div style="font-size:0.6rem;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:0.5px">min</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center mt-3">
+                        <div style="text-align:center">
+                            <div style="font-size:1.3rem;font-weight:800;color:var(--gold)">{{ total_candidatos }}</div>
+                            <div style="font-size:0.65rem;color:rgba(255,255,255,0.5)">Candidatos Presidenciales</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<!-- COMPARTIR PERSONALIZADO -->
+<div class="container mt-3">
+    <div class="p-3 p-md-4" style="background:linear-gradient(135deg,#1e3a5f,#0f2027);border-radius:16px;color:white;position:relative;overflow:hidden">
+        <div style="position:absolute;top:-30px;right:-30px;width:120px;height:120px;background:rgba(245,166,35,0.1);border-radius:50%"></div>
+        <div class="row align-items-center g-3">
+            <div class="col-12 col-md-5">
+                <div style="font-size:0.7rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--gold);font-weight:700;margin-bottom:0.3rem">
+                    <i class="bi bi-megaphone-fill"></i> Comparte y hazlo viral
+                </div>
+                <div style="font-size:1rem;font-weight:700;line-height:1.3">
+                    Ayuda a que más peruanos voten informados
+                </div>
+                <p style="font-size:0.8rem;color:rgba(255,255,255,0.6);margin:0.3rem 0 0">
+                    Personaliza tu mensaje y comparte en redes
+                </p>
+            </div>
+            <div class="col-12 col-md-7">
+                <div class="d-flex flex-column gap-2">
+                    <!-- Selector de mensaje personalizado -->
+                    <div class="d-flex flex-wrap gap-2 align-items-center">
+                        <select id="share-type" class="form-select form-select-sm" style="max-width:280px;border-radius:10px;font-size:0.8rem;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.1);color:white" onchange="updateSharePreview()">
+                            <option value="general" style="color:#1e293b">Compartir la plataforma</option>
+                            <option value="quiz" style="color:#1e293b">Compartir mi resultado del test</option>
+                            <option value="candidato" style="color:#1e293b">Compartir mi candidato favorito</option>
+                        </select>
+                        <select id="share-candidato" class="form-select form-select-sm d-none" style="max-width:220px;border-radius:10px;font-size:0.8rem;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.1);color:white">
+                            {% for candidato in candidatos %}
+                            {% if candidato.rol_plancha == 'presidente' %}
+                            <option value="{{ candidato.nombre }}" style="color:#1e293b">{{ candidato.nombre }}</option>
+                            {% endif %}
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div id="share-preview" style="font-size:0.75rem;color:rgba(255,255,255,0.5);font-style:italic;min-height:1.2em;padding:0 2px">
+                        "Conoce a los candidatos a la Presidencia del Perú 2026. Compara propuestas y vota informado"
+                    </div>
+                    <!-- Botones de compartir -->
+                    <div class="share-bar" style="gap:6px">
+                        <button class="share-btn wa" onclick="sharePersonalized('whatsapp')">
+                            <i class="bi bi-whatsapp"></i> <span class="share-text">WhatsApp</span>
+                        </button>
+                        <button class="share-btn fb" onclick="sharePersonalized('facebook')">
+                            <i class="bi bi-facebook"></i> <span class="share-text">Facebook</span>
+                        </button>
+                        <button class="share-btn tw" onclick="sharePersonalized('twitter')">
+                            <i class="bi bi-twitter-x"></i> <span class="share-text">X</span>
+                        </button>
+                        <button class="share-btn tt" onclick="sharePersonalized('tiktok')">
+                            <i class="bi bi-tiktok"></i> <span class="share-text">TikTok</span>
+                        </button>
+                        <button class="share-btn copy-link" onclick="sharePersonalized('copy')">
+                            <i class="bi bi-link-45deg"></i> <span class="share-text">Copiar</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- CONTENIDO PRINCIPAL -->
 <div class="container py-4">
@@ -121,11 +203,12 @@
         <div class="col-12 col-sm-6 col-lg-4 animate-in candidato-item" data-nombre="{{ candidato.nombre|lower }}"
             data-posicion="{{ candidato.posicion_politica }}" data-partido="{{ candidato.partido.id }}"
             style="--delay: {{ forloop.counter0 }}00ms;">
-            <div class="card-candidato">
+            <div class="card-candidato{% if candidato.fallecido %} candidato-fallecido{% endif %}">
                 <!-- Foto -->
                 <div class="foto-wrapper">
                     {% if candidato.get_foto %}
-                    <img src="{{ candidato.get_foto }}" alt="{{ candidato.nombre }}" loading="lazy">
+                    <img src="{{ candidato.get_foto }}" alt="{{ candidato.nombre }}" loading="lazy"
+                        {% if candidato.fallecido %}style="filter:grayscale(100%)"{% endif %}>
                     {% else %}
                     <div class="foto-placeholder">
                         <i class="bi bi-person-circle"></i>
@@ -152,6 +235,13 @@
                         <i class="bi bi-patch-check-fill"></i>
                     </span>
                     {% endif %}
+
+                    <!-- Badge fallecido -->
+                    {% if candidato.fallecido %}
+                    <span style="position:absolute;top:8px;left:8px;background:rgba(30,30,30,0.85);color:#fff;border-radius:20px;padding:3px 10px;font-size:0.72rem;font-weight:700;display:flex;align-items:center;gap:4px;backdrop-filter:blur(4px);z-index:10">
+                        🕊️ Fallecido
+                    </span>
+                    {% endif %}
                 </div>
 
                 <!-- Info -->
@@ -176,6 +266,34 @@
                         <span>{{ candidato.propuestas_destacadas.0|truncatewords:10 }}</span>
                     </div>
                     {% endif %}
+
+                    <!-- Plancha Presidencial (VPs) -->
+                    {% if candidato.vps %}
+                    <div style="background:#f1f5f9;border:1px solid #e2e8f0;border-radius:8px;padding:6px 10px;margin-bottom:0.75rem;font-size:0.78rem">
+                        <div style="font-weight:700;color:#334155;margin-bottom:3px;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.5px">
+                            <i class="bi bi-people-fill" style="color:#3b82f6"></i> Plancha Presidencial
+                        </div>
+                        {% for vp in candidato.vps %}
+                        <div style="display:flex;align-items:center;gap:5px;padding:2px 0">
+                            <span style="background:{% if vp.rol_plancha == 'vp1' %}#3b82f6{% else %}#6366f1{% endif %};color:white;border-radius:4px;padding:1px 5px;font-size:0.65rem;font-weight:700;white-space:nowrap">{{ vp.rol_plancha_label }}</span>
+                            <a href="{% url 'candidatos:candidato_detail' vp.slug %}" style="color:#1e293b;font-weight:600;text-decoration:none;line-height:1.2" title="Ver hoja de vida">
+                                {{ vp.nombre|title }}
+                            </a>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+
+                    <!-- Congresales link -->
+                    {% if candidato.total_congresales %}
+                    <a href="{% url 'candidatos:congresales' %}?partido={{ candidato.partido.nombre|urlencode }}"
+                       style="display:flex;align-items:center;gap:5px;font-size:0.75rem;color:#3b82f6;font-weight:600;text-decoration:none;margin-bottom:0.75rem;padding:4px 8px;background:#eff6ff;border:1px solid #bfdbfe;border-radius:6px;width:fit-content">
+                        <i class="bi bi-bank2"></i> {{ candidato.total_congresales }} candidatos al Congreso
+                        <i class="bi bi-chevron-right" style="font-size:0.65rem"></i>
+                    </a>
+                    {% endif %}
+
+
 
                     <div class="d-flex gap-2">
                         <a href="{% url 'candidatos:candidato_detail' candidato.slug %}" class="btn-peru flex-fill"
@@ -220,10 +338,67 @@
         </a>
     </div>
 
+
 </div>
 
 {% endblock %}
 
 {% block extra_js %}
 <script src="{% static 'js/home.js' %}"></script>
+<script>
+// Personalized sharing
+function getShareText() {
+    var type = document.getElementById('share-type').value;
+    var url = window.location.origin;
+    if (type === 'quiz') {
+        var quizResult = localStorage.getItem('quiz_resultado_nombre');
+        if (quizResult) {
+            return 'Hice el Test Electoral de Elecciones Perú 2026 y mi candidato más afín es ' + quizResult + '. ¡Descubre el tuyo! ' + url + '/quiz/';
+        }
+        return '¿Ya hiciste el Test Electoral? Descubre qué candidato representa mejor tus ideas para el Perú 2026. ' + url + '/quiz/';
+    } else if (type === 'candidato') {
+        var nombre = document.getElementById('share-candidato').value;
+        return 'Mi candidato para las Elecciones Perú 2026 es ' + nombre + '. Conoce a todos los candidatos y compara propuestas en ' + url;
+    }
+    return 'Conoce a los candidatos a la Presidencia del Perú 2026. Compara propuestas y vota informado. ' + url;
+}
+
+function updateSharePreview() {
+    var type = document.getElementById('share-type').value;
+    var candidatoSelect = document.getElementById('share-candidato');
+    var preview = document.getElementById('share-preview');
+    if (type === 'candidato') {
+        candidatoSelect.classList.remove('d-none');
+    } else {
+        candidatoSelect.classList.add('d-none');
+    }
+    preview.textContent = '"' + getShareText() + '"';
+}
+
+document.getElementById('share-candidato').addEventListener('change', updateSharePreview);
+
+function sharePersonalized(platform) {
+    var text = getShareText();
+    var url = window.location.href;
+    shareOn(platform, text);
+}
+</script>
+<script>
+(function(){
+    var target = new Date('2026-04-12T07:00:00-05:00');
+    function update(){
+        var now = new Date();
+        var diff = target - now;
+        if(diff <= 0){ document.getElementById('countdown-display').innerHTML='<div style="font-size:0.9rem;font-weight:700;color:var(--gold)">Hoy se vota</div>'; return; }
+        var d = Math.floor(diff/86400000);
+        var h = Math.floor((diff%86400000)/3600000);
+        var m = Math.floor((diff%3600000)/60000);
+        document.getElementById('cd-days').textContent = d;
+        document.getElementById('cd-hours').textContent = h < 10 ? '0'+h : h;
+        document.getElementById('cd-mins').textContent = m < 10 ? '0'+m : m;
+    }
+    update();
+    setInterval(update, 60000);
+})();
+</script>
 {% endblock %}

@@ -11,5 +11,7 @@ urlpatterns = [
     path('quiz/resultado/', views.quiz_resultado, name='quiz_resultado'),
     path('sobre/', views.sobre_el_proyecto, name='sobre'),
     path('encuestas-popup/', views.encuestas_popup, name='encuestas_popup'),
+    path('transparencia-partidos/', views.transparencia_partidos, name='transparencia_partidos'),
+    path('congresales/', views.congresales, name='congresales'),
     path('sugerencias/', views.sugerencias, name='sugerencias'),
 ]

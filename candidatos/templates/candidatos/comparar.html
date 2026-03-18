@@ -125,56 +125,118 @@
                     </td>
                 </tr>
                 <tr>
-                    <td
-                        style="padding:0.75rem 1rem;font-size:0.85rem;font-weight:600;color:#4a5568;border-bottom:1px solid #e9ecef">
+                    <td style="padding:0.75rem 1rem;font-size:0.85rem;font-weight:600;color:#4a5568;border-bottom:1px solid #e9ecef">
                         <i class="bi bi-briefcase"></i> Profesión
                     </td>
                     {% for c in candidatos_seleccionados %}
-                    <td
-                        style="padding:0.75rem 1rem;font-size:0.85rem;text-align:center;border-bottom:1px solid #e9ecef;color:#2d3748">
+                    <td style="padding:0.75rem 1rem;font-size:0.85rem;text-align:center;border-bottom:1px solid #e9ecef;color:#2d3748">
                         {{ c.profesion }}
                     </td>
                     {% endfor %}
                 </tr>
                 <tr>
-                    <td
-                        style="padding:0.75rem 1rem;font-size:0.85rem;font-weight:600;color:#4a5568;border-bottom:1px solid #e9ecef">
+                    <td style="padding:0.75rem 1rem;font-size:0.85rem;font-weight:600;color:#4a5568;border-bottom:1px solid #e9ecef">
                         <i class="bi bi-geo-alt"></i> Región
                     </td>
                     {% for c in candidatos_seleccionados %}
-                    <td
-                        style="padding:0.75rem 1rem;font-size:0.85rem;text-align:center;border-bottom:1px solid #e9ecef;color:#2d3748">
+                    <td style="padding:0.75rem 1rem;font-size:0.85rem;text-align:center;border-bottom:1px solid #e9ecef;color:#2d3748">
                         {{ c.region }}
                     </td>
                     {% endfor %}
                 </tr>
                 <tr>
-                    <td
-                        style="padding:0.75rem 1rem;font-size:0.85rem;font-weight:600;color:#4a5568;border-bottom:1px solid #e9ecef">
+                    <td style="padding:0.75rem 1rem;font-size:0.85rem;font-weight:600;color:#4a5568;border-bottom:1px solid #e9ecef">
                         <i class="bi bi-calendar3"></i> Edad
                     </td>
                     {% for c in candidatos_seleccionados %}
-                    <td
-                        style="padding:0.75rem 1rem;font-size:0.85rem;text-align:center;border-bottom:1px solid #e9ecef;color:#2d3748">
+                    <td style="padding:0.75rem 1rem;font-size:0.85rem;text-align:center;border-bottom:1px solid #e9ecef;color:#2d3748">
                         {{ c.edad }} años
                     </td>
                     {% endfor %}
                 </tr>
                 <tr>
-                    <td
-                        style="padding:0.75rem 1rem;font-size:0.85rem;font-weight:600;color:#4a5568;border-bottom:1px solid #e9ecef">
+                    <td style="padding:0.75rem 1rem;font-size:0.85rem;font-weight:600;color:#4a5568;border-bottom:1px solid #e9ecef">
                         <i class="bi bi-compass"></i> Posición
                     </td>
                     {% for c in candidatos_seleccionados %}
                     <td style="padding:0.75rem 1rem;text-align:center;border-bottom:1px solid #e9ecef">
-                        <span
-                            style="background:{{ c.posicion_color }};color:white;border-radius:20px;padding:2px 10px;font-size:0.75rem;font-weight:600">
-                            {% if c.posicion_label %}
-                                {{ c.posicion_label }}
-                            {% else %}
-                                {{ c.posicion_politica|default:"(no informado)" }}
-                            {% endif %}
+                        <span style="background:{{ c.posicion_color }};color:white;border-radius:20px;padding:2px 10px;font-size:0.75rem;font-weight:600">
+                            {% if c.posicion_label %}{{ c.posicion_label }}{% else %}{{ c.posicion_politica|default:"(no informado)" }}{% endif %}
                         </span>
+                    </td>
+                    {% endfor %}
+                </tr>
+
+                <!-- HOJA DE VIDA JNE -->
+                <tr style="background:#f8f9fa">
+                    <td colspan="{{ candidatos_seleccionados|length|add:1 }}"
+                        style="padding:0.5rem 1rem;font-size:0.75rem;font-weight:700;color:var(--text-muted-custom);text-transform:uppercase;letter-spacing:0.5px">
+                        <i class="bi bi-file-earmark-person"></i> Hoja de Vida (JNE)
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:0.75rem 1rem;font-size:0.85rem;font-weight:600;color:#4a5568;border-bottom:1px solid #e9ecef;vertical-align:top">
+                        <i class="bi bi-mortarboard"></i> Formación
+                    </td>
+                    {% for d in candidatos_jne %}
+                    <td style="padding:0.75rem 1rem;font-size:0.8rem;text-align:left;border-bottom:1px solid #e9ecef;color:#2d3748;line-height:1.6">
+                        {% if d.formacion %}
+                            {% for f in d.formacion %}<div style="margin-bottom:2px">{{ f }}</div>{% endfor %}
+                        {% else %}<span class="text-muted">—</span>{% endif %}
+                    </td>
+                    {% endfor %}
+                </tr>
+                <tr>
+                    <td style="padding:0.75rem 1rem;font-size:0.85rem;font-weight:600;color:#4a5568;border-bottom:1px solid #e9ecef;vertical-align:top">
+                        <i class="bi bi-building"></i> Experiencia
+                    </td>
+                    {% for d in candidatos_jne %}
+                    <td style="padding:0.75rem 1rem;font-size:0.78rem;text-align:left;border-bottom:1px solid #e9ecef;color:#2d3748;line-height:1.6">
+                        {% if d.experiencia %}
+                            {% for e in d.experiencia %}<div style="margin-bottom:2px">{{ e }}</div>{% endfor %}
+                        {% else %}<span class="text-muted">—</span>{% endif %}
+                    </td>
+                    {% endfor %}
+                </tr>
+                <tr>
+                    <td style="padding:0.75rem 1rem;font-size:0.85rem;font-weight:600;color:#4a5568;border-bottom:1px solid #e9ecef">
+                        <i class="bi bi-cash-stack"></i> Patrimonio
+                    </td>
+                    {% for d in candidatos_jne %}
+                    <td style="padding:0.75rem 1rem;font-size:0.85rem;text-align:center;border-bottom:1px solid #e9ecef;color:#2d3748">
+                        {% if d.patrimonio %}
+                        <strong style="color:#2563eb">S/ {{ d.patrimonio|floatformat:0 }}</strong>
+                        {% else %}<span class="text-muted">—</span>{% endif %}
+                    </td>
+                    {% endfor %}
+                </tr>
+                <tr>
+                    <td style="padding:0.75rem 1rem;font-size:0.85rem;font-weight:600;color:#4a5568;border-bottom:1px solid #e9ecef">
+                        <i class="bi bi-wallet2"></i> Ingresos anuales
+                    </td>
+                    {% for d in candidatos_jne %}
+                    <td style="padding:0.75rem 1rem;font-size:0.85rem;text-align:center;border-bottom:1px solid #e9ecef;color:#2d3748">
+                        {% if d.ingresos %}
+                        <strong style="color:#15803d">S/ {{ d.ingresos|floatformat:0 }}</strong>
+                        {% else %}<span class="text-muted">—</span>{% endif %}
+                    </td>
+                    {% endfor %}
+                </tr>
+                <tr>
+                    <td style="padding:0.75rem 1rem;font-size:0.85rem;font-weight:600;color:#4a5568;border-bottom:1px solid #e9ecef">
+                        <i class="bi bi-exclamation-triangle"></i> Sentencias
+                    </td>
+                    {% for d in candidatos_jne %}
+                    <td style="padding:0.75rem 1rem;font-size:0.85rem;text-align:center;border-bottom:1px solid #e9ecef">
+                        {% if d.tiene_sentencias %}
+                        <span style="background:#fef2f2;color:#dc2626;border-radius:20px;padding:3px 10px;font-size:0.75rem;font-weight:700">
+                            <i class="bi bi-exclamation-triangle-fill"></i> Sí registra
+                        </span>
+                        {% else %}
+                        <span style="background:#dcfce7;color:#166534;border-radius:20px;padding:3px 10px;font-size:0.75rem;font-weight:700">
+                            <i class="bi bi-check-circle-fill"></i> No registra
+                        </span>
+                        {% endif %}
                     </td>
                     {% endfor %}
                 </tr>
@@ -187,13 +249,11 @@
                     </td>
                 </tr>
                 <tr>
-                    <td
-                        style="padding:0.75rem 1rem;font-size:0.85rem;font-weight:600;color:#4a5568;border-bottom:1px solid #e9ecef;vertical-align:top">
+                    <td style="padding:0.75rem 1rem;font-size:0.85rem;font-weight:600;color:#4a5568;border-bottom:1px solid #e9ecef;vertical-align:top">
                         <i class="bi bi-lightbulb"></i> Resumen
                     </td>
                     {% for c in candidatos_seleccionados %}
-                    <td
-                        style="padding:0.75rem 1rem;font-size:0.82rem;text-align:left;border-bottom:1px solid #e9ecef;color:#2d3748;line-height:1.6">
+                    <td style="padding:0.75rem 1rem;font-size:0.82rem;text-align:left;border-bottom:1px solid #e9ecef;color:#2d3748;line-height:1.6">
                         {% if c.resumen_propuestas %}
                         {{ c.resumen_propuestas|truncatewords:30 }}
                         {% else %}
@@ -203,18 +263,33 @@
                     {% endfor %}
                 </tr>
                 <tr>
-                    <td
-                        style="padding:0.75rem 1rem;font-size:0.85rem;font-weight:600;color:#4a5568;border-bottom:1px solid #e9ecef;vertical-align:top">
+                    <td style="padding:0.75rem 1rem;font-size:0.85rem;font-weight:600;color:#4a5568;border-bottom:1px solid #e9ecef;vertical-align:top">
                         <i class="bi bi-trophy"></i> Propuesta principal
                     </td>
                     {% for c in candidatos_seleccionados %}
-                    <td
-                        style="padding:0.75rem 1rem;font-size:0.82rem;text-align:left;border-bottom:1px solid #e9ecef;color:#2d3748;line-height:1.5">
+                    <td style="padding:0.75rem 1rem;font-size:0.82rem;text-align:left;border-bottom:1px solid #e9ecef;color:#2d3748;line-height:1.5">
                         {% if c.propuestas_destacadas %}
                         <strong style="color:var(--peru-red)">{{ c.propuestas_destacadas.0|truncatewords:20 }}</strong>
                         {% else %}
                         <span class="text-muted">—</span>
                         {% endif %}
+                    </td>
+                    {% endfor %}
+                </tr>
+                <!-- EJES DEL PLAN DE GOBIERNO -->
+                <tr>
+                    <td style="padding:0.75rem 1rem;font-size:0.85rem;font-weight:600;color:#4a5568;border-bottom:1px solid #e9ecef;vertical-align:top">
+                        <i class="bi bi-journal-text"></i> Ejes del Plan
+                    </td>
+                    {% for d in candidatos_jne %}
+                    <td style="padding:0.75rem 1rem;font-size:0.78rem;text-align:left;border-bottom:1px solid #e9ecef;color:#2d3748;line-height:1.5">
+                        {% if d.ejes %}
+                            {% for eje in d.ejes %}
+                            <div style="margin-bottom:4px;padding-left:6px;border-left:3px solid {% if eje.dim == 'Social' %}#e11d48{% elif eje.dim == 'Económica' %}#2563eb{% elif eje.dim == 'Ambiental' %}#16a34a{% else %}#9333ea{% endif %}">
+                                <strong>{{ eje.dim }}:</strong> {{ eje.objetivo }}
+                            </div>
+                            {% endfor %}
+                        {% else %}<span class="text-muted">—</span>{% endif %}
                     </td>
                     {% endfor %}
                 </tr>
@@ -333,20 +408,28 @@
                     </td>
                 </tr>
                 <tr>
-                    <td
-                        style="padding:0.75rem 1rem;font-size:0.85rem;font-weight:600;color:#4a5568;border-bottom:1px solid #e9ecef">
+                    <td style="padding:0.75rem 1rem;font-size:0.85rem;font-weight:600;color:#4a5568;border-bottom:1px solid #e9ecef">
                         <i class="bi bi-file-earmark-pdf"></i> Plan de Gobierno
                     </td>
-                    {% for c in candidatos_seleccionados %}
+                    {% for d in candidatos_jne %}
                     <td style="padding:0.75rem 1rem;text-align:center;border-bottom:1px solid #e9ecef">
-                        {% if c.link_plan_gobierno %}
-                        <a href="{{ c.link_plan_gobierno }}" target="_blank" rel="noopener" class="btn-outline-peru"
-                            style="font-size:0.75rem;padding:0.35rem 0.7rem;border-color:var(--gold);color:var(--gold)">
-                            <i class="bi bi-box-arrow-up-right"></i> Plataforma JNE
+                        <div class="d-flex flex-wrap gap-1 justify-content-center">
+                        {% if d.plan_pdf %}
+                        <a href="{{ d.plan_pdf }}" target="_blank" rel="noopener" class="btn-outline-peru"
+                            style="font-size:0.72rem;padding:0.3rem 0.6rem;border-color:#3b82f6;color:#3b82f6">
+                            <i class="bi bi-file-pdf"></i> PDF Completo
                         </a>
-                        {% else %}
+                        {% endif %}
+                        {% if d.candidato.link_plan_gobierno %}
+                        <a href="{{ d.candidato.link_plan_gobierno }}" target="_blank" rel="noopener" class="btn-outline-peru"
+                            style="font-size:0.72rem;padding:0.3rem 0.6rem;border-color:var(--gold);color:var(--gold)">
+                            <i class="bi bi-box-arrow-up-right"></i> JNE
+                        </a>
+                        {% endif %}
+                        {% if not d.plan_pdf and not d.candidato.link_plan_gobierno %}
                         <span class="text-muted">—</span>
                         {% endif %}
+                        </div>
                     </td>
                     {% endfor %}
                 </tr>

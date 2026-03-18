@@ -1,0 +1,136 @@
+{% extends 'candidatos/base.html' %}
+
+{% block content %}
+<!-- HEADER HERO -->
+<div style="background:linear-gradient(135deg,#0f172a,#1e1e1e);color:white;padding:3rem 0;margin-bottom:2rem;margin-top:-2rem">
+    <div class="container text-center">
+        <i class="bi bi-bank" style="font-size:3rem;color:#4ade80;margin-bottom:1rem;display:inline-block"></i>
+        <h1 style="font-weight:800;font-size:2.5rem;margin-bottom:1rem">Legislativo: Ranking de Transparencia</h1>
+        <p style="font-size:1.1rem;opacity:0.9;max-width:600px;margin:0 auto">
+            ¿Qué partidos son realmente transparentes con el financiamiento de sus congresistas y autoridades?
+            Analizamos los reportes oficiales de la ONPE.
+        </p>
+    </div>
+</div>
+
+<div class="container pb-5">
+
+    <!-- CTA: CANDIDATOS AL CONGRESO -->
+    <div class="card-white text-center mb-4" style="background:linear-gradient(135deg,#1e293b,#0f172a);color:white;padding:2rem">
+        <i class="bi bi-bank2" style="font-size:2.5rem;color:#60a5fa;display:block;margin-bottom:0.75rem"></i>
+        <h3 style="font-weight:800;font-size:1.3rem;margin-bottom:0.5rem">
+            Busca a tu futuro Diputado o Senador
+        </h3>
+        <p style="font-size:0.9rem;opacity:0.8;max-width:500px;margin:0 auto 1rem">
+            Consulta la información financiera de los 8,800+ candidatos al Congreso. Filtra por departamento, partido o cargo.
+        </p>
+        <a href="{% url 'candidatos:congresales' %}" class="btn btn-primary" style="border-radius:20px;padding:0.6rem 2rem;font-weight:700;background:#3b82f6;border:none">
+            <i class="bi bi-search"></i> Explorar Candidatos al Congreso
+        </a>
+    </div>
+
+    <!-- METRICS GENERALES -->
+    {% if partidos %}
+    <div class="row mb-5 g-4">
+        <div class="col-md-4">
+            <div class="card-white text-center h-100" style="padding:1.5rem">
+                <div style="font-size:0.9rem;color:#64748b;font-weight:600;text-transform:uppercase;margin-bottom:0.5rem">Promedio General de Transparencia</div>
+                <div style="font-size:2.5rem;font-weight:800;color:{% if promedio_global > 50 %}#15803d{% else %}#b91c1c{% endif %}">
+                    {{ promedio_global|floatformat:1 }}%
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card-white text-center h-100" style="padding:1.5rem">
+                <div style="font-size:0.9rem;color:#64748b;font-weight:600;text-transform:uppercase;margin-bottom:0.5rem">Declaraciones Presentadas</div>
+                <div style="font-size:2.5rem;font-weight:800;color:#15803d">
+                    {{ total_presentaron }}
+                </div>
+                <div style="font-size:0.85rem;color:#64748b;margin-top:0.25rem">Candidatos al día</div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card-white text-center h-100" style="padding:1.5rem">
+                <div style="font-size:0.9rem;color:#64748b;font-weight:600;text-transform:uppercase;margin-bottom:0.5rem">Total Analizados</div>
+                <div style="font-size:2.5rem;font-weight:800;color:#334155">
+                    {{ total_general }}
+                </div>
+                <div style="font-size:0.85rem;color:#64748b;margin-top:0.25rem">En reportes ONPE procesados</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- RANKING LIST -->
+    <div class="card-white border-0 shadow-sm mb-5">
+        <div style="padding:1.5rem;border-bottom:1px solid #e2e8f0;background:#f8fafc">
+            <h3 style="margin:0;font-size:1.2rem;font-weight:700;color:#1e293b">Ranking por Partido Político</h3>
+        </div>
+        
+        <div class="list-group list-group-flush">
+            {% for p in partidos %}
+            <div class="list-group-item" style="padding:1.5rem;border-bottom:1px solid #f1f5f9">
+                <div class="row align-items-center">
+                    <div class="col-md-4 mb-3 mb-md-0 d-flex align-items-center gap-3">
+                        <div style="width:50px;height:50px;border-radius:10px;background:{{ p.color_primario }};display:flex;align-items:center;justify-content:center;color:{{ p.color_secundario }};font-weight:800;font-size:0.9rem;flex-shrink:0;box-shadow:0 4px 6px -1px rgba(0,0,0,0.1)">
+                            {{ p.siglas }}
+                        </div>
+                        <div>
+                            <h4 style="margin:0;font-size:1.1rem;font-weight:700;color:#1e293b">{{ p.nombre }}</h4>
+                            <div style="font-size:0.85rem;color:#64748b;margin-top:0.25rem">
+                                <i class="bi bi-people-fill"></i> {{ p.transparencia_onpe_total_candidatos }} candidatos analizados
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-8">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span style="font-size:0.85rem;font-weight:600;color:#475569">
+                                Cumplimiento: <span style="color:{% if p.transparencia_porcentaje > 50 %}#15803d{% else %}#b91c1c{% endif %}">{{ p.transparencia_porcentaje|floatformat:1 }}%</span>
+                            </span>
+                            <span style="font-size:0.85rem;color:#64748b">
+                                <strong>{{ p.transparencia_onpe_presentaron }}</strong> declararon su financiamiento
+                            </span>
+                        </div>
+                        
+                        <!-- Progress Bar -->
+                        <div class="progress" style="height:12px;border-radius:6px;background-color:#fee2e2">
+                            <div class="progress-bar" role="progressbar" 
+                                 style="width: {{ p.transparencia_porcentaje|stringformat:'f' }}%; background-color: {% if p.transparencia_porcentaje > 50 %}#22c55e{% elif p.transparencia_porcentaje > 20 %}#eab308{% else %}#ef4444{% endif %};border-radius:6px" 
+                                 aria-valuenow="{{ p.transparencia_porcentaje|stringformat:'f' }}" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>
+                        
+                        {% if p.transparencia_porcentaje < 20 %}
+                        <div class="mt-2" style="font-size:0.8rem;color:#991b1b;background:#fef2f2;padding:6px 10px;border-radius:4px;display:inline-block">
+                            <i class="bi bi-exclamation-triangle-fill"></i> Nivel crítico de opacidad financiera
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div style="padding:1rem;background:#f8fafc;font-size:0.8rem;color:#64748b;text-align:center;border-top:1px solid #e2e8f0">
+            Los datos son extraídos de las declaraciones oficiales presentadas por los candidatos ante la ONPE.
+        </div>
+    </div>
+    
+    {% else %}
+    <!-- En caso de no haber datos procesados aún -->
+    <div class="card-white text-center py-5">
+        <i class="bi bi-hourglass-split" style="font-size:3rem;color:#cbd5e1;margin-bottom:1rem;display:block"></i>
+        <h3 style="color:#475569;margin-bottom:0.5rem">Procesando reportes ONPE</h3>
+        <p style="color:#64748b;max-width:500px;margin:0 auto">
+            Estamos integrando los datos oficiales de financiamiento de campaña. Vuelve pronto para ver qué partidos políticos son realmente transparentes con sus cuentas.
+        </p>
+    </div>
+    {% endif %}
+
+    <div class="text-center mt-4">
+        <a href="{% url 'candidatos:home' %}" class="btn btn-outline-secondary" style="border-radius:20px;padding:0.5rem 1.5rem">
+            <i class="bi bi-arrow-left"></i> Volver a Candidatos
+        </a>
+    </div>
+
+</div>
+{% endblock %}

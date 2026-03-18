@@ -1,0 +1,952 @@
+[
+  {
+    "partido": "UN CAMINO DIFERENTE",
+    "total_candidatos": 262,
+    "presentaron": 1,
+    "no_presentaron": 261,
+    "porcentaje_transparencia": 0.38,
+    "por_cargo": {
+      "DIPUTADO": 159,
+      "SENADOR": 86,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 17
+    },
+    "por_cargo_presentaron": {
+      "DIPUTADO": 1,
+      "SENADOR": 0,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 0
+    },
+    "por_genero": {
+      "MASCULINO": 131,
+      "FEMENINO": 131
+    },
+    "por_genero_presentaron": {
+      "MASCULINO": 1,
+      "FEMENINO": 0
+    }
+  },
+  {
+    "partido": "ALIANZA PARA EL PROGRESO",
+    "total_candidatos": 260,
+    "presentaron": 1,
+    "no_presentaron": 259,
+    "porcentaje_transparencia": 0.38,
+    "por_cargo": {
+      "DIPUTADO": 158,
+      "SENADOR": 86,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 16
+    },
+    "por_cargo_presentaron": {
+      "DIPUTADO": 1,
+      "SENADOR": 0,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 0
+    },
+    "por_genero": {
+      "MASCULINO": 130,
+      "FEMENINO": 130
+    },
+    "por_genero_presentaron": {
+      "MASCULINO": 0,
+      "FEMENINO": 1
+    }
+  },
+  {
+    "partido": "PODEMOS PERÚ",
+    "total_candidatos": 261,
+    "presentaron": 0,
+    "no_presentaron": 261,
+    "porcentaje_transparencia": 0.0,
+    "por_cargo": {
+      "DIPUTADO": 159,
+      "SENADOR": 86,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 16
+    },
+    "por_cargo_presentaron": {
+      "DIPUTADO": 0,
+      "SENADOR": 0,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 0
+    },
+    "por_genero": {
+      "MASCULINO": 131,
+      "FEMENINO": 130
+    },
+    "por_genero_presentaron": {
+      "MASCULINO": 0,
+      "FEMENINO": 0
+    }
+  },
+  {
+    "partido": "FRENTE POPULAR AGRICOLA FIA DEL PERU",
+    "total_candidatos": 260,
+    "presentaron": 0,
+    "no_presentaron": 260,
+    "porcentaje_transparencia": 0.0,
+    "por_cargo": {
+      "DIPUTADO": 158,
+      "SENADOR": 86,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 16
+    },
+    "por_cargo_presentaron": {
+      "DIPUTADO": 0,
+      "SENADOR": 0,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 0
+    },
+    "por_genero": {
+      "MASCULINO": 130,
+      "FEMENINO": 130
+    },
+    "por_genero_presentaron": {
+      "MASCULINO": 0,
+      "FEMENINO": 0
+    }
+  },
+  {
+    "partido": "PARTIDO DEMOCRATA UNIDO PERU",
+    "total_candidatos": 260,
+    "presentaron": 0,
+    "no_presentaron": 260,
+    "porcentaje_transparencia": 0.0,
+    "por_cargo": {
+      "DIPUTADO": 158,
+      "SENADOR": 86,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 16
+    },
+    "por_cargo_presentaron": {
+      "DIPUTADO": 0,
+      "SENADOR": 0,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 0
+    },
+    "por_genero": {
+      "MASCULINO": 130,
+      "FEMENINO": 130
+    },
+    "por_genero_presentaron": {
+      "MASCULINO": 0,
+      "FEMENINO": 0
+    }
+  },
+  {
+    "partido": "PARTIDO DEMOCRATA VERDE",
+    "total_candidatos": 260,
+    "presentaron": 0,
+    "no_presentaron": 260,
+    "porcentaje_transparencia": 0.0,
+    "por_cargo": {
+      "DIPUTADO": 158,
+      "SENADOR": 86,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 16
+    },
+    "por_cargo_presentaron": {
+      "DIPUTADO": 0,
+      "SENADOR": 0,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 0
+    },
+    "por_genero": {
+      "MASCULINO": 130,
+      "FEMENINO": 130
+    },
+    "por_genero_presentaron": {
+      "MASCULINO": 0,
+      "FEMENINO": 0
+    }
+  },
+  {
+    "partido": "PARTIDO POLÍTICO NACIONAL PERÚ LIBRE",
+    "total_candidatos": 260,
+    "presentaron": 0,
+    "no_presentaron": 260,
+    "porcentaje_transparencia": 0.0,
+    "por_cargo": {
+      "DIPUTADO": 158,
+      "SENADOR": 86,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 16
+    },
+    "por_cargo_presentaron": {
+      "DIPUTADO": 0,
+      "SENADOR": 0,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 0
+    },
+    "por_genero": {
+      "MASCULINO": 130,
+      "FEMENINO": 130
+    },
+    "por_genero_presentaron": {
+      "MASCULINO": 0,
+      "FEMENINO": 0
+    }
+  },
+  {
+    "partido": "FUERZA POPULAR",
+    "total_candidatos": 260,
+    "presentaron": 0,
+    "no_presentaron": 260,
+    "porcentaje_transparencia": 0.0,
+    "por_cargo": {
+      "DIPUTADO": 158,
+      "SENADOR": 86,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 16
+    },
+    "por_cargo_presentaron": {
+      "DIPUTADO": 0,
+      "SENADOR": 0,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 0
+    },
+    "por_genero": {
+      "MASCULINO": 130,
+      "FEMENINO": 130
+    },
+    "por_genero_presentaron": {
+      "MASCULINO": 0,
+      "FEMENINO": 0
+    }
+  },
+  {
+    "partido": "PARTIDO DEMOCRATICO SOMOS PERU",
+    "total_candidatos": 260,
+    "presentaron": 0,
+    "no_presentaron": 260,
+    "porcentaje_transparencia": 0.0,
+    "por_cargo": {
+      "DIPUTADO": 158,
+      "SENADOR": 86,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 16
+    },
+    "por_cargo_presentaron": {
+      "DIPUTADO": 0,
+      "SENADOR": 0,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 0
+    },
+    "por_genero": {
+      "MASCULINO": 130,
+      "FEMENINO": 130
+    },
+    "por_genero_presentaron": {
+      "MASCULINO": 0,
+      "FEMENINO": 0
+    }
+  },
+  {
+    "partido": "PARTIDO POLITICO COOPERACION POPULAR",
+    "total_candidatos": 260,
+    "presentaron": 0,
+    "no_presentaron": 260,
+    "porcentaje_transparencia": 0.0,
+    "por_cargo": {
+      "DIPUTADO": 158,
+      "SENADOR": 86,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 16
+    },
+    "por_cargo_presentaron": {
+      "DIPUTADO": 0,
+      "SENADOR": 0,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 0
+    },
+    "por_genero": {
+      "MASCULINO": 130,
+      "FEMENINO": 130
+    },
+    "por_genero_presentaron": {
+      "MASCULINO": 0,
+      "FEMENINO": 0
+    }
+  },
+  {
+    "partido": "LIBERTAD POPULAR",
+    "total_candidatos": 260,
+    "presentaron": 0,
+    "no_presentaron": 260,
+    "porcentaje_transparencia": 0.0,
+    "por_cargo": {
+      "DIPUTADO": 158,
+      "SENADOR": 86,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 16
+    },
+    "por_cargo_presentaron": {
+      "DIPUTADO": 0,
+      "SENADOR": 0,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 0
+    },
+    "por_genero": {
+      "MASCULINO": 130,
+      "FEMENINO": 130
+    },
+    "por_genero_presentaron": {
+      "MASCULINO": 0,
+      "FEMENINO": 0
+    }
+  },
+  {
+    "partido": "AVANZA PAIS-PARTIDO DE INTEGRACION SOCIAL",
+    "total_candidatos": 260,
+    "presentaron": 0,
+    "no_presentaron": 260,
+    "porcentaje_transparencia": 0.0,
+    "por_cargo": {
+      "DIPUTADO": 158,
+      "SENADOR": 86,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 16
+    },
+    "por_cargo_presentaron": {
+      "DIPUTADO": 0,
+      "SENADOR": 0,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 0
+    },
+    "por_genero": {
+      "MASCULINO": 130,
+      "FEMENINO": 130
+    },
+    "por_genero_presentaron": {
+      "MASCULINO": 0,
+      "FEMENINO": 0
+    }
+  },
+  {
+    "partido": "RENOVACION POPULAR",
+    "total_candidatos": 260,
+    "presentaron": 0,
+    "no_presentaron": 260,
+    "porcentaje_transparencia": 0.0,
+    "por_cargo": {
+      "DIPUTADO": 158,
+      "SENADOR": 86,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 16
+    },
+    "por_cargo_presentaron": {
+      "DIPUTADO": 0,
+      "SENADOR": 0,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 0
+    },
+    "por_genero": {
+      "MASCULINO": 130,
+      "FEMENINO": 130
+    },
+    "por_genero_presentaron": {
+      "MASCULINO": 0,
+      "FEMENINO": 0
+    }
+  },
+  {
+    "partido": "PARTIDO POLITICO INTEGRIDAD DEMOCRATICA",
+    "total_candidatos": 260,
+    "presentaron": 0,
+    "no_presentaron": 260,
+    "porcentaje_transparencia": 0.0,
+    "por_cargo": {
+      "DIPUTADO": 158,
+      "SENADOR": 86,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 16
+    },
+    "por_cargo_presentaron": {
+      "DIPUTADO": 0,
+      "SENADOR": 0,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 0
+    },
+    "por_genero": {
+      "MASCULINO": 130,
+      "FEMENINO": 130
+    },
+    "por_genero_presentaron": {
+      "MASCULINO": 0,
+      "FEMENINO": 0
+    }
+  },
+  {
+    "partido": "FUERZA Y LIBERTAD",
+    "total_candidatos": 260,
+    "presentaron": 0,
+    "no_presentaron": 260,
+    "porcentaje_transparencia": 0.0,
+    "por_cargo": {
+      "DIPUTADO": 158,
+      "SENADOR": 86,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 16
+    },
+    "por_cargo_presentaron": {
+      "DIPUTADO": 0,
+      "SENADOR": 0,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 0
+    },
+    "por_genero": {
+      "MASCULINO": 130,
+      "FEMENINO": 130
+    },
+    "por_genero_presentaron": {
+      "MASCULINO": 0,
+      "FEMENINO": 0
+    }
+  },
+  {
+    "partido": "PARTIDO APRISTA PERUANO",
+    "total_candidatos": 260,
+    "presentaron": 0,
+    "no_presentaron": 260,
+    "porcentaje_transparencia": 0.0,
+    "por_cargo": {
+      "DIPUTADO": 158,
+      "SENADOR": 86,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 16
+    },
+    "por_cargo_presentaron": {
+      "DIPUTADO": 0,
+      "SENADOR": 0,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 0
+    },
+    "por_genero": {
+      "MASCULINO": 130,
+      "FEMENINO": 130
+    },
+    "por_genero_presentaron": {
+      "MASCULINO": 0,
+      "FEMENINO": 0
+    }
+  },
+  {
+    "partido": "UNIDAD NACIONAL",
+    "total_candidatos": 260,
+    "presentaron": 0,
+    "no_presentaron": 260,
+    "porcentaje_transparencia": 0.0,
+    "por_cargo": {
+      "DIPUTADO": 158,
+      "SENADOR": 86,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 16
+    },
+    "por_cargo_presentaron": {
+      "DIPUTADO": 0,
+      "SENADOR": 0,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 0
+    },
+    "por_genero": {
+      "MASCULINO": 130,
+      "FEMENINO": 130
+    },
+    "por_genero_presentaron": {
+      "MASCULINO": 0,
+      "FEMENINO": 0
+    }
+  },
+  {
+    "partido": "PARTIDO PAIS PARA TODOS",
+    "total_candidatos": 260,
+    "presentaron": 0,
+    "no_presentaron": 260,
+    "porcentaje_transparencia": 0.0,
+    "por_cargo": {
+      "DIPUTADO": 158,
+      "SENADOR": 86,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 16
+    },
+    "por_cargo_presentaron": {
+      "DIPUTADO": 0,
+      "SENADOR": 0,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 0
+    },
+    "por_genero": {
+      "MASCULINO": 130,
+      "FEMENINO": 130
+    },
+    "por_genero_presentaron": {
+      "MASCULINO": 0,
+      "FEMENINO": 0
+    }
+  },
+  {
+    "partido": "PARTIDO POLITICO PERU PRIMERO",
+    "total_candidatos": 260,
+    "presentaron": 0,
+    "no_presentaron": 260,
+    "porcentaje_transparencia": 0.0,
+    "por_cargo": {
+      "DIPUTADO": 158,
+      "SENADOR": 86,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 16
+    },
+    "por_cargo_presentaron": {
+      "DIPUTADO": 0,
+      "SENADOR": 0,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 0
+    },
+    "por_genero": {
+      "MASCULINO": 130,
+      "FEMENINO": 130
+    },
+    "por_genero_presentaron": {
+      "MASCULINO": 0,
+      "FEMENINO": 0
+    }
+  },
+  {
+    "partido": "AHORA NACIÓN - AN",
+    "total_candidatos": 258,
+    "presentaron": 0,
+    "no_presentaron": 258,
+    "porcentaje_transparencia": 0.0,
+    "por_cargo": {
+      "DIPUTADO": 158,
+      "SENADOR": 84,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 16
+    },
+    "por_cargo_presentaron": {
+      "DIPUTADO": 0,
+      "SENADOR": 0,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 0
+    },
+    "por_genero": {
+      "MASCULINO": 129,
+      "FEMENINO": 129
+    },
+    "por_genero_presentaron": {
+      "MASCULINO": 0,
+      "FEMENINO": 0
+    }
+  },
+  {
+    "partido": "ALIANZA ELECTORAL VENCEREMOS",
+    "total_candidatos": 256,
+    "presentaron": 0,
+    "no_presentaron": 256,
+    "porcentaje_transparencia": 0.0,
+    "por_cargo": {
+      "DIPUTADO": 158,
+      "SENADOR": 82,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 16
+    },
+    "por_cargo_presentaron": {
+      "DIPUTADO": 0,
+      "SENADOR": 0,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 0
+    },
+    "por_genero": {
+      "MASCULINO": 128,
+      "FEMENINO": 128
+    },
+    "por_genero_presentaron": {
+      "MASCULINO": 0,
+      "FEMENINO": 0
+    }
+  },
+  {
+    "partido": "PARTIDO DEL BUEN GOBIERNO",
+    "total_candidatos": 254,
+    "presentaron": 0,
+    "no_presentaron": 254,
+    "porcentaje_transparencia": 0.0,
+    "por_cargo": {
+      "DIPUTADO": 154,
+      "SENADOR": 84,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 16
+    },
+    "por_cargo_presentaron": {
+      "DIPUTADO": 0,
+      "SENADOR": 0,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 0
+    },
+    "por_genero": {
+      "MASCULINO": 127,
+      "FEMENINO": 127
+    },
+    "por_genero_presentaron": {
+      "MASCULINO": 0,
+      "FEMENINO": 0
+    }
+  },
+  {
+    "partido": "PROGRESEMOS",
+    "total_candidatos": 252,
+    "presentaron": 0,
+    "no_presentaron": 252,
+    "porcentaje_transparencia": 0.0,
+    "por_cargo": {
+      "DIPUTADO": 154,
+      "SENADOR": 82,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 16
+    },
+    "por_cargo_presentaron": {
+      "DIPUTADO": 0,
+      "SENADOR": 0,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 0
+    },
+    "por_genero": {
+      "MASCULINO": 126,
+      "FEMENINO": 126
+    },
+    "por_genero_presentaron": {
+      "MASCULINO": 0,
+      "FEMENINO": 0
+    }
+  },
+  {
+    "partido": "PARTIDO POLITICO PERU ACCION",
+    "total_candidatos": 244,
+    "presentaron": 0,
+    "no_presentaron": 244,
+    "porcentaje_transparencia": 0.0,
+    "por_cargo": {
+      "DIPUTADO": 158,
+      "SENADOR": 86,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 0
+    },
+    "por_cargo_presentaron": {
+      "DIPUTADO": 0,
+      "SENADOR": 0,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 0
+    },
+    "por_genero": {
+      "MASCULINO": 122,
+      "FEMENINO": 122
+    },
+    "por_genero_presentaron": {
+      "MASCULINO": 0,
+      "FEMENINO": 0
+    }
+  },
+  {
+    "partido": "PARTIDO FRENTE DE LA ESPERANZA 2021",
+    "total_candidatos": 243,
+    "presentaron": 0,
+    "no_presentaron": 243,
+    "porcentaje_transparencia": 0.0,
+    "por_cargo": {
+      "DIPUTADO": 157,
+      "SENADOR": 86,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 0
+    },
+    "por_cargo_presentaron": {
+      "DIPUTADO": 0,
+      "SENADOR": 0,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 0
+    },
+    "por_genero": {
+      "MASCULINO": 121,
+      "FEMENINO": 122
+    },
+    "por_genero_presentaron": {
+      "MASCULINO": 0,
+      "FEMENINO": 0
+    }
+  },
+  {
+    "partido": "PARTIDO CÍVICO OBRAS",
+    "total_candidatos": 232,
+    "presentaron": 0,
+    "no_presentaron": 232,
+    "porcentaje_transparencia": 0.0,
+    "por_cargo": {
+      "DIPUTADO": 142,
+      "SENADOR": 74,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 16
+    },
+    "por_cargo_presentaron": {
+      "DIPUTADO": 0,
+      "SENADOR": 0,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 0
+    },
+    "por_genero": {
+      "MASCULINO": 116,
+      "FEMENINO": 116
+    },
+    "por_genero_presentaron": {
+      "MASCULINO": 0,
+      "FEMENINO": 0
+    }
+  },
+  {
+    "partido": "PARTIDO POLITICO PRIN",
+    "total_candidatos": 228,
+    "presentaron": 0,
+    "no_presentaron": 228,
+    "porcentaje_transparencia": 0.0,
+    "por_cargo": {
+      "DIPUTADO": 142,
+      "SENADOR": 70,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 16
+    },
+    "por_cargo_presentaron": {
+      "DIPUTADO": 0,
+      "SENADOR": 0,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 0
+    },
+    "por_genero": {
+      "MASCULINO": 114,
+      "FEMENINO": 114
+    },
+    "por_genero_presentaron": {
+      "MASCULINO": 0,
+      "FEMENINO": 0
+    }
+  },
+  {
+    "partido": "PARTIDO MORADO",
+    "total_candidatos": 212,
+    "presentaron": 0,
+    "no_presentaron": 212,
+    "porcentaje_transparencia": 0.0,
+    "por_cargo": {
+      "DIPUTADO": 122,
+      "SENADOR": 74,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 16
+    },
+    "por_cargo_presentaron": {
+      "DIPUTADO": 0,
+      "SENADOR": 0,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 0
+    },
+    "por_genero": {
+      "MASCULINO": 106,
+      "FEMENINO": 106
+    },
+    "por_genero_presentaron": {
+      "MASCULINO": 0,
+      "FEMENINO": 0
+    }
+  },
+  {
+    "partido": "PARTIDO DE LOS TRABAJADORES Y EMPREDEDORES PTE-PERU",
+    "total_candidatos": 210,
+    "presentaron": 0,
+    "no_presentaron": 210,
+    "porcentaje_transparencia": 0.0,
+    "por_cargo": {
+      "DIPUTADO": 122,
+      "SENADOR": 72,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 16
+    },
+    "por_cargo_presentaron": {
+      "DIPUTADO": 0,
+      "SENADOR": 0,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 0
+    },
+    "por_genero": {
+      "MASCULINO": 105,
+      "FEMENINO": 105
+    },
+    "por_genero_presentaron": {
+      "MASCULINO": 0,
+      "FEMENINO": 0
+    }
+  },
+  {
+    "partido": "PARTIDO DEMOCRATICO FEDERAL",
+    "total_candidatos": 206,
+    "presentaron": 0,
+    "no_presentaron": 206,
+    "porcentaje_transparencia": 0.0,
+    "por_cargo": {
+      "DIPUTADO": 132,
+      "SENADOR": 74,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 0
+    },
+    "por_cargo_presentaron": {
+      "DIPUTADO": 0,
+      "SENADOR": 0,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 0
+    },
+    "por_genero": {
+      "MASCULINO": 103,
+      "FEMENINO": 103
+    },
+    "por_genero_presentaron": {
+      "MASCULINO": 0,
+      "FEMENINO": 0
+    }
+  },
+  {
+    "partido": "JUNTOS POR EL PERU",
+    "total_candidatos": 203,
+    "presentaron": 0,
+    "no_presentaron": 203,
+    "porcentaje_transparencia": 0.0,
+    "por_cargo": {
+      "DIPUTADO": 121,
+      "SENADOR": 66,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 16
+    },
+    "por_cargo_presentaron": {
+      "DIPUTADO": 0,
+      "SENADOR": 0,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 0
+    },
+    "por_genero": {
+      "MASCULINO": 102,
+      "FEMENINO": 101
+    },
+    "por_genero_presentaron": {
+      "MASCULINO": 0,
+      "FEMENINO": 0
+    }
+  },
+  {
+    "partido": "PRIMERO LA GENTE - COMUNIDAD, ECOLOGIA, LIBERTAD Y PROGRESO",
+    "total_candidatos": 202,
+    "presentaron": 0,
+    "no_presentaron": 202,
+    "porcentaje_transparencia": 0.0,
+    "por_cargo": {
+      "DIPUTADO": 132,
+      "SENADOR": 54,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 16
+    },
+    "por_cargo_presentaron": {
+      "DIPUTADO": 0,
+      "SENADOR": 0,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 0
+    },
+    "por_genero": {
+      "MASCULINO": 101,
+      "FEMENINO": 101
+    },
+    "por_genero_presentaron": {
+      "MASCULINO": 0,
+      "FEMENINO": 0
+    }
+  },
+  {
+    "partido": "PERU MODERNO",
+    "total_candidatos": 196,
+    "presentaron": 0,
+    "no_presentaron": 196,
+    "porcentaje_transparencia": 0.0,
+    "por_cargo": {
+      "DIPUTADO": 112,
+      "SENADOR": 68,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 16
+    },
+    "por_cargo_presentaron": {
+      "DIPUTADO": 0,
+      "SENADOR": 0,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 0
+    },
+    "por_genero": {
+      "MASCULINO": 98,
+      "FEMENINO": 98
+    },
+    "por_genero_presentaron": {
+      "MASCULINO": 0,
+      "FEMENINO": 0
+    }
+  },
+  {
+    "partido": "FE EN EL PERU",
+    "total_candidatos": 188,
+    "presentaron": 0,
+    "no_presentaron": 188,
+    "porcentaje_transparencia": 0.0,
+    "por_cargo": {
+      "DIPUTADO": 114,
+      "SENADOR": 58,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 16
+    },
+    "por_cargo_presentaron": {
+      "DIPUTADO": 0,
+      "SENADOR": 0,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 0
+    },
+    "por_genero": {
+      "MASCULINO": 94,
+      "FEMENINO": 94
+    },
+    "por_genero_presentaron": {
+      "MASCULINO": 0,
+      "FEMENINO": 0
+    }
+  },
+  {
+    "partido": "PARTIDO PATRIOTICO DEL PERU",
+    "total_candidatos": 174,
+    "presentaron": 0,
+    "no_presentaron": 174,
+    "porcentaje_transparencia": 0.0,
+    "por_cargo": {
+      "DIPUTADO": 112,
+      "SENADOR": 46,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 16
+    },
+    "por_cargo_presentaron": {
+      "DIPUTADO": 0,
+      "SENADOR": 0,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 0
+    },
+    "por_genero": {
+      "MASCULINO": 87,
+      "FEMENINO": 87
+    },
+    "por_genero_presentaron": {
+      "MASCULINO": 0,
+      "FEMENINO": 0
+    }
+  },
+  {
+    "partido": "SALVEMOS AL PERU",
+    "total_candidatos": 169,
+    "presentaron": 0,
+    "no_presentaron": 169,
+    "porcentaje_transparencia": 0.0,
+    "por_cargo": {
+      "DIPUTADO": 101,
+      "SENADOR": 52,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 16
+    },
+    "por_cargo_presentaron": {
+      "DIPUTADO": 0,
+      "SENADOR": 0,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 0
+    },
+    "por_genero": {
+      "MASCULINO": 84,
+      "FEMENINO": 85
+    },
+    "por_genero_presentaron": {
+      "MASCULINO": 0,
+      "FEMENINO": 0
+    }
+  },
+  {
+    "partido": "PARTIDO SICREO",
+    "total_candidatos": 112,
+    "presentaron": 0,
+    "no_presentaron": 112,
+    "porcentaje_transparencia": 0.0,
+    "por_cargo": {
+      "DIPUTADO": 74,
+      "SENADOR": 38,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 0
+    },
+    "por_cargo_presentaron": {
+      "DIPUTADO": 0,
+      "SENADOR": 0,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 0
+    },
+    "por_genero": {
+      "MASCULINO": 56,
+      "FEMENINO": 56
+    },
+    "por_genero_presentaron": {
+      "MASCULINO": 0,
+      "FEMENINO": 0
+    }
+  },
+  {
+    "partido": "PARTIDO CIUDADANOS POR EL PERÚ",
+    "total_candidatos": 78,
+    "presentaron": 0,
+    "no_presentaron": 78,
+    "porcentaje_transparencia": 0.0,
+    "por_cargo": {
+      "DIPUTADO": 52,
+      "SENADOR": 26,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 0
+    },
+    "por_cargo_presentaron": {
+      "DIPUTADO": 0,
+      "SENADOR": 0,
+      "REPRESENTANTE DEL PARLAMENTO ANDINO": 0
+    },
+    "por_genero": {
+      "MASCULINO": 41,
+      "FEMENINO": 37
+    },
+    "por_genero_presentaron": {
+      "MASCULINO": 0,
+      "FEMENINO": 0
+    }
+  }
+]

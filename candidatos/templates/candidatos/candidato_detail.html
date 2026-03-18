@@ -2,8 +2,27 @@
 {% load static %}
 
 {% block title %}{{ candidato.nombre }} — Elecciones Perú 2026{% endblock %}
+{% block og_title %}{{ candidato.nombre }} ({{ candidato.partido.siglas }}) — Elecciones Perú 2026{% endblock %}
+{% block og_description %}Conoce las propuestas, hoja de vida y plan de gobierno de {{ candidato.nombre }}. {{ candidato.resumen_propuestas|truncatewords:20 }}{% endblock %}
+{% block og_image %}{% if candidato.get_foto %}{{ candidato.get_foto }}{% endif %}{% endblock %}
 
 {% block content %}
+
+{% if candidato.fallecido %}
+<!-- BANNER DE FALLECIMIENTO -->
+<div style="background:linear-gradient(90deg,#1a1a1a,#2d2d2d);color:white;padding:0.75rem 0;border-bottom:2px solid #444">
+    <div class="container d-flex align-items-center gap-3 flex-wrap">
+        <span style="font-size:1.4rem;">🕊️</span>
+        <div>
+            <strong style="font-size:0.95rem">El candidato {{ candidato.nombre }} ha fallecido</strong>
+            {% if candidato.fecha_fallecimiento %}
+            <span style="color:rgba(255,255,255,0.65);font-size:0.85rem;margin-left:0.5rem">({{ candidato.fecha_fallecimiento|date:"d \d\e F \d\e Y" }})</span>
+            {% endif %}
+        </div>
+        <span style="margin-left:auto;font-size:0.78rem;color:rgba(255,255,255,0.5)">El perfil se mantiene como registro histórico</span>
+    </div>
+</div>
+{% endif %}
 
 <!-- HERO DEL CANDIDATO -->
 <section style="background:linear-gradient(135deg,var(--dark),#16213e);padding:2.5rem 0 0;color:white">
@@ -20,10 +39,10 @@
             <!-- Foto -->
             <div class="flex-shrink-0">
                 <div class="hero-candidate-photo"
-                    style="width:140px;height:160px;border-radius:16px;overflow:hidden;border:3px solid rgba(255,255,255,0.2);background:#2d3748;flex-shrink:0">
+                    style="width:140px;height:160px;border-radius:16px;overflow:hidden;border:3px solid rgba(255,255,255,0.2);background:#2d3748;flex-shrink:0{% if candidato.fallecido %};opacity:0.8{% endif %}">
                     {% if candidato.get_foto %}
                     <img src="{{ candidato.get_foto }}" alt="{{ candidato.nombre }}"
-                        style="width:100%;height:100%;object-fit:cover;object-position:top">
+                        style="width:100%;height:100%;object-fit:cover;object-position:top{% if candidato.fallecido %};filter:grayscale(100%){% endif %}">
                     {% else %}
                     <div
                         style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:60px;color:#4a5568">
@@ -48,6 +67,12 @@
                         {{ candidato.posicion_politica|default:"(no informado)" }}
                         {% endif %}
                     </span>
+                    {% if candidato.fallecido %}
+                    <span
+                        style="background:rgba(30,30,30,0.9);color:#fff;border-radius:20px;padding:2px 12px;font-size:0.78rem;font-weight:700">
+                        🕊️ Fallecido
+                    </span>
+                    {% endif %}
                     {% if candidato.verificado %}
                     <span
                         style="background:rgba(39,174,96,0.2);color:#27ae60;border-radius:20px;padding:2px 10px;font-size:0.72rem;font-weight:600">
@@ -78,6 +103,7 @@
 
         <!-- Tabs -->
         <div class="d-flex gap-1 mt-4 tab-bar-scroll" style="border-bottom:2px solid rgba(255,255,255,0.15)">
+            {% if candidato.rol_plancha == 'presidente' %}
             <button class="tab-btn active" onclick="showTab('resumen')" id="tab-resumen">
                 <i class="bi bi-star"></i> Resumen
             </button>
@@ -87,50 +113,223 @@
             <button class="tab-btn" onclick="showTab('posiciones')" id="tab-posiciones">
                 <i class="bi bi-clipboard-check"></i> Posiciones
             </button>
-            <button class="tab-btn" onclick="showTab('biografia')" id="tab-biografia">
-                <i class="bi bi-person"></i> Biografía
+            {% if hv_jne %}
+            <button class="tab-btn" onclick="showTab('hojavida')" id="tab-hojavida"
+                style="color:rgba(96,165,250,0.9)">
+                <i class="bi bi-file-earmark-person"></i> Hoja de Vida
             </button>
+            {% endif %}
             {% if candidato.antecedentes %}
             <button class="tab-btn" onclick="showTab('antecedentes')" id="tab-antecedentes"
                 style="color:rgba(255,180,80,0.8)">
                 <i class="bi bi-exclamation-triangle"></i> Antecedentes
             </button>
             {% endif %}
+            {% else %}
+            {# VPs: solo Hoja de Vida #}
+            {% if hv_jne %}
+            <button class="tab-btn active" onclick="showTab('hojavida')" id="tab-hojavida"
+                style="color:rgba(96,165,250,0.9)">
+                <i class="bi bi-file-earmark-person"></i> Hoja de Vida
+            </button>
+            {% endif %}
+            {% endif %}
         </div>
     </div>
 </section>
+
+<!-- SHARE BAR -->
+<div class="container pt-3">
+    <div style="background:white;border-radius:12px;padding:0.75rem 1rem;box-shadow:0 1px 4px rgba(0,0,0,0.06);display:flex;align-items:center;gap:0.75rem;flex-wrap:wrap">
+        <span style="font-size:0.82rem;font-weight:700;color:#334155;display:flex;align-items:center;gap:4px">
+            <i class="bi bi-share-fill" style="color:var(--peru-red)"></i> Compartir
+        </span>
+        <div class="share-bar" style="flex:1">
+            <button class="share-btn wa" onclick="shareOn('whatsapp','Mira el perfil de {{ candidato.nombre }} — Elecciones Perú 2026')">
+                <i class="bi bi-whatsapp"></i> <span class="share-text">WhatsApp</span>
+            </button>
+            <button class="share-btn fb" onclick="shareOn('facebook')">
+                <i class="bi bi-facebook"></i> <span class="share-text">Facebook</span>
+            </button>
+            <button class="share-btn tw" onclick="shareOn('twitter','Conoce a {{ candidato.nombre }} y sus propuestas para el Perú 2026')">
+                <i class="bi bi-twitter-x"></i> <span class="share-text">X</span>
+            </button>
+            <button class="share-btn tt" onclick="shareOn('tiktok')">
+                <i class="bi bi-tiktok"></i> <span class="share-text">TikTok</span>
+            </button>
+            <button class="share-btn copy-link" onclick="shareOn('copy')">
+                <i class="bi bi-link-45deg"></i> <span class="share-text">Copiar</span>
+            </button>
+        </div>
+    </div>
+</div>
 
 <!-- CONTENIDO TABS -->
 <div class="container py-4">
     <div class="row g-4">
         <div class="col-lg-8">
 
-            <!-- TAB: RESUMEN (Nueva pestaña principal) -->
+            {% if candidato.rol_plancha == 'presidente' %}
+            <!-- TAB: RESUMEN -->
             <div id="content-resumen" class="tab-content-pane">
-                <!-- Resumen General -->
+
+                <!-- Perfil del candidato (desde Hoja de Vida JNE) -->
+                {% if hv_jne %}
+                <div class="card-white mb-4">
+                    <h3 class="section-title mb-3">
+                        <i class="bi bi-person-vcard" style="color:#3b82f6"></i> Perfil del Candidato
+                    </h3>
+                    <div class="row g-3">
+                        {% if hv_jne.datos_personales.fecha_nacimiento %}
+                        <div class="col-6 col-md-4">
+                            <div style="font-size:0.72rem;color:#64748b;font-weight:600;text-transform:uppercase">Nacimiento</div>
+                            <div style="font-size:0.88rem;font-weight:600;color:#1e293b">{{ hv_jne.datos_personales.fecha_nacimiento }}</div>
+                            {% if hv_jne.datos_personales.nacimiento_departamento %}
+                            <div style="font-size:0.78rem;color:#64748b">{{ hv_jne.datos_personales.nacimiento_distrito }}, {{ hv_jne.datos_personales.nacimiento_departamento }}</div>
+                            {% endif %}
+                        </div>
+                        {% endif %}
+                        {% if hv_jne.datos_personales.domicilio_departamento %}
+                        <div class="col-6 col-md-4">
+                            <div style="font-size:0.72rem;color:#64748b;font-weight:600;text-transform:uppercase">Domicilio</div>
+                            <div style="font-size:0.88rem;font-weight:600;color:#1e293b">{{ hv_jne.datos_personales.domicilio_distrito }}, {{ hv_jne.datos_personales.domicilio_departamento }}</div>
+                        </div>
+                        {% endif %}
+                        {% if hv_jne.estado_candidato %}
+                        <div class="col-6 col-md-4">
+                            <div style="font-size:0.72rem;color:#64748b;font-weight:600;text-transform:uppercase">Estado JNE</div>
+                            <span class="badge {% if hv_jne.estado_candidato == 'INSCRITO' %}bg-success{% else %}bg-warning text-dark{% endif %}" style="font-size:0.8rem">
+                                {{ hv_jne.estado_candidato }}
+                            </span>
+                        </div>
+                        {% endif %}
+                    </div>
+
+                    {# Formación académica #}
+                    {% if hv_jne.educacion_universitaria or hv_jne.educacion_posgrado %}
+                    <div style="margin-top:1rem;padding-top:0.75rem;border-top:1px solid #f1f5f9">
+                        <div style="font-size:0.72rem;color:#64748b;font-weight:600;text-transform:uppercase;margin-bottom:0.5rem">
+                            <i class="bi bi-mortarboard"></i> Formación Académica
+                        </div>
+                        {% for edu in hv_jne.educacion_posgrado %}
+                        <div style="font-size:0.85rem;color:#1e293b;margin-bottom:0.25rem">
+                            <i class="bi bi-award" style="color:#9333ea"></i>
+                            <strong>{{ edu.especialidad }}</strong>
+                            {% if edu.centro_estudio %}<span style="color:#64748b">— {{ edu.centro_estudio }}</span>{% endif %}
+                        </div>
+                        {% endfor %}
+                        {% for edu in hv_jne.educacion_universitaria %}
+                        <div style="font-size:0.85rem;color:#1e293b;margin-bottom:0.25rem">
+                            <i class="bi bi-mortarboard-fill" style="color:#3b82f6"></i>
+                            <strong>{{ edu.carrera }}</strong>
+                            {% if edu.universidad %}<span style="color:#64748b">— {{ edu.universidad }}</span>{% endif %}
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+
+                    {# Experiencia destacada #}
+                    {% if hv_jne.experiencia_laboral %}
+                    <div style="margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid #f1f5f9">
+                        <div style="font-size:0.72rem;color:#64748b;font-weight:600;text-transform:uppercase;margin-bottom:0.5rem">
+                            <i class="bi bi-briefcase"></i> Experiencia
+                        </div>
+                        {% for exp in hv_jne.experiencia_laboral|slice:":3" %}
+                        <div style="font-size:0.85rem;color:#1e293b;margin-bottom:0.25rem">
+                            <i class="bi bi-building" style="color:#64748b"></i>
+                            <strong>{{ exp.cargo|default:exp.ocupacion }}</strong>
+                            {% if exp.centro_trabajo %}<span style="color:#64748b">— {{ exp.centro_trabajo }}</span>{% endif %}
+                            {% if exp.anio_inicio %}<span style="font-size:0.75rem;color:#94a3b8">({{ exp.anio_inicio }}{% if exp.anio_fin %}-{{ exp.anio_fin }}{% endif %})</span>{% endif %}
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+
+                    {# Patrimonio resumido #}
+                    {% if hv_jne.patrimonio_total or hv_jne.ingresos %}
+                    <div style="margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid #f1f5f9">
+                        <div class="d-flex flex-wrap gap-3">
+                            {% if hv_jne.ingresos.total %}
+                            <div>
+                                <div style="font-size:0.72rem;color:#64748b;font-weight:600;text-transform:uppercase">Ingresos anuales declarados</div>
+                                <div style="font-size:1rem;font-weight:700;color:#15803d">
+                                    S/ {{ hv_jne.ingresos.total|floatformat:2 }}
+                                </div>
+                            </div>
+                            {% endif %}
+                            {% if hv_jne.patrimonio_total %}
+                            <div>
+                                <div style="font-size:0.72rem;color:#64748b;font-weight:600;text-transform:uppercase">Patrimonio estimado</div>
+                                <div style="font-size:1rem;font-weight:700;color:#2563eb">
+                                    S/ {{ hv_jne.patrimonio_total|floatformat:2 }}
+                                </div>
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    {# Sentencias #}
+                    {% if hv_jne.tiene_sentencias %}
+                    <div style="margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid #f1f5f9">
+                        <span style="font-size:0.8rem;color:#dc2626;font-weight:600;background:#fef2f2;padding:3px 10px;border-radius:6px;border:1px solid #fecaca">
+                            <i class="bi bi-exclamation-triangle-fill"></i> Registra sentencias — ver pestaña Hoja de Vida
+                        </span>
+                    </div>
+                    {% endif %}
+                </div>
+                {% endif %}
+
+                <!-- Ejes del Plan de Gobierno (resumen visual) -->
+                {% if plan_dims %}
+                <div class="card-white mb-4">
+                    <h3 class="section-title mb-3">
+                        <i class="bi bi-journal-text" style="color:#3b82f6"></i> Plan de Gobierno — Ejes Principales
+                    </h3>
+                    <div class="row g-3">
+                        {% for dim in plan_dims %}
+                        <div class="col-md-6">
+                            <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:0.75rem;height:100%;border-left:4px solid {{ dim.color }}">
+                                <div style="font-size:0.78rem;font-weight:700;color:{{ dim.color }};margin-bottom:0.4rem;display:flex;align-items:center;gap:5px">
+                                    <i class="bi {{ dim.icon }}"></i> Dimensión {{ dim.label }}
+                                    <span style="font-size:0.68rem;background:{{ dim.color }};color:white;border-radius:8px;padding:1px 6px;margin-left:auto">{{ dim.items|length }}</span>
+                                </div>
+                                {% for item in dim.items|slice:":2" %}
+                                <div style="font-size:0.8rem;color:#334155;margin-bottom:0.3rem;padding-left:0.5rem;border-left:2px solid #e2e8f0">
+                                    {{ item.objetivo|truncatewords:20 }}
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+
+                    {% if plan_pdfs.completo or plan_pdfs.resumen %}
+                    <div class="d-flex flex-wrap gap-2 mt-3">
+                        {% if plan_pdfs.completo %}
+                        <a href="{{ plan_pdfs.completo }}" target="_blank" rel="noopener"
+                           class="btn-peru" style="font-size:0.82rem;padding:0.4rem 1rem;border-radius:20px">
+                            <i class="bi bi-file-earmark-pdf"></i> Plan Completo (PDF)
+                        </a>
+                        {% endif %}
+                        {% if plan_pdfs.resumen %}
+                        <a href="{{ plan_pdfs.resumen }}" target="_blank" rel="noopener"
+                           class="btn-outline-peru" style="font-size:0.82rem;padding:0.4rem 1rem;border-radius:20px;border-color:#6b7280;color:#6b7280">
+                            <i class="bi bi-file-earmark-text"></i> Resumen (PDF)
+                        </a>
+                        {% endif %}
+                    </div>
+                    {% endif %}
+                </div>
+                {% endif %}
+
+                <!-- Visión de Gobierno (resumen texto) -->
                 {% if candidato.resumen_propuestas %}
                 <div class="card-white mb-4">
                     <h3 class="section-title mb-3">
                         <i class="bi bi-lightbulb text-warning"></i> Visión de Gobierno
                     </h3>
                     <p style="line-height:1.9;color:#4a5568;font-size:0.95rem">{{ candidato.resumen_propuestas }}</p>
-                </div>
-                {% endif %}
-
-                <!-- Propuestas Destacadas -->
-                {% if candidato.propuestas_destacadas %}
-                <div class="card-white mb-4">
-                    <h3 class="section-title mb-3">
-                        <i class="bi bi-trophy text-warning"></i> Propuestas Destacadas
-                    </h3>
-                    <div class="propuestas-destacadas">
-                        {% for propuesta in candidato.propuestas_destacadas %}
-                        <div class="propuesta-destacada-item">
-                            <div class="propuesta-num">{{ forloop.counter }}</div>
-                            <div class="propuesta-texto">{{ propuesta }}</div>
-                        </div>
-                        {% endfor %}
-                    </div>
                 </div>
                 {% endif %}
 
@@ -182,96 +381,83 @@
                     </div>
                 </div>
                 {% endif %}
-
-                <!-- Link al Plan de Gobierno -->
-                {% if candidato.link_plan_gobierno %}
-                <div class="card-white"
-                    style="background:linear-gradient(135deg,#f8f9fa,#fff);border:2px solid var(--gold)">
-                    <div class="d-flex align-items-center gap-3">
-                        <div
-                            style="width:50px;height:50px;background:var(--gold);border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0">
-                            <i class="bi bi-bank" style="font-size:1.5rem;color:var(--dark)"></i>
-                        </div>
-                        <div class="flex-grow-1">
-                            <h5 style="margin:0;font-weight:700;font-size:0.95rem;color:var(--dark)">Plan de Gobierno
-                                (JNE)</h5>
-                            <p style="margin:0;font-size:0.82rem;color:#6c757d">Consulta oficial en la Plataforma
-                                Electoral</p>
-                        </div>
-                        <a href="{{ candidato.link_plan_gobierno }}" target="_blank" rel="noopener" class="btn-peru"
-                            style="white-space:nowrap">
-                            <i class="bi bi-box-arrow-up-right"></i> Ver en JNE
-                        </a>
-                    </div>
-                </div>
-                {% endif %}
-                {% if not propuestas_por_tema %}
-                <div class="alert alert-info mt-3" role="alert">
-                    <strong>Advertencia:</strong> No se ha encontrado un PDF de plan de gobierno
-                    accesible para este candidato, por lo que no es posible mostrar propuestas.
-                    {% if candidato.link_plan_gobierno %}
-                    Aún así puedes revisar el plan en el JNE usando el botón de arriba.
-                    {% endif %}
-                </div>
-                {% endif %}
             </div>
 
-            <!-- TAB: PROPUESTAS -->
+            <!-- TAB: PROPUESTAS (Plan de Gobierno JNE) -->
             <div id="content-propuestas" class="tab-content-pane d-none">
-                {% if propuestas_por_tema %}
-                {% for tema, propuestas in propuestas_por_tema.items %}
-                <div class="card-white mb-3">
-                    <h4 class="tema-header">
-                        <span class="tema-badge">
-                            <i class="{{ propuestas.0.icono }}"></i> {{ tema }}
-                        </span>
-                        {% if propuestas.0.prioridad == 'alta' %}
-                        <span class="prioridad-badge alta">Prioridad Alta</span>
-                        {% elif propuestas.0.prioridad == 'media' %}
-                        <span class="prioridad-badge media">Prioridad Media</span>
-                        {% endif %}
+                {% if plan_dims %}
+                <div class="card-white" style="border:1px solid #e2e8f0">
+                    <h4 style="font-weight:800;font-size:1rem;color:var(--dark);margin-bottom:1rem;display:flex;align-items:center;gap:8px">
+                        <i class="bi bi-journal-text" style="color:#3b82f6"></i> Plan de Gobierno — Ejes Temáticos
                     </h4>
-                    {% for propuesta in propuestas %}
-                    <div class="propuesta-item">
-                        <div class="propuesta-content">
-                            <i class="{{ propuesta.icono }} propuesta-icon"></i>
-                            <span>{{ propuesta.titulo }}</span>
+                    <div class="accordion" id="planGobiernoAccordion">
+                        {% for dim in plan_dims %}
+                        <div class="accordion-item" style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:0.5rem;overflow:hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button {% if not forloop.first %}collapsed{% endif %}" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#dim-{{ forloop.counter }}"
+                                    style="font-weight:700;font-size:0.9rem;background:white;padding:0.75rem 1rem">
+                                    <i class="bi {{ dim.icon }}" style="color:{{ dim.color }};margin-right:8px"></i>
+                                    Dimensión {{ dim.label }}
+                                    <span class="badge" style="background:{{ dim.color }};color:white;font-size:0.7rem;margin-left:8px;border-radius:10px">
+                                        {{ dim.items|length }} tema{{ dim.items|length|pluralize:"s" }}
+                                    </span>
+                                </button>
+                            </h2>
+                            <div id="dim-{{ forloop.counter }}" class="accordion-collapse collapse {% if forloop.first %}show{% endif %}"
+                                data-bs-parent="#planGobiernoAccordion">
+                                <div class="accordion-body" style="padding:0.75rem 1rem">
+                                    {% for item in dim.items %}
+                                    <div style="{% if not forloop.last %}border-bottom:1px solid #f1f5f9;padding-bottom:0.75rem;margin-bottom:0.75rem{% endif %}">
+                                        {% if item.objetivo %}
+                                        <div style="font-size:0.82rem;margin-bottom:0.4rem">
+                                            <strong style="color:{{ dim.color }}"><i class="bi bi-bullseye"></i> Objetivo:</strong>
+                                            <span style="color:#334155">{{ item.objetivo|truncatewords:40 }}</span>
+                                        </div>
+                                        {% endif %}
+                                        {% if item.meta %}
+                                        <div style="font-size:0.8rem;color:#475569">
+                                            <strong style="color:#64748b"><i class="bi bi-flag"></i> Meta:</strong>
+                                            {{ item.meta|truncatewords:30 }}
+                                        </div>
+                                        {% endif %}
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
                         </div>
+                        {% endfor %}
                     </div>
-                    {% endfor %}
-                </div>
-                {% endfor %}
 
-                <!-- Link al Plan de Gobierno -->
-                {% if candidato.link_plan_gobierno %}
-                <div class="card-white" style="background:#f0f9ff;border:1px solid #0ea5e9">
-                    <div class="d-flex align-items-center gap-2">
-                        <i class="bi bi-info-circle" style="color:#0ea5e9"></i>
-                        <span style="font-size:0.85rem;color:#0369a1">
-                            Para ver todas las propuestas detalladas, consulta el
-                            <a href="{{ candidato.link_plan_gobierno }}" target="_blank" rel="noopener"
-                                style="color:#0ea5e9;font-weight:600">Plan de Gobierno completo en el JNE</a>.
-                        </span>
+                    {% if plan_pdfs.completo or plan_pdfs.resumen %}
+                    <div class="d-flex flex-wrap gap-2 mt-3">
+                        {% if plan_pdfs.completo %}
+                        <a href="{{ plan_pdfs.completo }}" target="_blank" rel="noopener"
+                           class="btn-peru" style="font-size:0.82rem;padding:0.4rem 1rem;border-radius:20px">
+                            <i class="bi bi-file-earmark-pdf"></i> Plan Completo (PDF)
+                        </a>
+                        {% endif %}
+                        {% if plan_pdfs.resumen %}
+                        <a href="{{ plan_pdfs.resumen }}" target="_blank" rel="noopener"
+                           class="btn-outline-peru" style="font-size:0.82rem;padding:0.4rem 1rem;border-radius:20px;border-color:#6b7280;color:#6b7280">
+                            <i class="bi bi-file-earmark-text"></i> Resumen (PDF)
+                        </a>
+                        {% endif %}
+                    </div>
+                    {% endif %}
+
+                    <div style="margin-top:0.75rem;font-size:0.72rem;color:#94a3b8">
+                        <i class="bi bi-info-circle"></i> Fuente: Jurado Nacional de Elecciones — Plan de Gobierno registrado
                     </div>
                 </div>
-                {% endif %}
-
                 {% else %}
                 <div class="text-center py-5" style="color:var(--text-muted-custom)">
                     <i class="bi bi-clipboard" style="font-size:3rem;display:block;margin-bottom:1rem;opacity:0.5"></i>
-                    <p style="font-size:0.95rem">No hay propuestas detalladas registradas aún.</p>
+                    <p style="font-size:0.95rem">No se encontró plan de gobierno registrado en el JNE.</p>
                     {% if candidato.link_plan_gobierno %}
                     <a href="{{ candidato.link_plan_gobierno }}" target="_blank" rel="noopener" class="btn-peru">
                         <i class="bi bi-box-arrow-up-right"></i> Ver Plan de Gobierno en JNE
                     </a>
-                    <p style="font-size:0.85rem;color:var(--text-muted-custom);margin-top:0.5rem">
-                        Aunque hay un enlace, no se ha encontrado ningún PDF descargable del plan de gobierno
-                        para este candidato.
-                    </p>
-                    {% else %}
-                    <p style="font-size:0.85rem;color:var(--text-muted-custom);margin-top:0.5rem">
-                        No se encontró plan de gobierno oficial.
-                    </p>
                     {% endif %}
                 </div>
                 {% endif %}
@@ -336,18 +522,384 @@
                 {% endif %}
             </div>
 
-            <!-- TAB: BIOGRAFIA -->
-            <div id="content-biografia" class="tab-content-pane d-none">
+            {# Biografía tab removed #}
+            {% endif %}{# end presidente-only tabs #}
+
+            <!-- TAB: HOJA DE VIDA JNE -->
+            {% if hv_jne %}
+            <div id="content-hojavida" class="tab-content-pane {% if candidato.rol_plancha == 'presidente' %}d-none{% endif %}"
+
+                <!-- Datos Personales -->
+                {% if hv_jne.datos_personales %}
                 <div class="card-white mb-4">
-                    <h3 class="section-title mb-3">Sobre {{ candidato.nombre }}</h3>
-                    <p style="line-height:1.8;color:#4a5568">{{ candidato.biografia }}</p>
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <div class="jne-section-icon" style="background:#3b82f6"><i class="bi bi-person-vcard"></i></div>
+                        <h3 class="section-title" style="margin:0">Datos Personales</h3>
+                        {% if hv_jne.estado_candidato %}
+                        <span class="ms-auto badge {% if hv_jne.estado_candidato == 'INSCRITO' %}bg-success{% else %}bg-warning text-dark{% endif %}" style="font-size:0.75rem">
+                            {{ hv_jne.estado_candidato }}
+                        </span>
+                        {% endif %}
+                    </div>
+                    <div class="jne-datos-grid">
+                        {% if hv_jne.dni %}
+                        <div class="jne-dato-item">
+                            <span class="jne-dato-label"><i class="bi bi-credit-card-2-front"></i> DNI</span>
+                            <span class="jne-dato-value">{{ hv_jne.dni }}</span>
+                        </div>
+                        {% endif %}
+                        {% if hv_jne.datos_personales.fecha_nacimiento %}
+                        <div class="jne-dato-item">
+                            <span class="jne-dato-label"><i class="bi bi-calendar-heart"></i> Nacimiento</span>
+                            <span class="jne-dato-value">{{ hv_jne.datos_personales.fecha_nacimiento }}</span>
+                        </div>
+                        {% endif %}
+                        {% if hv_jne.datos_personales.sexo %}
+                        <div class="jne-dato-item">
+                            <span class="jne-dato-label"><i class="bi bi-gender-ambiguous"></i> Sexo</span>
+                            <span class="jne-dato-value">{{ hv_jne.datos_personales.sexo }}</span>
+                        </div>
+                        {% endif %}
+                        {% if hv_jne.datos_personales.nacimiento_departamento %}
+                        <div class="jne-dato-item">
+                            <span class="jne-dato-label"><i class="bi bi-geo-alt"></i> Lugar de nacimiento</span>
+                            <span class="jne-dato-value">{{ hv_jne.datos_personales.nacimiento_distrito }}, {{ hv_jne.datos_personales.nacimiento_provincia }}, {{ hv_jne.datos_personales.nacimiento_departamento }}</span>
+                        </div>
+                        {% endif %}
+                        {% if hv_jne.datos_personales.domicilio_departamento %}
+                        <div class="jne-dato-item">
+                            <span class="jne-dato-label"><i class="bi bi-house-door"></i> Domicilio</span>
+                            <span class="jne-dato-value">{{ hv_jne.datos_personales.domicilio_distrito }}, {{ hv_jne.datos_personales.domicilio_provincia }}, {{ hv_jne.datos_personales.domicilio_departamento }}</span>
+                        </div>
+                        {% endif %}
+                    </div>
                 </div>
+                {% endif %}
+
+                <!-- Educación -->
+                {% if hv_jne.educacion_universitaria or hv_jne.educacion_posgrado %}
                 <div class="card-white mb-4">
-                    <h3 class="section-title mb-3">Experiencia</h3>
-                    <p style="line-height:1.8;color:#4a5568">{{ candidato.experiencia }}</p>
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <div class="jne-section-icon" style="background:#8b5cf6"><i class="bi bi-mortarboard"></i></div>
+                        <h3 class="section-title" style="margin:0">Formación Académica</h3>
+                    </div>
+
+                    {% if hv_jne.educacion_posgrado %}
+                    <h6 class="jne-subsection-title"><i class="bi bi-award"></i> Posgrado</h6>
+                    {% for edu in hv_jne.educacion_posgrado %}
+                    <div class="jne-timeline-item">
+                        <div class="jne-timeline-dot" style="background:#8b5cf6"></div>
+                        <div class="jne-timeline-content">
+                            <div class="jne-timeline-title">{{ edu.especialidad }}</div>
+                            <div class="jne-timeline-subtitle">{{ edu.centro_estudio }}</div>
+                            <div class="jne-timeline-meta">
+                                {% if edu.es_doctor %}<span class="badge bg-purple-soft">Doctor</span>{% endif %}
+                                {% if edu.es_maestro %}<span class="badge bg-purple-soft">Magíster</span>{% endif %}
+                                {% if edu.concluido %}<span class="badge bg-success-soft">Concluido</span>{% else %}<span class="badge bg-warning-soft">No concluido</span>{% endif %}
+                                {% if edu.anio %}<span class="jne-timeline-year">{{ edu.anio }}</span>{% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    {% endif %}
+
+                    {% if hv_jne.educacion_universitaria %}
+                    <h6 class="jne-subsection-title"><i class="bi bi-building"></i> Universitaria</h6>
+                    {% for edu in hv_jne.educacion_universitaria %}
+                    <div class="jne-timeline-item">
+                        <div class="jne-timeline-dot" style="background:#3b82f6"></div>
+                        <div class="jne-timeline-content">
+                            <div class="jne-timeline-title">{{ edu.carrera }}</div>
+                            <div class="jne-timeline-subtitle">{{ edu.universidad }}</div>
+                            <div class="jne-timeline-meta">
+                                {% if edu.concluido %}<span class="badge bg-success-soft">Concluido</span>{% else %}<span class="badge bg-warning-soft">No concluido</span>{% endif %}
+                                {% if edu.anio_bachiller %}<span class="jne-timeline-year">Bachiller: {{ edu.anio_bachiller }}</span>{% endif %}
+                                {% if edu.anio_titulo %}<span class="jne-timeline-year">Título: {{ edu.anio_titulo }}</span>{% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    {% endif %}
+
+                    {% if hv_jne.educacion_basica %}
+                    <div class="jne-educacion-basica mt-3">
+                        <span class="jne-edu-basica-tag {% if hv_jne.educacion_basica.secundaria_concluida %}concluida{% else %}no-concluida{% endif %}">
+                            <i class="bi bi-{% if hv_jne.educacion_basica.secundaria_concluida %}check-circle{% else %}x-circle{% endif %}"></i>
+                            Secundaria {% if hv_jne.educacion_basica.secundaria_concluida %}completa{% else %}incompleta{% endif %}
+                        </span>
+                        <span class="jne-edu-basica-tag {% if hv_jne.educacion_basica.primaria_concluida %}concluida{% else %}no-concluida{% endif %}">
+                            <i class="bi bi-{% if hv_jne.educacion_basica.primaria_concluida %}check-circle{% else %}x-circle{% endif %}"></i>
+                            Primaria {% if hv_jne.educacion_basica.primaria_concluida %}completa{% else %}incompleta{% endif %}
+                        </span>
+                    </div>
+                    {% endif %}
+                </div>
+                {% endif %}
+
+                <!-- Experiencia Laboral -->
+                {% if hv_jne.experiencia_laboral %}
+                <div class="card-white mb-4">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <div class="jne-section-icon" style="background:#059669"><i class="bi bi-briefcase"></i></div>
+                        <h3 class="section-title" style="margin:0">Experiencia Laboral</h3>
+                    </div>
+                    {% for exp in hv_jne.experiencia_laboral %}
+                    <div class="jne-timeline-item">
+                        <div class="jne-timeline-dot" style="background:#059669"></div>
+                        <div class="jne-timeline-content">
+                            <div class="jne-timeline-title">{{ exp.ocupacion }}</div>
+                            <div class="jne-timeline-subtitle">{{ exp.centro_trabajo }}</div>
+                            <div class="jne-timeline-meta">
+                                <span class="jne-timeline-year">{{ exp.desde }}{% if exp.hasta and exp.hasta != '0000' %} – {{ exp.hasta }}{% else %} – Actualidad{% endif %}</span>
+                                {% if exp.departamento %}
+                                <span class="jne-timeline-location"><i class="bi bi-geo-alt-fill"></i> {{ exp.distrito }}, {{ exp.departamento }}</span>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+
+                <!-- Cargos Partidarios -->
+                {% if hv_jne.cargos_partidarios %}
+                <div class="card-white mb-4">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <div class="jne-section-icon" style="background:#d97706"><i class="bi bi-flag"></i></div>
+                        <h3 class="section-title" style="margin:0">Cargos en Partidos Políticos</h3>
+                    </div>
+                    <div class="jne-cargos-grid">
+                        {% for cargo in hv_jne.cargos_partidarios %}
+                        <div class="jne-cargo-card">
+                            <div class="jne-cargo-titulo">{{ cargo.cargo }}</div>
+                            <div class="jne-cargo-org">{{ cargo.organizacion }}</div>
+                            <div class="jne-cargo-periodo">{{ cargo.desde }}{% if cargo.hasta and cargo.hasta != '0000' %} – {{ cargo.hasta }}{% else %} – Actualidad{% endif %}</div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
+
+                <!-- Ingresos Declarados -->
+                {% if hv_jne.ingresos %}
+                <div class="card-white mb-4">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <div class="jne-section-icon" style="background:#16a085"><i class="bi bi-cash-stack"></i></div>
+                        <h3 class="section-title" style="margin:0">Ingresos Declarados ({{ hv_jne.ingresos.anio }})</h3>
+                    </div>
+                    <div class="jne-ingresos-total">
+                        <span class="jne-ingresos-label">Total Anual</span>
+                        <span class="jne-ingresos-monto">S/ {{ hv_jne.ingresos.total|floatformat:2 }}</span>
+                    </div>
+                    <div class="jne-ingresos-grid">
+                        {% if hv_jne.ingresos.remuneracion_publica %}
+                        <div class="jne-ingreso-item">
+                            <div class="jne-ingreso-label"><i class="bi bi-bank"></i> Remuneración pública</div>
+                            <div class="jne-ingreso-monto">S/ {{ hv_jne.ingresos.remuneracion_publica|floatformat:2 }}</div>
+                        </div>
+                        {% endif %}
+                        {% if hv_jne.ingresos.remuneracion_privada %}
+                        <div class="jne-ingreso-item">
+                            <div class="jne-ingreso-label"><i class="bi bi-building"></i> Remuneración privada</div>
+                            <div class="jne-ingreso-monto">S/ {{ hv_jne.ingresos.remuneracion_privada|floatformat:2 }}</div>
+                        </div>
+                        {% endif %}
+                        {% if hv_jne.ingresos.renta_individual_publica %}
+                        <div class="jne-ingreso-item">
+                            <div class="jne-ingreso-label"><i class="bi bi-bank"></i> Renta individual pública</div>
+                            <div class="jne-ingreso-monto">S/ {{ hv_jne.ingresos.renta_individual_publica|floatformat:2 }}</div>
+                        </div>
+                        {% endif %}
+                        {% if hv_jne.ingresos.renta_individual_privada %}
+                        <div class="jne-ingreso-item">
+                            <div class="jne-ingreso-label"><i class="bi bi-building"></i> Renta individual privada</div>
+                            <div class="jne-ingreso-monto">S/ {{ hv_jne.ingresos.renta_individual_privada|floatformat:2 }}</div>
+                        </div>
+                        {% endif %}
+                        {% if hv_jne.ingresos.otros_publico %}
+                        <div class="jne-ingreso-item">
+                            <div class="jne-ingreso-label"><i class="bi bi-bank"></i> Otros ingresos públicos</div>
+                            <div class="jne-ingreso-monto">S/ {{ hv_jne.ingresos.otros_publico|floatformat:2 }}</div>
+                        </div>
+                        {% endif %}
+                        {% if hv_jne.ingresos.otros_privado %}
+                        <div class="jne-ingreso-item">
+                            <div class="jne-ingreso-label"><i class="bi bi-building"></i> Otros ingresos privados</div>
+                            <div class="jne-ingreso-monto">S/ {{ hv_jne.ingresos.otros_privado|floatformat:2 }}</div>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endif %}
+
+                <!-- Bienes / Patrimonio -->
+                {% if hv_jne.bienes_inmuebles or hv_jne.bienes_muebles %}
+                <div class="card-white mb-4">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <div class="jne-section-icon" style="background:#0891b2"><i class="bi bi-house-heart"></i></div>
+                        <h3 class="section-title" style="margin:0">Patrimonio Declarado</h3>
+                        {% if hv_jne.patrimonio_total %}
+                        <span class="ms-auto" style="font-weight:800;color:#0891b2;font-size:1.1rem">S/ {{ hv_jne.patrimonio_total|floatformat:2 }}</span>
+                        {% endif %}
+                    </div>
+
+                    {% if hv_jne.bienes_inmuebles %}
+                    <h6 class="jne-subsection-title"><i class="bi bi-house-door"></i> Bienes Inmuebles ({{ hv_jne.bienes_inmuebles|length }})</h6>
+                    {% for bien in hv_jne.bienes_inmuebles %}
+                    <div class="jne-bien-card">
+                        <div class="jne-bien-tipo"><i class="bi bi-house"></i> {{ bien.tipo }}</div>
+                        <div class="jne-bien-direccion">{{ bien.direccion }}</div>
+                        {% if bien.autovaluo %}
+                        <div class="jne-bien-valor">Autovalúo: <strong>S/ {{ bien.autovaluo|floatformat:2 }}</strong></div>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                    {% endif %}
+
+                    {% if hv_jne.bienes_muebles %}
+                    <h6 class="jne-subsection-title mt-3"><i class="bi bi-car-front"></i> Bienes Muebles ({{ hv_jne.bienes_muebles|length }})</h6>
+                    {% for bien in hv_jne.bienes_muebles %}
+                    <div class="jne-bien-card">
+                        <div class="jne-bien-tipo"><i class="bi bi-car-front"></i> {{ bien.tipo }}</div>
+                        {% if bien.descripcion %}<div class="jne-bien-direccion">{{ bien.descripcion }}</div>{% endif %}
+                        {% if bien.valor %}
+                        <div class="jne-bien-valor">Valor: <strong>S/ {{ bien.valor|floatformat:2 }}</strong></div>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                    {% endif %}
+
+                    {% if not hv_jne.bienes_inmuebles and not hv_jne.bienes_muebles %}
+                    <p style="color:#6c757d;font-size:0.9rem">No declaró bienes.</p>
+                    {% endif %}
+                </div>
+                {% endif %}
+
+                <!-- Sentencias -->
+                {% if hv_jne.tiene_sentencias %}
+                <div class="card-white mb-4" style="border-left:4px solid #ef4444">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <div class="jne-section-icon" style="background:#ef4444"><i class="bi bi-exclamation-triangle"></i></div>
+                        <h3 class="section-title" style="margin:0;color:#dc2626">Sentencias Declaradas</h3>
+                    </div>
+                    <p style="font-size:0.82rem;color:#6c757d;margin-bottom:1rem">
+                        Información declarada por el propio candidato en su hoja de vida ante el JNE.
+                    </p>
+
+                    {% if hv_jne.sentencias_penales %}
+                    <h6 class="jne-subsection-title" style="color:#dc2626"><i class="bi bi-gavel"></i> Sentencias Penales</h6>
+                    {% for s in hv_jne.sentencias_penales %}
+                    <div class="jne-sentencia-card penal">
+                        <div class="jne-sentencia-header">
+                            <i class="bi bi-exclamation-octagon-fill"></i>
+                            <span>Expediente {{ s.expediente }}</span>
+                        </div>
+                        {% if s.delito %}<div class="jne-sentencia-detalle"><strong>Delito:</strong> {{ s.delito }}</div>{% endif %}
+                        {% if s.fallo %}<div class="jne-sentencia-detalle"><strong>Fallo:</strong> {{ s.fallo }}</div>{% endif %}
+                        {% if s.modalidad %}<div class="jne-sentencia-detalle"><strong>Modalidad:</strong> {{ s.modalidad }}</div>{% endif %}
+                        {% if s.cumplimiento %}<div class="jne-sentencia-detalle"><strong>Cumplimiento:</strong> {{ s.cumplimiento }}</div>{% endif %}
+                    </div>
+                    {% endfor %}
+                    {% endif %}
+
+                    {% if hv_jne.sentencias_obligatorias %}
+                    <h6 class="jne-subsection-title mt-3" style="color:#d97706"><i class="bi bi-file-earmark-text"></i> Sentencias Civiles / Obligaciones</h6>
+                    {% for s in hv_jne.sentencias_obligatorias %}
+                    <div class="jne-sentencia-card civil">
+                        <div class="jne-sentencia-header">
+                            <i class="bi bi-file-earmark-ruled"></i>
+                            <span>Expediente {{ s.expediente }}</span>
+                        </div>
+                        {% if s.materia %}<div class="jne-sentencia-detalle"><strong>Materia:</strong> {{ s.materia }}</div>{% endif %}
+                        {% if s.monto %}<div class="jne-sentencia-detalle"><strong>Monto:</strong> S/ {{ s.monto|floatformat:2 }}</div>{% endif %}
+                    </div>
+                    {% endfor %}
+                    {% endif %}
+                </div>
+                {% endif %}
+
+                <!-- Info Adicional -->
+                {% if hv_jne.info_adicional %}
+                <div class="card-white mb-4">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <div class="jne-section-icon" style="background:#6366f1"><i class="bi bi-info-circle"></i></div>
+                        <h3 class="section-title" style="margin:0">Información Adicional</h3>
+                    </div>
+                    <ul class="jne-info-adicional-list">
+                        {% for info in hv_jne.info_adicional %}
+                        <li>{{ info }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+
+                <!-- Anotaciones Marginales -->
+                {% if hv_jne.anotaciones_marginales %}
+                <div class="card-white mb-4" style="border-left:4px solid #f59e0b">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <div class="jne-section-icon" style="background:#f59e0b"><i class="bi bi-sticky"></i></div>
+                        <h3 class="section-title" style="margin:0">Anotaciones Marginales</h3>
+                    </div>
+                    {% for nota in hv_jne.anotaciones_marginales %}
+                    <div style="{% if not forloop.last %}border-bottom:1px solid #f1f5f9;padding-bottom:1rem;margin-bottom:1rem{% endif %}">
+                        {% if nota.rubro %}
+                        <div style="font-size:0.8rem;font-weight:700;color:#92400e;text-transform:uppercase;margin-bottom:0.5rem">
+                            <i class="bi bi-file-earmark-text"></i> {{ nota.rubro }}
+                        </div>
+                        {% endif %}
+                        {% if nota.documento %}
+                        <div style="font-size:0.82rem;color:#475569;margin-bottom:0.25rem">
+                            <strong>Documento:</strong> {{ nota.documento }}
+                        </div>
+                        {% endif %}
+                        {% if nota.fecha_registro %}
+                        <div style="font-size:0.8rem;color:#64748b;margin-bottom:0.75rem">
+                            <i class="bi bi-calendar3"></i> Registro: {{ nota.fecha_registro }}
+                            {% if nota.fecha_publicacion %} &bull; Publicación: {{ nota.fecha_publicacion }}{% endif %}
+                        </div>
+                        {% endif %}
+                        {% if nota.dice %}
+                        <div style="background:#fef3c7;border:1px solid #fde68a;border-radius:8px;padding:0.75rem;margin-bottom:0.5rem">
+                            <div style="font-size:0.72rem;font-weight:700;color:#92400e;text-transform:uppercase;margin-bottom:0.4rem">
+                                <i class="bi bi-arrow-right-circle"></i> Dice:
+                            </div>
+                            <pre style="font-size:0.78rem;color:#78350f;white-space:pre-wrap;word-break:break-word;margin:0;font-family:inherit;line-height:1.6">{{ nota.dice }}</pre>
+                        </div>
+                        {% endif %}
+                        {% if nota.debe_decir %}
+                        <div style="background:#dcfce7;border:1px solid #86efac;border-radius:8px;padding:0.75rem">
+                            <div style="font-size:0.72rem;font-weight:700;color:#166534;text-transform:uppercase;margin-bottom:0.4rem">
+                                <i class="bi bi-check-circle"></i> Debe Decir:
+                            </div>
+                            <pre style="font-size:0.78rem;color:#14532d;white-space:pre-wrap;word-break:break-word;margin:0;font-family:inherit;line-height:1.6">{{ nota.debe_decir }}</pre>
+                        </div>
+                        {% endif %}
+                        {% if not nota.rubro and not nota.dice %}
+                        <div class="jne-anotacion">{{ nota.descripcion|default:nota }}</div>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+
+                <!-- Fuente JNE -->
+                <div class="card-white" style="background:#eff6ff;border:1px solid #93c5fd">
+                    <div class="d-flex align-items-center gap-3">
+                        <img src="https://portal.jne.gob.pe/portal/Multimedia/Imagenes/logo_jne.png" alt="JNE" style="height:36px;opacity:0.85" onerror="this.style.display='none'">
+                        <div>
+                            <p style="margin:0;font-size:0.85rem;color:#1e40af">
+                                Datos de la <strong>Hoja de Vida</strong> declarada ante el <strong>Jurado Nacional de Elecciones (JNE)</strong>. Esta información es de carácter público y fue proporcionada por el propio candidato.
+                            </p>
+                            <a href="https://procesoselectorales.jne.gob.pe/plataforma-electoral/" target="_blank" rel="noopener" style="font-size:0.82rem;font-weight:600;color:#3b82f6;text-decoration:none">
+                                Consultar Plataforma Electoral del JNE <i class="bi bi-box-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
+            {% endif %}
 
+            {% if candidato.rol_plancha == 'presidente' %}
             <!-- TAB: ANTECEDENTES -->
             {% if candidato.antecedentes %}
             <div id="content-antecedentes" class="tab-content-pane d-none">
@@ -372,6 +924,7 @@
                 </div>
             </div>
             {% endif %}
+            {% endif %}{# end presidente-only transparencia/antecedentes #}
 
         </div>
 
@@ -397,6 +950,95 @@
                 </div>
             </div>
 
+            <!-- Plancha Presidencial (RESALTADA) -->
+            {% if plancha %}
+            <div class="card-white mb-3 plancha-card" style="border:2px solid {{ candidato.partido.color_primario }};background:linear-gradient(135deg,{{ candidato.partido.color_primario }}08,white)">
+                <div class="d-flex align-items-center gap-2 mb-3">
+                    <div style="width:32px;height:32px;border-radius:8px;background:{{ candidato.partido.color_primario }};display:flex;align-items:center;justify-content:center;color:white;flex-shrink:0">
+                        <i class="bi bi-people-fill" style="font-size:0.9rem"></i>
+                    </div>
+                    <div>
+                        <h5 style="font-weight:800;font-size:0.9rem;margin:0;color:var(--dark)">Plancha Presidencial</h5>
+                        <div style="font-size:0.7rem;color:{{ candidato.partido.color_primario }};font-weight:600">{{ candidato.partido.nombre }}</div>
+                    </div>
+                </div>
+
+                <!-- El candidato actual -->
+                <div class="plancha-member plancha-current" style="background:{{ candidato.partido.color_primario }}15;border:1px solid {{ candidato.partido.color_primario }}30">
+                    <div class="plancha-photo" style="border-color:{{ candidato.partido.color_primario }}">
+                        {% if candidato.get_foto %}
+                        <img src="{{ candidato.get_foto }}" alt="{{ candidato.nombre }}">
+                        {% else %}
+                        <div class="plancha-photo-placeholder"><i class="bi bi-person-fill"></i></div>
+                        {% endif %}
+                    </div>
+                    <div class="plancha-info">
+                        <div class="plancha-name">{{ candidato.nombre }}</div>
+                        <div class="plancha-role" style="color:{{ candidato.partido.color_primario }}">{{ candidato.rol_plancha_label }}</div>
+                    </div>
+                    <span class="plancha-you-badge" style="background:{{ candidato.partido.color_primario }}">Viendo</span>
+                </div>
+
+                <!-- Compañeros de plancha -->
+                {% for companero in plancha %}
+                <a href="{% url 'candidatos:candidato_detail' companero.slug %}" class="plancha-member plancha-link">
+                    <div class="plancha-photo" style="border-color:#cbd5e1">
+                        {% if companero.get_foto %}
+                        <img src="{{ companero.get_foto }}" alt="{{ companero.nombre }}">
+                        {% else %}
+                        <div class="plancha-photo-placeholder"><i class="bi bi-person-fill"></i></div>
+                        {% endif %}
+                    </div>
+                    <div class="plancha-info">
+                        <div class="plancha-name">{{ companero.nombre }}</div>
+                        <div class="plancha-role">{{ companero.rol_plancha_label }}</div>
+                        <div class="plancha-hint"><i class="bi bi-file-earmark-person"></i> Ver hoja de vida</div>
+                    </div>
+                    <i class="bi bi-arrow-right-circle-fill plancha-arrow" style="color:{{ candidato.partido.color_primario }}"></i>
+                </a>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            <!-- Candidatos al Congreso del partido -->
+            {% if congresales_partido %}
+            <div class="card-white mb-3" style="border-left:3px solid #3b82f6">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                    <i class="bi bi-bank2" style="color:#3b82f6;font-size:1.1rem"></i>
+                    <h5 style="font-weight:700;font-size:0.88rem;margin:0;color:var(--dark)">
+                        Candidatos al Congreso
+                    </h5>
+                </div>
+                <p style="font-size:0.75rem;color:#64748b;margin-bottom:0.75rem">
+                    {{ congresales_total }} candidatos de {{ candidato.partido.nombre }}
+                </p>
+
+                {% for cong in congresales_partido %}
+                <div class="cong-sidebar-item">
+                    <div class="cong-sidebar-info">
+                        <div class="cong-sidebar-name">{{ cong.nombre|title }}</div>
+                        <div class="cong-sidebar-meta">
+                            <span class="badge-cargo-xs {% if cong.cargo == 'DIPUTADO' %}diputado{% elif cong.cargo == 'SENADOR' %}senador{% else %}parlamento{% endif %}">{{ cong.cargo|title }}</span>
+                            {% if cong.departamento %}<span class="cong-sidebar-depto">{{ cong.departamento|title }}</span>{% endif %}
+                        </div>
+                    </div>
+                    {% if cong.estado == 'DENTRO DE PLAZO' %}
+                    <span class="cong-estado-dot presento" title="Declaró financiamiento"></span>
+                    {% else %}
+                    <span class="cong-estado-dot no-presento" title="No presentó declaración"></span>
+                    {% endif %}
+                </div>
+                {% endfor %}
+
+                {% if congresales_total > 12 %}
+                <a href="{% url 'candidatos:congresales' %}?partido={{ candidato.partido.nombre }}"
+                   class="d-block text-center mt-2" style="font-size:0.82rem;font-weight:600;color:#3b82f6;text-decoration:none">
+                    Ver los {{ congresales_total }} candidatos <i class="bi bi-arrow-right"></i>
+                </a>
+                {% endif %}
+            </div>
+            {% endif %}
+
             <!-- Fuente de datos -->
             {% if candidato.fuente_datos or candidato.verificado %}
             <div class="card-white mb-3" style="background:#f0fdf4;border:1px solid #86efac">
@@ -420,11 +1062,13 @@
                         <i class="bi bi-box-arrow-up-right"></i> Ver Plan de Gobierno (JNE)
                     </a>
                     {% endif %}
+                    {% if not candidato.fallecido %}
                     <button onclick="votarDesdeDetalle({{ candidato.id }})"
                         class="btn-outline-peru vote-btn-{{ candidato.id }}" style="justify-content:center"
                         id="voteBtn">
                         <i class="bi bi-box2-heart"></i> Votar por este candidato
                     </button>
+                    {% endif %}
                     <a href="{% url 'candidatos:comparar' %}?c={{ candidato.id }}" class="btn-outline-peru"
                         style="justify-content:center">
                         <i class="bi bi-columns-gap"></i> Comparar con otros
